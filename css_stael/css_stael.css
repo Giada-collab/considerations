@@ -1,0 +1,135 @@
+
+body {
+    background-color: linen;
+    margin-left:80px;
+    margin-right:80px;
+    margin-top:50px;
+    margin-bottom:50px;
+    font-family: Arial, Verdana, sans-serif;
+    color:black;
+    font-size: 14px;
+}
+
+header {
+    color:black;
+    text-indent:100px;
+    height:180px;
+    font-size:x-large;
+    line-height:1; 
+    padding-bottom:50px;
+    
+  }
+
+
+.title_header {
+
+  padding-top:100px;
+  display: block;
+  margin-left: 300px;
+ 
+
+  }
+
+#img_top {
+   float: left;
+ 
+   
+}
+
+.background_nav {
+  background-color:white;
+  margin:30px; 
+  padding-left:50px;
+   
+}
+
+.topnav a{
+  text-align:center;
+  font-weight:bold;
+  font-size:16px;
+  margin:30px;
+  color:black;
+  float: none;/* W3C responsive layout*/
+  width: 100%;/* W3C responsive layout*/
+ 
+}
+
+
+
+.main_content {
+  margin:30px;
+  background-color: linen;
+  height:auto;
+ 
+ 
+}
+
+
+.slide {
+  margin-left:50px;
+  margin-right:300px;
+  margin-top:30px;
+  margin-bottom:30px;
+  height: 400px;
+  width:300px;
+  display:none;
+   
+
+}
+
+.footer {
+  text-align:center;
+  color:black;
+   background-color:white;
+   margin:30px;
+   margin-top: 100px;
+}
+
+a {
+
+  text-decoration: none;
+  color:black;
+}
+
+a:hover {
+  background-color:#D57B69;
+  color: black;
+}
+
+
+
+.box {
+    margin-left:10px;
+    margin-bottom: 50px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    width: 350px;
+    height:auto;
+    background-color:white;
+    float: right;
+    box-shadow: 2px 7px #D57B69;
+    font-size: 12px;
+    line-height:1;
+
+}
+
+
+.img_manuscrit {
+    
+   margin-left:50px;
+   height:300px;
+   margin-bottom: 50px;
+   margin-top: 50px;
+ 
+    
+}
+
+.csl-bib-body{
+    
+  line-height: 1.35;
+  margin-left: 2em;
+  text-indent:-2em;  
+    
+}
+
