@@ -7,7 +7,7 @@
 - Institution: Ca' Foscari University of Venice
 
 ## Content
-Data taken from the text of a manuscript and the 1<sup>st</sup> edition (1818) of *Considérations sur les principaux événements de la Révolution française* of Madame de Staël. All data have been published in [Html pages]
+Data taken from the text of a manuscript and the 1<sup>st</sup> edition (1818) of *Considérations sur les principaux événements de la Révolution française* of Madame de Staël. All data have been published in [Html pages] (https://giada-collab.github.io/considerations/)
 
 
 ## Repository overview
