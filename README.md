@@ -37,6 +37,11 @@ Data taken from the text of a manuscript and the 1<sup>st</sup> edition (1818) o
 
 
 
+## Licence
+
+Data are licensed under a [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
+
+
 
 
 
