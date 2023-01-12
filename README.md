@@ -5,9 +5,10 @@
 - Author: Stefania Tesser
 - Email: stefania@unive.it
 - Institution: Ca' Foscari University of Venice
+- Date of file creation: 2023-01-12
 
 ## Content
-Data taken from the text of a manuscript and the 1<sup>st</sup> edition (1818) of *Considérations sur les principaux événements de la Révolution française* of Madame de Staël. All data have been published in a [website](https://giada-collab.github.io/considerations/). This is a work in progress that tests the faisability of the project.
+Data taken from the text of a manuscript and the 1<sup>st</sup> edition (1818) of *Considérations sur les principaux événements de la Révolution française* of Madame de Staël. Data have been published in a [website](https://giada-collab.github.io/considerations/). This is a work in progress.
 
 
 ## Repository overview
