@@ -37,7 +37,7 @@ Data taken from the text of a manuscript and the 1<sup>st</sup> edition (1818) o
 ## Methodological information
 
 Information about methodology of data collection will be provided soon.
-Software requerements: website tested for Microsoft Edge version 108.0.1462.76, Google Chrome version 108.0.5359.125, Firefox 72.0.2.
+Website tested for Microsoft Edge version 108.0.1462.76, Google Chrome version 108.0.5359.125, Firefox 72.0.2 and Android version QKQ1.191215.002.
 
 ## Licence
 
