@@ -5,7 +5,7 @@ body {
     margin-right:80px;
     margin-top:50px;
     margin-bottom:50px;
-    font-family: Arial, Verdana, sans-serif;
+    font-family: Arial, Verdana, sans-serif; <!--Recommended fonts - https://www.w3schools.com/css/css_font_websafe.asp-->
     color:black;
     font-size: 14px;
 }
