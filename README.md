@@ -26,6 +26,7 @@ Data from:  transcription of the last manuscript of *Considérations sur les pri
   - img_home_3.jpg
   - img_home_4.jpg
   - madame_de_stael.png
+- Documentation_Stael.pdf
 - contact.html
 - edition_1818.html
 - index.html
