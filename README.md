@@ -8,7 +8,7 @@
 - Language of data: French
 
 ## Content
-Data taken from the text of a manuscript and the 1<sup>st</sup> edition (1818) of *Considérations sur les principaux événements de la Révolution française* of Madame de Staël. Data have been published in a [website](https://giada-collab.github.io/considerations/). This is a work in progress.
+Data from:  transcription of the last manuscript of *Considérations sur les principaux événements de la Révolution française* of Madame de Staël and its  1<sup>st</sup> edition (1818) . Data have been published in a [website](https://giada-collab.github.io/considerations/). This is a work in progress.
 
 
 ## Repository overview
@@ -36,7 +36,6 @@ Data taken from the text of a manuscript and the 1<sup>st</sup> edition (1818) o
 
 ## Methodological information
 
-Information about methodology of data collection will be provided soon.
 Website tested for Microsoft Edge version 108.0.1462.76, Google Chrome version 108.0.5359.125, Firefox 72.0.2 and Android version QKQ1.191215.002.
 
 ## Licence
