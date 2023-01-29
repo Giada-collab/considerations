@@ -1,4 +1,5 @@
-# Digital edition of a political work of Madame de Staël
+# Considérations sur les principaux événements de la Révolution française de Madame de Staël : un laboratoire éditorial
+###*Digital edition of a political work of Madame de Staël*
 
 
 ## General information
@@ -39,9 +40,10 @@ Data from:  transcription of the last manuscript of *Considérations sur les pri
 
 Website tested for Microsoft Edge version 108.0.1462.76, Google Chrome version 108.0.5359.125, Firefox 72.0.2 and Android version QKQ1.191215.002.
 
-### Cite this repository
 
-Stefania Tesser, *Considérations*, Venice: Ca' Foscari University of Venice, 2023, [https://github.com/Giada-collab/considerations](https://github.com/Giada-collab/considerations).
+## Cite this repository
+
+Stefania Tesser, *Considérations sur les principaux événements de la Révolution française de Madame de Staël : un laboratoire éditorial*, Venice: Ca' Foscari University of Venice, 2023, [https://github.com/Giada-collab/considerations](https://github.com/Giada-collab/considerations).
 
 
 ## Licence
