@@ -1,9 +1,6 @@
 # *Considérations sur les principaux événements de la Révolution française* de Madame de Staël : un laboratoire éditorial 
 ### *Digital edition of a political work of Madame de Staël*
-
-
-
-
+----------
 
 ## General information
 - Author: Stefania Tesser
