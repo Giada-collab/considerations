@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title><w rend="italic">Considérations sur les principaux événements de la Révolution
+                  française</w>: édition critique numérique</title>
+            <author>
+               <persName ref="#stael">
+                  <surname>Staël-Holstein</surname>
+                  <forename>Germaine</forename>
+                  <nameLink>de</nameLink>
+               </persName>
+            </author>
+            <editor>
+               <persName xml:id="tesserS" ref="isni:0000000353074065">
+                  <surname>Tesser</surname>
+                  <forename>Stefania</forename>
+               </persName>
+            </editor>
+         </titleStmt>
+         <editionStmt>
+            <edition n="1">
+               <date when-iso="2023-07-02" type="mise_en_ligne">2 juillet 2023</date>
+               <!-- modifier la date à la fin du travail-->
+            </edition>
+         </editionStmt>
+         <extent>
+            <measure unit="KB" n="3">3 KB</measure>
+            <!-- modifier la taille à la fin du travail -->
+         </extent>
+         <publicationStmt>
+            <authority>
+               <persName ref="#tesserS">
+                  <surname>Tesser</surname>
+                  <forename>Stefania</forename>
+               </persName>
+            </authority>
+            <date when-iso="2023">2023</date>
+            <availability status="restricted">
+               <licence target="https://creativecommons.org/licenses/by-nc-nd/3.0/fr/">CC
+                  BY-NC-ND3.0 FR</licence>
+               <!-- modifier la licence aussi sur la page web-->
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc >
+               <msIdentifier>
+                  <country key="FR" ref="https://www.iso.org/">France</country>
+                  <settlement xml:id="paris" ref="https://www.geonames.org/2988507/paris.html">Paris</settlement>
+                  <institution>Bibliothèque nationale de France</institution>
+                  <repository>Département des Manuscrits</repository>
+                  <idno type="cote">NAF 14606-14608</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItemStruct>
+                     <author>
+                        <persName ref="#stael">
+                           <surname>Staël-Holstein</surname>
+                           <forename>Germaine</forename>
+                           <nameLink>de</nameLink>
+                        </persName>
+                     </author>
+                     <title xml:lang="fr" cert="medium">Considérations sur les principaux événements de la Révolution française</title>
+                     <note source="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc6176b">Titre de la fiche bibliographique. Le manuscrit n'a pas de titre</note>
+                  </msItemStruct>
+                          </msContents>
+             
+            </msDesc>
+            <biblStruct>
+               <monogr>
+                  <author>
+                     <persName ref="#stael">
+                        <surname>Staël-Holstein</surname>
+                        <!-- balisage sans <persName> pour noms déjà cités? doivent-ils figurer dans un index des noms? -->
+                        <forename>Germaine</forename>
+                        <nameLink>de</nameLink>
+                     </persName>
+                  </author>
+                  <editor>
+                     <persName xml:id="BroglieV" ref="isni:0000000122834231">
+                        <surname>Broglie</surname>
+                        <forename> Victor </forename>
+                        <nameLink>de</nameLink>
+                     </persName>
+                     <persName xml:id="StaelAu" ref="isni:0000000121235202">
+                        <surname>Staël-Holstein</surname>
+                        <forename>Auguste-Louis</forename>
+                        <nameLink>de</nameLink>
+                     </persName>
+                  </editor>
+                  <title xml:lang="fr" type="main">Considérations sur les principaux événemens de la Révolution
+                     françoise</title>
+                  <title xml:lang="fr" type="sub">ouvrage posthume de madame la baronne de Staël ; publ. par M. le
+                     duc de Broglie et M. le baron de Staël</title>
+                  <imprint>
+                     <pubPlace ref="#paris">Paris</pubPlace>
+                     <publisher> Delaunay</publisher>
+                     <date when-iso="1818">1818</date>
+                  </imprint>
+                  <extent>3 v.; in-8</extent>
+               </monogr>
+               <ptr type="bib_desc" target="http://catalogue.bnf.fr/ark:/12148/cb178050717">
+               </ptr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person>
+                  <persName xml:id="stael" ref="isni:0000000122591946">
+                     <surname>Staël-Holstein</surname>
+                     <forename>Germaine</forename>
+                     <nameLink>de</nameLink>
+                  </persName>
+                  <birth>
+                     <date when-iso="1766">1766</date>
+                  </birth>
+                  <death>
+                     <date when-iso="1817">1817</date>
+                  </death>
+                  <occupation role="french_writer">Écrivain</occupation>
+                  <!-- trouver un standard et uniformiser ces valeurs -->
+               </person>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+   </text>
+</TEI>

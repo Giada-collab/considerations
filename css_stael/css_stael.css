@@ -133,3 +133,50 @@ a:hover {
     
 }
 
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+h2 {
+  text-align:center;
+  font-style: italic;
+  }
+  
+  .delUnknown {
+      color:grey;
+      text-decoration: line-through;
+  }
+  
+ .orig {
+      color:brown;
+      
+  }
+  
+  .reg {
+      color:green;
+      
+  }
+  
+  
+ ol.var {
+ list-style-type: lower-alpha;
+      
+  }
+  
+  li.lem {
+
+  list-style-type: lower-alpha;
+  }
+  
+  li.SW {
+  
+color: yellow;
+  }
+  
+  li.Fe {
+      
+      color: blue;
+      
+  }
