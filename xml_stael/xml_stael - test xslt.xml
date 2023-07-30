@@ -174,8 +174,7 @@
                      <choice>
                         <orig>particulieres,</orig>
                         <reg>particulières ;</reg>
-                     </choice> ils se sont donc aveuglés autant qu'ils l'ont pu sur l'enchaîne <fw
-                        type="catchword" place="bottom-right"/><lb break="no" rend="-"/>ment <!-- ????? -->
+                     </choice> ils se sont donc aveuglés autant qu'ils l'ont pu sur l'enchaînement 
                      <pb facs="#CRF_I_i_3v" n="3v"/>
                      <fw type="pageNum" place="top-left">2</fw> des faits, et sur la marche
                      graduelle de la civilisation européenne.</del>
@@ -210,7 +209,7 @@
          <div type="apparatus">
             <head>Apparat Critique</head>
             <app loc="#titleWork"> 
-               <!-- Dans le ms pas de titre: comment indiquer l'ajout dans la 1re éd.????  èd. papier: j'ai utilisé "[]"-->
+               <!-- Dans le ms pas de titre: comment indiquer l'ajout dans la 1re éd.????  éd. papier: j'ai utilisé "[]"-->
                <rdg wit="#firstEd" rend="uppercase">Considérations sur les principaux événemens de
                   la révolution françoise</rdg>
             </app>

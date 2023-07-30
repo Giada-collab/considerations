@@ -65,7 +65,7 @@
         </span>
     </xsl:template> 
    
-    
+  
     <xsl:template match="orig">
         <span class="orig">
             <xsl:apply-templates/> 
