@@ -28,6 +28,13 @@ header {
   
   }
 
+
+.work {
+    
+  font-style:italic;  
+
+}
+
 #img_top {
    float: left;
    
@@ -35,50 +42,43 @@ header {
 
 .background_nav {
   background-color:white;
-  margin:30px; 
-  padding-right:50px;
-  padding-left:50px;
-   
+  padding-left: 200px;
+  padding-right: 60px;
+     
 }
 
 .topnav a{
   text-align:center;
   font-weight:bold;
   font-size:18px;
-  margin-right:75px;
-  margin-left:75px;
+  margin-right:130px;
+  margin-left:0;
   color:black;
   float: none;/* W3C responsive layout*/
   width: 100%;/* W3C responsive layout*/
-  padding-right:20px;
-  padding-left:20px;
-  text-decoration:none;
+  padding-right:10px;
+  padding-left:10px;
+  text-decoration:none; /* no link underlined */
   
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; 
-  overflow: hidden;
+  list-style-type: none; 
+  overflow: hidden; /* without this background-color of navigation bar disappear */
  
 }
-
+/* text alignement in navigation bar */
 li {
   float: left;
 }
 
-
-li.dropdown {
-  display: block;
-  
-}
 
 .dropdown-content {
   display: none;
   position:absolute;
   background-color:white;
   overflow:auto;/* W3C responsive layout*/
+  box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
 
 }
 
@@ -88,10 +88,13 @@ li.dropdown {
   display: block;
   text-align: left;
   font-weight:normal;
+  font-size:16px;
   padding-left:10px;
-  margin-left:10px;
+  margin-left:0;
   padding-right:10px;
-  margin-right:10px;
+  margin-right:0;
+  padding-top:10px;
+  
   }
 
 .dropdown:hover .dropdown-content {
@@ -104,6 +107,7 @@ li.dropdown {
   margin:30px;
   background-color: linen;
   height:auto;
+  font-size: 16px;
  
  
 }
@@ -153,17 +157,13 @@ a:hover {
 
 
 .box {
-    margin-left:10px;
-    margin-bottom: 50px;
-    padding-left: 15px;
-    padding-bottom: 10px;
-    padding-right: 15px;
+    padding: 20px;
     width: 600px;
     height:auto;
     background-color:white;
     float: right;
     box-shadow: 2px 7px #D57B69;
-    font-size: 13px;
+    font-size: 16px;
     line-height:2;
 
 }
@@ -176,7 +176,9 @@ a:hover {
    margin-bottom: 50px;
    margin-top: 50px;
  
-    
+ 
+ 
+  /* à partir d'ici ajouts dans le fichier test */  
 }
 
 .csl-bib-body{
