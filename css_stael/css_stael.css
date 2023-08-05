@@ -1,238 +1,267 @@
 
+
+
 body {
     background-color: linen;
-    margin-left:80px;
-    margin-right:80px;
-    margin-top:50px;
-    margin-bottom:50px;
-    font-family: Arial, Verdana, sans-serif; 
-    color:black;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Arial, Verdana, sans-serif;
+    color: black;
     font-size: 14px;
 }
 
 header {
-    color:black;
-    text-indent:90px;
-    height:180px;
-    font-size:x-large;
-    line-height:1; 
-    padding-bottom:50px;
-    
-  }
+    color: black;
+    text-indent: 90px;
+    height: 180px;
+    font-size: x-large;
+    line-height: 1;
+    padding-bottom: 50px;
+
+}
 
 
 .title_header {
 
-  padding-top:60px;
-  display: block;
-  
-  }
-
-
-.work {
-    
-  font-style:italic;  
+    padding-top: 60px;
+    display: block;
 
 }
 
+
 #img_top {
-   float: left;
-   
+    float: left;
+
 }
 
 .background_nav {
-  background-color:white;
-  padding-left: 200px;
-  padding-right: 60px;
-     
+    background-color: white;
+    padding-left: 200px;
+    padding-right: 60px;
+
 }
 
-.topnav a{
-  text-align:center;
-  font-weight:bold;
-  font-size:18px;
-  margin-right:130px;
-  margin-left:0;
-  color:black;
-  float: none;/* W3C responsive layout*/
-  width: 100%;/* W3C responsive layout*/
-  padding-right:10px;
-  padding-left:10px;
-  text-decoration:none; /* no link underlined */
-  
-}
+.topnav a {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 130px;
+    margin-left: 0;
+    color: black;
+    float: none; /* W3C responsive layout*/
+    width: 100%; /* W3C responsive layout*/
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none; /* no link underlined */
 
-ul {
-  list-style-type: none; 
-  overflow: hidden; /* without this background-color of navigation bar disappear */
- 
-}
-/* text alignement in navigation bar */
-li {
-  float: left;
 }
 
 
 .dropdown-content {
-  display: none;
-  position:absolute;
-  background-color:white;
-  overflow:auto;/* W3C responsive layout*/
-  box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+    background-color: white;
+    overflow: auto; /* W3C responsive layout*/
+    box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    padding-top: 10px;
 
 }
 
 .dropdown-content a {
 
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  font-weight:normal;
-  font-size:16px;
-  padding-left:10px;
-  margin-left:0;
-  padding-right:10px;
-  margin-right:0;
-  padding-top:10px;
-  
-  }
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 5px;
+
+}
 
 .dropdown:hover .dropdown-content {
-  display:block; 
+    display: block;
 }
 
 
 
 .main_content {
-  margin:30px;
-  background-color: linen;
-  height:auto;
-  font-size: 16px;
- 
- 
-}
+    margin: 30px;
+    background-color: linen;
+    height: auto;
+    font-size: 16px;
 
-
-.slide {
-  margin-left:50px;
-  margin-right:300px;
-  margin-top:30px;
-  margin-bottom:30px;
-  height: 400px;
-  width:300px;
-  display:none;
-   
 
 }
 
 .footer {
-  text-align:center;
-  color:black;
-  background-color:white;
-  margin-top:100px;
-   
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin-top: 100px;
+
 
 }
 
 
 .footer a {
 
-  text-decoration: none;
-  color:black;
-  float: none;/* W3C responsive layout*/
-  width: 100%;/* W3C responsive layout*/
-  padding-right:20px;
-  padding-left:20px;
-  margin-right:50px;
-  margin-left:50px;
- 
+    text-decoration: none;
+    color: black;
+    float: none; /* W3C responsive layout*/
+    width: 100%; /* W3C responsive layout*/
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 160px;
+    margin-left: 10px;
+
 
 }
 
 a:hover {
-  background-color:#D57B69;
-  color: black;
+    background-color: #D57B69;
+    color: black;
 }
 
+
+
+
+/* CSS for text */
+
+cite {
+
+    font-style: italic;
+    }
+ul {
+    list-style-type: none;
+    overflow: hidden; /* without this background-color of navigation bar disappear */
+
+}
+/* text alignement in navigation bar */
+li {
+    float: left;
+}
+
+
+
+.slide {
+    margin-left: 50px;
+    margin-right: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 400px;
+    width: 300px;
+    display: none;
+
+
+}
 
 
 .box {
     padding: 20px;
     width: 600px;
-    height:auto;
-    background-color:white;
+    height: auto;
+    background-color: white;
     float: right;
     box-shadow: 2px 7px #D57B69;
     font-size: 16px;
-    line-height:2;
+    line-height: 2;
 
 }
 
+.img_body {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 300px;
+    margin-right: 300px;
+    
+}
 
+
+.legende {
+    
+    font-size: 13px;
+    display: block;
+    margin-left: 300px;
+    margin-right: 300px;
+    
+}
 .img_manuscrit {
-    
-   margin-left:50px;
-   height:300px;
-   margin-bottom: 50px;
-   margin-top: 50px;
- 
- 
- 
-  /* à partir d'ici ajouts dans le fichier test */  
+
+    margin-left: 50px;
+    height: 300px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+
+
+    /* à partir d'ici ajouts dans le fichier test */
 }
 
-.csl-bib-body{
-    
-  line-height: 1.35;
-  margin-left: 2em;
-  text-indent:-2em;  
-    
+.csl-bib-body {
+
+    line-height: 1.35;
+    margin-left: 2em;
+    text-indent: -2em;
+
 }
 
 
 sup {
-  vertical-align: super;
-  font-size: smaller;
+    vertical-align: super;
+    font-size: 10px;
 }
 
-h2 {
-  text-align:center;
-  font-style: italic;
-  }
-  
-  .delUnknown {
-      color:grey;
-      text-decoration: line-through;
-  }
-  
- .orig {
-      color:brown;
-      
-  }
-  
-  .reg {
-      color:green;
-      
-  }
-  
-  
- ol.var {
- list-style-type: decimal;
-      
-  }
-  
-  li.lem {
+.note {
 
-  list-style-type: decimal;
-  }
-  
-  li.SW {
-  
-color: yellow;
-  }
-  
-  li.Fe {
-      
-      color: blue;
-      
-  }
+    font-size: 12px;
+}
+
+
+
+h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+.delUnknown {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.orig {
+    color: brown;
+
+}
+
+.reg {
+    color: green;
+
+}
+
+
+ol.var {
+    list-style-type: decimal;
+
+}
+
+li.lem {
+
+    list-style-type: decimal;
+}
+
+li.SW {
+
+    color: yellow;
+}
+
+li.Fe {
+
+    color: blue;
+
+}
