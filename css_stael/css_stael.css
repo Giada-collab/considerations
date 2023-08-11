@@ -38,8 +38,8 @@ header {
 
 .background_nav {
     background-color: white;
-    padding-left: 200px;
-    padding-right: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
@@ -47,8 +47,8 @@ header {
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    margin-right: 130px;
-    margin-left: 0;
+    margin-right: 10px;
+    margin-left: 0px;
     color: black;
     float: none; /* W3C responsive layout*/
     width: 100%; /* W3C responsive layout*/
@@ -95,6 +95,7 @@ header {
     background-color: linen;
     height: auto;
     font-size: 16px;
+    line-height: 20px;
 
 
 }
