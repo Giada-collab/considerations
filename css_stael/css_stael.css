@@ -132,12 +132,25 @@ a:hover {
 
 
 
-/* CSS for text */
+/* CSS for main content */
 
 cite {
 
     font-style: italic;
     }
+    
+ .foreign_language {
+
+    font-style: italic;
+   }
+   
+   
+ .cross_out {
+     
+   text-decoration: line-through;  
+     
+ }
+  
 ul {
     list-style-type: none;
     overflow: hidden; /* without this background-color of navigation bar disappear */
