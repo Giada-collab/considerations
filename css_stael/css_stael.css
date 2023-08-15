@@ -95,7 +95,7 @@ header {
     background-color: linen;
     height: auto;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 25px;
 
 
 }
@@ -137,20 +137,99 @@ a:hover {
 cite {
 
     font-style: italic;
-    }
-    
- .foreign_language {
+}
+
+.foreign_language {
 
     font-style: italic;
-   }
-   
-   
- .cross_out {
-     
-   text-decoration: line-through;  
-     
- }
-  
+}
+
+
+.cross_out {
+
+    text-decoration: line-through;
+
+}
+
+.addition {
+
+    font-style: italic;
+
+}
+
+
+.substitution {
+
+    font-weight: bold;
+
+}
+
+
+#copiste {
+
+    width: 25px;
+    height: 25px;
+
+}
+
+#book {
+
+    width: 25px;
+    height: 25px;
+
+}
+
+
+.rature {
+
+    font-family: sans-serif;
+
+}
+.rature2 {
+    color: #D57B69;
+
+}
+
+.rature3 {
+    color: #853525;
+
+}
+
+
+.variant_stael {
+    background-color: #D57B69;
+
+}
+
+
+.variant_copiste{
+    background-color: #ffedb3;
+
+}
+
+.schlegel{
+    background-color: #c0defa;
+
+}
+
+.auguste{
+    background-color: #b1faa7;
+
+}
+
+.crayon{
+    background-color: LightGray;
+
+}
+
+.editorial_note{
+    background-color: #fcac5c;
+    vertical-align: super;
+    font-size: smaller;
+
+}
+
+
 ul {
     list-style-type: none;
     overflow: hidden; /* without this background-color of navigation bar disappear */
@@ -194,17 +273,17 @@ li {
     display: block;
     margin-left: 300px;
     margin-right: 300px;
-    
+
 }
 
 
 .legende {
-    
+
     font-size: 13px;
     display: block;
     margin-left: 300px;
     margin-right: 300px;
-    
+
 }
 .img_manuscrit {
 
