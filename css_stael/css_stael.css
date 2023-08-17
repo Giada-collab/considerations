@@ -59,6 +59,9 @@ header {
 }
 
 
+
+
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -99,6 +102,29 @@ header {
 
 
 }
+
+
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: white;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color:black;
+  display: block;
+}
+
+
 
 .footer {
     text-align: center;
@@ -202,27 +228,27 @@ cite {
 }
 
 
-.variant_copiste{
+.variant_copiste {
     background-color: #ffedb3;
 
 }
 
-.schlegel{
+.schlegel {
     background-color: #c0defa;
 
 }
 
-.auguste{
+.auguste {
     background-color: #b1faa7;
 
 }
 
-.crayon{
+.crayon {
     background-color: LightGray;
 
 }
 
-.editorial_note{
+.editorial_note {
     background-color: #fcac5c;
     vertical-align: super;
     font-size: smaller;
