@@ -5,8 +5,8 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title><w rend="italic">Considérations sur les principaux événements de la Révolution
-                  française</w>: édition critique numérique</title>
+            <title>Considérations sur les principaux événements de la Révolution française de
+               Germaine de Staël : un laboratoire éditorial</title>
             <author>
                <persName ref="#stael">
                   <surname>Staël-Holstein</surname>
@@ -46,10 +46,11 @@
             </availability>
          </publicationStmt>
          <sourceDesc>
-            <msDesc >
+            <msDesc>
                <msIdentifier>
                   <country key="FR" ref="https://www.iso.org/">France</country>
-                  <settlement xml:id="paris" ref="https://www.geonames.org/2988507/paris.html">Paris</settlement>
+                  <settlement xml:id="paris" ref="https://www.geonames.org/2988507/paris.html"
+                     >Paris</settlement>
                   <institution>Bibliothèque nationale de France</institution>
                   <repository>Département des Manuscrits</repository>
                   <idno type="cote">NAF 14606-14608</idno>
@@ -63,11 +64,13 @@
                            <nameLink>de</nameLink>
                         </persName>
                      </author>
-                     <title xml:lang="fr" cert="medium">Considérations sur les principaux événements de la Révolution française</title>
-                     <note source="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc6176b">Titre de la fiche bibliographique. Le manuscrit n'a pas de titre</note>
+                     <title xml:lang="fr" cert="medium">Considérations sur les principaux événements
+                        de la Révolution française</title>
+                     <note source="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc6176b">Titre de
+                        la fiche bibliographique. Le manuscrit n'a pas de titre</note>
                   </msItemStruct>
-                          </msContents>
-             
+               </msContents>
+
             </msDesc>
             <biblStruct>
                <monogr>
@@ -91,10 +94,10 @@
                         <nameLink>de</nameLink>
                      </persName>
                   </editor>
-                  <title xml:lang="fr" type="main">Considérations sur les principaux événemens de la Révolution
-                     françoise</title>
-                  <title xml:lang="fr" type="sub">ouvrage posthume de madame la baronne de Staël ; publ. par M. le
-                     duc de Broglie et M. le baron de Staël</title>
+                  <title xml:lang="fr" type="main">Considérations sur les principaux événemens de la
+                     Révolution françoise</title>
+                  <title xml:lang="fr" type="sub">ouvrage posthume de madame la baronne de Staël ;
+                     publ. par M. le duc de Broglie et M. le baron de Staël</title>
                   <imprint>
                      <pubPlace ref="#paris">Paris</pubPlace>
                      <publisher> Delaunay</publisher>
@@ -102,8 +105,7 @@
                   </imprint>
                   <extent>3 v.; in-8</extent>
                </monogr>
-               <ptr type="bib_desc" target="http://catalogue.bnf.fr/ark:/12148/cb178050717">
-               </ptr>
+               <ptr type="bib_desc" target="http://catalogue.bnf.fr/ark:/12148/cb178050717"> </ptr>
             </biblStruct>
          </sourceDesc>
       </fileDesc>
