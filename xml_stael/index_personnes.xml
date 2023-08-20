@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr"  xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Index des noms</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publié en 2023</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Considérations sur les principaux événements de la Révolution française</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>Index des noms</p>
+         
+         <div>
+            
+          <listPerson>
+             <person>
+                <persName xml:id="stael" ref="isni:0000000122591946">
+                   <surname>Staël-Holstein</surname>
+                   <forename>Germaine</forename>
+                   <nameLink>de</nameLink>
+                </persName>
+                <birth>
+                   <date when-iso="1766">1766</date>
+                </birth>
+                <death>
+                   <date when-iso="1817">1817</date>
+                </death>
+                <occupation role="writer">Écrivain</occupation>
+                <!-- trouver un standard et uniformiser ces valeurs -->
+             </person>
+             
+          </listPerson>  
+         </div>
+      </body>
+  </text>
+</TEI>
