@@ -55,9 +55,58 @@
                      </author>
                      <title>Considérations sur les principaux événements de la Révolution
                         française</title>
-                     <note>Le manuscrit n'a pas de titre.</note>
+                     <note>Le manuscrit n'a pas de titre. Il a été reconstruit d'après la
+                        correspondance</note>
                   </msItemStruct>
+                  <msItem n="vol_1">
+                     <p>Premier volume</p>
+                  </msItem>
+                  <msItem n="vol_2">
+                     <p>Deuxième volume</p>
+                  </msItem>
+                  <msItem n="vol_3">
+                     <p>Troisième volume</p>
+                  </msItem>
                </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc>
+                        <support><material>Papier </material>vergé, filigrané et plié
+                           in-folio. Emploi rare du vélin</support>
+                        <extent> 
+                           <locus n="vol_1">Premier volume : 315 ff.</locus>
+                           <locus n="vol_2">Deuxième volume : 326 ff.</locus>
+                           <locus n="vol_3">Troisième volume : 389 ff.</locus>
+                        </extent>
+                        <foliation>Foliotation manuscrite dans l'angle supérieur gauche de chaque
+                           page. Foliotation au recto de chaque feuillet dans l'angle supérieur
+                           droit par la Bibliothèque nationale de France</foliation>
+
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2">Les copistes écrivent dans la colonne à droite et au recto et verso de
+                           chaque feuillet</layout>
+                     </layoutDesc>
+                  </objectDesc>
+                  <handDesc>
+                     <handNote xml:id="cA">Copiste : <persName xml:id="randall">Fanny Randall</persName></handNote>
+                     <handNote xml:id="cB">Copiste : non identifié</handNote>
+                     <handNote xml:id="cC">Copiste : <persName xml:id="staelA">Albertine de Staël</persName></handNote>
+                     <handNote xml:id="cD">Copiste : non identifié</handNote>
+                     <handNote xml:id="cE">Copiste : non identifié</handNote>
+                     <handNote xml:id="cF">Copiste : non identifié</handNote>
+                     <handNote xml:id="cG">Copiste : <persName ref="#staelAu">Auguste de Staël</persName></handNote>
+                     <handNote xml:id="cH">Copiste : non identifié</handNote>
+                     <handNote xml:id="cI">Copiste : non identifié</handNote>
+                  </handDesc>
+                  <bindingDesc>
+                     <binding>
+                        <p>Reliure en <material>veau</material></p>
+                        <decoNote type="plats">Décoration à plaques avec au centre un motif "à la
+                           cathédrale" </decoNote>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
             </msDesc>
             <biblStruct>
                <monogr>
@@ -118,7 +167,7 @@
          <textClass>
             <keywords scheme="https://rameau.bnf.fr/">
                <term>Révolution française</term>
-               <term>Napoléon Ier (1769-1821 ; empereur des Français)</term>
+               <term>Napoléon Ier</term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -126,7 +175,7 @@
    <text>
       <body>
          <p>
-            <persName ref="index_personnes.xml#stael">Stael.</persName></p>
+            <persName ref="index_personnes.xml#stael">Stael</persName></p>
       </body>
    </text>
 </TEI>
