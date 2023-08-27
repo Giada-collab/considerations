@@ -84,8 +84,13 @@
 
                      </supportDesc>
                      <layoutDesc>
+<<<<<<< HEAD
                         <layout columns="2">Les copistes écrivent dans la colonne à droite et au
                            recto et verso de chaque feuillet</layout>
+=======
+                        <layout columns="2">Les copistes écrivent dans la colonne de droite et au recto et verso de
+                           chaque feuillet</layout>
+>>>>>>> 8eb96daded09b7417be5167a597292898662181e
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
