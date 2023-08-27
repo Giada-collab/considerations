@@ -71,9 +71,9 @@
                <physDesc>
                   <objectDesc form="codex">
                      <supportDesc>
-                        <support><material>Papier </material>vergé, filigrané et plié
-                           in-folio. Emploi rare du vélin</support>
-                        <extent> 
+                        <support><material>Papier </material>vergé, filigrané et plié in-folio.
+                           Emploi rare du vélin</support>
+                        <extent>
                            <locus n="vol_1">Premier volume : 315 ff.</locus>
                            <locus n="vol_2">Deuxième volume : 326 ff.</locus>
                            <locus n="vol_3">Troisième volume : 389 ff.</locus>
@@ -84,18 +84,21 @@
 
                      </supportDesc>
                      <layoutDesc>
-                        <layout columns="2">Les copistes écrivent dans la colonne à droite et au recto et verso de
-                           chaque feuillet</layout>
+                        <layout columns="2">Les copistes écrivent dans la colonne à droite et au
+                           recto et verso de chaque feuillet</layout>
                      </layoutDesc>
                   </objectDesc>
                   <handDesc>
-                     <handNote xml:id="cA">Copiste : <persName xml:id="randall">Fanny Randall</persName></handNote>
+                     <handNote xml:id="cA">Copiste : <persName xml:id="randall">Fanny
+                           Randall</persName></handNote>
                      <handNote xml:id="cB">Copiste : non identifié</handNote>
-                     <handNote xml:id="cC">Copiste : <persName xml:id="staelA">Albertine de Staël</persName></handNote>
+                     <handNote xml:id="cC">Copiste : <persName xml:id="staelA">Albertine de
+                           Staël</persName></handNote>
                      <handNote xml:id="cD">Copiste : non identifié</handNote>
                      <handNote xml:id="cE">Copiste : non identifié</handNote>
                      <handNote xml:id="cF">Copiste : non identifié</handNote>
-                     <handNote xml:id="cG">Copiste : <persName ref="#staelAu">Auguste de Staël</persName></handNote>
+                     <handNote xml:id="cG">Copiste : <persName ref="#staelAu">Auguste de
+                           Staël</persName></handNote>
                      <handNote xml:id="cH">Copiste : non identifié</handNote>
                      <handNote xml:id="cI">Copiste : non identifié</handNote>
                   </handDesc>
@@ -107,6 +110,15 @@
                      </binding>
                   </bindingDesc>
                </physDesc>
+               <history>
+                  <p>Le manuscrit a été donné par <persName ref="#staelA">Albertine de
+                        Staël</persName> au peintre <persName xml:id="gerardF"> François
+                        Gérard</persName> après 1819 pour le remercier des portraits de sa <persName
+                        ref="#stael">mère</persName>, son frère <persName ref="#staelAu"> Auguste
+                     </persName>et <persName ref="#broglieV">Victor de Broglie</persName>. Il
+                     provenait de <persName xml:id="lyonJ">Jacques Lyon</persName> quand il a été
+                     acheté en 1963 par la Bibliothèque nationale de France</p>
+               </history>
             </msDesc>
             <biblStruct>
                <monogr>
@@ -172,6 +184,12 @@
          </textClass>
       </profileDesc>
    </teiHeader>
+   <facsimile>
+      <!-- penser à mettre tout ceci dans un fichier à part ? -->
+      <graphic  xml:id="lettre_albertine_1" url="../img_stael/lettre_albertine_1.jpg"/>
+      <graphic xml:id="lettre_albertine_2" url="../img_stael/lettre_albertine_2.jpg"/>
+      <graphic xml:id="lettre_albertine_3" url="../img_stael/lettre_albertine_3.jpg"/>
+   </facsimile>
    <text>
       <body>
          <p>
