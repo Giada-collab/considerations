@@ -18,9 +18,9 @@
   </teiHeader>
   <text>
       <body>
-         <p>Index des noms</p>
          
-         <div>
+         <div type="index_people">
+            <head>Index des noms des personnes</head>
             
           <listPerson>
              <person>
@@ -35,8 +35,6 @@
                 <death>
                    <date when-iso="1817">1817</date>
                 </death>
-                <occupation role="writer">Écrivain</occupation>
-                <!-- trouver un standard et uniformiser ces valeurs -->
              </person>
              
           </listPerson>  

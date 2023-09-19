@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Apparat critique</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publié en 2023</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Considérations sur les principaux événements de la Révolution française</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="critical_apparatus">
+            <head type="title_file">Apparat critique</head>
+            <head type="title_volume">Premier volume</head>
+            <app xml:id="noteV1P1a" from="manuscrit_vol_1.xml#NoteV1P1a">
+               <note>Cette lettre d'<persName ref="#staelA">Albertine de Staël</persName> a été
+                  reliée au manuscrit. Elle est adressée au peintre <persName xml:id="gerardF">
+                     François Gérard</persName> et témoigne du fait qu'elle a donné le manuscrit des
+                     <title type="work">Considérations</title>au peintre pour le remercier des
+                  portraits de sa <persName ref="index_noms.xml#stael">mère</persName>, son frère <persName
+                     ref="#staelAu"> Auguste </persName>et <persName ref="#broglieV">Victor de
+                     Broglie</persName>. </note>
+            </app>
+
+            <app from="manuscrit_vol_1.xml#letter1" to="manuscrit_vol_1.xml#letter2">
+               <rdg>
+                  <subst>
+                     <del hand="manuscrit_vol_1.xml#staelA" rend="strikethrough">
+                        <gap reason="illegible" atLeast="4" unit="char"/>
+                     </del>
+                     <add>vos</add>
+                  </subst>
+               </rdg>
+            </app>
+            <head type="title_part">Première partie</head>
+            <head type="title_chapitre">Premier chapitre</head>
+
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>
