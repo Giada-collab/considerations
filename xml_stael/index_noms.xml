@@ -2,8 +2,8 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xml:lang="fr"  xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title>Index des noms</title>
@@ -15,30 +15,198 @@
             <p>Considérations sur les principaux événements de la Révolution française</p>
          </sourceDesc>
       </fileDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
-         
+         <head>Index des noms</head>
+         <!-- ajouter l'élément <occupation> ?-->
+
          <div type="index_people">
             <head>Index des noms des personnes</head>
+
+            <listPerson>
+               <person>
+                  <persName xml:id="stael" ref="https://isni.org/isni/0000000122591946">
+                     <surname>Staël-Holstein</surname>
+                     <forename>Germaine</forename>
+                     <nameLink>de</nameLink>
+                  </persName>
+                  <birth>
+                     <date when-iso="1766">1766</date>
+                  </birth>
+                  <death>
+                     <date when-iso="1817">1817</date>
+                  </death>
+               </person>
+
+               <person>
+                  <persName xml:id="randall" ref="http://viaf.org/viaf/259797369">
+                     <surname>Randall</surname>
+                     <forename>Frances</forename>
+                     <addName>Fanny</addName>
+                  </persName>
+                  <birth>
+                     <date when-iso="1777">1777</date>
+                  </birth>
+                  <death>
+                     <date when-iso="1833">1833</date>
+                  </death>
+                  <occupation>Gouvernante d'Albertine de Staël</occupation>
+               </person>
+
+               <person>
+                  <persName xml:id="staelA" ref="https://isni.org/isni/0000000108020725">
+                     <surname>Staël-Holstein</surname>
+                     <forename>Albertine</forename>
+                     <roleName>Baronesse</roleName>
+                     <nameLink>de</nameLink>
+                  </persName>
+                  <birth>
+                     <date when-iso="1797">1797</date>
+                  </birth>
+                  <death>
+                     <date when-iso="1838">1838</date>
+                  </death>
+               </person>
+
+
+               <person>
+                  <persName xml:id="staelAu" ref="https://isni.org/isni/0000000121235202">
+                     <surname>Staël-Holstein</surname>
+                     <forename>Auguste-Louis</forename>
+                     <nameLink>de</nameLink>
+                  </persName>
+                  <birth>
+                     <date when-iso="1789">1789</date>
+                  </birth>
+                  <death>
+                     <date when-iso="1827">1827</date>
+                  </death>
+               </person>
+
+               <person>
+                  <persName xml:id="schlegelW" ref="https://isni.org/isni/0000000110276033">
+                     <surname>Schlegel</surname>
+                     <forename>August Wilhelm</forename>
+                  </persName>
+                  <birth>
+                     <date when-iso="1767">1767</date>
+                  </birth>
+                  <death>
+                     <date when-iso="1845">1845</date>
+                  </death>
+               </person>
+
+               <person>
+                  <persName xml:id="gerardF" ref="https://isni.org/isni/0000000107807200">
+                     <surname>Gérard</surname>
+                     <forename>François</forename>
+                     <roleName>Baron</roleName>
+                  </persName>
+                  <birth>
+                     <date when-iso="1770">1770</date>
+                  </birth>
+                  <death>
+                     <date when-iso="1837">1837</date>
+                  </death>
+                  <occupation>Peintre</occupation>
+               </person>
+
+
+               <person>
+                  <persName xml:id="lyonJ" ref="https://isni.org/isni/0000000048630571">
+                     <surname>Lion</surname>
+                     <forename>Jacques</forename>
+                  </persName>
+                  <birth>
+                     <date when-iso="1888">1888</date>
+                  </birth>
+                  <death>
+                     <date when-iso="1944">1944</date>
+                  </death>
+                  <occupation>Industriel</occupation>
+               </person>
+
+
+               <person>
+                  <persName xml:id="broglieV" ref="https://isni.org/isni/0000000122834231">
+                     <surname>Broglie</surname>
+                     <forename> Victor </forename>
+                     <nameLink>de</nameLink>
+                  </persName>
+                  <birth>
+                     <date when-iso="1785">1785</date>
+                  </birth>
+                  <death>
+                     <date when-iso="1870">1870</date>
+                  </death>
+                  <occupation>Homme politique</occupation>
+               </person>
+
+
+
+
+
+            </listPerson>
+         </div>
+
+
+         <div type="index_places">
+            <!-- Comme il est en grande partie question d'événements se déroulant en France, ce pays n'est pas indexé -->
+            <head>Index des lieux</head>
+            <listPlace>
+               <place>
+                  <country key="FR" ref="https://www.iso.org/">France</country>
+                  <settlement xml:id="paris" ref="https://www.geonames.org/2988507/paris.html">
+                     Paris</settlement>
+               </place>
+            </listPlace>
             
-          <listPerson>
-             <person>
-                <persName xml:id="stael" ref="isni:0000000122591946">
-                   <surname>Staël-Holstein</surname>
-                   <forename>Germaine</forename>
-                   <nameLink>de</nameLink>
-                </persName>
-                <birth>
-                   <date when-iso="1766">1766</date>
-                </birth>
-                <death>
-                   <date when-iso="1817">1817</date>
-                </death>
-             </person>
-             
-          </listPerson>  
+            <listPlace>
+               <place>
+                  <country key="FR" ref="https://www.iso.org/">France</country>
+                  <settlement xml:id="lyon" ref="https://www.geonames.org/2996944/lyon.html">
+                     Lyon</settlement>
+               </place>
+            </listPlace>
+            
+            
+         </div>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         <div type="index_works">
+            <head>Index des ouvrages cités</head>
+            <listObject>
+               <object xml:id="considerationsMS" ref="manuscrit_vol_1.xml#considerations">
+                  <objectIdentifier>
+                     <objectName type="manuscript" rend="italic">Considérations sur les principaux événements de la Révolution
+                        française</objectName>
+                     <objectName type="author" ref="#stael">Germanine de Staël</objectName>
+                  </objectIdentifier>
+               </object>
+               
+               <object xml:id="corinneMisene" source="https://www.wikidata.org/wiki/Q17176642">
+                  <objectIdentifier>
+                     <objectName type="painting" rend="italic">Corinne au Cap Misène</objectName>
+                      <objectName type="author" ref="#gerardF">François Gérard</objectName>
+                  </objectIdentifier>
+               </object>
+            </listObject>
+
          </div>
       </body>
-  </text>
+   </text>
 </TEI>

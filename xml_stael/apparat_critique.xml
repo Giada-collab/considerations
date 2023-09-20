@@ -22,13 +22,16 @@
             <head type="title_file">Apparat critique</head>
             <head type="title_volume">Premier volume</head>
             <app xml:id="noteV1P1a" from="manuscrit_vol_1.xml#NoteV1P1a">
-               <note>Cette lettre d'<persName ref="#staelA">Albertine de Staël</persName> a été
-                  reliée au manuscrit. Elle est adressée au peintre <persName xml:id="gerardF">
-                     François Gérard</persName> et témoigne du fait qu'elle a donné le manuscrit des
-                     <title type="work">Considérations</title>au peintre pour le remercier des
-                  portraits de sa <persName ref="index_noms.xml#stael">mère</persName>, son frère <persName
-                     ref="#staelAu"> Auguste </persName>et <persName ref="#broglieV">Victor de
-                     Broglie</persName>. </note>
+               <note>Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de Staël</rs> a été
+                  reliée au manuscrit. Elle est adressée au peintre <rs ref="index_noms.xml#gerardF"
+                     > François Gérard</rs> à qui elle a donné le manuscrit des <title
+                     type="litt_work" ref="index_noms.xml#Staël" rend="italic"
+                     >Considérations</title> pour le remercier des portraits de sa <rs
+                     ref="index_noms.xml#stael">mère</rs> et son frère <rs ref="#staelAu"> Auguste
+                  </rs>. Pour Germaine de Staël, elle fait probablement allusion au tableau <title
+                     type="painting" ref="index_noms.xml#corinneMisene" rend="italic">Corinne au Cap
+                     Misène</title> réalisé en 1819 et qui se trouve au Musée des Beaux-Arts de <rs
+                     ref="index_noms.xml#lyon"/> Lyon.</note>
             </app>
 
             <app from="manuscrit_vol_1.xml#letter1" to="manuscrit_vol_1.xml#letter2">

@@ -38,9 +38,7 @@
          <sourceDesc>
             <msDesc>
                <msIdentifier>
-                  <country key="FR" ref="https://www.iso.org/">France</country>
-                  <settlement xml:id="paris" ref="https://www.geonames.org/2988507/paris.html">
-                     Paris</settlement>
+                  <settlement ref="index_noms.xml#paris"> Paris</settlement>
                   <institution>Bibliothèque nationale de France</institution>
                   <repository>Département des Manuscrits</repository>
                   <idno type="shelfmark">NAF 14606,14607,14608</idno>
@@ -54,7 +52,7 @@
                            <nameLink>de</nameLink>
                         </persName>
                      </author>
-                     <title rend="italic">Considérations sur les principaux événements de la
+                     <title xml:id="considerations" rend="italic">Considérations sur les principaux événements de la
                         Révolution française</title>
                      <note>Le manuscrit n'a pas de titre. Il a été reconstruit d'après la
                         correspondance</note>
@@ -84,36 +82,41 @@
                            droit par la Bibliothèque nationale de France</foliation>
                      </supportDesc>
                      <layoutDesc>
-
                         <layout columns="2">Les copistes écrivent dans la colonne de droite et au
                            recto et verso de chaque feuillet</layout>
 
                      </layoutDesc>
                   </objectDesc>
+                  <!-- utilisation dans le teiHeader de <persName> vs <rs> dans le texte  -->
                   <handDesc>
-                     <handNote xml:id="cA">Copiste : <persName xml:id="randall">Fanny
+                     <handNote>Copiste A: <persName ref="index_noms.xml#randall">Fanny
                            Randall</persName></handNote>
-                     <handNote xml:id="cB">Copiste : non identifié</handNote>
-                     <handNote xml:id="cC">Copiste : <persName xml:id="staelA">Albertine de
+                     <handNote xml:id="cB">Copiste B: non identifié</handNote>
+                     <handNote>Copiste C: <persName ref="index_noms.xml#staelA">Albertine de
                            Staël</persName></handNote>
-                     <handNote xml:id="cD">Copiste : non identifié</handNote>
-                     <handNote xml:id="cE">Copiste : non identifié</handNote>
-                     <handNote xml:id="cF">Copiste : non identifié</handNote>
-                     <handNote xml:id="cG">Copiste : <persName ref="#staelAu">Auguste de
+                     <handNote xml:id="cD">Copiste D: non identifié</handNote>
+                     <handNote xml:id="cE">Copiste E: non identifié</handNote>
+                     <handNote xml:id="cF">Copiste F: non identifié</handNote>
+                     <handNote>Copiste G: <persName ref="index_noms.xml#staelAu">Auguste de
                            Staël</persName></handNote>
-                     <handNote xml:id="cH">Copiste : non identifié</handNote>
-                     <handNote xml:id="cI">Copiste : non identifié</handNote>
-                     <handNote>Variantes d'auteur : <persName ref="index_noms.xml#stael"/>Germaine de Staël </handNote>
-                     <handNote>Intervention allographe : <persName ref="#staelAu">Auguste de
-                           Staël</persName></handNote>
-                     <handNote>Intervention allographe : <persName xml:id="schlegelW">Wilhelm
-                           Schlegel </persName></handNote>
-                     <handNote medium="pencil">Intervention allographe : non identifié </handNote>
-                     <handNote>Auteur de feuillets adjoints : non identifié <note>Cette écriture
-                           figure aux ff. 219r°-220v° du troisième volume. Ce sont des feuillets
-                           d'un autre document contemporain à la rédaction de l'ouvrage qui ont
-                           été reliés au manuscrit</note></handNote>
-
+                     <handNote xml:id="cH">Copiste H: non identifié</handNote>
+                     <handNote xml:id="cI">Copiste I: non identifié</handNote>
+                     <handNote>Variantes d'auteur : <persName ref="index_noms.xml#stael"/>Germaine
+                        de Staël </handNote>
+                     <handNote>Intervention allographe A: <persName ref="index_noms.xml#staelAu"
+                           >Auguste de Staël</persName></handNote>
+                     <handNote>Intervention allographe B: <persName ref="index_noms.xml#schlegelW"
+                           >Wilhelm Schlegel </persName></handNote>
+                     <handNote xml:id="allC" medium="pencil">Intervention allographe C: non
+                        identifié </handNote>
+                     <handNote xml:id="allD">Auteur de feuillets adjoints : non identifié.
+                           <note>Cette écriture <!-- ajouter pointeur vers les ff. du volume III -->
+                           figure <locus>aux ff. 219r°-220v° du troisième volume</locus>. Ce sont
+                           des feuillets d'un document contemporain à la rédaction de l'ouvrage qui
+                           ont été reliés au manuscrit. L'auteur des feuillets suggère des
+                           corrections du texte de Germaine de Staël</note>
+                        <!-- Préciser la note et l'ajouter à l'apparat critique -->
+                     </handNote>
                   </handDesc>
                   <bindingDesc>
                      <binding>
@@ -124,12 +127,13 @@
                   </bindingDesc>
                </physDesc>
                <history>
-                  <p>Le manuscrit a été donné par <persName ref="#staelA">Albertine de
-                        Staël</persName> au peintre <persName xml:id="gerardF"> François
+                  <p>Le manuscrit a été donné par <persName ref="index_noms.xml#staelA">Albertine de
+                        Staël</persName> au peintre <persName ref="index_noms.xml#gerardF"> François
                         Gérard</persName> après 1819 pour le remercier des portraits de sa <persName
-                           ref="index_noms.xml#stael">mère</persName>, son frère <persName ref="#staelAu"> Auguste
-                     </persName>et <persName ref="#broglieV">Victor de Broglie</persName>. Il
-                     provenait de <persName xml:id="lyonJ">Jacques Lyon</persName> quand il a été
+                        ref="index_noms.xml#stael">mère</persName>, son frère <persName
+                        ref="index_noms.xml#staelAu"> Auguste </persName>et <persName
+                        ref="index_noms.xml#broglieV">Victor de Broglie</persName>. Il provenait de
+                        <persName ref="index_noms.xml#lyonJ">Jacques Lyon</persName> quand il a été
                      acheté en 1963 par la Bibliothèque nationale de France, comme indiqué au f° 1
                      r° du premier volume : "Achat 22856".</p>
                   <p/>
@@ -145,12 +149,12 @@
                      </persName>
                   </author>
                   <editor>
-                     <persName xml:id="broglieV" ref="isni:0000000122834231">
+                     <persName ref="index_noms.xml#broglieV">
                         <surname>Broglie</surname>
                         <forename> Victor </forename>
                         <nameLink>de</nameLink>
                      </persName>
-                     <persName xml:id="staelAu" ref="isni:0000000121235202">
+                     <persName ref="index_noms.xml#staelAu">
                         <surname>Staël-Holstein</surname>
                         <forename>Auguste-Louis</forename>
                         <nameLink>de</nameLink>
@@ -161,7 +165,7 @@
                   <title type="sub">ouvrage posthume de madame la baronne de Staël ; publ. par M. le
                      duc de Broglie et M. le baron de Staël</title>
                   <imprint>
-                     <pubPlace ref="#paris">Paris</pubPlace>
+                     <pubPlace ref="index_noms.xml#paris">Paris</pubPlace>
                      <publisher>Delaunay</publisher>
                      <date when-iso="1818">1818</date>
                   </imprint>
@@ -201,17 +205,17 @@
          </textClass>
          <correspDesc>
             <correspAction type="sent">
-               <persName ref="#staelA">Albertine de Staël</persName>
+               <persName ref="index_noms.xml#staelA">Albertine de Staël</persName>
                <date notBefore="1819">19 avril</date>
             </correspAction>
             <correspAction type="received">
-               <persName ref="#gerardF">François Gérard</persName>
+               <persName ref="index_noms.xml#gerardF">François Gérard</persName>
             </correspAction>
          </correspDesc>
       </profileDesc>
    </teiHeader>
    <facsimile>
-      <!-- remplacer les liens à ces images avec ceux du manuscrit numérisé par la BnF quand je l'aurai demandé au service de reproduction-->
+      <!-- remplacer les liens à ces images avec celles du manuscrit numérisé par la BnF - demander au service de reproduction -->
       <graphic xml:id="lettre_albertine_1" url="../img_stael/lettre_albertine_1.jpg"/>
       <graphic xml:id="lettre_albertine_2" url="../img_stael/lettre_albertine_2.jpg"/>
       <graphic xml:id="lettre_albertine_3" url="../img_stael/lettre_albertine_3.jpg"/>
@@ -220,30 +224,34 @@
       <body>
 
          <pb n="[2r°]" facs="#lettre_albertine_3"/>
-         <!-- L'enveloppe a été reliée après la lettre -->
-         <note type="bibl" xml:id="NoteV1P1a" target="apparat_critique.xml#noteV1P1a"></note>
+
+         <note type="bibl" target="apparat_critique.xml#noteV1P1a"/>
          <div type="envelope">
+            <!-- enveloppe reliée après la lettre -->
             <p>
                <address>
                   <addrLine>Monsieur</addrLine>
-                  <addrLine>Monsieur Gérard.</addrLine>
+                  <addrLine><rs ref="index_noms.xml#gerardF">Monsieur Gérard</rs>.</addrLine>
                </address>
             </p>
          </div>
          <pb n="1r°" facs="#lettre_albertine_1"/>
 
-         <div type="letter" hand="#staelA">
-            <!-- voir l'original --> <!-- comment rendre l'espace insécable en xml? -->
-            <p> Vous m’avez fait un present si precieux, Monsieur, que j’ai cherché à vous exprimer
-               ma reconnoissance par une chose qui[,] j’en suis
-               sure[,] aura du prix à <anchor xml:id="letter1"/>vos <anchor xml:id="letter2"/>yeux. Ce manuscrit des <title  type="work" rend="underlined"
+         <div type="letter" hand="index_noms.xml#staelA">
+            <!-- voir l'original -->
+            <!-- comment rendre l'espace insécable en xml? -->
+            <p>
+                 <rs ref="index_noms.xml#gerardF">Vous</rs> m’avez fait un present si precieux,
+               Monsieur, que <rs ref="index_noms.xml#staelA">j’ai </rs>cherché à vous exprimer ma reconnoissance par une chose qui[,]
+               j’en suis sure[,] aura du prix à <anchor xml:id="letter1"/>vos <anchor
+                  xml:id="letter2"/>yeux. Ce manuscrit des <title type="litt_work" rend="underlined" ref="index_noms.xml#considerationsMS"
                   >Considérations sur la révolution françoise</title> est une copie corrigée de la
-               main de <persName ref="index_noms.xml#stael">ma mere</persName> et de mon frere Auguste. Je ne m’en serois pas
-                séparée facilement pour toute
-               autre personne mais il m’est doux de le mettre entre <pb n="1v°"
-                  facs="#lettre_albertine_2"/> les mains de celui qui nous a procuré le bonheur de
-               revoir <persName ref="index_noms.xml#stael">leurs traits </persName>cheris. Je crois accomplir un devoir et c’est en même tems un
-               plaisir de vous le remettre. </p>
+               main de <rs ref="index_noms.xml#stael">ma mere</rs> et de <rs ref="index_noms.xml#staelAu">mon frere
+               Auguste</rs>. Je ne m’en serois pas séparée facilement pour toute autre personne mais il
+               m’est doux de le mettre entre <pb n="1v°" facs="#lettre_albertine_2"/> les mains de
+               <rs ref="index_noms.xml#gerardF">celui</rs> qui nous a procuré le bonheur de revoir <rs ref="index_noms.xml#stael"
+                  ><rs ref="index_noms.xml#staelAu">leurs traits </rs></rs>cheris. Je crois accomplir un devoir et c’est en même
+               tems un plaisir de vous le remettre. </p>
             <closer>
                <salute>Agreez[,] je vous en prie[,] l'expression de tous mes sentimens.</salute>
                <signed> Staël de Broglie</signed>
