@@ -142,9 +142,7 @@
    <facsimile>
       <graphic xml:id="CRF_I_i_3r" url="../img_stael/Considerations_ms_I_i_3r.jpg"/>
    </facsimile>
-   <facsimile>
-      <graphic xml:id="CRF_I_i_3v" url="../img_stael/Considerations_ms_I_i_3v.jpg"/>
-   </facsimile>
+   
    <text>
       <body>
          <div type="part" n="1">
@@ -162,7 +160,7 @@
                   Réflexions générales </head>
                <p>La Révolution de France est une des <del hand="#unknown"><w xml:id="plus"
                   >plus</w></del> grandes époques de l'ordre social.
-                  <!-- dans ce cas ci-dessous je laisse une anotation interne puisqu'il s'agit de rature dont la responsabilité est inconnue -->
+                  <!-- dans ce cas ci-dessous je laisse une annotation interne puisqu'il s'agit de rature dont la responsabilité est inconnue -->
                   Ceux qui la considèrent comme un événement accidentel n'ont <w xml:id="etendu"
                      >étendu </w> leurs regards ni <w xml:id="dans">dans</w> le passé, ni dans
                   l'avenir. Ils ont pris les acteurs pour la pièce, et afin de satisfaire leurs

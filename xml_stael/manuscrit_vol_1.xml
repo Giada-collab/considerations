@@ -52,8 +52,8 @@
                            <nameLink>de</nameLink>
                         </persName>
                      </author>
-                     <title xml:id="considerations" rend="italic">Considérations sur les principaux événements de la
-                        Révolution française</title>
+                     <title xml:id="considerations" rend="italic">Considérations sur les principaux
+                        événements de la Révolution française</title>
                      <note>Le manuscrit n'a pas de titre. Il a été reconstruit d'après la
                         correspondance</note>
                   </msItemStruct>
@@ -89,34 +89,37 @@
                   </objectDesc>
                   <!-- utilisation dans le teiHeader de <persName> vs <rs> dans le texte  -->
                   <handDesc>
-                     <handNote>Copiste A: <persName ref="index_noms.xml#randall">Fanny
+                     <handNote xml:id="cA">Copiste A: <persName ref="index_noms.xml#randall">Fanny
                            Randall</persName></handNote>
                      <handNote xml:id="cB">Copiste B: non identifié</handNote>
-                     <handNote>Copiste C: <persName ref="index_noms.xml#staelA">Albertine de
-                           Staël</persName></handNote>
+                     <handNote xml:id="cC">Copiste C: <persName ref="index_noms.xml#staelA"
+                           >Albertine de Staël</persName></handNote>
                      <handNote xml:id="cD">Copiste D: non identifié</handNote>
                      <handNote xml:id="cE">Copiste E: non identifié</handNote>
                      <handNote xml:id="cF">Copiste F: non identifié</handNote>
-                     <handNote>Copiste G: <persName ref="index_noms.xml#staelAu">Auguste de
-                           Staël</persName></handNote>
+                     <handNote xml:id="cG">Copiste G: <persName ref="index_noms.xml#staelAu">Auguste
+                           de Staël</persName></handNote>
                      <handNote xml:id="cH">Copiste H: non identifié</handNote>
                      <handNote xml:id="cI">Copiste I: non identifié</handNote>
-                     <handNote>Variantes d'auteur : <persName ref="index_noms.xml#stael"/>Germaine
-                        de Staël </handNote>
-                     <handNote>Intervention allographe A: <persName ref="index_noms.xml#staelAu"
-                           >Auguste de Staël</persName></handNote>
-                     <handNote>Intervention allographe B: <persName ref="index_noms.xml#schlegelW"
-                           >Wilhelm Schlegel </persName></handNote>
+                     <handNote xml:id="aut">Variantes d'auteur : <persName
+                           ref="index_noms.xml#stael"/>Germaine de Staël </handNote>
+                     <handNote xml:id="allA">Intervention allographe A: <persName
+                           ref="index_noms.xml#staelAu">Auguste de Staël</persName></handNote>
+                     <handNote xml:id="allB">Intervention allographe B: <persName
+                           ref="index_noms.xml#schlegelW">Wilhelm Schlegel </persName></handNote>
                      <handNote xml:id="allC" medium="pencil">Intervention allographe C: non
                         identifié </handNote>
-                     <handNote xml:id="allD">Auteur de feuillets adjoints : non identifié.
-                           <note>Cette écriture <!-- ajouter pointeur vers les ff. du volume III -->
-                           figure <locus>aux ff. 219r°-220v° du troisième volume</locus>. Ce sont
-                           des feuillets d'un document contemporain à la rédaction de l'ouvrage qui
-                           ont été reliés au manuscrit. L'auteur des feuillets suggère des
-                           corrections du texte de Germaine de Staël</note>
+                     <handNote xml:id="allD">Auteur de feuillets adjoints : non identifié. <note
+                           type="phil">Cette écriture
+                           <!-- ajouter pointeur vers les ff. du volume III --> figure <locus>aux
+                              ff. 219r°-220v° du troisième volume</locus>. Ce sont des feuillets
+                           d'un document contemporain à la rédaction de l'ouvrage qui ont été reliés
+                           au manuscrit. L'auteur des feuillets suggère des corrections du texte de
+                           Germaine de Staël</note>
                         <!-- Préciser la note et l'ajouter à l'apparat critique -->
                      </handNote>
+                     <handNote xml:id="unknown">Non identifié. Auteur de passages barrés</handNote>
+
                   </handDesc>
                   <bindingDesc>
                      <binding>
@@ -219,11 +222,18 @@
       <graphic xml:id="lettre_albertine_1" url="../img_stael/lettre_albertine_1.jpg"/>
       <graphic xml:id="lettre_albertine_2" url="../img_stael/lettre_albertine_2.jpg"/>
       <graphic xml:id="lettre_albertine_3" url="../img_stael/lettre_albertine_3.jpg"/>
+      <graphic xml:id="v1_3r" url="../img_stael/manuscrit_vol1_3r.jpg"/>
+      <graphic xml:id="v1_3v" url="../img_stael/manuscrit_vol1_3v.jpg"/>
    </facsimile>
+
+
+
+
    <text>
+
       <body>
 
-         <pb n="[2r°]" facs="#lettre_albertine_3"/>
+         <pb n="[2r]" facs="#lettre_albertine_3"/>
 
          <note type="bibl" target="apparat_critique.xml#noteV1P1a"/>
          <div type="envelope">
@@ -235,30 +245,63 @@
                </address>
             </p>
          </div>
-         <pb n="1r°" facs="#lettre_albertine_1"/>
-
+         <pb n="1r" facs="#lettre_albertine_1"/>
+         <fw type="bibl" place="bottom-left">Achat 22856 <note type="bibl">Acquisition du manuscrit
+               de la part de la Bibliothèque Nationale de France</note></fw>
          <div type="letter" hand="index_noms.xml#staelA">
             <!-- voir l'original -->
             <!-- comment rendre l'espace insécable en xml? -->
             <p>
-                 <rs ref="index_noms.xml#gerardF">Vous</rs> m’avez fait un present si precieux,
-               Monsieur, que <rs ref="index_noms.xml#staelA">j’ai </rs>cherché à vous exprimer ma reconnoissance par une chose qui[,]
-               j’en suis sure[,] aura du prix à <anchor xml:id="letter1"/>vos <anchor
-                  xml:id="letter2"/>yeux. Ce manuscrit des <title type="litt_work" rend="underlined" ref="index_noms.xml#considerationsMS"
+               <rs ref="index_noms.xml#gerardF">Vous</rs> m’avez fait un present si precieux,
+               Monsieur, que <rs ref="index_noms.xml#staelA">j’ai </rs>cherché à vous exprimer ma
+               reconnoissance par une chose qui[,] j’en suis sure[,] aura du prix à <anchor
+                  xml:id="letter1"/>vos <anchor xml:id="letter2"/>yeux. Ce manuscrit des <title
+                  type="litt_work" rend="underlined" ref="index_noms.xml#considerationsMS"
                   >Considérations sur la révolution françoise</title> est une copie corrigée de la
-               main de <rs ref="index_noms.xml#stael">ma mere</rs> et de <rs ref="index_noms.xml#staelAu">mon frere
-               Auguste</rs>. Je ne m’en serois pas séparée facilement pour toute autre personne mais il
-               m’est doux de le mettre entre <pb n="1v°" facs="#lettre_albertine_2"/> les mains de
-               <rs ref="index_noms.xml#gerardF">celui</rs> qui nous a procuré le bonheur de revoir <rs ref="index_noms.xml#stael"
-                  ><rs ref="index_noms.xml#staelAu">leurs traits </rs></rs>cheris. Je crois accomplir un devoir et c’est en même
-               tems un plaisir de vous le remettre. </p>
+               main de <rs ref="index_noms.xml#stael">ma mère</rs> et de <rs
+                  ref="index_noms.xml#staelAu">mon frere Auguste</rs>, je ne m’en serois pas séparée
+               facilement pour toute autre personne mais il m’est doux de le mettre entre <pb n="1v"
+                  facs="#lettre_albertine_2"/> les mains de <rs ref="index_noms.xml#gerardF"
+                  >celui</rs> qui nous a procuré le bonheur de revoir <rs ref="index_noms.xml#stael"
+                  /><rs ref="index_noms.xml#staelAu">leurs traits </rs>cheris. Je crois accomplir un
+               devoir et c’est en même tems un plaisir de vous le remettre. </p>
             <closer>
                <salute>Agreez[,] je vous en prie[,] l'expression de tous mes sentimens.</salute>
                <signed> Staël de Broglie</signed>
                <dateline>le 19 avril</dateline>
             </closer>
          </div>
-
+         <pb n="3r" facs="#v1_3r"/>
+         <fw type="pageNum" place="top-left">1</fw>
+         <fw type="volNum" place="top-left"><del hand="#unknown">1.<w rend="sup">er</w>
+            Volume</del></fw>
+         <fw type="cahNum" place="top-left"><del hand="#unknown">1<w rend="sup">er</w>
+            Cahier</del></fw>
+         <fw type="bibl" place="bottom-left">Achat 22856 <note type="bibl">Acquisition du manuscrit
+               de la part de la Bibliothèque Nationale de France</note></fw>
+         <fw type="bibl" place="top-center">N.a.fr. 14606<note type="bibl"> Cote du premier volume
+            </note></fw>
+         <div type="part" n="1">
+            <head type="title_part" rend="underlined" hand="#unknown">Première partie</head>
+            <div type="chapter" n="1">
+               <head xml:id="title_chapter" hand="#cA"> 1<w rend="sup">er</w>Chapitre. <lb/>
+                  Réflexionns générales </head>
+               <p hand="#cA">La Révolution de France est une des <del hand="#unknown"
+                     rend="strikethrough">plus</del> grandes époques de l'ordre social. Ceux qui la
+                  considèrent comme un évènement accidentel, n'ont <anchor xml:id="etendu_3r1"/>
+                  étendu <anchor xml:id="etendu_3r2"/> leurs regards ni <anchor xml:id="dans_3r1"
+                     />dans<anchor xml:id="dans_3r2"/> le passé, ni dans l'avenir. Ils ont pris les
+                  acteurs pour la pièce, et afin de satisfaire leurs passions, ils ont attribué aux
+                  hommes du moment ce que les siècles avoient préparé. <del  
+                     hand="#unknown" rend="strikethrough">Les adversaires des principes de la Révolution aimoient à se
+                     persuader que le choc auquel ils vouloient s'opposer étoit produit par quelques
+                     circonstances particulieres [;] ils se sont donc aveuglés autant qu'ils l'ont pu sur l'enchaînement
+                        <pb n="3v" facs="#v1_3v>"/>
+                     <fw type="pageNum" place="top-left">2</fw> 
+                     des faits, et sur la marche graduelle de la civilisation européenne.</del>
+               </p>
+            </div>
+         </div>
       </body>
    </text>
 </TEI>

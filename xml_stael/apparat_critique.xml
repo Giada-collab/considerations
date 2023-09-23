@@ -22,7 +22,7 @@
             <head type="title_file">Apparat critique</head>
             <head type="title_volume">Premier volume</head>
             <app xml:id="noteV1P1a" from="manuscrit_vol_1.xml#NoteV1P1a">
-               <note>Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de Staël</rs> a été
+               <note type="bibl">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de Staël</rs> a été
                   reliée au manuscrit. Elle est adressée au peintre <rs ref="index_noms.xml#gerardF"
                      > François Gérard</rs> à qui elle a donné le manuscrit des <title
                      type="litt_work" ref="index_noms.xml#Staël" rend="italic"
@@ -33,7 +33,6 @@
                      Misène</title> réalisé en 1819 et qui se trouve au Musée des Beaux-Arts de <rs
                      ref="index_noms.xml#lyon"/> Lyon.</note>
             </app>
-
             <app from="manuscrit_vol_1.xml#letter1" to="manuscrit_vol_1.xml#letter2">
                <rdg>
                   <subst>
@@ -45,11 +44,12 @@
                </rdg>
             </app>
             <head type="title_part">Première partie</head>
-            <head type="title_chapitre">Premier chapitre</head>
-
-
-
-
+            <head type="title_chapter">Premier chapitre</head>
+            <app from="manuscrit_vol_1.xml#etendu_3r1" to="manuscrit_vol_1.xml#etendu_3r2">
+                  <lem> étendu</lem>
+                  <rdg hand="manuscrit_vol_1.xml#allB">étendu</rdg>
+               <rdg hand="manuscrit_vol_1.xml#allB">porté</rdg>
+            </app>
          </div>
       </body>
    </text>
