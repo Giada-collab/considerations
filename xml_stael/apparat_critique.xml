@@ -21,11 +21,11 @@
          <div type="critical_apparatus">
             <head type="title_file">Apparat critique</head>
             <head type="title_volume">Premier volume</head>
-            <app xml:id="noteV1P1a" from="manuscrit_vol_1.xml#NoteV1P1a">
-               <note type="bibl">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de Staël</rs> a été
-                  reliée au manuscrit. Elle est adressée au peintre <rs ref="index_noms.xml#gerardF"
-                     > François Gérard</rs> à qui elle a donné le manuscrit des <title
-                     type="litt_work" ref="index_noms.xml#Staël" rend="italic"
+            <app xml:id="noteLetter" from="manuscrit_vol_1.xml#noteLetter">
+               <note type="bibl">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de
+                     Staël</rs> a été reliée au manuscrit. Elle est adressée au peintre <rs
+                     ref="index_noms.xml#gerardF"> François Gérard</rs> à qui elle a donné le
+                  manuscrit des <title type="litt_work" ref="index_noms.xml#Staël" rend="italic"
                      >Considérations</title> pour le remercier des portraits de sa <rs
                      ref="index_noms.xml#stael">mère</rs> et son frère <rs ref="#staelAu"> Auguste
                   </rs>. Pour Germaine de Staël, elle fait probablement allusion au tableau <title
@@ -33,23 +33,46 @@
                      Misène</title> réalisé en 1819 et qui se trouve au Musée des Beaux-Arts de <rs
                      ref="index_noms.xml#lyon"/> Lyon.</note>
             </app>
-            <app from="manuscrit_vol_1.xml#letter1" to="manuscrit_vol_1.xml#letter2">
+            <app xml:id="varVos" from="manuscrit_vol_1.xml#letter1" to="manuscrit_vol_1.xml#letter2">
                <rdg>
                   <subst>
-                     <del hand="manuscrit_vol_1.xml#staelA" rend="strikethrough">
+                     <del hand="manuscrit_vol_1.xml#staelA" instant="true" rend="strikethrough">
                         <gap reason="illegible" atLeast="4" unit="char"/>
                      </del>
-                     <add>vos</add>
+                     <add hand="manuscrit_vol_1.xml#staelA">vos</add>
                   </subst>
                </rdg>
             </app>
             <head type="title_part">Première partie</head>
             <head type="title_chapter">Premier chapitre</head>
-            <app from="manuscrit_vol_1.xml#etendu_3r1" to="manuscrit_vol_1.xml#etendu_3r2">
-                  <lem> étendu</lem>
-                  <rdg hand="manuscrit_vol_1.xml#allB">étendu</rdg>
-               <rdg hand="manuscrit_vol_1.xml#allB">porté</rdg>
+            <app xml:id="varEtendu" from="manuscrit_vol_1.xml#etendu1"
+               to="manuscrit_vol_1.xml#etendu2">
+               <lem> étendu</lem>
+               <rdg varSeq="1" hand="manuscrit_vol_1.xml#allB" rend="strikethrough">étendu</rdg>
+               <rdg varSeq="2" hand="manuscrit_vol_1.xml#allB">porté</rdg>
             </app>
+            <app xml:id="varDans" from="manuscrit_vol_1.xml#dans1" to="manuscrit_vol_1.xml#dans2">
+               <lem>dans</lem>
+               <rdg varSeq="1" hand="manuscrit_vol_1.xml#allB" rend="strikethrough">sur</rdg>
+               <rdg varSeq="2" hand="manuscrit_vol_1.xml#allB">dans</rdg>
+            </app>
+            <app xml:id="varProgres" from="manuscrit_vol_1.xml#progres1"
+               to="manuscrit_vol_1.xml#progres2">
+               <lem>aux progrès</lem>
+               <rdg hand="manuscrit_vol_1.xml#allB">au developpement</rdg>
+            </app>
+            <app xml:id="varProlonge" from="manuscrit_vol_1.xml#prolonge1"
+               to="manuscrit_vol_1.xml#prolonge1"/>
+            <substJoin>
+               <del hand="manuscrit_vol_1.xml#aut" rend="strikethrough">longs</del>
+               <del hand="manuscrit_vol_1.xml#aut">
+                  <add hand="manuscrit_vol_1.xml#aut">durables></add>
+                   </del>
+               <add hand="manuscrit_vol_1.xml#aut">prolongés</add>
+            </substJoin>
+       
+       
+         </div>
          </div>
       </body>
    </text>
