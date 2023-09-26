@@ -21,11 +21,11 @@
          <div type="critical_apparatus">
             <head type="title_file">Apparat critique</head>
             <head type="title_volume">Premier volume</head>
-            <app xml:id="noteLetter" from="manuscrit_vol_1.xml#noteLetter">
-               <note type="bibl">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de
-                     Staël</rs> a été reliée au manuscrit. Elle est adressée au peintre <rs
-                     ref="index_noms.xml#gerardF"> François Gérard</rs> à qui elle a donné le
-                  manuscrit des <title type="litt_work" ref="index_noms.xml#Staël" rend="italic"
+            <app xml:id="noteLetter">
+               <note>Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de Staël</rs> a été
+                  reliée au manuscrit. Elle est adressée au peintre <rs ref="index_noms.xml#gerardF"
+                     > François Gérard</rs> à qui elle a donné le manuscrit des <title
+                     type="litt_work" ref="index_noms.xml#staël" rend="italic"
                      >Considérations</title> pour le remercier des portraits de sa <rs
                      ref="index_noms.xml#stael">mère</rs> et son frère <rs ref="#staelAu"> Auguste
                   </rs>. Pour Germaine de Staël, elle fait probablement allusion au tableau <title
@@ -33,46 +33,94 @@
                      Misène</title> réalisé en 1819 et qui se trouve au Musée des Beaux-Arts de <rs
                      ref="index_noms.xml#lyon"/> Lyon.</note>
             </app>
+            <app xml:id="noteBibl1">
+               <note>Acquisition du manuscrit de la part de la Bibliothèque Nationale de
+                  France</note>
+            </app>
+            <app xml:id="noteBibl2">
+               <note>Acquisition du manuscrit de la part de la Bibliothèque Nationale de France
+               </note>
+            </app>
+            <app xml:id="noteCote">
+               <note>Cote du premier volume</note>
+            </app>
             <app xml:id="varVos" from="manuscrit_vol_1.xml#letter1" to="manuscrit_vol_1.xml#letter2">
-               <rdg>
-                  <subst>
-                     <del hand="manuscrit_vol_1.xml#staelA" instant="true" rend="strikethrough">
-                        <gap reason="illegible" atLeast="4" unit="char"/>
-                     </del>
-                     <add hand="manuscrit_vol_1.xml#staelA">vos</add>
-                  </subst>
+               <!-- modification par une seule main : @hand dans <rdg> qui regroupe <del> + <add> (substitution) ou une modifcation seulement -->
+               <rdg hand="manuscrit_vol_1.xml#staelA">
+                  <!-- @rend dans le tag concerné -->
+                  <del instant="true" rend="strikethrough">
+                     <gap reason="illegible" atLeast="4" unit="char"/>
+                  </del>
+                  <add>vos</add>
                </rdg>
             </app>
             <head type="title_part">Première partie</head>
             <head type="title_chapter">Premier chapitre</head>
             <app xml:id="varEtendu" from="manuscrit_vol_1.xml#etendu1"
                to="manuscrit_vol_1.xml#etendu2">
-               <lem> étendu</lem>
-               <rdg varSeq="1" hand="manuscrit_vol_1.xml#allB" rend="strikethrough">étendu</rdg>
-               <rdg varSeq="2" hand="manuscrit_vol_1.xml#allB">porté</rdg>
+               <rdg varSeq="1" hand="manuscrit_vol_1.xml#allB">
+                  <del rend="strikethrough">étendu</del>
+               </rdg>
+               <rdg varSeq="2" hand="manuscrit_vol_1.xml#allB">
+                  <del rend="strikethrough">
+                     <add> étendu</add>
+                  </del>
+               </rdg>
+               <rdg varSeq="3" hand="manuscrit_vol_1.xml#allB">
+                  <add>porté</add>
+               </rdg>
             </app>
             <app xml:id="varDans" from="manuscrit_vol_1.xml#dans1" to="manuscrit_vol_1.xml#dans2">
-               <lem>dans</lem>
-               <rdg varSeq="1" hand="manuscrit_vol_1.xml#allB" rend="strikethrough">sur</rdg>
-               <rdg varSeq="2" hand="manuscrit_vol_1.xml#allB">dans</rdg>
+               <rdg varSeq="1" hand="manuscrit_vol_1.xml#allB">
+                  <del rend="strikethrough">dans</del>
+               </rdg>
+               <rdg varSeq="2" hand="manuscrit_vol_1.xml#allB">
+                  <del rend="strikethrough">
+                    <add>sur</add>
+                  </del> 
+                  </rdg>
+               <rdg varSeq="3" hand="manuscrit_vol_1.xml#allB">
+                  <add>dans</add>
+                   </rdg>
             </app>
             <app xml:id="varProgres" from="manuscrit_vol_1.xml#progres1"
                to="manuscrit_vol_1.xml#progres2">
-               <lem>aux progrès</lem>
-               <rdg hand="manuscrit_vol_1.xml#allB">au developpement</rdg>
+               <rdg hand="manuscrit_vol_1.xml#allB">
+                  <del  rend="strikethrough">aux progrès </del>  
+                  <add>au developpement</add>
+                  </rdg>
             </app>
             <app xml:id="varProlonge" from="manuscrit_vol_1.xml#prolonge1"
-               to="manuscrit_vol_1.xml#prolonge1"/>
-            <substJoin>
-               <del hand="manuscrit_vol_1.xml#aut" rend="strikethrough">longs</del>
-               <del hand="manuscrit_vol_1.xml#aut">
-                  <add hand="manuscrit_vol_1.xml#aut">durables></add>
-                   </del>
-               <add hand="manuscrit_vol_1.xml#aut">prolongés</add>
-            </substJoin>
-       
-       
-         </div>
+               to="manuscrit_vol_1.xml#prolonge1">
+        
+               <rdg varSeq="1" hand="manuscrit_vol_1.xml#aut">
+                  <del  rend="strikethrough">longs</del>
+               </rdg>
+               <rdg varSeq="2" hand="manuscrit_vol_1.xml#aut">
+                  <del rend="strikethrough">
+                     <add>durables</add>
+                  </del>
+               </rdg>
+               <rdg varSeq="3" hand="manuscrit_vol_1.xml#aut">
+                  <add>prolongés</add>
+               </rdg>
+            </app>
+            <app xml:id="varBien_loin" from="manuscrit_vol_1.xml#bien_loin1"
+               to="manuscrit_vol_1.xml#bien_loin2">
+               <rdg hand="manuscrit_vol_1.xml#aut">
+                  <del rend="strikethrough">depuis long temps écoulé</del>
+                  <add>bien loin de nous</add>
+               </rdg>
+            </app>
+            <app xml:id="varSiecles" from="manuscrit_vol_1.xml#siecles1"
+               to="manuscrit_vol_1.xml#siecles2">
+               <rdg hand="manuscrit_vol_1.xml#aut">
+                  <del rend="strikethrough">de l'avenir</del>
+                  <add>des siecles futurs,</add>
+               </rdg>
+            </app>
+
+
          </div>
       </body>
    </text>

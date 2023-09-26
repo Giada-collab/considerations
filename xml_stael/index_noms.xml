@@ -169,21 +169,10 @@
                      Lyon</settlement>
                </place>
             </listPlace>
-            
-            
          </div>
          
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
+   
+     
          
          
          
@@ -192,12 +181,11 @@
             <listObject>
                <object xml:id="considerationsMS" ref="manuscrit_vol_1.xml#considerations">
                   <objectIdentifier>
-                     <objectName type="manuscript" rend="italic">Considérations sur les principaux événements de la Révolution
+                     <objectName type="litt_work" rend="italic">Considérations sur les principaux événements de la Révolution
                         française</objectName>
                      <objectName type="author" ref="#stael">Germanine de Staël</objectName>
                   </objectIdentifier>
                </object>
-               
                <object xml:id="corinneMisene" source="https://www.wikidata.org/wiki/Q17176642">
                   <objectIdentifier>
                      <objectName type="painting" rend="italic">Corinne au Cap Misène</objectName>
