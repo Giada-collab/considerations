@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>
+               <title type="litt_work">Considérations sur les principaux événements de la Révolution
+                  française</title> de Germaine de Staël : un laboratoire éditorial. Première
+               édition de 1818</title>
+            <author>
+               <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
+            </author>
+            <editor>
+               <persName xml:id="tesserS" ref="https://isni.org/isni/0000000353074065">
+                  <surname>Tesser</surname>
+                  <forename>Stefania</forename>
+               </persName>
+            </editor>
+         </titleStmt>
+         <extent>
+            <measure unit="KB" n="29">29 KB</measure>
+            <!-- modifier la taille à la fin du travail -->
+         </extent>
+         <publicationStmt>
+            <authority>Università Ca' Foscari Venezia <placeName>
+                  <settlement ref="index_noms.xml#venezia">Venezia</settlement>
+               </placeName>
+            </authority>
+            <!-- dates selon standard ISO 8601 (année+mois+jour ou année seulement) -->
+            <date when-iso="2023">2023</date>
+            <availability status="restricted">
+               <licence target="https://https://creativecommons.org/licenses/by-nc/4.0/deed.fr">CC
+                  BY-NC-4.0 FR</licence>
+               <!-- uniformiser avec GitHub -->
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <!-- description des deux documents mis en relation : manuscrit et première édition -->
+            <msDesc>
+               <msIdentifier>
+                  <settlement ref="index_noms.xml#paris"> Paris</settlement>
+                  <institution>Bibliothèque nationale de France</institution>
+                  <repository>Département des Manuscrits</repository>
+                  <idno type="shelfmark">NAF 14606,14607,14608</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItemStruct>
+                     <author>
+                        <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
+                     </author>
+                     <title type="litt_work" ref="index_noms.xml#considerationsMS" rend="italic"
+                        >Considérations sur les principaux événements de la Révolution
+                        française</title>
+                     <note>Le manuscrit n'a pas de titre. Il a été reconstruit d'après la
+                        correspondance</note>
+                  </msItemStruct>
+                  <msItem n="vol_1">
+                     <p>Premier volume</p>
+                  </msItem>
+                  <msItem n="vol_2">
+                     <p>Deuxième volume</p>
+                  </msItem>
+                  <msItem n="vol_3">
+                     <p>Troisième volume</p>
+                  </msItem>
+               </msContents>
+               <physDesc>
+                  <objectDesc form="codex">
+                     <supportDesc>
+                        <support><material>Papier </material>vergé, filigrané et plié in-folio.
+                           Emploi rare du vélin</support>
+                        <extent>
+                           <locus n="vol_1">Premier volume : 315 ff.</locus>
+                           <locus n="vol_2">Deuxième volume : 326 ff.</locus>
+                           <locus n="vol_3">Troisième volume : 389 ff.</locus>
+                        </extent>
+                        <foliation>Foliotation manuscrite dans l'angle supérieur gauche de chaque
+                           page. Foliotation au recto de chaque feuillet dans l'angle supérieur
+                           droit par la Bibliothèque nationale de France</foliation>
+                     </supportDesc>
+                     <layoutDesc>
+                        <layout columns="2">Les copistes écrivent dans la colonne de droite et au
+                           recto et verso de chaque feuillet</layout>
+
+                     </layoutDesc>
+                  </objectDesc>
+                  <!-- utilisation dans le teiHeader de <persName> vs <rs> dans le texte  -->
+                  <bindingDesc>
+                     <binding>
+                        <p>Reliure en <material>veau</material></p>
+                        <decoNote type="plats">Décoration à plaques avec au centre un motif "à la
+                           cathédrale" </decoNote>
+                     </binding>
+                  </bindingDesc>
+               </physDesc>
+               <history>
+                  <p>Le manuscrit a été donné par <persName ref="index_noms.xml#staelA">Albertine de
+                        Staël</persName> au peintre <persName ref="index_noms.xml#gerardF"> François
+                        Gérard</persName> après 1819 pour le remercier des portraits de sa <persName
+                        ref="index_noms.xml#stael">mère</persName> et son frère <persName
+                        ref="index_noms.xml#staelAu"> Auguste </persName>. Il provenait de <persName
+                        ref="index_noms.xml#lyonJ">Jacques Lyon</persName> quand il a été acheté en
+                     1963 par la Bibliothèque nationale de France, comme indiqué au f° 1 r° du
+                     premier volume : "Achat 22856".</p>
+                  <p/>
+               </history>
+            </msDesc>
+            <biblStruct>
+               <monogr>
+                  <author>
+                     <persName ref="index_noms.xml#stael">Germaine de Staël </persName>
+                  </author>
+                  <editor>
+                     <persName ref="index_noms.xml#broglieV">Victor de Broglie </persName>
+                     <persName ref="index_noms.xml#staelAu"> Auguste de Staël </persName>
+                  </editor>
+                  <title type="main">Considérations sur les principaux événemens de la Révolution
+                     françoise</title>
+                  <title type="sub">ouvrage posthume de madame la baronne de Staël, publ. par M. le
+                     duc de Broglie et M. le baron de Staël.</title>
+                  <imprint>
+                     <pubPlace ref="index_noms.xml#paris">Paris</pubPlace>
+                     <publisher>Delaunay</publisher>
+                     <date when-iso="1818">1818</date>
+                  </imprint>
+                  <extent>3 v.; in-8</extent>
+               </monogr>
+               <ptr type="bib_desc" target="http://catalogue.bnf.fr/ark:/12148/cb178050717"> </ptr>
+            </biblStruct>
+
+            <biblStruct>
+               <!-- données relatives à la version numérisée de la BnF. Elle est décrite comme unité bibliographique indépendente de la version papier-->
+               <monogr>
+                  <author>
+                     <persName ref="index_noms.xml#stael">Germaine de Staël </persName>
+                  </author>
+                  <editor>
+                     <persName ref="index_noms.xml#broglieV">Victor de Broglie </persName>
+                     <persName ref="index_noms.xml#staelAu"> Auguste de Staël </persName>
+                  </editor>
+                  <title type="main">Considérations sur les principaux événemens de la Révolution
+                     françoise</title>
+                  <title type="sub">ouvrage posthume de madame la baronne de Staël, publ. par M. le
+                     duc de Broglie et M. le baron de Staël.</title>
+                  <idno type="shelfmark" n="NUMM-3056628"> Cote: NUMM-3056628</idno>
+                  <ptr type="source" target="https://gallica.bnf.fr/ark:/12148/bpt6k3056628z"/>
+                  <availability status="restricted">
+                     <licence
+                        target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"
+                        >Utilisation non commerciale libre</licence>
+                  </availability>
+                  <imprint>
+                     <pubPlace ref="index_noms.xml#paris">Paris</pubPlace>
+                     <publisher>Bibliothèque nationale de France</publisher>
+                     <date when-iso="2019-07-08">8 juillet 2019</date>
+                     <note>Version numérisée de la première édition</note>
+                  </imprint>
+                  <biblScope n="1" unit="volume">Tome premier</biblScope>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Édition numérique du dernier manuscrit des <title type="litt_work"
+                  >Considérations</title> et de la première édition posthume. Le projet vise à
+               restituer toutes les écritures qui figurent dans le manuscrit et à comparer celui-ci
+               avec le texte de la première édition </p>
+         </projectDesc>
+         <editorialDecl>
+            <normalization>
+               <p>Le texte de la première édition n'a pas été normalisé : graphie et ponctuation
+                  respectées. </p>
+            </normalization>
+         </editorialDecl>
+         <!-- vérifier s'il faut l'éliminer -->
+         <variantEncoding location="external" method="double-end-point"/>
+      </encodingDesc>
+      <profileDesc>
+         <textClass>
+            <keywords scheme="https://rameau.bnf.fr/">
+               <term>Révolution française</term>
+               <term>Napoléon I<hi rend="sup">er</hi></term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <!-- les images précédentes (plats, pages de garde, etc. n'ont pas été ajoutées pour l'instant) -->
+      <graphic xml:id="frontispice"
+         url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f13/full/1020,/0/native.jpg"/>
+      <graphic xml:id="frontispice_verso"
+         url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f14/full/1022,/0/native.jpg"/>
+      <graphic xml:id="avis_editeurs_v"
+         url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f15/full/1026,/0/native.jpg"/>
+      <graphic xml:id="avis_editeurs_vi"
+         url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f16/full/1022,/0/native.jpg"/>
+      <graphic xml:id="avis_editeurs_vii"
+         url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f17/full/1044,/0/native.jpg"/>
+      <graphic xml:id="avis_editeurs_viii"
+         url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f18/full/1022,/0/native.jpg"/>
+      <graphic xml:id="avertissement_auteur_ix"
+         url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f19/full/1044,/0/native.jpg"/>
+      <graphic xml:id="avertissement_auteur_x"
+         url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f20/full/1022,/0/native.jpg"/>
+      <!-- à partir d'ici indication de tome et de page -->
+      <graphic xml:id="t1_1"
+         url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f21/full/1026,/0/native.jpg"/>
+      <graphic xml:id="t1_2"
+         url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f22/full/1034,/0/native.jpg"/>
+
+   </facsimile>
+
+   <text>
+      <front>
+         <pb facs="#frontispice"/>
+         <!-- les images précédentes (plats, pages de garde, etc. n'ont pas été ajoutées pour l'instant) -->
+         <!-- la dimension des caractères n'a pas encore été prise en compte -->
+         <!-- pour l'instant, pas d'annotation (entités nommées) -->
+         <titlePage>
+            <docTitle rend="align_center">
+               <titlePart> CONSIDÉRATIONS <lb/> SUR LES PRINCIPAUX ÉVÉNEMENS <lb/> DE <lb/> LA
+                  RÉVOLUTION FRANÇOISE ; </titlePart>
+            </docTitle>
+            <byline> OUVRAGE POSTHUME<lb/> DE <docAuthor ref="manuscrit_vol_1.xml#stael"> MADAME LA
+                  BARONNE DE STAËL</docAuthor>, <lb/>PUBLIÉ <lb/> PAR M. LE DUC DE BROGLIE ET M. LE
+               BARON DE STAËL. </byline>
+
+            <epigraph rend="align_right">
+               <quote> Les révolutions qui arrivent dans les grands états <lb/>ne sont point un
+                  effet du hasard ni du caprice <lb/>des peuples.</quote>
+               <bibl> MÉM. DE SULLY, T.I, p. 133 </bibl>
+            </epigraph>
+            <titlePart rend="align_center">TOME PREMIER. </titlePart>
+            <!--     !!!!  message image map editor : image non supportée ou corrompue -->
+            <fw rend="align_center">Frise</fw>
+            <fw type="stamp">Tampon "Bibliothèque Royale"</fw>
+
+
+            <docImprint rend="align_center">
+               <settlement ref="index_noms.xml#paris">PARIS,<lb/></settlement>
+               <publisher>DELAUNAY, LIBRAIRE, PALAIS-ROYAL, GALERIE DE BOIS, N. 243 </publisher>
+               <lb/>
+               <publisher>BOSSANGE ET MASSON, LIBRAIRES, RUE DE TOURNON, N. 6.</publisher>
+               <lb/><date>1818.</date>
+            </docImprint>
+         </titlePage>
+         <pb facs="#frontispice_verso"/>
+         <pb n="v" facs="#avis_editeurs_v"/>
+
+         <div type="preface">
+
+            <head xml:id="preface_ed" rend="align_center">AVIS DES EDITEURS.</head>
+
+            <!-- penser à l'utilisation de @rendition avec syntaxe CSS -->
+            <p><hi rend="larger"> E</hi>N remplissant la tâche que madame de Staël a daigné nous
+               confier, nous devons avant tout faire connoître dans quel état nous avons trouvé le
+               manuscrit remis à nos soins. <lb/> Madame de Staël s’étoit tracé, pour toutes ses
+               compositions, une règle de travail dont elle ne s'écartoit jamais. Elle écrivoit d’un
+               seul trait toute l’ébauche de l’ouvrage dont elle avoit conçu le plan, sans revenir
+               sur ses pas, sans interrompre le cours de ses pensées, si ce n’est par les recherches
+               que son sujet rendoit nécessaires. Cette première composition achevée, madame de
+               Staël la transcrivoit en entier de sa main, et sans s’occuper encore de la correction
+               du style, elle modifioit l’expression de ses idées et les classoit souvent dans un
+               ordre nouveau. Le second travail étoit ensuite mis au net par un secrétaire, et ce
+               n’étoit que sur la copie, souvent même sur les épreuves imprimées, que madame de
+               Staël perfectionnoit les détails de la diction : plus occupée de transmettre à ses
+               lecteurs toutes la nuances de sa pensée, toutes les émotions de son âme, que
+               d’atteindre une correction minutieuse qu'on peut obtenir d’un travail, pour ainsi
+               dire, mécanique. <lb/>Madame de Staël avoit achevé, dès les premiers jours de 1816,
+               la composition de l'ouvrage que nous publions. Elle avoit consacré une année à en
+               revoir les deux premiers volumes, ainsi qu'une partie du troisième. Elle étoit
+               revenue à Paris pour terminer les morceaux relatifs à des événemens récens dont elle
+               n'avoit pas été témoin, et sur lesquels des renseignemens plus précis devoient
+               modifier quelques-unes de ses opinions. Enfin les <title type="litt_work"
+                  rend="italic"> Considérations sur les principaux événemens de la révoIution
+                  françoise</title> (car tel est le titre que madame de Staël avoit elle-même
+               choisi) auroient paru à la fin de l'année dernière, si celle qui faisoit notre gloire
+               et notre bonheur nous eût été conservée. <lb/>Nous avons trouvé les deux premiers
+               volumes, et plusieurs chapitres du troisième, dans l'état où ils auroient été livrés
+               à l’impression. D’autres chapitres étoient copiés, mais non revus par l’auteur.
+               D’autres enfin n’étoient composés que de premier jet; et des notes marginales,
+               écrites ou dictées par madame de Staël, indiquoient les points qu’elle se proposoit
+               de développer. <lb/>Le premier sentiment comme le premier devoir de ses enfans, a été
+               un respect religieux pour les moindres indications de sa pensée; et il est presque
+               superflu de dire que nous ne nous sommes permis ni une addition ni même un
+               changement, et que l’ouvrage qu’on va lire est parfaitement conforme au manuscrit de
+               madame de Staël. <lb/>Le travail des éditeurs s’est borné uniquement à la révision
+               des épreuves, et à la correction de ces légères inexactitudes de style, qui échappent
+               à la vue dans le manuscrit le plus soigné. Ce travail s’est fait sous les yeux de M.
+               A. W. de Schlegel, dont la rare supériorité d'esprit et de savoir justifie la
+               confiance avec laquelle madame de Staël le consultoit dans tous ses travaux
+               littéraires, autant que son honorable caractère mérite l’estime et l’amitié qu’elle
+               n’a pas cessé d’avoir pour lui pendant une liaison de treize années.<lb/> M. de Staël
+               remplira des intentions qui doivent être sacrées pour lui, en publiant une édition
+               complète des œuvres de sa mere, et de celles de M. Necker. Les œuvres de madame de
+               Staël renfermeront quelques compositions inédites; entre autres des fragmens d’un
+               ouvrage commencé sous le titre de<title type="litt_work" rend="italic"> Dix années
+                  d’exil</title>. L’une et l'autre collection sera précédée d’une notice
+               biographique; mais un sentiment, que ceux qui ont connu madame de Staël apprécieront
+               avec indulgence, n’a pas encore permis à ses enfans de se livrer à un travail qui
+               touche de si près à leurs plus chers comme à leurs plus douloureux souvenirs. </p>
+         </div>
+         <pb n="ix" facs="#avertissement_auteur_ix"/>
+         <div type="preface_author">
+
+            <head xml:id="preface_au" rend="align_center">AVERTISSEMENT <lb/>DE L’AUTEUR.</head>
+
+            <p> J’AVOIS d’abord commencé cet ouvrage avec l’intention de le borner à l’examen des
+               actes et des écrits politiques de mon père. Mais, en avançant dans mon travail, j’ai
+               été conduite par le sujet même à retracer, d’une part, les principaux événemens de la
+               révolution françoise, et à présenter, de l’autre, le tableau de l’Angleterre, comme
+               une justification de l’opinion de M. NecKer, relativement aux institutions politiques
+               de ce pays. Mon plan s’étant agrandi, il m’a semblé que je devois changer de titre,
+               quoique je n’eusse pas changé d’objet. Il restera néanmoins dans ce livre plus de
+               détails relatifs à mon <pb n="x" facs="#avertissement_auteur_x"/>
+               <fw type="current_title" rend="align_center">AVERTISSEMENT DE L'AUTEUR.</fw> père, et
+               même à moi, que je n’en aurois mis, si je l’eusse d’abord conçu sous un point de vue
+               général ; mais peut-être des circonstances particulières servent-elles à faire mieux
+               connoÎtre l’esprit et le caractère des temps qu’on veut décrire. </p>
+
+         </div>
+      </front>
+      <body rend="background_white">
+         <pb n="1" facs="#t1_1"/>
+         <head xml:id="title_work" rend="align_center"> CONSIDÉRATIONS <lb/>SUR <lb/>LES PRINCIPAUX
+            ÉVÉNEMENS <lb/>DE LA RÉVOLUTION FRANÇOISE. </head>
+         <fw>Frise</fw>
+        <!-- uniformiser tous les <head> --> 
+         <head xml:id="title_part" rend="align_center"> PREMIÈRE PARTIE.</head>
+         <head xml:id="title_chapter" rend="align_center"> CHAPITRE PREMIER. </head>
+         
+         <head xml:id="title_chapter_main" rend="align_center"><hi rend="italic">Réflexions
+            générales.</hi></head>
+         <!-- on ne peut pas mettre des <div> à l'emplacement correct -->
+<ab type="part" n="1">
+<ab type="chapter" n="1">
+         <ab><hi rend="bold">L</hi>A révolution de France est une des grandes époques de l’ordre
+            social. Ceux qui la considèrent comme un événement accidentel, n’ont porté leurs regards
+            ni dans le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce ; et, afin de
+            satisfaire leurs passions, ils ont attribué aux hommes du moment ce que les siècles
+            avoient préparé. <lb/>Il suffisoit cependant de jeter un coup d’œil sur les principales
+            crises de l’histoire, pour se convaincre qu’elles ont été toutes inévitables, <pb n="2"
+               facs="#t1_2"/>quand elles se rattachoient de quelque manière au développement des
+            idées; et qu’après une lutte et des malheurs plus ou moins prolongés, le triomphe des
+            lumières a toujours été favorable à la grandeur et à l’amélioration de l’espèce humaine.
+          <lb/>  Mon ambition seroit de parler du temps dans lequel nous avons vécu, comme s’il étoit
+            déjà loin de nous. Les hommes éclairés, qui sont toujours contemporains des siècles
+            futurs par leurs pensées, jugeront si j’ai su m’élever à la hauteur d’impartialité que
+            je 
+            <!-- fin f. 3v du manuscrit - fin échantillon test -->
+            
+            voulois atteindre.<lb/> Je me bornerai, dans ce chapitre, à des considérations générales
+            sur la marche politique de la civilisation européenne, mais seulement par rapport à la
+            révolution de France : car c’est à ce sujet, déjà bien vaste, que cet ouvrage est
+            consacré.<lb/> Les deux peuples anciens dont la littérature et l’histoire composent encore
+            aujourd’hui notre principale fortune intellectuelle, n’ont dû leur étonnante supériorité
+            qu’à la jouissance d’une patrie libre. Mais l’esclavage existoit chez eux ; et, par
+            conséquent, les droits et les motifs d’émulation, qui doivent être communs à tous les
+            hommes, étoient le partage exclusif<pb n="3"/>
+         </ab>
+</ab>
+   
+</ab>
+
+      </body>
+   </text>
+
+</TEI>

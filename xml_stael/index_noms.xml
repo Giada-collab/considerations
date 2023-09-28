@@ -2,24 +2,40 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
 <TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Index des noms</title>
-         </titleStmt>
-         <publicationStmt>
-            <p>Publié en 2023</p>
-         </publicationStmt>
-         <sourceDesc>
-            <p>Considérations sur les principaux événements de la Révolution française</p>
-         </sourceDesc>
+      <title type="main">
+         <title type="litt_work"> Considérations sur les principaux événements de la
+            Révolution française</title> de Germaine de Staël : un laboratoire
+         éditorial</title>
+      <title type="sub">Index des noms</title>
+      <author>
+         <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
+      </author>
+      <editor>
+         <persName ref="manuscrit_vol_1.xml#tesserS">Stefania Tesser </persName>
+      </editor>
+      </titleStmt>
+      <publicationStmt>
+         <p>Publié en 2023</p>
+      </publicationStmt>
+      <sourceDesc>
+         <bibl>
+            <title type="litt_work" ref="index_noms.xml#considerationsMS">Considérations sur les
+               principaux événements de la Révolution française</title>
+            <author>
+               <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
+            </author>
+         </bibl>
+      </sourceDesc>
       </fileDesc>
    </teiHeader>
    <text>
       <body>
          <head>Index des noms</head>
-         <!-- ajouter l'élément <occupation> ?-->
 
          <div type="index_people">
             <head>Index des noms des personnes</head>
@@ -124,7 +140,6 @@
                   <death>
                      <date when-iso="1944">1944</date>
                   </death>
-                  <occupation>Industriel</occupation>
                </person>
 
 
@@ -140,56 +155,53 @@
                   <death>
                      <date when-iso="1870">1870</date>
                   </death>
-                  <occupation>Homme politique</occupation>
                </person>
-
-
-
-
-
             </listPerson>
          </div>
 
 
          <div type="index_places">
             <!-- Comme il est en grande partie question d'événements se déroulant en France, ce pays n'est pas indexé -->
+            <!-- utilisation du standard ISO 3166 pour le code pays -->
             <head>Index des lieux</head>
             <listPlace>
                <place>
-                  <country key="FR" ref="https://www.iso.org/">France</country>
+                  <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR">France</country>
                   <settlement xml:id="paris" ref="https://www.geonames.org/2988507/paris.html">
                      Paris</settlement>
                </place>
             </listPlace>
-            
+
             <listPlace>
                <place>
-                  <country key="FR" ref="https://www.iso.org/">France</country>
+                  <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR">France</country>
                   <settlement xml:id="lyon" ref="https://www.geonames.org/2996944/lyon.html">
                      Lyon</settlement>
                </place>
             </listPlace>
+            <listPlace>
+               <place>
+                  <country key="IT" ref="https://www.iso.org/obp/ui/#iso:code:3166:IT">Italie</country>
+                  <settlement xml:id="venezia" ref="https://www.geonames.org/3164603/venice.html">Venise</settlement>
+               </place>  
+            </listPlace>
          </div>
-         
-   
-     
-         
-         
-         
+
+
          <div type="index_works">
             <head>Index des ouvrages cités</head>
             <listObject>
-               <object xml:id="considerationsMS" ref="manuscrit_vol_1.xml#considerations">
+               <object xml:id="considerationsMS">
                   <objectIdentifier>
-                     <objectName type="litt_work" rend="italic">Considérations sur les principaux événements de la Révolution
-                        française</objectName>
+                     <objectName type="litt_work" rend="italic">Considérations sur les principaux
+                        événements de la Révolution française</objectName>
                      <objectName type="author" ref="#stael">Germanine de Staël</objectName>
                   </objectIdentifier>
                </object>
                <object xml:id="corinneMisene" source="https://www.wikidata.org/wiki/Q17176642">
                   <objectIdentifier>
                      <objectName type="painting" rend="italic">Corinne au Cap Misène</objectName>
-                      <objectName type="author" ref="#gerardF">François Gérard</objectName>
+                     <objectName type="author" ref="#gerardF">François Gérard</objectName>
                   </objectIdentifier>
                </object>
             </listObject>

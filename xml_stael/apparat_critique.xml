@@ -6,21 +6,39 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Apparat critique</title>
+            <title type="main">
+               <!-- type de titre: litt_work OR painting - uniformiser -->
+               <title type="litt_work"> Considérations sur les principaux événements de la
+                  Révolution française</title> de Germaine de Staël : un laboratoire
+               éditorial</title>
+            <title type="sub">Apparat critique</title>
+            <author>
+                   <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
+            </author>
+            <editor>
+               <!-- faut-il mettre l'adresse complète pour ISNI ? Comment indiquer le ns pour tout le fichier ?-->
+               <persName ref="manuscrit_vol_1.xml#tesserS">Stefania Tesser </persName>
+            </editor>
          </titleStmt>
          <publicationStmt>
             <p>Publié en 2023</p>
          </publicationStmt>
          <sourceDesc>
-            <p>Considérations sur les principaux événements de la Révolution française</p>
+            <bibl>
+               <title type="litt_work" ref="index_noms.xml#considerationsMS">Considérations sur les
+                  principaux événements de la Révolution française</title>
+               <author>
+                  <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
+               </author>
+            </bibl>
          </sourceDesc>
       </fileDesc>
    </teiHeader>
    <text>
       <body>
-         <div type="critical_apparatus">
-            <head type="title_file">Apparat critique</head>
-            <head type="title_volume">Premier volume</head>
+         <head type="title_file">Apparat critique</head>
+         <div type="volume" n="1">
+             <head type="title_volume">Premier volume</head> 
             <app xml:id="noteLetter">
                <note>Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de Staël</rs> a été
                   reliée au manuscrit. Elle est adressée au peintre <rs ref="index_noms.xml#gerardF"
@@ -54,6 +72,7 @@
                   <add>vos</add>
                </rdg>
             </app>
+
             <head type="title_part">Première partie</head>
             <head type="title_chapter">Premier chapitre</head>
             <app xml:id="varEtendu" from="manuscrit_vol_1.xml#etendu1"
@@ -76,25 +95,25 @@
                </rdg>
                <rdg varSeq="2" hand="manuscrit_vol_1.xml#allB">
                   <del rend="strikethrough">
-                    <add>sur</add>
-                  </del> 
-                  </rdg>
+                     <add>sur</add>
+                  </del>
+               </rdg>
                <rdg varSeq="3" hand="manuscrit_vol_1.xml#allB">
                   <add>dans</add>
-                   </rdg>
+               </rdg>
             </app>
             <app xml:id="varProgres" from="manuscrit_vol_1.xml#progres1"
                to="manuscrit_vol_1.xml#progres2">
                <rdg hand="manuscrit_vol_1.xml#allB">
-                  <del  rend="strikethrough">aux progrès </del>  
+                  <del rend="strikethrough">aux progrès </del>
                   <add>au developpement</add>
-                  </rdg>
+               </rdg>
             </app>
             <app xml:id="varProlonge" from="manuscrit_vol_1.xml#prolonge1"
                to="manuscrit_vol_1.xml#prolonge1">
-        
+
                <rdg varSeq="1" hand="manuscrit_vol_1.xml#aut">
-                  <del  rend="strikethrough">longs</del>
+                  <del rend="strikethrough">longs</del>
                </rdg>
                <rdg varSeq="2" hand="manuscrit_vol_1.xml#aut">
                   <del rend="strikethrough">
@@ -122,6 +141,9 @@
 
 
          </div>
+         
+         <div type="volume" n="2"></div>
+         <div type="volume" n="3"></div>
       </body>
    </text>
 </TEI>
