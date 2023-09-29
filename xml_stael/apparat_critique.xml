@@ -13,7 +13,7 @@
                éditorial</title>
             <title type="sub">Apparat critique</title>
             <author>
-                   <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
+               <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
             </author>
             <editor>
                <!-- faut-il mettre l'adresse complète pour ISNI ? Comment indiquer le ns pour tout le fichier ?-->
@@ -38,7 +38,15 @@
       <body>
          <head type="title_file">Apparat critique</head>
          <div type="volume" n="1">
-             <head type="title_volume">Premier volume</head> 
+            <head type="title_volume">Premier volume</head>
+            <app xml:id="noteTitle">
+               <!-- note qu'il faut préciser en citant éventuellement l'édition papier-->
+               <note> Le manuscrit n'a pas de titre mais, d'après la correspondance de <rs
+                     ref="index_noms.xml#stael">Germaine de Staël</rs> et de son entourage, le titre
+                  qu'elle avait choisi est probablement celui qui est indiqué dans L'<title
+                     type="title_chapter" ref="edition_vol_1#considerationsEd">Avis des
+                     éditeurs</title>de la première édition. </note>
+            </app>
             <app xml:id="noteLetter">
                <note>Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de Staël</rs> a été
                   reliée au manuscrit. Elle est adressée au peintre <rs ref="index_noms.xml#gerardF"
@@ -141,9 +149,9 @@
 
 
          </div>
-         
-         <div type="volume" n="2"></div>
-         <div type="volume" n="3"></div>
+
+         <div type="volume" n="2"/>
+         <div type="volume" n="3"/>
       </body>
    </text>
 </TEI>
