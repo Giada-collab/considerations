@@ -7,8 +7,8 @@
       <fileDesc>
          <titleStmt>
             <title type="main">
-               <!-- type de titre: litt_work OR painting - uniformiser -->
-               <title type="litt_work"> Considérations sur les principaux événements de la
+               <!-- type de titre: littWork OR painting - uniformiser -->
+               <title type="littWork"> Considérations sur les principaux événements de la
                   Révolution française</title> de Germaine de Staël : un laboratoire
                éditorial</title>
             <title type="sub">Apparat critique</title>
@@ -25,7 +25,7 @@
          </publicationStmt>
          <sourceDesc>
             <bibl>
-               <title type="litt_work" ref="index_noms.xml#considerationsMS">Considérations sur les
+               <title type="littWork" ref="index_noms.xml#considerationsMS">Considérations sur les
                   principaux événements de la Révolution française</title>
                <author>
                   <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
@@ -36,22 +36,22 @@
    </teiHeader>
    <text>
       <body>
-         <head type="title_file">Apparat critique</head>
+         <head type="titleFile">Apparat critique</head>
          <div type="volume" n="1">
-            <head type="title_volume">Premier volume</head>
+            <head type="titleVolume">Premier volume</head>
             <app xml:id="noteTitle">
                <!-- note qu'il faut préciser en citant éventuellement l'édition papier-->
                <note> Le manuscrit n'a pas de titre mais, d'après la correspondance de <rs
                      ref="index_noms.xml#stael">Germaine de Staël</rs> et de son entourage, le titre
                   qu'elle avait choisi est probablement celui qui est indiqué dans L'<title
-                     type="title_chapter" ref="edition_vol_1#considerationsEd">Avis des
+                     type="titleChapter" ref="edition_vol_1.xml#considerationsEd">Avis des
                      éditeurs</title>de la première édition. </note>
             </app>
             <app xml:id="noteLetter">
                <note>Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de Staël</rs> a été
                   reliée au manuscrit. Elle est adressée au peintre <rs ref="index_noms.xml#gerardF"
                      > François Gérard</rs> à qui elle a donné le manuscrit des <title
-                     type="litt_work" ref="index_noms.xml#staël" rend="italic"
+                     type="littWork" ref="index_noms.xml#staël" rend="italic"
                      >Considérations</title> pour le remercier des portraits de sa <rs
                      ref="index_noms.xml#stael">mère</rs> et son frère <rs ref="#staelAu"> Auguste
                   </rs>. Pour Germaine de Staël, elle fait probablement allusion au tableau <title
@@ -59,17 +59,7 @@
                      Misène</title> réalisé en 1819 et qui se trouve au Musée des Beaux-Arts de <rs
                      ref="index_noms.xml#lyon"/> Lyon.</note>
             </app>
-            <app xml:id="noteBibl1">
-               <note>Acquisition du manuscrit de la part de la Bibliothèque Nationale de
-                  France</note>
-            </app>
-            <app xml:id="noteBibl2">
-               <note>Acquisition du manuscrit de la part de la Bibliothèque Nationale de France
-               </note>
-            </app>
-            <app xml:id="noteCote">
-               <note>Cote du premier volume</note>
-            </app>
+            
             <app xml:id="varVos" from="manuscrit_vol_1.xml#letter1" to="manuscrit_vol_1.xml#letter2">
                <!-- modification par une seule main : @hand dans <rdg> qui regroupe <del> + <add> (substitution) ou une modifcation seulement -->
                <rdg hand="manuscrit_vol_1.xml#staelA">
@@ -81,8 +71,8 @@
                </rdg>
             </app>
 
-            <head type="title_part">Première partie</head>
-            <head type="title_chapter">Premier chapitre</head>
+            <head type="titlePart">Première partie</head>
+            <head type="titleChapter">Premier chapitre</head>
             <app xml:id="varEtendu" from="manuscrit_vol_1.xml#etendu1"
                to="manuscrit_vol_1.xml#etendu2">
                <rdg varSeq="1" hand="manuscrit_vol_1.xml#allB">

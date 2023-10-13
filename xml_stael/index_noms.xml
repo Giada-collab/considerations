@@ -8,7 +8,7 @@
       <fileDesc>
          <titleStmt>
       <title type="main">
-         <title type="litt_work"> Considérations sur les principaux événements de la
+         <title type="littWork"> Considérations sur les principaux événements de la
             Révolution française</title> de Germaine de Staël : un laboratoire
          éditorial</title>
       <title type="sub">Index des noms</title>
@@ -24,7 +24,7 @@
       </publicationStmt>
       <sourceDesc>
          <bibl>
-            <title type="litt_work" ref="index_noms.xml#considerationsMS">Considérations sur les
+            <title type="littWork" ref="index_noms.xml#considerationsMS">Considérations sur les
                principaux événements de la Révolution française</title>
             <author>
                <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
@@ -37,7 +37,7 @@
       <body>
          <head>Index des noms</head>
 
-         <div type="index_people">
+         <div type="indexPeople">
             <head>Index des noms des personnes</head>
 
             <listPerson>
@@ -160,7 +160,7 @@
          </div>
 
 
-         <div type="index_places">
+         <div type="indexPlaces">
             <!-- Comme il est en grande partie question d'événements se déroulant en France, ce pays n'est pas indexé -->
             <!-- utilisation du standard ISO 3166 pour le code pays -->
             <head>Index des lieux</head>
@@ -188,12 +188,12 @@
          </div>
 
 
-         <div type="index_works">
+         <div type="indexWorks">
             <head>Index des ouvrages cités</head>
             <listObject>
                <object xml:id="considerationsMS">
                   <objectIdentifier>
-                     <objectName type="litt_work" rend="italic">Considérations sur les principaux
+                     <objectName type="littWork" rend="italic">Considérations sur les principaux
                         événements de la Révolution française</objectName>
                      <objectName type="author" ref="#stael">Germanine de Staël</objectName>
                   </objectIdentifier>

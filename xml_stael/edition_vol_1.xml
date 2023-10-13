@@ -2,12 +2,19 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- dates standard ISO 8601  -->
+   <!-- utilisation dans le teiHeader de <persName> vs <rs> dans le texte  -->
+   <!-- l'ajout de <seg> avant le titre n'est pas possible -->
+   <!-- penser à l'utilisation de @rendition avec syntaxe CSS -->
+   <!-- pour toute divergence entre manuscrit et première édition : dans la première édition on utilise <seg> pour tout segment de texte différant du manuscrit e <anchor> pour les lacunes -->
+
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>
-               <title type="litt_work">Considérations sur les principaux événements de la Révolution
-                  française</title> de Germaine de Staël : un laboratoire éditorial. Première
+            <title type="main">
+               <title type="littWork">Considérations sur les principaux événements de la Révolution
+                  française</title> de Germaine de Staël : un laboratoire éditorial</title>
+            <title type="sub">Première
                édition de 1818</title>
             <author>
                <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
@@ -28,7 +35,7 @@
                   <settlement ref="index_noms.xml#venezia">Venezia</settlement>
                </placeName>
             </authority>
-            <!-- dates selon standard ISO 8601 (année+mois+jour ou année seulement) -->
+
             <date when-iso="2023">2023</date>
             <availability status="restricted">
                <licence target="https://https://creativecommons.org/licenses/by-nc/4.0/deed.fr">CC
@@ -50,7 +57,7 @@
                      <author>
                         <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
                      </author>
-                     <title type="litt_work" ref="index_noms.xml#considerationsMS" rend="italic"
+                     <title type="littWork" ref="index_noms.xml#considerationsMS" rend="italic"
                         >Considérations sur les principaux événements de la Révolution
                         française</title>
                      <note>Le manuscrit n'a pas de titre. Il a été reconstruit d'après la
@@ -86,7 +93,7 @@
 
                      </layoutDesc>
                   </objectDesc>
-                  <!-- utilisation dans le teiHeader de <persName> vs <rs> dans le texte  -->
+
                   <bindingDesc>
                      <binding>
                         <p>Reliure en <material>veau</material></p>
@@ -127,7 +134,7 @@
                   </imprint>
                   <extent>3 v.; in-8</extent>
                </monogr>
-               <ptr type="bib_desc" target="http://catalogue.bnf.fr/ark:/12148/cb178050717"> </ptr>
+               <ptr type="bibl" target="http://catalogue.bnf.fr/ark:/12148/cb178050717"> </ptr>
             </biblStruct>
 
             <biblStruct>
@@ -137,6 +144,7 @@
                      <persName ref="index_noms.xml#stael">Germaine de Staël </persName>
                   </author>
                   <editor>
+                     
                      <persName ref="index_noms.xml#broglieV">Victor de Broglie </persName>
                      <persName ref="index_noms.xml#staelAu"> Auguste de Staël </persName>
                   </editor>
@@ -145,7 +153,7 @@
                   <title type="sub">ouvrage posthume de madame la baronne de Staël, publ. par M. le
                      duc de Broglie et M. le baron de Staël.</title>
                   <idno type="shelfmark" n="NUMM-3056628"> Cote: NUMM-3056628</idno>
-                  <ptr type="source" target="https://gallica.bnf.fr/ark:/12148/bpt6k3056628z"/>
+                  <ref type="source" target="https://gallica.bnf.fr/ark:/12148/bpt6k3056628z"/>
                   <availability status="restricted">
                      <licence
                         target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"
@@ -164,10 +172,10 @@
       </fileDesc>
       <encodingDesc>
          <projectDesc>
-            <p>Édition numérique du dernier manuscrit des <title type="litt_work"
+            <p>Édition numérique du dernier manuscrit des <title type="littWork"
                   >Considérations</title> et de la première édition posthume. Le projet vise à
-               restituer toutes les écritures qui figurent dans le manuscrit et à comparer celui-ci
-               avec le texte de la première édition </p>
+               restituer toutes les écritures qui figurent dans le manuscrit et à fournir des moyens
+               pour comparer celui-ci avec le texte de la première édition </p>
          </projectDesc>
          <editorialDecl>
             <normalization>
@@ -175,8 +183,6 @@
                   respectées. </p>
             </normalization>
          </editorialDecl>
-         <!-- vérifier s'il faut l'éliminer -->
-         <variantEncoding location="external" method="double-end-point"/>
       </encodingDesc>
       <profileDesc>
          <textClass>
@@ -214,7 +220,8 @@
    </facsimile>
 
    <text>
-      <anchor type="gap" xml:id="gapLetter" corresp="manuscrit_vol_1.xml#addLetter"/>
+      <anchor type="collation" subtype="gap" xml:id="LetterEd"
+         corresp="manuscrit_vol_1.xml#LetterMs"/>
       <front>
          <pb facs="#frontispice"/>
          <!-- les images précédentes (plats, pages de garde, etc. n'ont pas été ajoutées pour l'instant) -->
@@ -222,7 +229,7 @@
          <!-- pour l'instant, pas d'annotation (entités nommées) -->
          <titlePage>
             <docTitle rend="center">
-               <note type="editor" target="apparat_critique.xml#noteTitle"/>
+               <note type="editor" target="manuscrit_vol_1.xml#noteTitle"/>
                <titlePart> CONSIDÉRATIONS <lb/> SUR LES PRINCIPAUX ÉVÉNEMENS <lb/> DE <lb/> LA
                   RÉVOLUTION FRANÇOISE ; </titlePart>
             </docTitle>
@@ -236,7 +243,7 @@
                <bibl> MÉM. DE SULLY, T.I, p. 133 </bibl>
             </epigraph>
             <titlePart rend="top-center">TOME PREMIER. </titlePart>
-            <!--     !!!!  message image map editor : image non supportée ou corrompue -->
+            <!--     !!!!  ajouter avec image map editor  -->
             <fw type="frise">Frise</fw>
             <fw type="stamp">Tampon "Bibliothèque Royale"</fw>
 
@@ -251,15 +258,15 @@
          </titlePage>
          <pb facs="#frontispice_verso"/>
          <pb n="v" facs="#avis_editeurs_v"/>
+        
 
-         <div type="preface">
+         <div type="prefaceEd">
 
-            <head xml:id="preface_ed" rend="center"> AVIS DES EDITEURS.</head>
-            <!-- l'ajout de <seg> avant le titre n'est pas possible -->
-            <!-- penser à l'utilisation de @rendition avec syntaxe CSS -->
-            <!-- pour toute divergence entre manuscrit et première édition : dans la première édition on utilise <seg> pour tout segment de texte différant du manuscrit e <anchor> pour les lacunes -->
+            <head type="prefaceEditors" rend="center"> AVIS DES EDITEURS.</head>
+
             <p>
-               <seg type="add" xml:id="addPrefaceEd" corresp="manuscrit_vol_1.xml#gapPrefaceEd">
+               <seg type="collation" subtype="add" xml:id="PrefaceEdEd"
+                  corresp="manuscrit_vol_1.xml#PrefaceEdMs">
                   <hi rend="larger"> E</hi>N remplissant la tâche que madame de Staël a daigné nous
                   confier, nous devons avant tout faire connoître dans quel état nous avons trouvé
                   le manuscrit remis à nos soins. <lb/> Madame de Staël s’étoit tracé, pour toutes
@@ -281,22 +288,22 @@
                   à en revoir les deux premiers volumes, ainsi qu'une partie du troisième. Elle
                   étoit revenue à Paris pour terminer les morceaux relatifs à des événemens récens
                   dont elle n'avoit pas été témoin, et sur lesquels des renseignemens plus précis
-                  devoient modifier quelques-unes de ses opinions. Enfin les <title type="litt_work"
+                  devoient modifier quelques-unes de ses opinions. Enfin les <title type="littWork"
                      xml:id="considerationsEd" ref="index_noms.xml#considerationsMS" rend="italic">
                      Considérations sur les principaux événemens de la révolution françoise</title>
                   (car tel est le titre que madame de Staël avoit elle-même choisi) auroient paru à
                   la fin de l'année dernière, si celle qui faisoit notre gloire et notre bonheur
                   nous eût été conservée. <lb/>
                   <pb n="vii" facs="#avis_editeurs_vii"/>
-                  <fw type="header" rend="top-center"/> Nous avons trouvé les deux premiers
-                  volumes, et plusieurs chapitres du troisième, dans l'état où ils auroient été
-                  livrés à l’impression. D’autres chapitres étoient copiés, mais non revus par
-                  l’auteur. D’autres enfin n’étoient composés que de premier jet; et des notes
-                  marginales, écrites ou dictées par madame de Staël, indiquoient les points qu’elle
-                  se proposoit de développer. <lb/>Le premier sentiment comme le premier devoir de
-                  ses enfans, a été un respect religieux pour les moindres indications de sa pensée;
-                  et il est presque superflu de dire que nous ne nous sommes permis ni une addition
-                  ni même un changement, et que l’ouvrage qu’on va lire est parfaitement conforme au
+                  <fw type="header" rend="top-center"/> Nous avons trouvé les deux premiers volumes,
+                  et plusieurs chapitres du troisième, dans l'état où ils auroient été livrés à
+                  l’impression. D’autres chapitres étoient copiés, mais non revus par l’auteur.
+                  D’autres enfin n’étoient composés que de premier jet; et des notes marginales,
+                  écrites ou dictées par madame de Staël, indiquoient les points qu’elle se
+                  proposoit de développer. <lb/>Le premier sentiment comme le premier devoir de ses
+                  enfans, a été un respect religieux pour les moindres indications de sa pensée; et
+                  il est presque superflu de dire que nous ne nous sommes permis ni une addition ni
+                  même un changement, et que l’ouvrage qu’on va lire est parfaitement conforme au
                   manuscrit de madame de Staël. <lb/>Le travail des éditeurs s’est borné uniquement
                   à la révision des épreuves, et à la correction de ces légères inexactitudes de
                   style, qui échappent à la vue dans le manuscrit le plus soigné. Ce travail s’est
@@ -309,7 +316,7 @@
                   doivent être sacrées pour lui, en publiant une édition complète des œuvres de sa
                   mere, et de celles de M. Necker. Les œuvres de madame de Staël renfermeront
                   quelques compositions inédites; entre autres des fragmens d’un ouvrage commencé
-                  sous le titre de<title type="litt_work" rend="italic"> Dix années d’exil</title>.
+                  sous le titre de<title type="littWork" rend="italic"> Dix années d’exil</title>.
                   L’une et l'autre collection sera précédée d’une notice biographique; mais un
                   sentiment, que ceux qui ont connu madame de Staël apprécieront avec indulgence,
                   n’a pas encore permis à ses enfans de se livrer à un travail qui touche de si près
@@ -317,69 +324,71 @@
          </div>
 
          <pb n="ix" facs="#avertissement_auteur_ix"/>
-         <div type="preface_author">
+         <div type="prefaceAu">
 
-            <head xml:id="preface_au" rend="center"> AVERTISSEMENT <lb/>DE L’AUTEUR.</head>
+            <head type="prefaceAuthor" rend="center"> AVERTISSEMENT <lb/>DE L’AUTEUR.</head>
 
-            <p><seg type="add" xml:id="addPrefaceAu" corresp="manuscrit_vol_1.xml#gapPrefaceAu">
-                  J’AVOIS d’abord commencé cet ouvrage avec l’intention de le borner à l’examen des
-                  actes et des écrits politiques de mon père. Mais, en avançant dans mon travail,
-                  j’ai été conduite par le sujet même à retracer, d’une part, les principaux
-                  événemens de la révolution françoise, et à présenter, de l’autre, le tableau de
-                  l’Angleterre, comme une justification de l’opinion de M. NecKer, relativement aux
-                  institutions politiques de ce pays. Mon plan s’étant agrandi, il m’a semblé que je
-                  devois changer de titre, quoique je n’eusse pas changé d’objet. Il restera
-                  néanmoins dans ce livre plus de détails relatifs à mon <pb n="x"
-                     facs="#avertissement_auteur_x"/>
-                  <fw type="header" rend="top-center">AVERTISSEMENT DE L'AUTEUR.</fw> père, et
-                  même à moi, que je n’en aurois mis, si je l’eusse d’abord conçu sous un point de
-                  vue général ; mais peut-être des circonstances particulières servent-elles à faire
+            <p><seg type="collation" subtype="add" xml:id="PrefaceAuEd"
+                  corresp="manuscrit_vol_1.xml#PrefaceAuMs"> J’AVOIS d’abord commencé cet ouvrage
+                  avec l’intention de le borner à l’examen des actes et des écrits politiques de mon
+                  père. Mais, en avançant dans mon travail, j’ai été conduite par le sujet même à
+                  retracer, d’une part, les principaux événemens de la révolution françoise, et à
+                  présenter, de l’autre, le tableau de l’Angleterre, comme une justification de
+                  l’opinion de M. NecKer, relativement aux institutions politiques de ce pays. Mon
+                  plan s’étant agrandi, il m’a semblé que je devois changer de titre, quoique je
+                  n’eusse pas changé d’objet. Il restera néanmoins dans ce livre plus de détails
+                  relatifs à mon <pb n="x" facs="#avertissement_auteur_x"/>
+                  <fw type="header" rend="top-center">AVERTISSEMENT DE L'AUTEUR.</fw> père, et même
+                  à moi, que je n’en aurois mis, si je l’eusse d’abord conçu sous un point de vue
+                  général ; mais peut-être des circonstances particulières servent-elles à faire
                   mieux connoÎtre l’esprit et le caractère des temps qu’on veut décrire.</seg>
             </p>
 
          </div>
       </front>
-      <body rend="background-white">
+      <body>
+        
          <pb n="1" facs="#t1_1"/>
-         <head xml:id="title_work" rend="center"><seg type="add" xml:id="addTitle"
-               corresp="manuscrit_vol_1.xml#gapTitle"> CONSIDÉRATIONS <lb/>SUR <lb/>LES PRINCIPAUX
+         <div type="volume" n="1">
+         <head type="titleWork" rend="center"><seg type="collation" subtype="add" xml:id="TitleEd"
+               corresp="manuscrit_vol_1.xml#TitleMs"> CONSIDÉRATIONS <lb/>SUR <lb/>LES PRINCIPAUX
                ÉVÉNEMENS <lb/>DE LA RÉVOLUTION FRANÇOISE.</seg>
          </head>
          <fw type="frise">Frise</fw>
-         <!-- uniformiser tous les <head> -->
-         <head xml:id="title_part" rend="center"> PREMIÈRE PARTIE.</head>
-         <head xml:id="title_chapter" rend="center">
-            <seg type="subst" xml:id="substChap1Ed" corresp="manuscrit_vol_1.xml#substChap1Ms"
-               >CHAPITRE PREMIER.</seg>
+
+         <head type="titlePart" rend="center"> PREMIÈRE PARTIE.</head>
+         <head type="titleChapter" rend="center">
+            <seg type="collation" subtype="subst" xml:id="Chap1Ed"
+               corresp="manuscrit_vol_1.xml#Chap1Ms">CHAPITRE PREMIER.</seg>
          </head>
 
-         <head xml:id="title_chapter_main" rend="center"><hi rend="italic">Réflexions
-               générales.</hi></head>
-         <!-- on ne peut pas mettre des <div> à l'emplacement correct -->
-         <ab type="part" n="1">
-            <ab type="chapter" n="1">
-               <ab><hi rend="bold">L</hi>A révolution de France est une des <anchor type="gap"
-                     xml:id="gapPlus" corresp="manuscrit_vol_1.xml#addPlus"/> grandes époques de
-                  l’ordre social. Ceux qui la considèrent comme un événement accidentel, n’ont<seg
-                     type="subst" xml:id="substEtenduEd" corresp="manuscrit_vol_1.xml#substEtenduMs"
-                     > porté</seg> leurs regards ni <seg type="subst" xml:id="substDansEd"
-                     corresp="manuscrit_vol_1.xml#substDansMs">dans </seg>le passé, ni dans
-                  l'avenir. Ils ont pris les acteurs pour la pièce ; et, afin de satisfaire leurs
-                  passions, ils ont attribué aux hommes du moment ce que les siècles avoient
-                     préparé.<anchor type="gap" xml:id="gapAdversaires"
-                     corresp="manuscrit_vol_1.xml#addAdversaires"/>
+         <head type="titleChapterMain" rend="center"><hi rend="italic">Réflexions
+            générales.</hi></head>
+
+         <div type="part" n="1">
+            <div type="chapter" n="1">
+               <p><hi rend="bold">L</hi>A révolution de France est une des <anchor type="collation"
+                     subtype="gap" xml:id="PlusEd" corresp="manuscrit_vol_1.xml#PlusMs"/> grandes
+                  époques de l’ordre social. Ceux qui la considèrent comme un événement accidentel,
+                     n’ont<seg type="collation" subtype="subst" xml:id="EtenduEd"
+                     corresp="manuscrit_vol_1.xml#EtenduMs"> porté</seg> leurs regards ni <seg
+                     type="subst" xml:id="substDansEd" corresp="manuscrit_vol_1.xml#substDansMs"
+                     >dans </seg>le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce
+                  ; et, afin de satisfaire leurs passions, ils ont attribué aux hommes du moment ce
+                  que les siècles avoient préparé.<anchor type="collation" subtype="gap"
+                     xml:id="AdversairesEd" corresp="manuscrit_vol_1.xml#AdversairesMs"/>
                   <lb/>Il suffisoit cependant de jeter un coup d’œil sur les principales crises de
-                  l’histoire, pour se convaincre qu’elles ont été toutes inévitables,<fw type="footer"
-                     rend="bottom-left"><hi rend="smaller">TOME I</hi></fw>
+                  l’histoire, pour se convaincre qu’elles ont été toutes inévitables,<fw
+                     type="footer" rend="bottom-left"><hi rend="small">TOME I</hi></fw>
                   <pb n="2" facs="#t1_2"/>
-                  <fw type="header" rend="top-center">CONSIDÉRATIONS</fw>quand elles se
-                  rattachoient de quelque manière <seg type="subst" xml:id="substProgresEd"
-                     corresp="manuscrit_vol_1.xml#substProgresMs">au développement</seg> des idées;
-                  et qu’après une lutte et des malheurs plus ou moins prolongés, le triomphe des
+                  <fw type="header" rend="top-center">CONSIDÉRATIONS</fw>quand elles se rattachoient
+                  de quelque manière <seg type="collation" subtype="subst" xml:id="ProgresEd"
+                     corresp="manuscrit_vol_1.xml#ProgresMs">au développement</seg> des idées; et
+                  qu’après une lutte et des malheurs plus ou moins prolongés, le triomphe des
                   lumières a toujours été favorable à la grandeur et à l’amélioration de l’espèce
                   humaine. <lb/> Mon ambition seroit de parler du temps dans lequel nous avons vécu,
-                  comme s’il étoit déjà <anchor type="gap" xml:id="gapBien"
-                     corresp="manuscrit_vol_1.xml#addBien"/>loin de nous. Les hommes éclairés, qui
+                  comme s’il étoit déjà <anchor type="collation" subtype="gap" xml:id="BienEd"
+                     corresp="manuscrit_vol_1.xml#BienMs"/>loin de nous. Les hommes éclairés, qui
                   sont toujours contemporains des siècles futurs par leurs pensées, jugeront si j’ai
                   su m’élever à la hauteur d’impartialité que je
                   <!-- fin f. 3v du manuscrit - fin échantillon test --> voulois atteindre.<lb/> Je
@@ -391,10 +400,10 @@
                   leur étonnante supériorité qu’à la jouissance d’une patrie libre. Mais l’esclavage
                   existoit chez eux ; et, par conséquent, les droits et les motifs d’émulation, qui
                   doivent être communs à tous les hommes, étoient le partage exclusif<pb n="3"/>
-               </ab>
-            </ab>
-         </ab>
-
+               </p>
+            </div>
+         </div>
+         </div>
       </body>
    </text>
 
