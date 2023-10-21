@@ -3,7 +3,7 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
    <!-- title type: littWork OR painting -->
-   <!-- dates standard ISO 8601  -->
+   <!-- dates standard ISO 8601  avec @when seulement -->
    <!-- <persName> in teiHeader  vs <rs> in text for names  -->
    <!-- pour toute divergence entree manuscrit - première édition (@add @subst @transp @gap dans le ms) : 
                on utilise dans le manuscrit <anchor @type @xml:id @corresp @next @n="start"> placé au début du texte 
@@ -46,7 +46,7 @@
                </placeName>
             </authority>
 
-            <date when-iso="2023">2023</date>
+            <date when="2023">2023</date>
             <availability status="restricted">
                <licence target="https://https://creativecommons.org/licenses/by-nc/4.0/deed.fr">CC
                   BY-NC-4.0 FR</licence>
@@ -172,7 +172,7 @@
                   <imprint>
                      <pubPlace ref="index_noms.xml#paris">Paris</pubPlace>
                      <publisher>Delaunay</publisher>
-                     <date when-iso="1818">1818</date>
+                     <date when="1818">1818</date>
                   </imprint>
                   <extent>3 v.; in-8</extent>
                </monogr>
@@ -203,7 +203,7 @@
                   <imprint>
                      <pubPlace ref="index_noms.xml#paris">Paris</pubPlace>
                      <publisher>Bibliothèque nationale de France</publisher>
-                     <date when-iso="2019-07-08">8 juillet 2019</date>
+                     <date when="2019-07-08">8 juillet 2019</date>
                      <note>Version numérisée de la première édition</note>
                   </imprint>
                   <biblScope n="1" unit="volume">Tome premier</biblScope>
@@ -357,6 +357,7 @@
                      un évènement accidentel, n'ont <anchor type="collation" subtype="subst"
                         xml:id="EtenduMs" corresp="edition_vol_1.xml#EtenduEd" next="#EtenduMsEnd"
                         n="start"/>
+                     
                      <ref type="allB" xml:id="etendu1" target="#varEtendu"/> étendu <anchor type="allB"
                         xml:id="etendu2"/>
                      <anchor type="collation" subtype="subst" xml:id="EtenduMsEnd" prev="#EtenduMs"
@@ -409,7 +410,12 @@
                      toujours contemporains <ref type="aut" xml:id="siecles1" target="#varSiecles"/>
                      des siècles futurs, <anchor type="aut" xml:id="siecles2"/>par leurs pensées, jugeront si
                      j'ai su m'élever à la hauteur d'impartialité que je <pb n="4r"/>
+                     
                   </p>
+                  
+                     
+                  
+                  
                </div>
             </div>
          </div>

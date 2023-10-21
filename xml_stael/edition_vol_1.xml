@@ -36,7 +36,7 @@
                </placeName>
             </authority>
 
-            <date when-iso="2023">2023</date>
+            <date when="2023">2023</date>
             <availability status="restricted">
                <licence target="https://https://creativecommons.org/licenses/by-nc/4.0/deed.fr">CC
                   BY-NC-4.0 FR</licence>
@@ -130,7 +130,7 @@
                   <imprint>
                      <pubPlace ref="index_noms.xml#paris">Paris</pubPlace>
                      <publisher>Delaunay</publisher>
-                     <date when-iso="1818">1818</date>
+                     <date when="1818">1818</date>
                   </imprint>
                   <extent>3 v.; in-8</extent>
                </monogr>
@@ -162,7 +162,7 @@
                   <imprint>
                      <pubPlace ref="index_noms.xml#paris">Paris</pubPlace>
                      <publisher>Bibliothèque nationale de France</publisher>
-                     <date when-iso="2019-07-08">8 juillet 2019</date>
+                     <date when="2019-07-08">8 juillet 2019</date>
                      <note>Version numérisée de la première édition</note>
                   </imprint>
                   <biblScope n="1" unit="volume">Tome premier</biblScope>
