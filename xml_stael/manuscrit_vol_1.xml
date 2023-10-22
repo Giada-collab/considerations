@@ -4,6 +4,7 @@
 <TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
    <!-- title type: littWork OR painting -->
    <!-- dates standard ISO 8601  avec @when seulement -->
+   <!-- standard ISO ISO 639-1 for languages -->
    <!-- <persName> in teiHeader  vs <rs> in text for names  -->
    <!-- pour toute divergence entree manuscrit - première édition (@add @subst @transp @gap dans le ms) : 
                on utilise dans le manuscrit <anchor @type @xml:id @corresp @next @n="start"> placé au début du texte 
@@ -23,7 +24,7 @@
             <title type="main">
                <title type="littWork">Considérations sur les principaux événements de la Révolution
                   française</title> de Germaine de Staël : un laboratoire éditorial</title>
-               <title type="sub">Manuscrit</title>
+            <title type="sub">Manuscrit</title>
             <author>
                <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
             </author>
@@ -103,29 +104,31 @@
                   </objectDesc>
                   <!-- donner pour chaque écriture non indentifiée des éléments caractéristiques -->
                   <handDesc>
-                     <handNote xml:id="cA">Copiste A: <persName ref="index_noms.xml#randall">Fanny
-                           Randall</persName></handNote>
+                     <handNote xml:id="randallF">Copiste A: <persName ref="index_noms.xml#randallF"
+                           >Fanny Randall</persName></handNote>
                      <handNote xml:id="cB" medium="ink">Copiste B : non identifié</handNote>
-                     <handNote xml:id="cC" medium="ink">Copiste C : <persName
-                           ref="index_noms.xml#staelA">Albertine de Staël</persName></handNote>
-                     <handNote xml:id="cD" medium="ink">Copiste D : non identifié.
+                     <handNote xml:id="staelA" medium="ink">Copiste C : <persName
+                           ref="index_noms.xml#staelA">Albertine de Staël</persName>
+                        <note>Elle est autrice également de la lettre aux ff. 1r-2v</note>
                      </handNote>
+                     <handNote xml:id="cD" medium="ink">Copiste D : non identifié. </handNote>
                      <handNote xml:id="cE" medium="ink">Copiste E : non identifié</handNote>
                      <handNote xml:id="cF" medium="ink">Copiste F : non identifié</handNote>
-                     <handNote xml:id="cG" medium="ink">Copiste G : <persName
-                           ref="index_noms.xml#staelAu">Auguste de Staël</persName></handNote>
+                     <handNote xml:id="staelAu" medium="ink">Copiste G : <persName
+                           ref="index_noms.xml#staelAu">Auguste de Staël</persName>
+                        <note>Il est également auteur d'interventions posthumes dans le
+                           manuscrit</note>
+                     </handNote>
                      <handNote xml:id="cH" medium="ink">Copiste H : non identifié</handNote>
                      <handNote xml:id="cI" medium="ink">Copiste I : non identifié</handNote>
-                     <handNote xml:id="aut" medium="ink">Variantes d'auteur : <persName
+                     <handNote xml:id="stael" medium="ink">Variantes d'auteur : <persName
                            ref="index_noms.xml#stael"/>Germaine de Staël </handNote>
-                     <handNote xml:id="allA" medium="ink">Intervention allographe A : <persName
-                           ref="index_noms.xml#staelAu">Auguste de Staël</persName></handNote>
-                     <handNote xml:id="allB" medium="ink">Intervention allographe B : <persName
+                     <handNote xml:id="schlegelW" medium="ink">Intervention allographe B : <persName
                            ref="index_noms.xml#schlegelW">Wilhelm Schlegel </persName></handNote>
                      <handNote xml:id="allC" medium="pencil">Intervention allographe C : non
                         identifié </handNote>
                      <handNote xml:id="allD" medium="ink">Auteur de feuillets adjoints : non
-                        identifié. <note>e écriture
+                        identifié. <note>Écriture qui
                            <!-- ajouter pointeur vers les ff. du volume III --> figure <locus>aux
                               ff. 219r°-220v° du troisième volume</locus>. Ce sont des feuillets
                            d'un document contemporain à la rédaction de l'ouvrage qui ont été reliés
@@ -232,13 +235,13 @@
                   correspondant à celle de la BnF. </p>
             </normalization>
          </editorialDecl>
-         <variantEncoding location="external" method="double-end-point"/>
+         <variantEncoding location="internal" method="location-referenced"/>
       </encodingDesc>
       <profileDesc>
          <textClass>
             <keywords scheme="https://rameau.bnf.fr/">
                <term>Révolution française</term>
-               <term>Napoléon I<hi rend="sup">er</hi></term>
+               <term>Napoléon I<hi rend="superscript">er</hi></term>
             </keywords>
          </textClass>
          <correspDesc>
@@ -282,10 +285,10 @@
             <note type="editor" target="#noteLetter"/>
 
             <anchor type="collation" subtype="add" xml:id="LetterMs"
-               corresp="edition_vol_1.xml#LetterEd" next="#LetterMsEnd" n="start"/>
-            <div type="envelope">
+               corresp="edition_vol_1.xml#LetterEd"/>
+            <div type="envelope" hand="#staelA">
                <!-- enveloppe reliée après la lettre -->
-               <p hand="index_noms.xml#staelA">
+               <p>
                   <address>
                      <addrLine>Monsieur</addrLine>
                      <lb/>
@@ -296,25 +299,27 @@
             </div>
             <pb n="1r" facs="#lettre_albertine_1"/>
             <fw type="bibl" place="bottom-left">Achat 22856 </fw>
-            <div type="letter">
+            <div type="letter" hand="#staelA">
 
                <!-- voir l'original -->
                <!-- comment rendre l'espace insécable en xml? -->
-               
-               <p hand="index_noms.xml#staelA">
+
+               <p>
                   <rs ref="index_noms.xml#gerardF">Vous</rs> m’avez fait un present si precieux,
                   Monsieur, que <rs ref="index_noms.xml#staelA">j’ai </rs>cherché à vous exprimer ma
-                  reconnoissance par une chose qui j’en suis sure aura du prix à <ref type="staelA"
-                     xml:id="letter1" target="#varVos"/> vos <anchor type="staelA" xml:id="letter2"/> yeux. Ce
-                  manuscrit des <title type="littWork" rend="underlined"
-                     ref="index_noms.xml#considerationsMS">Considérations sur la révolution
-                     françoise</title> est une copie corrigée de la main de <rs
-                     ref="index_noms.xml#stael">ma mère</rs> et de <rs ref="index_noms.xml#staelAu"
-                     >mon frere Auguste</rs>, je ne m’en serois pas séparée facilement pour toute
-                  autre personne mais il m’est doux de le mettre entre <pb n="1v"
-                     facs="#lettre_albertine_2"/> les mains de <rs ref="index_noms.xml#gerardF"
-                     >celui</rs> qui nous a procuré le bonheur de revoir <rs
-                     ref="index_noms.xml#stael"/><rs ref="index_noms.xml#staelAu">leurs traits
+                  reconnoissance par une chose qui j’en suis sure aura du prix à <del hand="#staelA"
+                     rend="strikethrough">
+                     <gap reason="illegible" atLeast="4" unit="char"/>
+                  </del>
+                  <add hand="#staelA" instant="true">vos</add> yeux. Ce manuscrit des <title
+                     type="littWork" rend="underlined" ref="index_noms.xml#considerationsMS"
+                     >Considérations sur la révolution françoise</title> est une copie corrigée de
+                  la main de <rs ref="index_noms.xml#stael">ma mère</rs> et de <rs
+                     ref="index_noms.xml#staelAu">mon frere Auguste</rs>, je ne m’en serois pas
+                  séparée facilement pour toute autre personne mais il m’est doux de le mettre entre
+                     <pb n="1v" facs="#lettre_albertine_2"/> les mains de <rs
+                     ref="index_noms.xml#gerardF">celui</rs> qui nous a procuré le bonheur de revoir
+                     <rs ref="index_noms.xml#stael"/><rs ref="index_noms.xml#staelAu">leurs traits
                   </rs>cheris. Je crois accomplir un devoir et c’est en même tems un plaisir de vous
                   le remettre. </p>
                <closer>
@@ -323,15 +328,15 @@
                      <rs ref="index_noms.xml#staelA"> Staël de Broglie</rs></signed>
                   <dateline>le 19 avril</dateline>
                </closer>
-               <anchor type="collation" subtype="add" xml:id="LetterMsEnd" prev="#LetterMs" n="end"/>
+
 
 
             </div>
             <pb n="3r" facs="#v1_3r"/>
             <fw type="pageNum" place="top-left">1</fw>
-            <fw type="volNum" place="top-left"><del hand="#unknown">1.<w rend="sup">er</w>
+            <fw type="volNum" place="top-left"><del hand="#unknown">1.<hi rend="superscript">er</hi>
                   Volume</del></fw>
-            <fw type="cahNum" place="top-left"><del hand="#unknown">1<w rend="sup">er</w>
+            <fw type="cahNum" place="top-left"><del hand="#unknown">1<hi rend="superscript">er</hi>
                   Cahier</del></fw>
             <fw type="bibl" place="bottom-left">Achat 22856</fw>
             <fw type="bibl" place="top-center">N.a.fr. 14606 </fw>
@@ -343,34 +348,44 @@
                <div type="chapter" n="1">
                   <head type="titlePart" rend="underlined" hand="#unknown">Première partie</head>
                   <head type="titleChapter">
-                     <handShift scribeRef="#cA"/>
+                     <handShift scribeRef="#randallF"/>
                      <anchor type="collation" subtype="subst" xml:id="Chap1Ms"
-                        corresp="edition_vol_1.xml#Chap1Ed" next="#Chap1MsEnd" n="start"/> 1<w
-                        rend="sup">er</w>Chapitre. <anchor type="collation" subtype="subst"
-                        xml:id="Chap1MsEnd" prev="#Chap1Ms" n="end"/><lb/> Réflexionns générales </head>
+                        corresp="edition_vol_1.xml#Chap1Ed"/> 1<hi rend="superscript">er</hi>Chapitre.<lb/>
+                     Réflexionns générales </head>
                   <p>La Révolution de France est une des <anchor type="collation" subtype="add"
-                        xml:id="PlusMs" corresp="edition_vol_1.xml#PlusEd" next="#PlusMsEnd"
-                        n="start"/>
-                     <del hand="#unknown" rend="strikethrough"> plus </del>
-                     <anchor type="collation" subtype="add" xml:id="PlusMsEnd" prev="#PlusMs"
-                        n="end"/> grandes époques de l'ordre social. Ceux qui la considèrent comme
-                     un évènement accidentel, n'ont <anchor type="collation" subtype="subst"
-                        xml:id="EtenduMs" corresp="edition_vol_1.xml#EtenduEd" next="#EtenduMsEnd"
-                        n="start"/>
-                     
-                     <ref type="allB" xml:id="etendu1" target="#varEtendu"/> étendu <anchor type="allB"
-                        xml:id="etendu2"/>
-                     <anchor type="collation" subtype="subst" xml:id="EtenduMsEnd" prev="#EtenduMs"
-                        n="end"/> leurs regards ni <anchor type="collation" subtype="subst"
-                        xml:id="DansMs" corresp="edition_vol_1.xml#DansEd" next="#DansMsEnd"
-                        n="start"/>
-                     <ref type="allB" xml:id="dans1" target="#varDans"/> dans <anchor type="allB" xml:id="dans2"/>
-                     <anchor type="collation" subtype="subst" xml:id="DansMsEnd" prev="#DansMs"
-                        n="end"/> le passé, ni dans l'avenir. Ils ont pris les acteurs pour la
-                     pièce, et afin de satisfaire leurs passions, ils ont attribué aux hommes du
-                     moment ce que les siècles avoient préparé. <anchor type="collation"
-                        subtype="add" xml:id="AdversairesMs"
-                        corresp="edition_vol_1.xml#AdversairesEd" next="AdversairesMsEnd" n="start"/>
+                        xml:id="PlusMs" corresp="edition_vol_1.xml#PlusEd"/>
+                     <del hand="#unknown" rend="strikethrough"> plus </del> grandes époques de
+                     l'ordre social. Ceux qui la considèrent comme un évènement accidentel, n'ont
+                        <anchor type="collation" subtype="subst" xml:id="EtenduMs"
+                        corresp="edition_vol_1.xml#EtenduEd"/> étendu <app>
+                        <rdg>
+                           <del hand="#schlegelW" rend="strikethrough" seq="1">étendu</del>
+                        </rdg>
+                        <rdg>
+                           <del hand="#schlegelW" rend="strikethrough" seq="3">
+                              <add hand="#schlegelW" seq="2"> étendu</add>
+                           </del>
+                        </rdg>
+                        <rdg>
+                           <add hand="#schlegelW" seq="4">porté</add>
+                        </rdg>
+                     </app> leurs regards ni <anchor type="collation" subtype="subst"
+                        xml:id="DansMs" corresp="edition_vol_1.xml#DansEd"/> dans <app>
+                        <rdg>
+                           <del hand="#schlegelW" rend="strikethrough" seq="1">dans</del>
+                        </rdg>
+                        <rdg>
+                           <del hand="#schlegelW" rend="strikethrough" seq="3">
+                              <add hand="#schlegelW" seq="2">sur</add>
+                           </del>
+                        </rdg>
+                        <rdg>
+                           <add hand="#schlegelW" seq="4">dans</add>
+                        </rdg>
+                     </app> le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et
+                     afin de satisfaire leurs passions, ils ont attribué aux hommes du moment ce que
+                     les siècles avoient préparé. <anchor type="collation" subtype="add"
+                        xml:id="AdversairesMs" corresp="edition_vol_1.xml#AdversairesEd"/>
                      <del hand="#unknown" rend="strikethrough"> Les adversaires des principes de la
                         Révolution aimoient à se persuader que le choc auquel ils vouloient
                         s'opposer étoit produit par quelques circonstances particulieres <choice>
@@ -381,41 +396,43 @@
                         <fw type="catch" place="bottom-right">je</fw>
                         <fw type="pageNum" place="top-left">2</fw> des faits, et sur la marche
                         graduelle de la civilisation européenne. </del>
-                     <anchor type="collation" subtype="add" xml:id="AdversairesMsEnd"
-                        prev="#AdversairesMs" n="end"/>
+                     <anchor type="collation" subtype="add" xml:id="AdversairesMsEnd"/>
                      <lb/> Il suffisoit cependant de jeter un coup d'œil sur les principales crises
                      de l'histoire pour se convaincre <choice>
                         <orig>quelles</orig>
                         <reg>qu'elles</reg>
                      </choice> ont été toutes inévitables quand elles se rattachoient de quelque
+                     <!-- un trait vertical dans la marge gauche en correspondance du texte suivant -->
                      manière <metamark spanTo="#quApres" rend="verticalLine"
                         place="left-hand margin"/>
-                 
                      <anchor type="collation" subtype="subst" xml:id="ProgresMs"
-                        corresp="edition_vol_1.xml#ProgresEd" next="ProgresMsEnd" n="start"/>
-                     <ref type="allB" xml:id="progres1" target="#varProgres"/> aux progrès <anchor type="allB"
-                        xml:id="progres2"/>
-                     <anchor type="collation" subtype="subst" xml:id="ProgresMsEnd"
-                        prev="#ProgresMs" n="end"/> des idées, et qu'après <anchor type="metamark" xml:id="quApres"/>
-                     <!--vérifier ?? ça se réfère à quoi ?  --> une lutte et des malheurs plus ou
-                     moins <ref type="aut" xml:id="prolonge1" target="#varProlonge"/> prolongés
-                     <anchor type="aut" xml:id="prolonge2"/>, le triomphe des lumières a toujours été
-                     favorable à la grandeur et à l'amélioration de l'espèce humaine.<lb/> Mon
-                     ambition seroit de parler du temps dans lequel nous avons vécu, comme s'il
-                     étoit déjà <anchor type="collation" subtype="add" xml:id="BienMs"
-                        corresp="edition_vol_1.xml#BienEd" next="#BienMsEnd" n="start"/>
-                     <ref type="aut" xml:id="bien_loin1" target="#varBien_loin"/> bien <anchor
-                        type="collation" subtype="add" xml:id="BienMsEnd" prev="#BienMs" n="end"/>
-                     loin de nous <anchor type="aut" xml:id="bien_loin2"/>. Les hommes éclairés qui sont
-                     toujours contemporains <ref type="aut" xml:id="siecles1" target="#varSiecles"/>
-                     des siècles futurs, <anchor type="aut" xml:id="siecles2"/>par leurs pensées, jugeront si
+                        corresp="edition_vol_1.xml#ProgresEd"/> aux progrès <del hand="#schlegelW"
+                        rend="strikethrough">aux progrès </del>
+                     <add hand="#schlegelW">au developpement</add> des idées, et qu'après <anchor
+                        type="metamark" xml:id="quApres"/> une lutte et des malheurs plus ou moins
+                     prolongés <app>
+                        <rdg>
+                           <del hand="#stael" rend="strikethrough" seq="1">longs</del>
+                        </rdg>
+                        <rdg varSeq="2">
+                           <del hand="#stael" rend="strikethrough" seq="3">
+                              <add hand="#stael" seq="2">durables</add>
+                           </del>
+                        </rdg>
+                        <rdg>
+                           <add hand="#stael" seq="4">prolongés</add>
+                        </rdg>
+                     </app>, le triomphe des lumières a toujours été favorable à la grandeur et à
+                     l'amélioration de l'espèce humaine.<lb/> Mon ambition seroit de parler du temps
+                     dans lequel nous avons vécu, comme s'il étoit déjà <anchor type="collation"
+                        subtype="add" xml:id="BienMs" corresp="edition_vol_1.xml#BienEd"/>bien loin
+                     de nous.<del hand="#stael" rend="strikethrough">depuis long temps écoulé</del>
+                     <add hand="#stael">bien loin de nous</add> Les hommes éclairés qui sont
+                     toujours contemporains des siècles futurs,<del hand="#stael"
+                        rend="strikethrough">de l'avenir</del>
+                     <add hand="#stael">des siecles futurs,</add> par leurs pensées, jugeront si
                      j'ai su m'élever à la hauteur d'impartialité que je <pb n="4r"/>
-                     
                   </p>
-                  
-                     
-                  
-                  
                </div>
             </div>
          </div>
@@ -449,82 +466,6 @@
                   rend="italic">Corinne au Cap Misène</title> réalisé en 1819 et qui se trouve au
                Musée des Beaux-Arts de <rs ref="index_noms.xml#lyon"/> Lyon.</note>
          </app>
-
-         <app xml:id="varVos" from="#letter1" to="#letter2">
-            <!-- modification par une seule main : @hand dans <rdg> qui regroupe <del> + <add> (substitution) ou une modification seulement -->
-            <rdg hand="#staelA">
-               <!-- @rend dans le tag concerné -->
-               <del instant="true" rend="strikethrough">
-                  <gap reason="illegible" atLeast="4" unit="char"/>
-               </del>
-               <add>vos</add>
-            </rdg>
-         </app>
-
-
-         <app xml:id="varEtendu" from="#etendu1" to="#etendu2">
-            <rdg varSeq="1" hand="l#allB">
-               <del rend="strikethrough">étendu</del>
-            </rdg>
-            <rdg varSeq="2" hand="#allB">
-               <del rend="strikethrough">
-                  <add> étendu</add>
-               </del>
-            </rdg>
-            <rdg varSeq="3" hand="#allB">
-               <add>porté</add>
-            </rdg>
-         </app>
-         <app xml:id="varDans" from="#dans1" to="#dans2">
-            <rdg varSeq="1" hand="#allB">
-               <del rend="strikethrough">dans</del>
-            </rdg>
-            <rdg varSeq="2" hand="#allB">
-               <del rend="strikethrough">
-                  <add>sur</add>
-               </del>
-            </rdg>
-            <rdg varSeq="3" hand="#allB">
-               <add>dans</add>
-            </rdg>
-         </app>
-         <app xml:id="varProgres" from="#progres1" to="#progres2">
-            <rdg hand="#allB">
-               <del rend="strikethrough">aux progrès </del>
-               <add>au developpement</add>
-            </rdg>
-         </app>
-         <app xml:id="varProlonge" from="#prolonge1" to="#prolonge1">
-
-            <rdg varSeq="1" hand="#aut">
-               <del rend="strikethrough">longs</del>
-            </rdg>
-            <rdg varSeq="2" hand="#aut">
-               <del rend="strikethrough">
-                  <add>durables</add>
-               </del>
-            </rdg>
-            <rdg varSeq="3" hand="#aut">
-               <add>prolongés</add>
-            </rdg>
-         </app>
-         <app xml:id="varBien_loin" from="#bien_loin1" to="#bien_loin2">
-            <rdg hand="#aut">
-               <del rend="strikethrough">depuis long temps écoulé</del>
-               <add>bien loin de nous</add>
-            </rdg>
-         </app>
-         <app xml:id="varSiecles" from="#siecles1" to="#siecles2">
-            <rdg hand="#aut">
-               <del rend="strikethrough">de l'avenir</del>
-               <add>des siecles futurs,</add>
-            </rdg>
-         </app>
-
-
-
-
-
       </listApp>
 
    </standOff>

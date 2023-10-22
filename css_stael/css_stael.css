@@ -321,9 +321,21 @@ li {
     height: 300px;
     margin-bottom: 50px;
     margin-top: 50px;
+}
+.download {
+
+width:30px;
+height:30px;
+
+}
 
 
 
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------- */
     /* à partir d'ici ajouts dans le fichier test */
 }
 
@@ -390,33 +402,4 @@ li.Fe {
 
 }
 
-
-/* test */
-
-.TOOLTIP      {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltipText {
-
-visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  top: -5px;
-  left: 105%;
-}
-
-.tooltip:hover .tooltipText {
-  visibility: visible;
-}
 

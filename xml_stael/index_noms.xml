@@ -56,7 +56,7 @@
                </person>
 
                <person>
-                  <persName xml:id="randall" ref="http://viaf.org/viaf/259797369">
+                  <persName xml:id="randallF" ref="http://viaf.org/viaf/259797369">
                      <surname>Randall</surname>
                      <forename>Frances</forename>
                      <addName>Fanny</addName>
@@ -189,7 +189,7 @@
 
 
          <div type="indexWorks">
-            <head>Index des ouvrages cités</head>
+            <head>Index des ouvrages cités</head> <!-- ajouter identifiants pour les ouvrages -->
             <listObject>
                <object xml:id="considerationsMS">
                   <objectIdentifier>

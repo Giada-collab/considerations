@@ -3,6 +3,7 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
    <!-- dates standard ISO 8601  -->
+   <!-- utilisation du standard ISO 3166 pour le code pays -->
    <!-- utilisation dans le teiHeader de <persName> vs <rs> dans le texte  -->
    <!-- l'ajout de <seg> avant le titre n'est pas possible -->
    <!-- penser à l'utilisation de @rendition avec syntaxe CSS -->
@@ -188,7 +189,7 @@
          <textClass>
             <keywords scheme="https://rameau.bnf.fr/">
                <term>Révolution française</term>
-               <term>Napoléon I<hi rend="sup">er</hi></term>
+               <term>Napoléon I<hi rend="superscript">er</hi></term>
             </keywords>
          </textClass>
       </profileDesc>
@@ -243,7 +244,7 @@
                <bibl> MÉM. DE SULLY, T.I, p. 133 </bibl>
             </epigraph>
             <titlePart rend="top-center">TOME PREMIER. </titlePart>
-            <!--     !!!!  ajouter avec image map editor  -->
+            <!--     !!!!  ajouter image avec image map editor ? -->
             <fw type="frise">Frise</fw>
             <fw type="stamp">Tampon "Bibliothèque Royale"</fw>
 
