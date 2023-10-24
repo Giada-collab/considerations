@@ -38,14 +38,13 @@
                             <a href="objectifs.html">Objectifs du projet</a>
                             <a href="principes_editoriaux.html">Principes éditoriaux</a>
                             <a href="documentation_technique.html">Documentation technique</a>
-                           
                         </div>
                     </li>
-                    <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Édition</a>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Édition</a>
                         <div class="dropdown-content">
                             <a href="manuscrit.html">Manuscrit</a>
                             <a href="premiere_edition.html">Première édition</a>
-                            
                         </div>
                     </li>
                     <li>
@@ -54,59 +53,151 @@
                 </ul>
             </div>
         </div>
-        <br/>
+        <br />
         <h2 class="title_page">Documentation technique</h2>
-        <div class="main_content"> <p>Cette édition étant un prototype, le but est d’abord de tester les différentes fonctionnalités et les différents outils pour voir s’ils répondent de manière efficace aux objectifs du projet. Les utilisateurs pourrons ainsi voir les premiers résultats de ce travail qui seront ensuite analysés pour définir les améliorations à apporter. Les données techniques que nous décrivons ici peuvent donc subir des modifications importantes en fonctions des nouveaux choix opérés.</p>
-            
-            
+        <div class="main_content">
+            <p>Cette édition étant un prototype, le but est d’abord de tester les différentes
+                fonctionnalités et les différents outils pour voir s’ils répondent de manière
+                efficace aux objectifs du projet. Les utilisateurs pourrons ainsi voir les premiers
+                résultats de ce travail qui seront ensuite analysés pour définir les améliorations à
+                apporter. Les données techniques que nous décrivons ici peuvent donc subir des
+                modifications importantes en fonctions des nouveaux choix opérés.</p>
             <h3>Principes d’encodage</h3>
-            
-            <p>Assurer l’interopérabilité et la pérennisation des données sur le long terme a été une des principales règles de cette édition qui nous ont conduit à choisir des standards ouverts et largement utilisés par la communauté scientifique.</p> 
-            <p>Un autre objectif était de faire figurer les différentes écritures relevées dans le manuscrit et de comparer celui-ci avec la première édition sans laisser entendre que, pour assurer la plus grande fidélité aux intentions de l’auteur, le choix éditorial s’était exprimé  de quelque manière en faveur d’un élément plutôt que d’un autre (variantes de Staël vs  interventions allographes ou bien manuscrit vs première édition). Il fallait donc représenter ces phénomènes de manière non hiérarchisée tout en respectant les normes d’encodage et la lisibilité. </p>
-            <p>Un autre problème a dû être affronté pour l’affichage des contenus dans la page web&nbsp;: les différentes écritures devaient être identifiables immédiatement et la navigation entre manuscrit et première édition devait  être rapide et intuitive. Et tout ceci devait être exprimé à travers un code lisible et conforme aux recommandations sur l’accessibilité. </p>
-            <p>Ce que l’on voit actuellement dans le site web de l’édition représente ainsi le difficile compromis qui a pu être atteint pour l’instant entre ces différentes exigences.</p>
-            
-   
-            
+            <p>Assurer l’interopérabilité et la pérennisation des données sur le long terme a été
+                une des principales règles de cette édition qui nous ont conduit à choisir des
+                standards ouverts et largement utilisés par la communauté scientifique comme XML,
+                HTML, XSLT et les recommendations TEI.</p>
+            <p>Un autre objectif était de faire figurer les différentes écritures relevées dans le
+                manuscrit et de comparer celui-ci avec la première édition sans laisser entendre
+                que, pour assurer la plus grande fidélité aux intentions de l’auteur, le choix
+                éditorial s’était exprimé de quelque manière en faveur d’un élément plutôt que d’un
+                autre (variantes de Staël <i>vs</i> interventions allographes ou bien manuscrit
+                    <i>vs</i> première édition). Il fallait donc représenter ces phénomènes de
+                manière non hiérarchisée tout en respectant les normes d’encodage et la lisibilité. </p>
+            <p>Un autre problème a dû être affronté pour l’affichage des contenus dans la page
+                web&nbsp;: les différentes écritures devaient être identifiables immédiatement et la
+                navigation entre manuscrit et première édition devait être rapide et intuitive. 
+                Tout ceci devait enfin être exprimé à travers un code lisible et conforme aux
+                recommandations sur l’accessibilité. </p>
+            <p>Ce que l’on voit actuellement dans le site web de l’édition représente ainsi le
+                difficile compromis qui a pu être atteint pour l’instant entre ces différentes
+                exigences.</p>
             <h4>Encodage en XML-TEI</h4>
-            
-            
-            <p>L’encodage des textes se base sur le langage XML et les normes <a href="https://tei-c.org/"></a>  pour sa structuration.  La personnalisation du schéma reste en tout cas conforme aux recommandations TEI, et ce pour assurer le plus haut niveau d’interopérabilité.
-                Pour des raisons analogues, nous avons utilisé UTF-8 pour le codage des caractères, le standard ISO 8601 pour les dates,  le standard ISO 639-1:2002 pour les langues et des identifiants uniques pour les personnes (ISNI, VIAF ou Wikidata), les lieux (GeoNames) et les titres d’ouvrages (Wikidata).</p>
-                
-                <p> Nous décrivons ci-après les pratiques de balisage en rappelant que dans la page de chaque document il est possible de télécharger le fichier XML correspondant.  Les fichiers disponibles sont les suivants&nbsp;:</p>
-                
-            <i>Manuscrit&nbsp;</i> <a href="../xml_stael/manuscrit_vol_1.xml" download="Fichier_XML">
-                <img class="download" src="../img_stael/xml-extension.jpg" alt="XML"> <!-- attribution: riajulislam -->
+            <p>L’encodage des textes se base sur le langage XML et les <cite>P5 Guidelines</cite> de
+                la <a href="https://tei-c.org/">TEI</a> pour sa structuration. La personnalisation
+                du schéma reste en tout cas conforme aux recommandations TEI, et ce pour assurer le
+                plus haut niveau d’interopérabilité. Pour des raisons analogues, nous avons utilisé
+                des standards tels que UTF-8 pour le codage des caractères, ISO 8601 pour les dates,
+                ISO 639-1:2002 pour les langues et des identifiants uniques pour les personnes
+                (ISNI, VIAF ou Wikidata), les lieux (GeoNames) et les titres d’ouvrages
+                (Wikidata).</p>
+            <p> Nous décrivons ci-après les pratiques de balisage en rappelant que dans la page de
+                chaque document il est possible de télécharger le fichier XML correspondant. Les
+                fichiers disponibles sont les suivants&nbsp;:</p>
+            <i>Manuscrit&nbsp;</i>
+            <a href="../xml_stael/manuscrit_vol_1.xml" download="Fichier_XML">
+                <img class="download" src="../img_stael/xml-extension.jpg" alt="XML">
+                <!-- attribution: riajulislam -->
             </a>
-                       <br/>
-            <i>Première édition&nbsp;</i> <a href="../xml_stael/edition_vol_1.xml" download="Fichier_XML">
+            <br />
+            <i>Première édition&nbsp;</i>
+            <a href="../xml_stael/edition_vol_1.xml" download="Fichier_XML">
                 <img class="download" src="../img_stael/xml-extension.jpg" alt="XML">
             </a>
-            
-            <br/>
-            
-            <br/>
-            
-            <h5> <i>Métadonnées</i></h5>
-            
-            
-            <h4>Encodage en HTML</h4> e Markdown?
-            
+            <br />
+            <br />
+            <p><i> Balisage physique</i>&nbsp;: contribuer à une meilleure connaissance des
+                manuscrits de Staël et de sa manière de travailler est un autre objectif de ce
+                projet. Des métadonnées et un encodage du texte plus riches sur cet aspect est donc
+                un travail qui a été prévu pour ses phases ultérieures. Pour l’instant, ces
+                informations ne sont que partiellement confiées aux fac-similé introduit à l’aide de
+                l’attribut @facs dans &lt;pb&gt; qui marque le début d’une nouvelle page. <br />
+                D’autres informations sur la page comme le numéro di page, de cahier (manuscrit) ou
+                le titre courant (première édition) sont introduites à l’aide de &lt;fw&gt; qui est
+                toujours suivi des attributs @type et @place. <br /> L’élément &lt;hi&gt; enfin est
+                utilisé avec @rend pour mettre en évidence des mots ou des lettres graphiquement
+                distincts du reste comme, par exemple, une lettre en exposant.<br /> Ce balisage ne
+                figure que dans le fichier XML et n’est pas affiché dans la page web. <br />
+                <i> Balisage logique</i>&nbsp;: la subdivision du texte est exprimée par l’élément
+                &lt;div&gt; toujours suivi de @type pour indiquer la typologie de la section
+                (préface, chapitre, partie) et, le cas échéant, de @n pour indiquer le numéro
+                progressif correspondant. Le choix d’introduire systématiquement ces attributs est
+                dû au caractère trop générique de &lt;div&gt; pour identifier chaque partie et
+                appliquer éventuellement un style particulier. Pour les mêmes raisons, le titre de
+                la subdivision &lt;head&gt; est toujours suivi de @type. Pour les subdivisions
+                entièrement rédigées par une seule main, l’attribut @hand a été introduit dans
+                &lt;div&gt;. <br />
+                <i> Balisage sémantique</i>&nbsp;: le plus grand enjeu de l’encodage du texte a été
+                de trouver des balises indiquant clairement les différentes interventions dans le
+                manuscrit tout en laissant le code lisible et conforme à la TEI. Il fallait en même
+                temps penser au rendu final dans la page web qui devait représenter de manière
+                claire les différentes mains. Ce travail s’est vu compliqué par la superposition
+                d’autres balises relatives aux entités nommés ou à la collation entre manuscrit et
+                première édition&nbsp;: un mot, un syntagme ou un paragraphe peut, en effet, être
+                intéressé par plusieurs phénomènes. Nous avons donc opté pour une annotation
+                minimale pour pouvoir concentrer ce travail pilote sur les variantes. Pour la même
+                raison, le balisage des entités nommées et sur la collation ne seront affichés
+                qu’ultérieurement.<br /> Pour signaler toute modification du texte de la part des
+                différentes mains, le choix a été porté dans un premier temps sur la méthode
+                “double-end-point" avec l’apparat critique placé dans le &lt;standOff>. Cela devait
+                permettre de délimiter de manière précise l’endroit affecté par la modification et
+                de ne pas surcharger le texte avec beaucoup d’annotations. Ce dernier effet n’ayant
+                pu être obtenu, nous sommes en train de tester la méthode “location-referenced” et
+                la position “internal” de l’apparat critique, c’est-à-dire dans le texte. Voici une
+                substitution de Staël&nbsp;: <br /><br /><img src="../img_stael/subst_stael.png"
+                    alt="Substitution Staël" width="700" height="70" />
+            <p> Tout type d’intervention est marquée par l’attribut @hand pour pouvoir
+                distinguer les différents scripteurs dont la liste a été crée dans le
+                &lt;handDesc&gt; du &lt;teiHeader&gt;. Le changement de copiste est indiqué comme
+                dans cet exemple&nbsp;: &lt;handShift scribeRef="#randallF"/&gt; La distinction
+                entre @hand et @scribeRef permet aussi de distinguer les différentes foncions des
+                scripteurs. Il arrive, en effet, qu’une même personne est tantôt copiste à certains
+                endroits et tantôt auteur de modifications du texte dans d’autres. <br /> Pour plus
+                d'une substitution faisant partie d'une intervention unique &nbsp;:</p>
+            <img src="../img_stael/subst2_stael.png" alt=" Deux substitution Staël" width="700"
+                height="300" />
+            <p>Dans ce cas, l'ordre des interventions est indiqué par @seq. </p>
+            <p>Il faudra ensuite ajouter le balisage relatif à la collation entre manuscrit et
+                première édition et permettre une comparaison entre les deux textes. Pour rendre ce
+                travail plus aisé, la possibilité d’une mise en regard des deux textes serait
+                souhaitable.</p>
+            <p>L'index des noms a été mis dans un fichier à part et cela toujours dans le but de
+                déplacer ailleur tout ce qui n'appartient pas au texte. Les éléments qui ont été
+                considérés comme le minimum indispensable pour l'identification sont les
+                suivants&nbsp;: <br /><br />
+                <img src="../img_stael/persName.png" alt=" Deux substitution Staël" width="700"
+                    height="300" />
+            <p> L'identification est confiée à l'attribut @ref qui renvoie à un identifiant
+                unique. Voici les éléments de base pour les lieux&nbsp;:</p>
+            <br />
+            <br />
+            <img src="../img_stael/listPlace.png" alt=" Deux substitution Staël" width="700"
+                height="150" />
+            <p>Dans ce cas également @ref renvoie à des identifiants uniques pour le pays et la
+                ville. Pour l'index des ouvrages cités, une solution sémantiquement satisfaisante et
+                en même temps conforme à la TEI n'a pas encore été trouvée. Voici une solution
+                provisoire&nbsp;: </p>
+            <img src="../img_stael/object.png" alt=" Deux substitution Staël" width="700"
+                height="120" />
+            <p>L'élément &lt;object&gt; ne peut pas contenir @ref. Nous avons choisi @source qui
+                fournit l'identifiant et, en même temps, la source de laquelle il a été tiré. Le
+                type d'ouvrage doit toujour être précisé avec @type dans &lt;objectName&gt;. Pour
+                introduire l'auteur, nous avons dû utiliser encore &lt;objectName&gt; et, dans ce
+                cas, @type sert à distinguer cette information de la précédente.</p>
+            <p>Pour les notes, nous ne les avons distinguées que sur la base de l'auteur de la note.
+                Dans le manuscrit, soi il s’agit d’une note de l’éditeur scientifique soi de
+                l’auteur. Dans le texte, l’élément &lt;note&gt; est donc suivi de @resp renvoyant à
+                l’un des deux et de @target renvoyant au texte de la note placée dans le
+                &lt;standOff&gt;. Voici un exemple&nbsp;: </p> &lt;note resp="#tesserS"
+            target="#noteTitle"&gt; <h4>Encodage en HTML</h4>
             <h4>Principes d’affichage</h4>
-            
             <!-- title with anchor -->
-            
             <h3>Outils numériques</h3>
-            
             <h3>Pratiques d'archivage</h3>
-            
-            <h3>Licences</h3> <!-- renvoit à mentions légales -->
-            
+            <h3>Licences</h3>
+            <!-- renvoit à mentions légales -->
             <h3>Sources</h3>
-            
         </div>
-        
         <div class="background_nav">
             <div class="footer">
                 <a href="plan_site.html">Plan du site</a>

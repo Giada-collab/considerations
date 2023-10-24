@@ -7,16 +7,15 @@
    <!-- standard ISO ISO 639-1 for languages -->
    <!-- <persName> in teiHeader  vs <rs> in text for names  -->
    <!-- pour toute divergence entree manuscrit - première édition (@add @subst @transp @gap dans le ms) : 
-               on utilise dans le manuscrit <anchor @type @xml:id @corresp @next @n="start"> placé au début du texte 
-               et <anchor @xml:id @prev @n="end" > à la fin du texte qui diffère de la première édition. 
-               Ceci pour éviter la superposition de différents phénomènes sur le meme segment si on utilise <seg>. 
-               Il faut utiliser @n="end" pour marquer la fin du passage concerné et @prev pour pointer vers @start.
-            On introduit @next dans le 2e <anchor> seulement pour le fichier xml, pas de lien html (il y a déjà @corresp)-->
-   <!-- apparat critique : premier <anchor> pas nécessaire s'il y a @xml:id ; utilisation de <ref> + @type pour pouvoir afficher en html les différentes écritures avec des couleurs -->
+               on utilise dans le manuscrit <anchor @type @xml:id @corresp > placé au début du texte 
+               qui diffère de la première édition. 
+               Ceci pour éviter la superposition de différents phénomènes sur le meme segment si on utilise <seg>. -->
+
+
    <!-- file names with  "_"  -->
-   <!-- Information related to BnF (stamp, shelfmark) won't be plublished -->
+   <!-- Information related to BnF (stamp, shelfmark) and metamarks won't be plublished -->
    <!-- revoir <fw @type bibl   ... pas clair, il faut que ce soit clair que cela renvoit à la BnF -->
-   <!-- tous les <metamarks> n'ont pas été introduits. Por l'instant, il ne seront pas affichés dans la page web -->
+
 
    <teiHeader>
       <fileDesc>
@@ -29,7 +28,7 @@
                <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
             </author>
             <editor>
-               <!-- faut-il mettre l'adresse compète pour ISNI ? Comment indiquer le ns pour tout le fichier ?-->
+               <!-- faut-il mettre l'adresse complète pour ISNI ? Comment indiquer le ns pour tout le fichier ?-->
                <!-- nom qui n'est pas indexé -->
                <persName xml:id="tesserS" ref="https://isni.org/isni/0000000353074065">
                   <surname>Tesser</surname>
@@ -272,7 +271,7 @@
          <div type="volume" n="1">
 
             <!-- l'absence de titre dans le manuscrit est signalée par une note explicative -->
-            <note type="editor" target="#noteTitle"/>
+            <note resp="#tesserS" target="#noteTitle"/>
             <!-- point de divergence entre manuscrit et première édition -->
             <anchor type="collation" subtype="gap" xml:id="TitleMs"
                corresp="edition_vol_1.xml#TitleEd"/>
@@ -282,7 +281,7 @@
                corresp="edition_vol_1.xml#PrefaceAuEd"/>
 
             <pb n="2r" cert="high" facs="#lettre_albertine_3"/>
-            <note type="editor" target="#noteLetter"/>
+            <note resp="#tesserS" target="#noteLetter"/>
 
             <anchor type="collation" subtype="add" xml:id="LetterMs"
                corresp="edition_vol_1.xml#LetterEd"/>
@@ -350,8 +349,8 @@
                   <head type="titleChapter">
                      <handShift scribeRef="#randallF"/>
                      <anchor type="collation" subtype="subst" xml:id="Chap1Ms"
-                        corresp="edition_vol_1.xml#Chap1Ed"/> 1<hi rend="superscript">er</hi>Chapitre.<lb/>
-                     Réflexionns générales </head>
+                        corresp="edition_vol_1.xml#Chap1Ed"/> 1<hi rend="superscript"
+                     >er</hi>Chapitre.<lb/> Réflexionns générales </head>
                   <p>La Révolution de France est une des <anchor type="collation" subtype="add"
                         xml:id="PlusMs" corresp="edition_vol_1.xml#PlusEd"/>
                      <del hand="#unknown" rend="strikethrough"> plus </del> grandes époques de
@@ -422,18 +421,19 @@
                         <rdg>
                            <add hand="#stael" seq="4">prolongés</add>
                         </rdg>
-                     </app>, le triomphe des lumières a toujours été favorable à la grandeur et à
+                     </app> , le triomphe des lumières a toujours été favorable à la grandeur et à
                      l'amélioration de l'espèce humaine.<lb/> Mon ambition seroit de parler du temps
                      dans lequel nous avons vécu, comme s'il étoit déjà <anchor type="collation"
                         subtype="add" xml:id="BienMs" corresp="edition_vol_1.xml#BienEd"/>bien loin
                      de nous.<del hand="#stael" rend="strikethrough">depuis long temps écoulé</del>
                      <add hand="#stael">bien loin de nous</add> Les hommes éclairés qui sont
-                     toujours contemporains des siècles futurs,<del hand="#stael"
+                     toujours contemporains des siècles futurs, <del hand="#stael"
                         rend="strikethrough">de l'avenir</del>
                      <add hand="#stael">des siecles futurs,</add> par leurs pensées, jugeront si
                      j'ai su m'élever à la hauteur d'impartialité que je <pb n="4r"/>
                   </p>
                </div>
+
             </div>
          </div>
       </body>
@@ -449,14 +449,14 @@
 
          <app xml:id="noteTitle">
             <!-- note qu'il faut préciser en citant éventuellement l'édition papier-->
-            <note> Le manuscrit n'a pas de titre mais, d'après la correspondance de <rs
+            <note resp="#tesserS"> Le manuscrit n'a pas de titre mais, d'après la correspondance de <rs
                   ref="index_noms.xml#stael">Germaine de Staël</rs> et de son entourage, le titre
                qu'elle avait choisi est probablement celui qui est indiqué dans L'<title
                   type="titleChapter" ref="edition_vol_1.xml#considerationsEd">Avis des
                   éditeurs</title>de la première édition. </note>
          </app>
          <app xml:id="noteLetter">
-            <note>Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de Staël</rs> a été
+            <note resp="#tesserS">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de Staël</rs> a été
                reliée au manuscrit. Elle est adressée au peintre <rs ref="index_noms.xml#gerardF">
                   François Gérard</rs> à qui elle a donné le manuscrit des <title type="littWork"
                   ref="index_noms.xml#staël" rend="italic">Considérations</title> pour le remercier
