@@ -4,11 +4,7 @@
 <TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
    <!-- dates standard ISO 8601  -->
    <!-- utilisation du standard ISO 3166 pour le code pays -->
-   <!-- utilisation dans le teiHeader de <persName> vs <rs> dans le texte  -->
-   <!-- l'ajout de <seg> avant le titre n'est pas possible -->
-   <!-- penser à l'utilisation de @rendition avec syntaxe CSS -->
-   <!-- pour toute divergence entre manuscrit et première édition : dans la première édition on utilise <seg> pour tout segment de texte différant du manuscrit e <anchor> pour les lacunes -->
-
+ 
    <teiHeader>
       <fileDesc>
          <titleStmt>

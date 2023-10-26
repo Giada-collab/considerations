@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="../documentation_stael/manuscrit_vol_1.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../documentation_stael/manuscrit_vol_1.rng" type="application/xml"	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
-   <!-- title type: littWork OR painting -->
+
    <!-- dates standard ISO 8601  avec @when seulement -->
    <!-- standard ISO ISO 639-1 for languages -->
-   <!-- <persName> in teiHeader  vs <rs> in text for names  -->
-   <!-- pour toute divergence entree manuscrit - première édition (@add @subst @transp @gap dans le ms) : 
-               on utilise dans le manuscrit <anchor @type @xml:id @corresp > placé au début du texte 
-               qui diffère de la première édition. 
-               Ceci pour éviter la superposition de différents phénomènes sur le meme segment si on utilise <seg>. -->
-
-
-   <!-- file names with  "_"  -->
-   <!-- Information related to BnF (stamp, shelfmark) and metamarks won't be plublished -->
-   <!-- revoir <fw @type bibl   ... pas clair, il faut que ce soit clair que cela renvoit à la BnF -->
-
 
    <teiHeader>
       <fileDesc>
@@ -41,11 +30,11 @@
             <!-- modifier la taille à la fin du travail -->
          </extent>
          <publicationStmt>
-            <authority>Università Ca' Foscari Venezia <placeName>
+            <authority>Università Ca' Foscari Venezia </authority>
+               <address> 
                   <settlement ref="index_noms.xml#venezia">Venezia</settlement>
-               </placeName>
-            </authority>
-
+               </address>
+     
             <date when="2023">2023</date>
             <availability status="restricted">
                <licence target="https://https://creativecommons.org/licenses/by-nc/4.0/deed.fr">CC
@@ -178,7 +167,7 @@
                   </imprint>
                   <extent>3 v.; in-8</extent>
                </monogr>
-               <ptr type="bib_desc" target="http://catalogue.bnf.fr/ark:/12148/cb178050717"> </ptr>
+               <ref type="bib_desc" target="http://catalogue.bnf.fr/ark:/12148/cb178050717"> </ref>
             </biblStruct>
             <biblStruct>
                <!-- data about digital version of the 1st edition. -->
@@ -208,7 +197,7 @@
                      <date when="2019-07-08">8 juillet 2019</date>
                      <note>Version numérisée de la première édition</note>
                   </imprint>
-                  <biblScope n="1" unit="volume">Tome premier</biblScope>
+                  <biblScope unit="volume" n="1">Tome premier</biblScope>
                </monogr>
             </biblStruct>
 
@@ -272,19 +261,12 @@
 
             <!-- l'absence de titre dans le manuscrit est signalée par une note explicative -->
             <note resp="#tesserS" target="#noteTitle"/>
-            <!-- point de divergence entre manuscrit et première édition -->
-            <anchor type="collation" subtype="gap" xml:id="TitleMs"
-               corresp="edition_vol_1.xml#TitleEd"/>
-            <anchor type="collation" subtype="gap" xml:id="PrefaceEdMs"
-               corresp="edition_vol_1.xml#PrefaceEdEd"/>
-            <anchor type="collation" subtype="gap" xml:id="PrefaceAuMs"
-               corresp="edition_vol_1.xml#PrefaceAuEd"/>
+
 
             <pb n="2r" cert="high" facs="#lettre_albertine_3"/>
             <note resp="#tesserS" target="#noteLetter"/>
 
-            <anchor type="collation" subtype="add" xml:id="LetterMs"
-               corresp="edition_vol_1.xml#LetterEd"/>
+
             <div type="envelope" hand="#staelA">
                <!-- enveloppe reliée après la lettre -->
                <p>
@@ -301,7 +283,7 @@
             <div type="letter" hand="#staelA">
 
                <!-- voir l'original -->
-               <!-- comment rendre l'espace insécable en xml? -->
+
 
                <p>
                   <rs ref="index_noms.xml#gerardF">Vous</rs> m’avez fait un present si precieux,
@@ -347,16 +329,11 @@
                <div type="chapter" n="1">
                   <head type="titlePart" rend="underlined" hand="#unknown">Première partie</head>
                   <head type="titleChapter">
-                     <handShift scribeRef="#randallF"/>
-                     <anchor type="collation" subtype="subst" xml:id="Chap1Ms"
-                        corresp="edition_vol_1.xml#Chap1Ed"/> 1<hi rend="superscript"
+                     <handShift scribeRef="#randallF"/> 1<hi rend="superscript"
                      >er</hi>Chapitre.<lb/> Réflexionns générales </head>
-                  <p>La Révolution de France est une des <anchor type="collation" subtype="add"
-                        xml:id="PlusMs" corresp="edition_vol_1.xml#PlusEd"/>
-                     <del hand="#unknown" rend="strikethrough"> plus </del> grandes époques de
-                     l'ordre social. Ceux qui la considèrent comme un évènement accidentel, n'ont
-                        <anchor type="collation" subtype="subst" xml:id="EtenduMs"
-                        corresp="edition_vol_1.xml#EtenduEd"/> étendu <app>
+                  <p>La Révolution de France est une des <del hand="#unknown" rend="strikethrough">
+                        plus </del> grandes époques de l'ordre social. Ceux qui la considèrent comme
+                     un évènement accidentel, n'ont étendu <app>
                         <rdg>
                            <del hand="#schlegelW" rend="strikethrough" seq="1">étendu</del>
                         </rdg>
@@ -368,8 +345,7 @@
                         <rdg>
                            <add hand="#schlegelW" seq="4">porté</add>
                         </rdg>
-                     </app> leurs regards ni <anchor type="collation" subtype="subst"
-                        xml:id="DansMs" corresp="edition_vol_1.xml#DansEd"/> dans <app>
+                     </app> leurs regards ni dans <app>
                         <rdg>
                            <del hand="#schlegelW" rend="strikethrough" seq="1">dans</del>
                         </rdg>
@@ -383,11 +359,10 @@
                         </rdg>
                      </app> le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et
                      afin de satisfaire leurs passions, ils ont attribué aux hommes du moment ce que
-                     les siècles avoient préparé. <anchor type="collation" subtype="add"
-                        xml:id="AdversairesMs" corresp="edition_vol_1.xml#AdversairesEd"/>
-                     <del hand="#unknown" rend="strikethrough"> Les adversaires des principes de la
-                        Révolution aimoient à se persuader que le choc auquel ils vouloient
-                        s'opposer étoit produit par quelques circonstances particulieres <choice>
+                     les siècles avoient préparé. <del hand="#unknown" rend="strikethrough"> Les
+                        adversaires des principes de la Révolution aimoient à se persuader que le
+                        choc auquel ils vouloient s'opposer étoit produit par quelques circonstances
+                        particulieres <choice>
                            <orig>, i</orig>
                            <reg>.I</reg>
                         </choice> ls se sont donc aveuglés autant qu'ils l'ont pu sur l'enchaînement
@@ -395,7 +370,6 @@
                         <fw type="catch" place="bottom-right">je</fw>
                         <fw type="pageNum" place="top-left">2</fw> des faits, et sur la marche
                         graduelle de la civilisation européenne. </del>
-                     <anchor type="collation" subtype="add" xml:id="AdversairesMsEnd"/>
                      <lb/> Il suffisoit cependant de jeter un coup d'œil sur les principales crises
                      de l'histoire pour se convaincre <choice>
                         <orig>quelles</orig>
@@ -403,9 +377,7 @@
                      </choice> ont été toutes inévitables quand elles se rattachoient de quelque
                      <!-- un trait vertical dans la marge gauche en correspondance du texte suivant -->
                      manière <metamark spanTo="#quApres" rend="verticalLine"
-                        place="left-hand margin"/>
-                     <anchor type="collation" subtype="subst" xml:id="ProgresMs"
-                        corresp="edition_vol_1.xml#ProgresEd"/> aux progrès <del hand="#schlegelW"
+                        place="left-hand margin"/> aux progrès <del hand="#schlegelW"
                         rend="strikethrough">aux progrès </del>
                      <add hand="#schlegelW">au developpement</add> des idées, et qu'après <anchor
                         type="metamark" xml:id="quApres"/> une lutte et des malheurs plus ou moins
@@ -413,7 +385,7 @@
                         <rdg>
                            <del hand="#stael" rend="strikethrough" seq="1">longs</del>
                         </rdg>
-                        <rdg varSeq="2">
+                        <rdg>
                            <del hand="#stael" rend="strikethrough" seq="3">
                               <add hand="#stael" seq="2">durables</add>
                            </del>
@@ -423,9 +395,8 @@
                         </rdg>
                      </app> , le triomphe des lumières a toujours été favorable à la grandeur et à
                      l'amélioration de l'espèce humaine.<lb/> Mon ambition seroit de parler du temps
-                     dans lequel nous avons vécu, comme s'il étoit déjà <anchor type="collation"
-                        subtype="add" xml:id="BienMs" corresp="edition_vol_1.xml#BienEd"/>bien loin
-                     de nous.<del hand="#stael" rend="strikethrough">depuis long temps écoulé</del>
+                     dans lequel nous avons vécu, comme s'il étoit déjà bien loin de nous.<del
+                        hand="#stael" rend="strikethrough">depuis long temps écoulé</del>
                      <add hand="#stael">bien loin de nous</add> Les hommes éclairés qui sont
                      toujours contemporains des siècles futurs, <del hand="#stael"
                         rend="strikethrough">de l'avenir</del>
@@ -449,22 +420,23 @@
 
          <app xml:id="noteTitle">
             <!-- note qu'il faut préciser en citant éventuellement l'édition papier-->
-            <note resp="#tesserS"> Le manuscrit n'a pas de titre mais, d'après la correspondance de <rs
-                  ref="index_noms.xml#stael">Germaine de Staël</rs> et de son entourage, le titre
-               qu'elle avait choisi est probablement celui qui est indiqué dans L'<title
+            <note resp="#tesserS"> Le manuscrit n'a pas de titre mais, d'après la correspondance de
+                  <rs ref="index_noms.xml#stael">Germaine de Staël</rs> et de son entourage, le
+               titre qu'elle avait choisi est probablement celui qui est indiqué dans L'<title
                   type="titleChapter" ref="edition_vol_1.xml#considerationsEd">Avis des
                   éditeurs</title>de la première édition. </note>
          </app>
          <app xml:id="noteLetter">
-            <note resp="#tesserS">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de Staël</rs> a été
-               reliée au manuscrit. Elle est adressée au peintre <rs ref="index_noms.xml#gerardF">
-                  François Gérard</rs> à qui elle a donné le manuscrit des <title type="littWork"
-                  ref="index_noms.xml#staël" rend="italic">Considérations</title> pour le remercier
-               des portraits de sa <rs ref="index_noms.xml#stael">mère</rs> et son frère <rs
-                  ref="#staelAu"> Auguste </rs>. Pour Germaine de Staël, elle fait probablement
-               allusion au tableau <title type="painting" ref="index_noms.xml#corinneMisene"
-                  rend="italic">Corinne au Cap Misène</title> réalisé en 1819 et qui se trouve au
-               Musée des Beaux-Arts de <rs ref="index_noms.xml#lyon"/> Lyon.</note>
+            <note resp="#tesserS">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de
+                  Staël</rs> a été reliée au manuscrit. Elle est adressée au peintre <rs
+                  ref="index_noms.xml#gerardF"> François Gérard</rs> à qui elle a donné le manuscrit
+               des <title type="littWork" ref="index_noms.xml#staël" rend="italic"
+                  >Considérations</title> pour le remercier des portraits de sa <rs
+                  ref="index_noms.xml#stael">mère</rs> et son frère <rs ref="#staelAu"> Auguste
+               </rs>. Pour Germaine de Staël, elle fait probablement allusion au tableau <title
+                  type="painting" ref="index_noms.xml#corinneMisene" rend="italic">Corinne au Cap
+                  Misène</title> réalisé en 1819 et qui se trouve au Musée des Beaux-Arts de <rs
+                  ref="index_noms.xml#lyon"/> Lyon.</note>
          </app>
       </listApp>
 
