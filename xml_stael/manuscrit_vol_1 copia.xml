@@ -31,10 +31,10 @@
          </extent>
          <publicationStmt>
             <authority>Università Ca' Foscari Venezia </authority>
-            <address>
-               <settlement ref="index_noms.xml#venezia">Venezia</settlement>
-            </address>
-
+               <address> 
+                  <settlement ref="index_noms.xml#venezia">Venezia</settlement>
+               </address>
+     
             <date when="2023">2023</date>
             <availability status="restricted">
                <licence target="https://https://creativecommons.org/licenses/by-nc/4.0/deed.fr">CC
@@ -262,6 +262,22 @@
             <!-- l'absence de titre dans le manuscrit est signalée par une note explicative -->
             <note resp="#tesserS" target="#noteTitle"/>
 
+
+            <pb n="2r" cert="high" facs="#lettre_albertine_3"/>
+            <note resp="#tesserS" target="#noteLetter"/>
+
+
+            <div type="envelope" hand="#staelA">
+               <!-- enveloppe reliée après la lettre -->
+               <p>
+                  <address>
+                     <addrLine>Monsieur</addrLine>
+                     <lb/>
+                     <addrLine><rs ref="index_noms.xml#gerardF">Monsieur <hi rend="capital"
+                              cert="low">G</hi>érard</rs>.</addrLine>
+                  </address>
+               </p>
+            </div>
             <pb n="1r" facs="#lettre_albertine_1"/>
             <fw type="bibl" place="bottom-left">Achat 22856 </fw>
             <div type="letter" hand="#staelA">
@@ -297,22 +313,6 @@
 
 
             </div>
-            
-            <pb n="2r" cert="high" facs="#lettre_albertine_3"/>
-            <note resp="#tesserS" target="#noteLetter"/>
-            <div type="envelope" hand="#staelA">
-               <!-- enveloppe reliée après la lettre -->
-               <p>
-                  <address>
-                     <addrLine>Monsieur</addrLine>
-                     <lb/>
-                     <addrLine><rs ref="index_noms.xml#gerardF">Monsieur <hi rend="capital"
-                              cert="low">G</hi>érard</rs>.</addrLine>
-                  </address>
-               </p>
-            </div>
-
-
             <pb n="3r" facs="#v1_3r"/>
             <fw type="pageNum" place="top-left">1</fw>
             <fw type="volNum" place="top-left"><del hand="#unknown">1.<hi rend="superscript">er</hi>
