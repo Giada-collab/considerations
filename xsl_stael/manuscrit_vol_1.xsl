@@ -115,6 +115,27 @@
 
     </xsl:template>
 
+
+    <xsl:template match="handShift">
+
+        <div class="tooltip">
+            <img class="copiste" alt="Nouveau copiste" src="../img_stael/copiste.jpg"/>
+
+            <span class="tooltiptext">
+
+                <xsl:for-each select="@scribeRef">
+
+                    <xsl:apply-templates/>
+                    <!-- revoir -->
+                </xsl:for-each>
+
+
+            </span>
+        </div>
+
+    </xsl:template>
+
+
     <xsl:template match="pb">
         <xsl:choose>
             <xsl:when test="@n = '1r'">
@@ -127,10 +148,11 @@
                 <br/>
             </xsl:when>
             <xsl:otherwise>
-                <hr class="finPage"/>
-                <span class="folio">
-                    <xsl:value-of select="@n"/>
-                </span>
+                <hr class="finPage">
+                    <span class="folio">
+                        <xsl:value-of select="@n"/>
+                    </span>
+                </hr>
                 <br/>
                 <br/>
             </xsl:otherwise>
@@ -138,28 +160,24 @@
 
     </xsl:template>
 
+    <!--  variantes -->
 
     <xsl:template match="del[@hand = '#staelA']">
         <span class="delStaelA">
-<xsl:choose>
-    <xsl:when test="child::gap[@reason='illegible']">
-        <xsl:text>xxx</xsl:text>  
-        
-    </xsl:when>
-    <xsl:otherwise>
-        <xsl:apply-templates/>
-    </xsl:otherwise>
-</xsl:choose>
-            
+            <xsl:choose>
+                <xsl:when test="child::gap[@reason = 'illegible']">
+                    <xsl:text>xxx</xsl:text>
+
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates/>
+                </xsl:otherwise>
+            </xsl:choose>
+
         </span>
     </xsl:template>
 
-    <xsl:template match="title[@rend ='underlined']">
 
-        <span class="underlined">
-        <xsl:apply-templates/>
-        </span>
-    </xsl:template>
 
     <xsl:template match="add[@hand = '#staelA']">
         <span class="addStaelA">
@@ -167,10 +185,167 @@
         </span>
     </xsl:template>
 
-    <xsl:template match="del[@hand = '#unknown']">
-        <span class="delUnknown">
+    <xsl:template match="del">
+        <xsl:choose>
+            <xsl:when test="@hand = '#unknown'">
+                <span class="delUnknown">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:when>
+
+            <xsl:when test="@hand = '#schlegelW'">
+                <span class="delSchlegelW">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:when>
+
+            <xsl:when test="@hand = '#stael'">
+                <span class="delStael">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:when>
+
+        </xsl:choose>
+
+    </xsl:template>
+
+    <xsl:template match="add">
+        <xsl:choose>
+            <xsl:when test="@hand = '#unknown'">
+                <span class="addUnknown">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:when>
+
+            <xsl:when test="@hand = '#schlegelW'">
+                <span class="addSchlegelW">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:when>
+
+            <xsl:when test="@hand = '#stael'">
+                <span class="addStael">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:when>
+
+        </xsl:choose>
+
+    </xsl:template>
+
+    <!-- .................... -->
+
+    <xsl:template match="title[@rend = 'underlined']">
+
+        <span class="underlined">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
+
+    <xsl:template match="closer">
+        <p>
+            <xsl:value-of select="salute"/>
+        </p>
+        <br/>
+
+        <p>
+            <xsl:value-of select="signed"/>
+        </p>
+        <br/>
+        <p>
+            <xsl:value-of select="dateline"/>
+        </p>
+        <br/>
+
+
+    </xsl:template>
+
+
+
+
+    <xsl:template match="address">
+        <p>
+            <xsl:value-of select="addrLine[1]"/>
+        </p>
+
+        <p>
+            <xsl:value-of select="addrLine[2]"/>
+        </p>
+        <br/>
+
+
+    </xsl:template>
+
+
+    <xsl:template match="lb">
+        <br/>
+        <xsl:apply-templates/>   </xsl:template>
+
+    <xsl:template match="head[@rend = 'underlined']">
+
+        <p>
+            <span class="underlined">
+                <xsl:apply-templates/>
+            </span>
+        </p>
+    </xsl:template>
+
+    <xsl:template match="head">
+        <xsl:choose>
+            <xsl:when test="@type = 'titlePart'">
+                <div title="titlePart"/>
+            </xsl:when>
+
+            <xsl:when test="@subtype = 'nChapter'">
+                <div title="titleChapter"/>
+                <xsl:apply-templates/>
+                <br/>
+                <br/>
+            </xsl:when>
+            <xsl:when test="@subtype = 'main'">
+                <div title="mainTitleChapter"/>
+                <xsl:apply-templates/>
+                <br/>
+                <br/>
+            </xsl:when>
+
+        </xsl:choose>
+    </xsl:template>
+
+
+    <xsl:template match="hi[@rend = 'superscript']">
+
+        <span class="superscript">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+
+    <xsl:template match="choice">
+        
+        <div class="tooltipReg"> 
+    <xsl:value-of select="reg"/>
+            <span class="tooltiptextReg">
+                <xsl:value-of select="orig"/>      
+                
+            </span> 
+        </div>
+    </xsl:template>
+    
+    <xsl:template match="orig">
+        
+       
+            
+         
+      
+    </xsl:template>
+
+   
+
+
+
+
+
+
 
 </xsl:stylesheet>

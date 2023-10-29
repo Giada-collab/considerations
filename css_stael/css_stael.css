@@ -190,7 +190,7 @@ a:hover {
 
 
 
-/* CSS for main content */
+/* CSS for main content (all pages) */
 
 cite {
 
@@ -203,36 +203,135 @@ cite {
 }
 
 
-.addEditor{
+/* Critical apparatus */
 
-    font-size:14px;
-   font-style:italic;
+
+
+
+.addEditor {
+
+    font-size: 14px;
+    font-style: italic;
 }
 
-.delStaelA{
-    
+
+
+.noteEditoriale {
+
+    width: 30px;
+    height: 30px;
+
+}
+
+
+/* del */
+
+.delStaelA {
+
     text-decoration: line-through;
-    color:#6AB1AE;
-    
+    text-decoration-color:#6AB1AE;
+    text-decoration-thickness: 2px;
+    display: inline;
+
 }
 
-.addStaelA{
-    
-    font-weight: bold;
-    color:#6AB1AE;
-    
+.delUnknown {
+
+    text-decoration: line-through;
+    text-decoration-color: grey;
+    text-decoration-thickness: 2px;
+    display: inline;
+
+
+
 }
+
+
+.delSchlegelW {
+
+    text-decoration: line-through;
+   text-decoration-color: #0077b6;
+  text-decoration-thickness: 2px;
+    display: inline;
+
+
+}
+
+
+.delStael {
+    text-decoration: line-through;
+    text-decoration-color: #D57B69;
+   text-decoration-thickness: 2px;
+    display: inline;
+}
+
+
+/* add */
+
+
+.addStaelA {
+
+    font-weight: bold;
+    color: #6AB1AE;
+
+}
+
+.addUnknown {
+
+    font-weight: bold;
+
+    color: grey;
+    display: inline;
+
+
+}
+
+
+
+
+.addSchlegelW {
+
+    font-weight: bold;
+
+    color: #0077b6;
+    display: inline;
+
+
+}
+
+
+
+.addStael {
+
+    font-weight: bold;
+    color: #D57B69;
+    display: inline;
+
+
+
+}
+
+/* -------------- */
+
 
 
 .underlined {
-    
+
     text-decoration: underline;
-    
+
 }
 
 
 
+.superscript {
 
+    vertical-align: super;
+    font-size: 12px;
+
+}
+
+
+/* revoir tout ce qui suit*/
 
 .cross_out {
 
@@ -254,7 +353,7 @@ cite {
 }
 
 
-#copiste {
+.copiste {
 
     width: 25px;
     height: 25px;
@@ -317,7 +416,7 @@ cite {
     font-size: smaller;
 
 }
-
+/*  revoir précédents */
 
 ul {
     list-style-type: none;
@@ -380,33 +479,31 @@ li {
 }
 
 
-.noteEditoriale {
-
-    width: 30px;
-    height: 30px;
-
-}
-
 
 .finPage {
 
-   border-top: 1px dashed grey;
+    border-top: 1px dashed grey;
 
 }
 
 
-.folio{
+.folio {
 
-   font-size:12px;
-   font-style:italic;
+    font-size: 12px;
+    font-style: italic;
 
 }
+
+/* Tooltips  .............*/
+
+
+
 
 /* Tooltip container */
 .tooltip {
     position: relative;
     display: inline-block;
-    
+
 }
 
 /* Tooltip text */
@@ -431,11 +528,52 @@ li {
     visibility: visible;
 }
 
+/*   ........ */
 
 
 
 
 
+/* Tooltip container */
+.tooltipReg {
+    position: relative;
+    display: inline-block;
+    border-bottom:dotted;
 
-/* --------------------------------------------------------------------------------------------------------------------- */
-/* à partir d'ici ajouts dans le fichier test */
+}
+
+/* Tooltip text */
+.tooltipReg .tooltiptextReg {
+    visibility: hidden;
+    width: 120px;
+    background-color:#d8e2dc;
+    text-align: center;
+    padding: 6px 0;
+    border-radius: 6px;
+    bottom: 100%;
+    left: 50%;
+     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+    /* Position the tooltip text  */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltipReg:hover .tooltiptextReg {
+    visibility: visible;
+}
+
+.tooltipReg .tooltiptextReg::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #d8e2dc transparent transparent transparent;
+}
+
+
+

@@ -258,7 +258,7 @@
    <text>
       <body>
          <div type="volume" n="1">
-
+<!-- Lette d'Albertine de Staël à François Gérard -->
           
             <pb n="1r" facs="#lettre_albertine_1"/>
             <!-- l'absence de titre dans le manuscrit est signalée par une note explicative -->
@@ -329,12 +329,14 @@
             <div type="part" n="1">
                <div type="chapter" n="1">
                   <head type="titlePart" rend="underlined" hand="#unknown">Première partie</head>
-                  <head type="titleChapter">
+                  <head type="titleChapter" subtype="nChapter">
+                     <!-- les <head> suivants n'ont pas encore été expliqués dans les principes d'encodage -->
                      <handShift scribeRef="#randallF"/> 1<hi rend="superscript"
-                     >er</hi>Chapitre.<lb/> Réflexionns générales </head>
+                    
+                        >er</hi> Chapitre.</head> <head type="titleChapter" subtype="main">Réflexions générales </head>
                   <p>La Révolution de France est une des <del hand="#unknown" rend="strikethrough">
                         plus </del> grandes époques de l'ordre social. Ceux qui la considèrent comme
-                     un évènement accidentel, n'ont étendu <app>
+                     un évènement accidentel, n'ont <app>
                         <rdg>
                            <del hand="#schlegelW" rend="strikethrough" seq="1">étendu</del>
                         </rdg>
@@ -346,7 +348,7 @@
                         <rdg>
                            <add hand="#schlegelW" seq="4">porté</add>
                         </rdg>
-                     </app> leurs regards ni dans <app>
+                     </app> leurs regards ni <app>
                         <rdg>
                            <del hand="#schlegelW" rend="strikethrough" seq="1">dans</del>
                         </rdg>
@@ -365,12 +367,12 @@
                         choc auquel ils vouloient s'opposer étoit produit par quelques circonstances
                         particulieres <choice>
                            <orig>, i</orig>
-                           <reg>.I</reg>
-                        </choice> ls se sont donc aveuglés autant qu'ils l'ont pu sur l'enchaînement
+                           <reg>. I</reg>
+                        </choice>ls se sont donc aveuglés autant qu'ils l'ont pu sur l'enchaînement</del>
                            <pb n="3v" facs="#v1_3v>"/>
                         <fw type="catch" place="bottom-right">je</fw>
-                        <fw type="pageNum" place="top-left">2</fw> des faits, et sur la marche
-                        graduelle de la civilisation européenne. <del/>
+                     <fw type="pageNum" place="top-left">2</fw> <del  hand="#unknown" rend="strikethrough">des faits, et sur la marche
+                      graduelle de la civilisation européenne. </del>
                      <lb/> Il suffisoit cependant de jeter un coup d'œil sur les principales crises
                      de l'histoire pour se convaincre <choice>
                         <orig>quelles</orig>
@@ -378,11 +380,11 @@
                      </choice> ont été toutes inévitables quand elles se rattachoient de quelque
                      <!-- un trait vertical dans la marge gauche en correspondance du texte suivant -->
                      manière <metamark spanTo="#quApres" rend="verticalLine"
-                        place="left-hand margin"/> aux progrès <del hand="#schlegelW"
+                        place="left-hand margin"/> <del hand="#schlegelW"
                         rend="strikethrough">aux progrès </del>
                      <add hand="#schlegelW">au developpement</add> des idées, et qu'après <anchor
                         type="metamark" xml:id="quApres"/> une lutte et des malheurs plus ou moins
-                     prolongés <app>
+                     <app>
                         <rdg>
                            <del hand="#stael" rend="strikethrough" seq="1">longs</del>
                         </rdg>
@@ -392,18 +394,18 @@
                            </del>
                         </rdg>
                         <rdg>
-                           <add hand="#stael" seq="4">prolongés</add>
+                           <add hand="#stael" seq="4">prolongés,</add>
                         </rdg>
-                     </app> , le triomphe des lumières a toujours été favorable à la grandeur et à
+                     </app> le triomphe des lumières a toujours été favorable à la grandeur et à
                      l'amélioration de l'espèce humaine.<lb/> Mon ambition seroit de parler du temps
-                     dans lequel nous avons vécu, comme s'il étoit déjà bien loin de nous.<del
+                     dans lequel nous avons vécu, comme s'il étoit déjà <del
                         hand="#stael" rend="strikethrough">depuis long temps écoulé</del>
-                     <add hand="#stael">bien loin de nous</add> Les hommes éclairés qui sont
-                     toujours contemporains des siècles futurs, <del hand="#stael"
+                     <add hand="#stael">bien loin de nous</add>. Les hommes éclairés qui sont
+                     toujours contemporains <del hand="#stael"
                         rend="strikethrough">de l'avenir</del>
-                     <add hand="#stael">des siecles futurs,</add> par leurs pensées, jugeront si
+                     <add hand="#stael">des siecles futurs</add> par leurs pensées, jugeront si
                      j'ai su m'élever à la hauteur d'impartialité que je <pb n="4r"/>
-                     </del>
+             
                   </p>
                </div>
 
