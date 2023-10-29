@@ -103,12 +103,7 @@
 
             <span class="tooltiptext">
 
-                <xsl:for-each select="@target">
-
-                    <xsl:apply-templates/>
-                    <!-- revoir -->
-                </xsl:for-each>
-
+                <xsl:value-of select="@target"/>
 
             </span>
         </div>
@@ -123,13 +118,9 @@
 
             <span class="tooltiptext">
 
-                <xsl:for-each select="@scribeRef">
+                <xsl:value-of select="@scribeRef"/>
 
-                    <xsl:apply-templates/>
-                    <!-- revoir -->
-                </xsl:for-each>
-
-
+              
             </span>
         </div>
 
@@ -334,10 +325,7 @@
     
     <xsl:template match="orig">
         
-       
-            
-         
-      
+     
     </xsl:template>
 
    
