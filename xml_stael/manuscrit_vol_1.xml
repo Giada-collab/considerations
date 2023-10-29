@@ -259,15 +259,16 @@
       <body>
          <div type="volume" n="1">
 
+          
+            <pb n="1r" facs="#lettre_albertine_1"/>
             <!-- l'absence de titre dans le manuscrit est signalée par une note explicative -->
             <note resp="#tesserS" target="#noteTitle"/>
-
-            <pb n="1r" facs="#lettre_albertine_1"/>
+            
+            
             <fw type="bibl" place="bottom-left">Achat 22856 </fw>
             <div type="letter" hand="#staelA">
 
                <!-- voir l'original -->
-
 
                <p>
                   <rs ref="index_noms.xml#gerardF">Vous</rs> m’avez fait un present si precieux,
@@ -359,7 +360,7 @@
                         </rdg>
                      </app> le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et
                      afin de satisfaire leurs passions, ils ont attribué aux hommes du moment ce que
-                     les siècles avoient préparé. <del hand="#unknown" rend="strikethrough"> Les
+                     les siècles avoient préparé. <del  hand="#unknown" rend="strikethrough"> Les
                         adversaires des principes de la Révolution aimoient à se persuader que le
                         choc auquel ils vouloient s'opposer étoit produit par quelques circonstances
                         particulieres <choice>
@@ -369,7 +370,7 @@
                            <pb n="3v" facs="#v1_3v>"/>
                         <fw type="catch" place="bottom-right">je</fw>
                         <fw type="pageNum" place="top-left">2</fw> des faits, et sur la marche
-                        graduelle de la civilisation européenne. </del>
+                        graduelle de la civilisation européenne. <del/>
                      <lb/> Il suffisoit cependant de jeter un coup d'œil sur les principales crises
                      de l'histoire pour se convaincre <choice>
                         <orig>quelles</orig>
@@ -402,6 +403,7 @@
                         rend="strikethrough">de l'avenir</del>
                      <add hand="#stael">des siecles futurs,</add> par leurs pensées, jugeront si
                      j'ai su m'élever à la hauteur d'impartialité que je <pb n="4r"/>
+                     </del>
                   </p>
                </div>
 
@@ -418,16 +420,16 @@
          <head type="titleVolume">Premier volume</head>
 
 
-         <app xml:id="noteTitle">
+         <app >
             <!-- note qu'il faut préciser en citant éventuellement l'édition papier-->
-            <note resp="#tesserS"> Le manuscrit n'a pas de titre mais, d'après la correspondance de
+            <note xml:id="noteTitle"> Le manuscrit n'a pas de titre mais, d'après la correspondance de
                   <rs ref="index_noms.xml#stael">Germaine de Staël</rs> et de son entourage, le
                titre qu'elle avait choisi est probablement celui qui est indiqué dans L'<title
                   type="titleChapter" ref="edition_vol_1.xml#considerationsEd">Avis des
                   éditeurs</title>de la première édition. </note>
          </app>
-         <app xml:id="noteLetter">
-            <note resp="#tesserS">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de
+         <app >
+            <note xml:id="noteLetter">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de
                   Staël</rs> a été reliée au manuscrit. Elle est adressée au peintre <rs
                   ref="index_noms.xml#gerardF"> François Gérard</rs> à qui elle a donné le manuscrit
                des <title type="littWork" ref="index_noms.xml#staël" rend="italic"
