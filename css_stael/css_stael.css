@@ -160,7 +160,10 @@ a:hover {
 }
 
 
-
+a {
+    text-decoration: none;
+    
+}
 
 .volume {
     background-color: white;
@@ -360,7 +363,7 @@ cite {
 
 }
 
-#book {
+.book {
 
     width: 25px;
     height: 25px;
