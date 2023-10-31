@@ -328,7 +328,7 @@
                France</fw>
             <div type="part" n="1">
                <div type="chapter" n="1">
-                  <head type="titlePart" rend="underlined" hand="#unknown">Première partie</head>
+                  <head type="titlePart" rend="underlined"><add hand="#unknown">Première partie</add></head>
                   <head type="titleChapter" subtype="nChapter">
                      <!-- les <head> suivants n'ont pas encore été expliqués dans les principes d'encodage -->
                      <handShift scribeRef="#randallF"/> 1<hi rend="superscript"

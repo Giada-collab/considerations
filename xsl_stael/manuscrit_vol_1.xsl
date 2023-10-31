@@ -4,7 +4,7 @@
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
     <xsl:output method="html" encoding="UTF-8"/>
 
-
+<!-- html commun à toutes les pages -->
 
     <xsl:template match="/">
         <html>
@@ -81,6 +81,9 @@
             </body>
         </html>
     </xsl:template>
+    
+    
+    <!-- éliminer de l'affichage des parties  -->
 
     <xsl:template match="teiHeader">   </xsl:template>
 
@@ -93,36 +96,40 @@
         <div class="volume">
             <xsl:apply-templates/>
         </div>   </xsl:template>
+    
+   
 
 
     <xsl:template match="note[@resp = '#tesserS']">
 
-        <div class="tooltip">
+        <span class="tooltip">
             <img class="noteEditoriale" alt="Note éditoriale" src="../img_stael/note_editoriale.jpg"/>
 
+                
 
             <span class="tooltiptext">
 
-                <xsl:value-of select="@target"/>
-
+                <xsl:for-each select="@target">
+                    <xsl:value-of select="."/>
+                    
+                </xsl:for-each>
             </span>
-        </div>
+        </span>
 
     </xsl:template>
 
 
     <xsl:template match="handShift">
 
-        <div class="tooltip">
+        <span class="tooltip">
             <img class="copiste" alt="Nouveau copiste" src="../img_stael/copiste.jpg"/>
 
             <span class="tooltiptext">
-
-                <xsl:value-of select="@scribeRef"/>
-
-              
+                <xsl:for-each select="@scribeRef">
+                <xsl:value-of select="."/>
+                </xsl:for-each>
             </span>
-        </div>
+        </span>
 
     </xsl:template>
 
