@@ -15,15 +15,14 @@
             <body>
                 <header>
                     <!--Public domain, via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Madame_de_Sta%C3%ABl.jpg-->
-                    <div id="img_top">
-                        <img width="200" height="200" alt="Madame de Staël par François Gérard"
+                   
+                        <img class="img_top" alt="Madame de Staël par François Gérard"
                             src="../img_stael/madame_de_stael.png"/>
-                    </div>
-                    <div class="title_header">
-                        <cite>Considérations sur les principaux événements de la Révolution
-                            française</cite>
-                        <p>de Germaine de Staël : un laboratoire éditorial</p>
-                    </div>
+                    <span class="title_header">
+                        
+                        <cite>Considérations sur les principaux événements<br/> de la Révolution française</cite><br/>
+                        <br/><span class="title_header_sub">de Germaine de Staël</span><br/> <span class="title_header_sub2"> Un laboratoire éditorial</span>  
+                    </span>
                 </header>
                 <div class="background_nav">
                     <div class="topnav">

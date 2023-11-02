@@ -9,31 +9,47 @@ body {
     margin-bottom: 50px;
     font-family: Arial, Verdana, sans-serif;
     color: black;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 header {
-    color: black;
-    text-indent: 90px;
-    height: 180px;
-    font-size: x-large;
-    line-height: 1;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+
 
 }
 
 
 .title_header {
 
-    padding-top: 60px;
+    font-size: 3vw; /* Responsive Font Size */
+    line-height: 1;
+    background-color: linen;
+    text-align: center;
     display: block;
 
 }
 
+.title_header_sub {
 
-#img_top {
+    font-size: 2vw; /* Responsive Font Size */
+
+
+
+}
+
+
+.title_header_sub2 {
+
+    font-size: 0.5em; /* To allow users to resize the text (in the browser menu): em instead of pixels */
+}
+
+
+
+.img_top {
     float: left;
-
+    max-width: 20%; /* W3C: Responsive images will automatically adjust to fit the size of the screen */
+    height: auto;
+ 
 }
 
 .background_nav {
@@ -148,8 +164,8 @@ header {
     width: 100%; /* W3C responsive layout*/
     padding-right: 10px;
     padding-left: 10px;
-    margin-right: 160px;
-    margin-left: 10px;
+    margin-right: 140px;
+    margin-left: 50px;
 
 
 }
@@ -162,7 +178,7 @@ a:hover {
 
 a {
     text-decoration: none;
-    
+
 }
 
 .volume {
@@ -232,7 +248,7 @@ cite {
 .delStaelA {
 
     text-decoration: line-through;
-    text-decoration-color:#6AB1AE;
+    text-decoration-color: #6AB1AE;
     text-decoration-thickness: 2px;
     display: inline;
 
@@ -253,8 +269,8 @@ cite {
 .delSchlegelW {
 
     text-decoration: line-through;
-   text-decoration-color: #0077b6;
-  text-decoration-thickness: 2px;
+    text-decoration-color: #0077b6;
+    text-decoration-thickness: 2px;
     display: inline;
 
 
@@ -264,7 +280,7 @@ cite {
 .delStael {
     text-decoration: line-through;
     text-decoration-color: #D57B69;
-   text-decoration-thickness: 2px;
+    text-decoration-thickness: 2px;
     display: inline;
 }
 
@@ -514,7 +530,7 @@ li {
     visibility: hidden;
     width: 120px;
     background-color: white;
- border-style: outset;
+    border-style: outset;
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
@@ -544,7 +560,7 @@ li {
 .tooltipReg {
     position: relative;
     display: inline-block;
-    border-bottom:dotted;
+    border-bottom: dotted;
 
 }
 
@@ -552,13 +568,13 @@ li {
 .tooltipReg .tooltiptextReg {
     visibility: hidden;
     width: 120px;
-    background-color:#d8e2dc;
+    background-color: #d8e2dc;
     text-align: center;
     padding: 6px 0;
     border-radius: 6px;
     bottom: 100%;
     left: 50%;
-     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 
     /* Position the tooltip text  */
     position: absolute;
@@ -571,15 +587,12 @@ li {
 }
 
 .tooltipReg .tooltiptextReg::after {
-  content: " ";
-  position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #d8e2dc transparent transparent transparent;
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #d8e2dc transparent transparent transparent;
 }
-
-
-
