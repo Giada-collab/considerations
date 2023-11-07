@@ -33,6 +33,7 @@ header {
 .title_header_sub {
 
     font-size: 2vw; /* Responsive Font Size */
+    line-height: 2.5em;
 
 
 
@@ -42,7 +43,8 @@ header {
 .title_header_sub2 {
 
     font-size: 1.5vw; /* To allow users to resize the text (in the browser menu): em instead of pixels */
-    
+    line-height: 2em;
+
 }
 
 
@@ -152,7 +154,7 @@ header {
 
 .container .content {
     position: absolute;
-    top: 0px;
+    bottom: 0px;
     background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: #f1f1f1;
@@ -233,6 +235,16 @@ a {
 
 }
 
+.plan_site {
+
+    margin-left: 40%;
+    line-height: 2em;
+
+
+}
+
+
+
 
 
 /* CSS for main content (all pages) */
@@ -246,6 +258,34 @@ cite {
 
     font-style: italic;
 }
+
+.plan_site {
+
+    margin-left: 40%;
+    line-height: 2em;
+
+
+}
+
+
+
+.underlined {
+
+    text-decoration: underline;
+
+}
+
+
+
+.superscript {
+
+    vertical-align: super;
+    font-size: 12px;
+
+}
+
+
+
 
 
 /* Critical apparatus */
@@ -332,8 +372,6 @@ cite {
 }
 
 
-
-
 .addSchlegelW {
 
     font-weight: bold;
@@ -360,29 +398,11 @@ cite {
 
 
 
-.underlined {
-
-    text-decoration: underline;
-
-}
-
-
-
-.superscript {
-
-    vertical-align: super;
-    font-size: 12px;
-
-}
 
 
 /* revoir tout ce qui suit*/
 
-.cross_out {
 
-    text-decoration: line-through;
-
-}
 
 .addition {
 
@@ -440,10 +460,6 @@ cite {
 
 }
 
-.schlegel {
-    background-color: #c0defa;
-
-}
 
 .auguste {
     background-color: #b1faa7;
@@ -455,12 +471,7 @@ cite {
 
 }
 
-.editorial_note {
-    background-color: #fcac5c;
-    vertical-align: super;
-    font-size: smaller;
 
-}
 /*  revoir précédents */
 
 ul {
@@ -474,29 +485,31 @@ li {
 }
 
 
-
-
-
-
-
 .img_body {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
-    display: block;
-    margin-left: 300px;
-    margin-right: 300px;
+    float: none;
+margin-left: auto;
+  margin-right: auto;
+  display:block;
+
 
 }
 
 
 .legende {
 
-    font-size: 13px;
+    font-size: 0.7em;
     display: block;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: auto;
+  margin-right: auto;
+
 
 }
+
+
+
+
 .img_manuscrit {
 
     margin-left: 50px;
