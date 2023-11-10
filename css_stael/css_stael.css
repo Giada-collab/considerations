@@ -27,6 +27,7 @@ header {
     background-color: linen;
     text-align: center;
     display: block;
+    width: auto;
 
 }
 
@@ -77,13 +78,14 @@ header {
     text-align: center;
     font-weight: bold;
     font-size: 1.5vw;
-    margin-right: 30px;
+
     color: black;
     float: none; /* W3C responsive layout*/
     width: 100%; /* W3C responsive layout*/
     padding-right: 10px;
     padding-left: 10px;
     text-decoration: none; /* no link underlined */
+   
 
 
 }
@@ -154,9 +156,9 @@ header {
 
 .container .content {
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    background: rgba(0, 0, 0, 0.6); /* Black background with 0.6 opacity */
     color: #f1f1f1;
     width: auto;
     padding-left: 30px;
