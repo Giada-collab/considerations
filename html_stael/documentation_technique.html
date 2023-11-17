@@ -15,12 +15,14 @@
     <body>
         <header class="clearfix">
             <!--Public domain, via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Madame_de_Sta%C3%ABl.jpg-->
-            <img  class="img_top" alt="Madame de Staël par François Gérard" src="../img_stael/madame_de_stael.png" >
-            
+            <img class="img_top" alt="Madame de Staël par François Gérard"
+                src="../img_stael/madame_de_stael.png">
             <span class="title_header">
-                
-                <cite>Considérations sur les principaux événements<br/> de la Révolution française</cite><br/>
-                <span class="title_header_sub">de Germaine de Staël: un laboratoire éditorial </span><br/>
+                <cite>Considérations sur les principaux événements<br /> de la Révolution
+                    française</cite>
+                <br />
+                <span class="title_header_sub">de Germaine de Staël: un laboratoire éditorial </span>
+                <br />
             </span>
         </header>
         <div class="background_nav">
@@ -90,17 +92,23 @@
                 (ISNI, VIAF ou Wikidata), les lieux (GeoNames) et les titres d’ouvrages
                 (Wikidata).</p>
             <p> Nous décrivons ci-après les pratiques de balisage en rappelant que dans la page de
-                chaque document il est possible de télécharger le fichier XML correspondant. Les
-                fichiers disponibles sont les suivants&nbsp;:</p>
-            <i>Manuscrit&nbsp;</i>
-            <a href="../xml_stael/manuscrit_vol_1.xml" download="Fichier_XML">
-                <img class="download" src="../img_stael/xml-extension.jpg" alt="XML">
-                <!-- attribution: riajulislam -->
-            </a>
+                chaque document il est possible de télécharger le fichier XML correspondant. Le schéma de balisage est disponible dans l' <a href="../documentation_stael/manuscrit_vol_1_docum.html">ODD (One Document Does-it-all)</a>.
+                <br/>
+                
+                
+                
+                
+                
+                
+                Les
+                fichiers XML disponibles sont les suivants&nbsp;:</p>
+            
+                
             <br />
             <i>Première édition&nbsp;</i>
             <a href="../xml_stael/edition_vol_1.xml" download="Fichier_XML">
                 <img class="download" src="../img_stael/xml-extension.jpg" alt="XML">
+                <!-- attribution: riajulislam !!-->
             </a>
             <br />
             <br />
@@ -142,31 +150,33 @@
                 pu être obtenu, nous sommes en train de tester la méthode “location-referenced” et
                 la position “internal” de l’apparat critique, c’est-à-dire dans le texte. Voici une
                 substitution de Staël&nbsp;: <br /><br /><img src="../img_stael/subst_stael.png"
-                    alt="Substitution Staël" width="700" height="70" />
-            <p> Tout type d’intervention est marquée par l’attribut @hand pour pouvoir distinguer
-                les différents scripteurs dont la liste a été crée dans le &lt;handDesc&gt; du
-                &lt;teiHeader&gt;. Le changement de copiste est indiqué comme dans cet
-                exemple&nbsp;: &lt;handShift scribeRef="#randallF"/&gt;. La distinction entre @hand
-                et @scribeRef permet aussi de distinguer les différentes foncions des scripteurs. Il
-                arrive, en effet, qu’une même personne est tantôt copiste à certains endroits et
-                tantôt auteur de modifications du texte dans d’autres. <br /> Voici un autre exemple
-                pour plus d'une substitution faisant partie d'une intervention unique &nbsp;:</p>
+                    alt="Substitution Staël" width="700" height="70" >
+            <p> Tout type d’intervention est marquée par l’attribut @hand pour pouvoir
+                distinguer les différents scripteurs dont la liste a été crée dans le
+                &lt;handDesc&gt; du &lt;teiHeader&gt;. Le changement de copiste est indiqué comme
+                dans cet exemple&nbsp;: &lt;handShift scribeRef="#randallF"/&gt;. La distinction
+                entre @hand et @scribeRef permet aussi de distinguer les différentes foncions des
+                scripteurs. Il arrive, en effet, qu’une même personne est tantôt copiste à certains
+                endroits et tantôt auteur de modifications du texte dans d’autres. <br /> Dans le
+                cas de plus d'une substitution faisant partie d'une intervention unique, nous avons
+                pris pour base la section "11.3.1.5 Substitutions" des "P5 TEI Guidelines" qui
+                considère l'encodage suivant comme ayant une foction analogue à &lt;subst&gt;&nbsp;: </p>
             <img src="../img_stael/subst2_schlegel.png" alt=" Deux substitutions Schlegel"
                 width="700" height="300" />
-            <p>Dans ce cas, l'ordre des interventions est indiqué par @seq, tandis que @rend
-                restitue la manière dont cette opération se présente dans le document en question.
-                <br /> Il faudra ensuite ajouter le balisage relatif à la collation entre manuscrit
-                et première édition et permettre une comparaison entre les deux textes. Pour rendre
-                ce travail plus aisé, la possibilité d’une mise en regard des deux textes serait
-                souhaitable. <br /> L'index des noms a été mis dans un fichier à part et cela
-                toujours dans le but de déplacer ailleurs tout ce qui n'appartient pas au texte.
-                Dans ce dernier, le balisage onomastique est marqué par &lt;rs&gt; suivi de @ref
-                renvoyant à l'index des noms. Les éléments qui ont été considérés comme le minimum
-                indispensable pour l'identification sont les suivants&nbsp;: <br /><br />
+            <p>L'ordre des interventions est indiqué par @seq, tandis que @rend restitue la manière
+                dont cette opération est effectuée. <br /> Il faudra
+                ensuite ajouter le balisage relatif à la collation entre manuscrit et première
+                édition et permettre une comparaison entre les deux textes. Pour rendre ce travail
+                plus aisé, la possibilité d’une mise en regard des deux textes serait souhaitable.
+                <br /> L'index des noms a été mis dans un fichier à part et cela dans le
+                but de déplacer ailleurs tout ce qui n'appartient pas au texte. Dans ce dernier, le
+                balisage onomastique est marqué par &lt;rs&gt; suivi de @ref renvoyant à l'index des
+                noms. Les éléments qui ont été considérés comme le minimum indispensable pour
+                l'identification sont les suivants&nbsp;: <br /><br />
                 <img src="../img_stael/persName.png" alt=" Deux substitution Staël" width="700"
                     height="300" />
-            <p> L'identification est confiée à l'attribut @ref qui renvoie à un identifiant unique.
-                Voici les éléments de base pour les lieux&nbsp;:</p>
+            <p> L'identification est confiée à l'attribut @ref qui renvoie à un identifiant
+                unique. Voici les éléments de base pour les lieux&nbsp;:</p>
             <img src="../img_stael/listPlace.png" alt=" Deux substitution Staël" width="700"
                 height="130" />
             <p>Dans ce cas également @ref renvoie à des identifiants uniques pour le pays et la
@@ -192,9 +202,7 @@
             <h3>Pratiques d'archivage</h3>
             <h3>Licences</h3>
             <!-- renvoit à mentions légales -->
-            <h3>Sources</h3>
-            disquiet, bvh, austin, proust, becket, varchi, calvin
-        </div>
+            <h3>Sources</h3> disquiet, bvh, austin, proust, becket, varchi, calvin </div>
         <div class="background_nav">
             <div class="footer">
                 <a href="plan_site.html">Plan du site</a>

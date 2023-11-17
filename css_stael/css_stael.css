@@ -70,7 +70,7 @@ header {
 .background_nav {
     background-color: white;
     padding-left: 10px;
-    padding-right: 10px;
+   
 
 }
 
@@ -85,9 +85,17 @@ header {
     padding-right: 10px;
     padding-left: 10px;
     text-decoration: none; /* no link underlined */
-   
+
+}
 
 
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+  background-color:#C0D1A9;
+  color:white;
+  margin-right:0px;
+  margin-left:1px;
 }
 
 
@@ -171,24 +179,6 @@ header {
 }
 
 
-.sidenav {
-    max-width: 180px;
-    position: relative;
-    box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.2);
-    margin: auto;
-    background-color: white;
-
-
-}
-
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 1.5vw;
-    color: black;
-    display: block;
-}
-
 
 
 .footer {
@@ -234,6 +224,7 @@ a {
     text-align: justify;
     width: 60%;
     line-height: 150%;
+    margin:auto;
 
 }
 
@@ -491,9 +482,9 @@ li {
     max-width: 50%;
     height: auto;
     float: none;
-margin-left: auto;
-  margin-right: auto;
-  display:block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 
 
 }
@@ -504,7 +495,7 @@ margin-left: auto;
     font-size: 0.7em;
     display: block;
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
 
 
 }
@@ -551,20 +542,23 @@ margin-left: auto;
 .tooltip {
     position: relative;
     display: inline-block;
+    border-bottom: dotted;
 
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: white;
+    width: 20em;
+    font-size: smaller;
+    background-color: #FFFBE1;
     border-style: outset;
-    text-align: center;
-    padding: 5px 0;
+    text-align: justify;
+    padding: 10px;
     border-radius: 6px;
-    top: -5px;
+    top: -10px;
     left: 105%;
+    
 
     /* Position the tooltip text  */
     position: absolute;
@@ -585,7 +579,7 @@ margin-left: auto;
 
 
 
-/* Tooltip container */
+/* Tooltip container - normalization*/
 .tooltipReg {
     position: relative;
     display: inline-block;
@@ -593,11 +587,12 @@ margin-left: auto;
 
 }
 
-/* Tooltip text */
+/* Tooltip text normalization*/
 .tooltipReg .tooltiptextReg {
     visibility: hidden;
     width: 120px;
-    background-color: #d8e2dc;
+    font-size: smaller;
+    background-color: #EABDB4;
     text-align: center;
     padding: 6px 0;
     border-radius: 6px;
@@ -605,16 +600,16 @@ margin-left: auto;
     left: 50%;
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 
-    /* Position the tooltip text  */
+    /* Position the tooltip text normalization */
     position: absolute;
     z-index: 1;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
+/* Show the tooltip text when you mouse over the tooltip container - normalization */
 .tooltipReg:hover .tooltiptextReg {
     visibility: visible;
 }
-
+/*  Array - Normalization */
 .tooltipReg .tooltiptextReg::after {
     content: " ";
     position: absolute;
@@ -623,5 +618,5 @@ margin-left: auto;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #d8e2dc transparent transparent transparent;
+    border-color: #EABDB4 transparent transparent transparent;
 }

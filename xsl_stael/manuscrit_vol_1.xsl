@@ -4,7 +4,7 @@
     xpath-default-namespace="http://www.tei-c.org/ns/1.0">
     <xsl:output method="html" encoding="UTF-8"/>
 
-<!-- html commun à toutes les pages -->
+    <!-- html commun à toutes les pages -->
 
     <xsl:template match="/">
         <html>
@@ -15,13 +15,17 @@
             <body>
                 <header class="clearfix">
                     <!--Public domain, via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:Madame_de_Sta%C3%ABl.jpg-->
-                   
-                        <img class="img_top" alt="Madame de Staël par François Gérard"
-                            src="../img_stael/madame_de_stael.png"/>
+
+                    <img class="img_top" alt="Madame de Staël par François Gérard"
+                        src="../img_stael/madame_de_stael.png"/>
                     <span class="title_header">
-                        
-                        <cite>Considérations sur les principaux événements<br/> de la Révolution française</cite><br/>
-                        <span class="title_header_sub">de Germaine de Staël: un laboratoire éditorial </span><br/>
+
+                        <cite>Considérations sur les principaux événements<br/> de la Révolution
+                            française</cite>
+                        <br/>
+                        <span class="title_header_sub">de Germaine de Staël: un laboratoire
+                            éditorial </span>
+                        <br/>
                     </span>
                 </header>
                 <div class="background_nav">
@@ -53,18 +57,15 @@
                             <li>
                                 <a href="savoir_plus.html">En savoir plus</a>
                             </li>
+                            <li class="topnav-right"><a href="../xml_stael/manuscrit_vol_1.xml">Fichier
+                                XML</a></li><li class="topnav-right"><a href="../html_stael/principes_editoriaux.html#legende"
+                                    >Légende</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="main_content">
                     <h2 class="title_page">Volume I</h2>
-                    <div class="sidenav">
-                        <a href="manuscrit.html">Retour à <q>Manuscrit</q></a>
-                        <a href="manuscrit_vol_1.html">Deuxième volume</a>
-                        <a href="manuscrit_vol_2.html">Troisième volume</a>
-
-                    </div>
-
+                    
                 </div>
 
                 <xsl:apply-templates/>
@@ -80,9 +81,9 @@
             </body>
         </html>
     </xsl:template>
-    
-    
-    <!-- éliminer de l'affichage des parties  -->
+
+
+    <!-- ne pas afficher des parties  -->
 
     <xsl:template match="teiHeader">   </xsl:template>
 
@@ -95,8 +96,8 @@
         <div class="volume">
             <xsl:apply-templates/>
         </div>   </xsl:template>
-    
-   
+
+
 
 
     <xsl:template match="note[@resp = '#tesserS']">
@@ -104,33 +105,16 @@
         <span class="tooltip">
             <img class="noteEditoriale" alt="Note éditoriale" src="../img_stael/note_editoriale.jpg"/>
 
-                
 
             <span class="tooltiptext">
 
-                <xsl:for-each select="@target">
-                    <xsl:value-of select="."/>
-                    
-                </xsl:for-each>
+                <xsl:apply-templates/>
+
             </span>
         </span>
 
     </xsl:template>
 
-
-    <xsl:template match="handShift">
-
-        <span class="tooltip">
-            <img class="copiste" alt="Nouveau copiste" src="../img_stael/copiste.jpg"/>
-
-            <span class="tooltiptext">
-                <xsl:for-each select="@scribeRef">
-                <xsl:value-of select="."/>
-                </xsl:for-each>
-            </span>
-        </span>
-
-    </xsl:template>
 
 
     <xsl:template match="pb">
@@ -176,11 +160,7 @@
 
 
 
-    <xsl:template match="add[@hand = '#staelA']">
-        <span class="addStaelA">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
+
 
     <xsl:template match="del">
         <xsl:choose>
@@ -222,6 +202,11 @@
 
             <xsl:when test="@hand = '#stael'">
                 <span class="addStael">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:when>
+            <xsl:when test="@hand = '#staelA'">
+                <span class="addStaelA">
                     <xsl:apply-templates/>
                 </span>
             </xsl:when>
@@ -319,25 +304,22 @@
 
 
     <xsl:template match="choice">
-        
-        <div class="tooltipReg"> 
-    <xsl:value-of select="reg"/>
+
+        <span class="tooltipReg">
+            <xsl:value-of select="reg"/>
             <span class="tooltiptextReg">
-                <xsl:value-of select="orig"/>      
-                
-            </span> 
-        </div>
-    </xsl:template>
-    
-    <xsl:template match="orig">
-        
-     
+                <xsl:value-of select="orig"/>
+
+            </span>
+        </span>
     </xsl:template>
 
-   
+    <xsl:template match="title[@rend = 'italic']">
+        <cite>
+            <xsl:apply-templates/>
+        </cite>
 
-
-
+    </xsl:template>
 
 
 
