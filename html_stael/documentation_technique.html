@@ -82,6 +82,18 @@
                 Ce que l’on voit actuellement dans le site web de l’édition représente ainsi le
                 difficile compromis qui a pu être atteint pour l’instant entre ces différentes
                 exigences.</p>
+            <p>La structuration du site se base sur la distinction <span class="foreign_language"
+                >source-output</span> qui prévoit deux niveaux de granularité des données&nbsp;:
+                dans le fichier XML-TEI l'annotation est beaucoup plus riche, alors que l'affichage
+                des données dans le site prévoit une granularité inférieure. Les raisons de ce choix
+                reposent sur l'état expérimental du site du point de vue technique&nbsp;: de
+                nouvelles informations seront graduellement affichées quand le test sur le rendu
+                final aura montré son efficacité à l'égard de la facilité d'utilisation. </p>
+            <p> Nous décrivons ci-après les pratiques de balisage en rappelant que dans la page de
+                chaque document il est possible de télécharger le fichier XML correspondant. Le
+                schéma de balisage est d'ailleurs disponible dans l' <a
+                    href="../documentation_stael/manuscrit_vol_1_docum.html">ODD (One Document
+                    Does-it-all)</a>.
             <h4>Encodage en XML-TEI</h4>
             <p>L’encodage des textes se base sur le langage XML et les <cite>P5 Guidelines</cite> de
                 la <a href="https://tei-c.org/">TEI</a> pour sa structuration. La personnalisation
@@ -91,19 +103,8 @@
                 ISO 639-1:2002 pour les langues et des identifiants uniques pour les personnes
                 (ISNI, VIAF ou Wikidata), les lieux (GeoNames) et les titres d’ouvrages
                 (Wikidata).</p>
-            <p> Nous décrivons ci-après les pratiques de balisage en rappelant que dans la page de
-                chaque document il est possible de télécharger le fichier XML correspondant. Le schéma de balisage est disponible dans l' <a href="../documentation_stael/manuscrit_vol_1_docum.html">ODD (One Document Does-it-all)</a>.
-                <br/>
-                
-                
-                
-                
-                
-                
-                Les
-                fichiers XML disponibles sont les suivants&nbsp;:</p>
-            
-                
+             <br /> Les fichiers XML disponibles sont les
+                suivants&nbsp;:
             <br />
             <i>Première édition&nbsp;</i>
             <a href="../xml_stael/edition_vol_1.xml" download="Fichier_XML">
@@ -150,7 +151,7 @@
                 pu être obtenu, nous sommes en train de tester la méthode “location-referenced” et
                 la position “internal” de l’apparat critique, c’est-à-dire dans le texte. Voici une
                 substitution de Staël&nbsp;: <br /><br /><img src="../img_stael/subst_stael.png"
-                    alt="Substitution Staël" width="700" height="70" >
+                    alt="Substitution Staël" width="700" height="70">
             <p> Tout type d’intervention est marquée par l’attribut @hand pour pouvoir
                 distinguer les différents scripteurs dont la liste a été crée dans le
                 &lt;handDesc&gt; du &lt;teiHeader&gt;. Le changement de copiste est indiqué comme
@@ -164,15 +165,15 @@
             <img src="../img_stael/subst2_schlegel.png" alt=" Deux substitutions Schlegel"
                 width="700" height="300" />
             <p>L'ordre des interventions est indiqué par @seq, tandis que @rend restitue la manière
-                dont cette opération est effectuée. <br /> Il faudra
-                ensuite ajouter le balisage relatif à la collation entre manuscrit et première
-                édition et permettre une comparaison entre les deux textes. Pour rendre ce travail
-                plus aisé, la possibilité d’une mise en regard des deux textes serait souhaitable.
-                <br /> L'index des noms a été mis dans un fichier à part et cela dans le
-                but de déplacer ailleurs tout ce qui n'appartient pas au texte. Dans ce dernier, le
-                balisage onomastique est marqué par &lt;rs&gt; suivi de @ref renvoyant à l'index des
-                noms. Les éléments qui ont été considérés comme le minimum indispensable pour
-                l'identification sont les suivants&nbsp;: <br /><br />
+                dont cette opération est effectuée. <br /> Il faudra ensuite ajouter le balisage
+                relatif à la collation entre manuscrit et première édition et permettre une
+                comparaison entre les deux textes. Pour rendre ce travail plus aisé, la possibilité
+                d’une mise en regard des deux textes serait souhaitable. <br /> L'index des noms a
+                été mis dans un fichier à part et cela dans le but de déplacer ailleurs tout ce qui
+                n'appartient pas au texte. Dans ce dernier, le balisage onomastique est marqué par
+                &lt;rs&gt; suivi de @ref renvoyant à l'index des noms. Les éléments qui ont été
+                considérés comme le minimum indispensable pour l'identification sont les
+                suivants&nbsp;: <br /><br />
                 <img src="../img_stael/persName.png" alt=" Deux substitution Staël" width="700"
                     height="300" />
             <p> L'identification est confiée à l'attribut @ref qui renvoie à un identifiant

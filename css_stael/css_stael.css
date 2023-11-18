@@ -283,9 +283,6 @@ cite {
 
 /* Critical apparatus */
 
-
-
-
 .addEditor {
 
     font-size: 14px;
@@ -313,6 +310,17 @@ cite {
 
 }
 
+.delStaelAu {
+
+    text-decoration: line-through;
+    text-decoration-color: #9DBD8F;
+    text-decoration-thickness: 2px;
+    display: inline;
+
+}
+
+
+
 .delUnknown {
 
     text-decoration: line-through;
@@ -338,10 +346,35 @@ cite {
 
 .delStael {
     text-decoration: line-through;
-    text-decoration-color: #D57B69;
+    text-decoration-color: #D57B69;/* last level of revision */
     text-decoration-thickness: 2px;
     display: inline;
 }
+
+.delStael1 {
+    text-decoration: line-through;
+    text-decoration-color: #1c0601;/* oldest level of revision */
+    text-decoration-thickness: 2px;
+    display: inline;
+}
+
+
+.delStael2 {
+    text-decoration: line-through;
+    text-decoration-color: #752A1B;/* 1st intermediate level of revision */
+    text-decoration-thickness: 2px;
+    display: inline;
+}
+
+
+.addCopiste {
+    text-decoration: line-through;
+    text-decoration-color: #F4CB73;
+    text-decoration-thickness: 2px;
+    display: inline;
+
+}
+
 
 
 /* add */
@@ -354,6 +387,15 @@ cite {
 
 }
 
+
+.addStaelAu {
+
+    font-weight: bold;
+    color: #9DBD8F;
+
+}
+
+
 .addUnknown {
 
     font-weight: bold;
@@ -365,51 +407,97 @@ cite {
 }
 
 
-.addSchlegelW {
+.addSchlegelW {   /* last level of intervention */
 
     font-weight: bold;
 
-    color: #0077b6;
+    color: #0077B6;
     display: inline;
+}
 
+.addSchlegelW1 {
 
+    font-weight: bold;/* oldest level of intervention */
+
+    color: #013754;
+    display: inline;
+}
+
+.addSchlegelW2 {
+
+    font-weight: bold;/* 1st intemediate level of intervention */
+
+    color: #02679E;
+    display: inline;
 }
 
 
 
 .addStael {
 
-    font-weight: bold;
+    font-weight: bold; /* last level of revision */
     color: #D57B69;
     display: inline;
+}
+
+.addStael1 {
+
+    font-weight: bold; /* oldest level of revision */
+    color: #1c0601;
+    display: inline;
+}
+.addStael2 {
+
+    font-weight: bold;/* 1st intemediate level of revision */
+    color: #752A1B;
+    display: inline;
+}
+
+.addStael3 {
+
+    font-weight: bold;/* 2nd intemediate level of revision */
+    color: #9C4938;
+    display: inline;
+}
 
 
+
+.addCopiste {
+    font-weight: bold;
+    color: #F4CB73;
+    display: inline;
+
+}
+
+
+
+
+.crayon {
+    background-color: LightGray;
 
 }
 
 /* -------------- */
 
 
+/* For  section "Principes d'affichage" - general */
 
 
 
-/* revoir tout ce qui suit*/
+.del{
+   text-decoration: line-through; 
+}
 
 
 
-.addition {
+.subst {
 
-    font-style: italic;
+    font-weight: bold; 
 
 }
 
 
-.substitution {
-
-    font-weight: bold;
-
-}
-
+/* icons - start */
 
 .copiste {
 
@@ -425,54 +513,21 @@ cite {
 
 }
 
-
-.rature {
-
-    font-family: sans-serif;
-
-}
-.rature2 {
-    color: #D57B69;
-
-}
-
-.rature3 {
-    color: #853525;
-
-}
+/* icons - end */
 
 
-.variant_stael {
-    background-color: #D57B69;
-
-}
 
 
-.variant_copiste {
-    background-color: #ffedb3;
-
-}
-
-
-.auguste {
-    background-color: #b1faa7;
-
-}
-
-.crayon {
-    background-color: LightGray;
-
-}
-
-
-/*  revoir précédents */
 
 ul {
     list-style-type: none;
     overflow: hidden; /* without this background-color of navigation bar disappear */
 
 }
+
+
 /* text alignement in navigation bar */
+
 li {
     float: left;
 }
@@ -533,9 +588,9 @@ li {
 
 }
 
-/* Tooltips  .............*/
+/* Tooltips  */
 
-
+/* tooltip editorial note */
 
 
 /* Tooltip container */
@@ -573,13 +628,13 @@ li {
 
 
 
-/*   ........ */
+/*   tooltip normalisation */
 
 
 
 
 
-/* Tooltip container - normalization*/
+/* Tooltip container*/
 .tooltipReg {
     position: relative;
     display: inline-block;
@@ -587,7 +642,7 @@ li {
 
 }
 
-/* Tooltip text normalization*/
+/* Tooltip text */
 .tooltipReg .tooltiptextReg {
     visibility: hidden;
     width: 120px;
@@ -600,16 +655,16 @@ li {
     left: 50%;
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
 
-    /* Position the tooltip text normalization */
+    /* Position the tooltip text  */
     position: absolute;
     z-index: 1;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container - normalization */
+/* Show the tooltip text when you mouse over the tooltip container */
 .tooltipReg:hover .tooltiptextReg {
     visibility: visible;
 }
-/*  Array - Normalization */
+/*  Array  */
 .tooltipReg .tooltiptextReg::after {
     content: " ";
     position: absolute;
@@ -620,3 +675,6 @@ li {
     border-style: solid;
     border-color: #EABDB4 transparent transparent transparent;
 }
+
+
+/* .................... */

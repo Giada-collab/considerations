@@ -352,28 +352,28 @@
                   <p>La Révolution de France est une des <del hand="#unknown" rend="strikethrough">
                         plus </del> grandes époques de l'ordre social. Ceux qui la considèrent comme
                      un évènement accidentel, n'ont <app>
-                        <rdg>
-                           <del hand="#schlegelW" rend="strikethrough" seq="1">étendu</del>
+                        <rdg varSeq="1">
+                           <del hand="#schlegelW" rend="strikethrough">étendu</del>
                         </rdg>
-                        <rdg>
-                           <del hand="#schlegelW" rend="strikethrough" seq="3">
-                              <add hand="#schlegelW" seq="2"> étendu</add>
+                        <rdg varSeq="2">
+                           <del hand="#schlegelW" rend="strikethrough">
+                              <add hand="#schlegelW"> étendu</add>
                            </del>
                         </rdg>
-                        <rdg>
-                           <add hand="#schlegelW" seq="4">porté</add>
+                        <rdg varSeq="3">
+                           <add hand="#schlegelW">porté</add>
                         </rdg>
                      </app> leurs regards ni <app>
-                        <rdg>
-                           <del hand="#schlegelW" rend="strikethrough" seq="1">dans</del>
+                        <rdg varSeq="1">
+                           <del hand="#schlegelW" rend="strikethrough">dans</del>
                         </rdg>
-                        <rdg>
-                           <del hand="#schlegelW" rend="strikethrough" seq="3">
-                              <add hand="#schlegelW" seq="2">sur</add>
+                        <rdg varSeq="2">
+                           <del hand="#schlegelW" rend="strikethrough">
+                              <add hand="#schlegelW">sur</add>
                            </del>
                         </rdg>
-                        <rdg>
-                           <add hand="#schlegelW" seq="4">dans</add>
+                        <rdg varSeq="3">
+                           <add hand="#schlegelW">dans</add>
                         </rdg>
                      </app> le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et
                      afin de satisfaire leurs passions, ils ont attribué aux hommes du moment ce que
@@ -401,16 +401,16 @@
                      <del hand="#schlegelW" rend="strikethrough">aux progrès </del>
                      <add hand="#schlegelW">au developpement</add> des idées, et qu'après <anchor
                         type="metamark" xml:id="quApres"/> une lutte et des malheurs plus ou moins <app>
-                        <rdg>
-                           <del hand="#stael" rend="strikethrough" seq="1">longs</del>
+                        <rdg varSeq="1">
+                           <del hand="#stael" rend="strikethrough">longs</del>
                         </rdg>
-                        <rdg>
-                           <del hand="#stael" rend="strikethrough" seq="3">
-                              <add hand="#stael" seq="2">durables</add>
+                        <rdg varSeq="2">
+                           <del hand="#stael" rend="strikethrough">
+                              <add hand="#stael">durables</add>
                            </del>
                         </rdg>
-                        <rdg>
-                           <add hand="#stael" seq="4">prolongés,</add>
+                        <rdg varSeq="3">
+                           <add hand="#stael">prolongés,</add>
                         </rdg>
                      </app> le triomphe des lumières a toujours été favorable à la grandeur et à
                      l'amélioration de l'espèce humaine.<lb/> Mon ambition seroit de parler du temps
