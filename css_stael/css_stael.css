@@ -477,10 +477,10 @@ cite {
 
 }
 
-/* -------------- */
 
 
-/* For  section "Principes d'affichage" - general */
+
+/* Section "Principes d'affichage" */
 
 
 
@@ -494,6 +494,20 @@ cite {
 
     font-weight: bold; 
 
+}
+
+
+/* Section "Documentation technique" */
+
+.imgXml{
+    
+   max-width:70%;
+   height: auto;
+   float:none;
+    
+    
+    
+    
 }
 
 
@@ -588,7 +602,7 @@ li {
 
 }
 
-/* Tooltips  */
+
 
 /* tooltip editorial note */
 

@@ -83,7 +83,7 @@
                 difficile compromis qui a pu être atteint pour l’instant entre ces différentes
                 exigences.</p>
             <p>La structuration du site se base sur la distinction <span class="foreign_language"
-                >source-output</span> qui prévoit deux niveaux de granularité des données&nbsp;:
+                    >source-output</span> qui prévoit deux niveaux de granularité des données&nbsp;:
                 dans le fichier XML-TEI l'annotation est beaucoup plus riche, alors que l'affichage
                 des données dans le site prévoit une granularité inférieure. Les raisons de ce choix
                 reposent sur l'état expérimental du site du point de vue technique&nbsp;: de
@@ -93,8 +93,7 @@
                 chaque document il est possible de télécharger le fichier XML correspondant. Le
                 schéma de balisage est d'ailleurs disponible dans l' <a
                     href="../documentation_stael/manuscrit_vol_1_docum.html">ODD (One Document
-                    Does-it-all)</a>.
-            <h4>Encodage en XML-TEI</h4>
+                    Does-it-all)</a>. <h4>Encodage en XML-TEI</h4>
             <p>L’encodage des textes se base sur le langage XML et les <cite>P5 Guidelines</cite> de
                 la <a href="https://tei-c.org/">TEI</a> pour sa structuration. La personnalisation
                 du schéma reste en tout cas conforme aux recommandations TEI, et ce pour assurer le
@@ -103,9 +102,7 @@
                 ISO 639-1:2002 pour les langues et des identifiants uniques pour les personnes
                 (ISNI, VIAF ou Wikidata), les lieux (GeoNames) et les titres d’ouvrages
                 (Wikidata).</p>
-             <br /> Les fichiers XML disponibles sont les
-                suivants&nbsp;:
-            <br />
+            <br /> Les fichiers XML disponibles sont les suivants&nbsp;: <br />
             <i>Première édition&nbsp;</i>
             <a href="../xml_stael/edition_vol_1.xml" download="Fichier_XML">
                 <img class="download" src="../img_stael/xml-extension.jpg" alt="XML">
@@ -150,8 +147,8 @@
                 de ne pas surcharger le texte avec beaucoup d’annotations. Ce dernier effet n’ayant
                 pu être obtenu, nous sommes en train de tester la méthode “location-referenced” et
                 la position “internal” de l’apparat critique, c’est-à-dire dans le texte. Voici une
-                substitution de Staël&nbsp;: <br /><br /><img src="../img_stael/subst_stael.png"
-                    alt="Substitution Staël" width="700" height="70">
+                substitution de Staël&nbsp;: <br /><br /><img class="imgXml"
+                    src="../img_stael/subst_stael.png" alt="Substitution Staël">
             <p> Tout type d’intervention est marquée par l’attribut @hand pour pouvoir
                 distinguer les différents scripteurs dont la liste a été crée dans le
                 &lt;handDesc&gt; du &lt;teiHeader&gt;. Le changement de copiste est indiqué comme
@@ -162,30 +159,29 @@
                 cas de plus d'une substitution faisant partie d'une intervention unique, nous avons
                 pris pour base la section "11.3.1.5 Substitutions" des "P5 TEI Guidelines" qui
                 considère l'encodage suivant comme ayant une foction analogue à &lt;subst&gt;&nbsp;: </p>
-            <img src="../img_stael/subst2_schlegel.png" alt=" Deux substitutions Schlegel"
-                width="700" height="300" />
-            <p>L'ordre des interventions est indiqué par @seq, tandis que @rend restitue la manière
-                dont cette opération est effectuée. <br /> Il faudra ensuite ajouter le balisage
-                relatif à la collation entre manuscrit et première édition et permettre une
-                comparaison entre les deux textes. Pour rendre ce travail plus aisé, la possibilité
-                d’une mise en regard des deux textes serait souhaitable. <br /> L'index des noms a
-                été mis dans un fichier à part et cela dans le but de déplacer ailleurs tout ce qui
-                n'appartient pas au texte. Dans ce dernier, le balisage onomastique est marqué par
-                &lt;rs&gt; suivi de @ref renvoyant à l'index des noms. Les éléments qui ont été
-                considérés comme le minimum indispensable pour l'identification sont les
-                suivants&nbsp;: <br /><br />
-                <img src="../img_stael/persName.png" alt=" Deux substitution Staël" width="700"
-                    height="300" />
+            <img class="imgXml" src="../img_stael/subst_schlegel.png"
+                alt=" Deux substitutions Schlegel" />
+            <p>L'ordre des interventions est indiqué par @varSeq, tandis que @rend restitue la
+                manière dont cette opération est effectuée. En particulier, l'élément &lt;add&gt;
+                emboîté dans &lt;del&gt; indique une addition qui a été ensuite rayée. <br /> Il
+                faudra ensuite ajouter le balisage relatif à la collation entre manuscrit et
+                première édition et permettre une comparaison entre les deux textes. Pour rendre ce
+                travail plus aisé, la possibilité d’une mise en regard des deux textes pourra être
+                envisagée. <br /> L'index des noms a été mis dans un fichier à part et cela dans le
+                but de déplacer ailleurs tout ce qui n'appartient pas au texte. Dans ce dernier, le
+                balisage onomastique est marqué par &lt;rs&gt; suivi de @ref renvoyant à l'index des
+                noms. Les éléments qui ont été considérés comme le minimum indispensable pour
+                l'identification sont les suivants&nbsp;: <br /><br />
+                <img class="imgXml" src="../img_stael/persName.png" alt=" Deux substitution Staël"
+                 />
             <p> L'identification est confiée à l'attribut @ref qui renvoie à un identifiant
                 unique. Voici les éléments de base pour les lieux&nbsp;:</p>
-            <img src="../img_stael/listPlace.png" alt=" Deux substitution Staël" width="700"
-                height="130" />
+            <img class="imgXml" src="../img_stael/listPlace.png" alt=" Deux substitution Staël" />
             <p>Dans ce cas également @ref renvoie à des identifiants uniques pour le pays et la
                 ville. Pour l'index des ouvrages cités, une solution sémantiquement satisfaisante et
                 en même temps conforme à la TEI n'a pas encore été trouvée. Voici une solution
                 provisoire&nbsp;: </p>
-            <img src="../img_stael/object.png" alt=" Deux substitution Staël" width="700"
-                height="110" />
+            <img class="imgXml" src="../img_stael/object.png" alt=" Deux substitution Staël" />
             <p>L'élément &lt;object&gt; ne peut pas contenir @ref. Nous avons choisi @source qui
                 fournit l'identifiant et, en même temps, la source de laquelle il a été tiré. Le
                 type d'ouvrage doit toujour être précisé avec @type dans &lt;objectName&gt;. Pour
@@ -193,9 +189,7 @@
                 caractésant à travers l'attribut @type.<br /> En ce qui concerne les notes, nous ne
                 les avons distinguées que sur la base de l'auteur de la note. Dans le manuscrit, soi
                 il s’agit d’une note de l’éditeur scientifique soi de Staël. Dans le texte,
-                l’élément &lt;note&gt; est donc suivi de @resp renvoyant à l’un des deux et de
-                @target renvoyant au texte de la note placée dans le &lt;standOff&gt;. Voici un
-                exemple&nbsp;: &lt;note resp="#tesserS" target="#noteTitle"&gt;. <br />
+                l’élément &lt;note&gt; est donc suivi de @resp renvoyant à l’un des deux.
             <h4>Encodage en HTML</h4>
             <h4>Principes d’affichage</h4>
             <!-- title with anchor -->
@@ -203,7 +197,7 @@
             <h3>Pratiques d'archivage</h3>
             <h3>Licences</h3>
             <!-- renvoit à mentions légales -->
-            <h3>Sources</h3> disquiet, bvh, austin, proust, becket, varchi, calvin </div>
+            <h3>Sources</h3> <!--  disquiet, bvh, austin, proust, becket, varchi, calvin --></div>
         <div class="background_nav">
             <div class="footer">
                 <a href="plan_site.html">Plan du site</a>
