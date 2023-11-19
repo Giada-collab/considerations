@@ -112,16 +112,21 @@
             <br />
             <p><i> Balisage physique</i>&nbsp;: contribuer à une meilleure connaissance des
                 manuscrits de Staël et de sa manière de travailler est un autre objectif de ce
-                projet. Des métadonnées et un encodage du texte plus riches sur cet aspect sont donc
-                un travail qui a été prévu dans ses phases ultérieures. Pour l’instant, ces
+                projet. Des métadonnées et un encodage du texte plus détaillés sur cet aspect sont
+                donc un travail qui a été prévu dans ses phases ultérieures. Pour l’instant, ces
                 informations ne sont que partiellement confiées aux fac-similé introduit à l’aide de
-                l’attribut @facs dans &lt;pb&gt; qui marque le début d’une nouvelle page. <br />
-                D’autres informations sur la page comme le numéro di page, de cahier (manuscrit) ou
-                le titre courant (première édition) sont introduites à l’aide de &lt;fw&gt; qui est
-                toujours suivi des attributs @type et @place. <br /> L’élément &lt;hi&gt; enfin est
-                utilisé avec @rend pour mettre en évidence des mots ou des lettres graphiquement
-                distincts du reste comme, par exemple, une lettre en exposant.<br /> Ce balisage ne
-                figure que dans le fichier XML et n’est pas affiché dans la page web. <br />
+                l’attribut @facs dans &lt;pb&gt; qui marque le début d’une nouvelle page. <br />La
+                pagination que nous avons adoptée est celle de la BnF qui a été introduite de
+                manière régulière dans tous les trois volumes. La pagination manuscrite, placée
+                normalement en haut a gauche de chaque page, est beaucoup plus irrégulière parce que
+                elle est le résultat des différents déplacements de feuillets. Nous l'avons décrite
+                à l'aide de l'élément &lt;fw&gt; suivi de @type="pageNum". <br /> D’autres
+                informations sur la page comme le numéro de cahier (manuscrit) ou le titre
+                courant (première édition) sont introduites à l’aide de &lt;fw&gt; qui est toujours
+                suivi des attributs @type et @place. <br /> L’élément &lt;hi&gt; enfin est utilisé
+                avec @rend pour mettre en évidence des mots ou des lettres graphiquement distincts
+                du reste comme, par exemple, une lettre en exposant.<br /> Ce balisage ne figure que
+                dans le fichier XML et n’est pas affiché dans la page web. <br />
                 <i> Balisage logique</i>&nbsp;: la subdivision du texte est exprimée par l’élément
                 &lt;div&gt; toujours suivi de @type pour indiquer la typologie de la section
                 (préface, chapitre, partie) et, le cas échéant, de @n pour indiquer le numéro

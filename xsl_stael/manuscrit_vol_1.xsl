@@ -60,6 +60,7 @@
                             <li class="topnav-right"><a href="../xml_stael/manuscrit_vol_1.xml">Fichier
                                 XML</a></li><li class="topnav-right"><a href="../html_stael/principes_editoriaux.html#legende"
                                     >Légende</a></li>
+                            <li class="topnav-right"><a href="../html_stael/manuscrit.html">Retour à "Manuscrit"</a></li>
                         </ul>
                     </div>
                 </div>

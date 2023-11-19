@@ -328,7 +328,7 @@
             </div>
 
 
-            <pb n="3r" facs="#v1_3r"/>
+            <pb n="3r" type="nBnF" facs="#v1_3r"/>
             <fw type="pageNum" place="top-left">1</fw>
             <fw type="volNum" place="top-left"><del hand="#unknown">1.<hi rend="superscript">er</hi>
                   Volume</del></fw>

@@ -38,7 +38,7 @@
          <head>Index des noms</head>
 
          <div type="indexPeople">
-            <head>Index des noms des personnes</head>
+            <head>Index des noms de personne</head>
 
             <listPerson>
                <person>
@@ -74,7 +74,6 @@
                   <persName xml:id="staelA" ref="https://isni.org/isni/0000000108020725">
                      <surname>Staël-Holstein</surname>
                      <forename>Albertine</forename>
-                     <roleName>Baronesse</roleName>
                      <nameLink>de</nameLink>
                   </persName>
                   <birth>
@@ -163,7 +162,7 @@
          <div type="indexPlaces">
             <!-- Comme il est en grande partie question d'événements se déroulant en France, ce pays n'est pas indexé -->
             <!-- utilisation du standard ISO 3166 pour le code pays -->
-            <head>Index des lieux</head>
+            <head>Index des noms de lieu</head>
             <listPlace>
                <place>
                   <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR">France</country>
@@ -189,7 +188,7 @@
 
 
          <div type="indexWorks">
-            <head>Index des ouvrages cités</head> <!-- ajouter identifiants pour les ouvrages -->
+            <head>Index des ouvrages </head> <!-- ajouter identifiants pour les ouvrages -->
             <listObject>
                <object xml:id="considerationsMS">
                   <objectIdentifier>
