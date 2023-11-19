@@ -321,7 +321,15 @@
 
     </xsl:template>
 
-
+<xsl:template match="add[@type = 'addition']">
+    <span class="addition">
+        
+        <xsl:apply-templates/> 
+        
+    </span>
+    
+    
+</xsl:template>
 
 
 </xsl:stylesheet>

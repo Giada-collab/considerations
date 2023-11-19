@@ -91,9 +91,9 @@
                 final aura montré son efficacité à l'égard de la facilité d'utilisation. </p>
             <p> Nous décrivons ci-après les pratiques de balisage en rappelant que dans la page de
                 chaque document il est possible de télécharger le fichier XML correspondant. Le
-                schéma de balisage est d'ailleurs disponible dans l' <a
-                    href="../documentation_stael/manuscrit_vol_1_docum.html">ODD (One Document
-                    Does-it-all)</a>. <h4>Encodage en XML-TEI</h4>
+                schéma de balisage est d'ailleurs disponible dans l'<a
+                    href="../documentation_stael/manuscrit_vol_1_docum.html">ODD (<cite>One Document
+                        Does-it-all</cite>)</a>. <h4>Encodage en XML-TEI</h4>
             <p>L’encodage des textes se base sur le langage XML et les <cite>P5 Guidelines</cite> de
                 la <a href="https://tei-c.org/">TEI</a> pour sa structuration. La personnalisation
                 du schéma reste en tout cas conforme aux recommandations TEI, et ce pour assurer le
@@ -163,15 +163,17 @@
                 alt=" Deux substitutions Schlegel" />
             <p>L'ordre des interventions est indiqué par @varSeq, tandis que @rend restitue la
                 manière dont cette opération est effectuée. En particulier, l'élément &lt;add&gt;
-                emboîté dans &lt;del&gt; indique une addition qui a été ensuite rayée. <br /> Il
-                faudra ensuite ajouter le balisage relatif à la collation entre manuscrit et
-                première édition et permettre une comparaison entre les deux textes. Pour rendre ce
-                travail plus aisé, la possibilité d’une mise en regard des deux textes pourra être
-                envisagée. <br /> L'index des noms a été mis dans un fichier à part et cela dans le
-                but de déplacer ailleurs tout ce qui n'appartient pas au texte. Dans ce dernier, le
-                balisage onomastique est marqué par &lt;rs&gt; suivi de @ref renvoyant à l'index des
-                noms. Les éléments qui ont été considérés comme le minimum indispensable pour
-                l'identification sont les suivants&nbsp;: <br /><br />
+                emboîté dans &lt;del&gt; indique une addition qui a été ensuite rayée. Pour
+                distinguer dans les différents &lt;add&gt; ce qui fait partie d'une substition de ce
+                qui est une addition tout court, sous avons ajouté pour ces dernières l'attribut
+                @type="addition".<br /> Il faudra ensuite ajouter le balisage relatif à la collation
+                entre manuscrit et première édition et permettre une comparaison entre les deux
+                textes. Pour rendre ce travail plus aisé, la possibilité d’une mise en regard des
+                deux textes pourra être envisagée. <br /> L'index des noms a été mis dans un fichier
+                à part et cela dans le but de déplacer ailleurs tout ce qui n'appartient pas au
+                texte. Dans ce dernier, le balisage onomastique est marqué par &lt;rs&gt; suivi de
+                @ref renvoyant à l'index des noms. Les éléments qui ont été considérés comme le
+                minimum indispensable pour l'identification sont les suivants&nbsp;: <br /><br />
                 <img class="imgXml" src="../img_stael/persName.png" alt=" Deux substitution Staël"
                  />
             <p> L'identification est confiée à l'attribut @ref qui renvoie à un identifiant
@@ -190,14 +192,15 @@
                 les avons distinguées que sur la base de l'auteur de la note. Dans le manuscrit, soi
                 il s’agit d’une note de l’éditeur scientifique soi de Staël. Dans le texte,
                 l’élément &lt;note&gt; est donc suivi de @resp renvoyant à l’un des deux.
-            <h4>Encodage en HTML</h4>
+                <h4>Encodage en HTML</h4>
             <h4>Principes d’affichage</h4>
             <!-- title with anchor -->
             <h3>Outils numériques</h3>
             <h3>Pratiques d'archivage</h3>
             <h3>Licences</h3>
             <!-- renvoit à mentions légales -->
-            <h3>Sources</h3> <!--  disquiet, bvh, austin, proust, becket, varchi, calvin --></div>
+            <h3>Sources</h3>
+            <!--  disquiet, bvh, austin, proust, becket, varchi, calvin --></div>
         <div class="background_nav">
             <div class="footer">
                 <a href="plan_site.html">Plan du site</a>

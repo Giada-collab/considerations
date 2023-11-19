@@ -342,7 +342,7 @@
                France</fw>
             <div type="part" n="1">
                <div type="chapter" n="1">
-                  <head type="titlePart" rend="underlined"><add hand="#unknown">Première
+                  <head type="titlePart" rend="underlined"><add type="addition" hand="#unknown">Première
                         partie</add></head>
                   <head type="titleChapter" subtype="nChapter">
                      <!-- les <head> suivants n'ont pas encore été expliqués dans les principes d'encodage -->

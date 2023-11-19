@@ -351,20 +351,6 @@ cite {
     display: inline;
 }
 
-.delStael1 {
-    text-decoration: line-through;
-    text-decoration-color: #1c0601;/* oldest level of revision */
-    text-decoration-thickness: 2px;
-    display: inline;
-}
-
-
-.delStael2 {
-    text-decoration: line-through;
-    text-decoration-color: #752A1B;/* 1st intermediate level of revision */
-    text-decoration-thickness: 2px;
-    display: inline;
-}
 
 
 .addCopiste {
@@ -415,21 +401,6 @@ cite {
     display: inline;
 }
 
-.addSchlegelW1 {
-
-    font-weight: bold;/* oldest level of intervention */
-
-    color: #013754;
-    display: inline;
-}
-
-.addSchlegelW2 {
-
-    font-weight: bold;/* 1st intemediate level of intervention */
-
-    color: #02679E;
-    display: inline;
-}
 
 
 
@@ -440,25 +411,6 @@ cite {
     display: inline;
 }
 
-.addStael1 {
-
-    font-weight: bold; /* oldest level of revision */
-    color: #1c0601;
-    display: inline;
-}
-.addStael2 {
-
-    font-weight: bold;/* 1st intemediate level of revision */
-    color: #752A1B;
-    display: inline;
-}
-
-.addStael3 {
-
-    font-weight: bold;/* 2nd intemediate level of revision */
-    color: #9C4938;
-    display: inline;
-}
 
 
 
@@ -470,7 +422,12 @@ cite {
 }
 
 
-
+.addition{
+    
+     font-style: italic;
+    
+    
+}
 
 .crayon {
     background-color: LightGray;
