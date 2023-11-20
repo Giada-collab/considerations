@@ -121,11 +121,11 @@
                 normalement en haut a gauche de chaque page, est beaucoup plus irrégulière parce que
                 elle est le résultat des différents déplacements de feuillets. Nous l'avons décrite
                 à l'aide de l'élément &lt;fw&gt; suivi de @type="pageNum". <br /> D’autres
-                informations sur la page comme le numéro de cahier (manuscrit) ou le titre
-                courant (première édition) sont introduites à l’aide de &lt;fw&gt; qui est toujours
-                suivi des attributs @type et @place. <br /> L’élément &lt;hi&gt; enfin est utilisé
-                avec @rend pour mettre en évidence des mots ou des lettres graphiquement distincts
-                du reste comme, par exemple, une lettre en exposant.<br /> Ce balisage ne figure que
+                informations sur la page comme le numéro de cahier (manuscrit) ou le titre courant
+                (première édition) sont introduites à l’aide de &lt;fw&gt; qui est toujours suivi
+                des attributs @type et @place. <br /> L’élément &lt;hi&gt; enfin est utilisé avec
+                @rend pour mettre en évidence des mots ou des lettres graphiquement distincts du
+                reste comme, par exemple, une lettre en exposant.<br /> Ce balisage ne figure que
                 dans le fichier XML et n’est pas affiché dans la page web. <br />
                 <i> Balisage logique</i>&nbsp;: la subdivision du texte est exprimée par l’élément
                 &lt;div&gt; toujours suivi de @type pour indiquer la typologie de la section
@@ -179,24 +179,23 @@
                 texte. Dans ce dernier, le balisage onomastique est marqué par &lt;rs&gt; suivi de
                 @ref renvoyant à l'index des noms. Les éléments qui ont été considérés comme le
                 minimum indispensable pour l'identification sont les suivants&nbsp;: <br /><br />
-                <img class="imgXml" src="../img_stael/persName.png" alt=" Deux substitution Staël"
+                <img class="imgXml" src="../img_stael/persName.png" alt=" Encodage noms de personne"
                  />
             <p> L'identification est confiée à l'attribut @ref qui renvoie à un identifiant
                 unique. Voici les éléments de base pour les lieux&nbsp;:</p>
-            <img class="imgXml" src="../img_stael/listPlace.png" alt=" Deux substitution Staël" />
+            <img class="imgXml" src="../img_stael/listPlace.png" alt=" Encodage noms de lieu" />
             <p>Dans ce cas également @ref renvoie à des identifiants uniques pour le pays et la
                 ville. Pour l'index des ouvrages cités, une solution sémantiquement satisfaisante et
                 en même temps conforme à la TEI n'a pas encore été trouvée. Voici une solution
                 provisoire&nbsp;: </p>
-            <img class="imgXml" src="../img_stael/object.png" alt=" Deux substitution Staël" />
-            <p>L'élément &lt;object&gt; ne peut pas contenir @ref. Nous avons choisi @source qui
-                fournit l'identifiant et, en même temps, la source de laquelle il a été tiré. Le
-                type d'ouvrage doit toujour être précisé avec @type dans &lt;objectName&gt;. Pour
-                introduire l'auteur, nous avons dû utiliser encore &lt;objectName&gt; en le
-                caractésant à travers l'attribut @type.<br /> En ce qui concerne les notes, nous ne
-                les avons distinguées que sur la base de l'auteur de la note. Dans le manuscrit, soi
-                il s’agit d’une note de l’éditeur scientifique soi de Staël. Dans le texte,
-                l’élément &lt;note&gt; est donc suivi de @resp renvoyant à l’un des deux.
+            <img class="imgXml" src="../img_stael/term.png" alt=" Encodage ouvrages" />
+            <p> La liste des ouvrages a été créée à l'aide des éléments &lt;index&gt; et
+                &lt;term&gt;. Comme ce dernier n'aide pas à l'identification des objets décrits,
+                cette fonction est confiée à l'attribut @type dans &lt;objectName&gt; pour les
+                ouvrages et dans &lt;name&gt; pour les auteurs. <br /> En ce qui concerne les notes,
+                nous ne les avons distinguées que sur la base de l'auteur de la note. Dans le
+                manuscrit, soi il s’agit d’une note de l’éditeur scientifique soi de Staël. Dans le
+                texte, l’élément &lt;note&gt; est donc suivi de @resp renvoyant à l’un des deux.
                 <h4>Encodage en HTML</h4>
             <h4>Principes d’affichage</h4>
             <!-- title with anchor -->

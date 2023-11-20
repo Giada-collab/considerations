@@ -1,5 +1,5 @@
 
-/* Structure */
+/* BASIC STRUCTURE ALL PAGES*/
 
 body {
     background-color: linen;
@@ -65,7 +65,7 @@ header {
 }
 
 
-
+/* navigation bar */
 
 .background_nav {
     background-color: white;
@@ -89,10 +89,10 @@ header {
 }
 
 
-/* Right-aligned section inside the top navigation */
+
 .topnav-right {
   float: right;
-  background-color:#C0D1A9;
+  background-color:#C0D1A9;/* Right-aligned section inside the top navigation */
   color:white;
   margin-right:0px;
   margin-left:1px;
@@ -131,6 +131,55 @@ header {
 
 
 
+
+ul {
+    list-style-type: none;
+    overflow: hidden; /* without this background-color of navigation bar disappear */
+
+}
+
+
+
+
+li {
+    float: left;/* text alignement in navigation bar */
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    text-align: center;
+    color: black;
+    background-color: white;
+    margin-top: 50px;
+    font-size: 1.3vw;
+
+
+}
+
+
+.footer a {
+
+    text-decoration: none;
+    color: black;
+    float: none; /* W3C responsive layout*/
+    width: 100%; /* W3C responsive layout*/
+    padding-right: 10px;
+    padding-left: 10px;
+
+
+
+
+}
+
+
+/* end footer */
+
+
+
 .main_content {
 
     background-color: linen;
@@ -143,11 +192,44 @@ header {
 
 .title_page {
 
-    text-align: center;
+    text-align: center; /* <h3> for each page */
 
 }
 
 
+/* CSS main content all pages */
+
+
+a:hover {
+    background-color: #D57B69;
+    color: black;
+}
+
+
+a {
+    text-decoration: none;
+
+}
+
+
+
+cite {
+
+    font-style: italic;
+}
+
+.foreign_language {
+
+    font-style: italic;
+}
+
+
+
+
+/* HOME */
+
+
+/* Img home */
 .container {
     position: relative;
     max-width: 100%;
@@ -175,47 +257,10 @@ header {
     font-size: 1.8vw;
     line-height: 1.5;
 
-
+/* img home end */
 }
 
-
-
-
-.footer {
-    text-align: center;
-    color: black;
-    background-color: white;
-    margin-top: 50px;
-    font-size: 1.3vw;
-
-
-}
-
-
-.footer a {
-
-    text-decoration: none;
-    color: black;
-    float: none; /* W3C responsive layout*/
-    width: 100%; /* W3C responsive layout*/
-    padding-right: 10px;
-    padding-left: 10px;
-
-
-
-
-}
-
-a:hover {
-    background-color: #D57B69;
-    color: black;
-}
-
-
-a {
-    text-decoration: none;
-
-}
+/* ???? */
 
 .volume {
     background-color: white;
@@ -237,30 +282,7 @@ a {
 }
 
 
-
-
-
-/* CSS for main content (all pages) */
-
-cite {
-
-    font-style: italic;
-}
-
-.foreign_language {
-
-    font-style: italic;
-}
-
-.plan_site {
-
-    margin-left: 40%;
-    line-height: 2em;
-
-
-}
-
-
+/* MANUSCRIT VOLUME I */
 
 .underlined {
 
@@ -273,7 +295,7 @@ cite {
 .superscript {
 
     vertical-align: super;
-    font-size: 12px;
+    font-size: 0.75em;
 
 }
 
@@ -281,11 +303,11 @@ cite {
 
 
 
-/* Critical apparatus */
+/* CRITICAL APPARATUS */
 
 .addEditor {
 
-    font-size: 14px;
+    font-size: 0.875em;
     font-style: italic;
 }
 
@@ -346,7 +368,7 @@ cite {
 
 .delStael {
     text-decoration: line-through;
-    text-decoration-color: #D57B69;/* last level of revision */
+    text-decoration-color: #D57B69;
     text-decoration-thickness: 2px;
     display: inline;
 }
@@ -393,7 +415,7 @@ cite {
 }
 
 
-.addSchlegelW {   /* last level of intervention */
+.addSchlegelW {   
 
     font-weight: bold;
 
@@ -406,7 +428,7 @@ cite {
 
 .addStael {
 
-    font-weight: bold; /* last level of revision */
+    font-weight: bold; 
     color: #D57B69;
     display: inline;
 }
@@ -456,19 +478,16 @@ cite {
 
 /* Section "Documentation technique" */
 
+/* icons  */
+
 .imgXml{
     
    max-width:70%;
    height: auto;
-   float:none;
-    
-    
-    
+   float:none;  
     
 }
 
-
-/* icons - start */
 
 .copiste {
 
@@ -487,21 +506,6 @@ cite {
 /* icons - end */
 
 
-
-
-
-ul {
-    list-style-type: none;
-    overflow: hidden; /* without this background-color of navigation bar disappear */
-
-}
-
-
-/* text alignement in navigation bar */
-
-li {
-    float: left;
-}
 
 
 .img_body {
@@ -554,12 +558,12 @@ li {
 
 .folio {
 
-    font-size: 12px;
+    font-size: 0.75em;
     font-style: italic;
 
 }
 
-
+/* TOOLTIPS */
 
 /* tooltip editorial note */
 
@@ -600,9 +604,6 @@ li {
 
 
 /*   tooltip normalisation */
-
-
-
 
 
 /* Tooltip container*/
@@ -648,4 +649,4 @@ li {
 }
 
 
-/* .................... */
+/* END TOOLTIPS */

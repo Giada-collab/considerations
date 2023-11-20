@@ -164,47 +164,42 @@
             <!-- utilisation du standard ISO 3166 pour le code pays -->
             <head>Index des noms de lieu</head>
             <listPlace>
-               <place>
+               <place xml:id="paris">
                   <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR">France</country>
-                  <settlement xml:id="paris" ref="https://www.geonames.org/2988507/paris.html">
+                  <settlement  ref="https://www.geonames.org/2988507/paris.html">
                      Paris</settlement>
                </place>
-            </listPlace>
-
-            <listPlace>
-               <place>
+           
+               <place xml:id="lyon">
                   <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR">France</country>
-                  <settlement xml:id="lyon" ref="https://www.geonames.org/2996944/lyon.html">
+                  <settlement  ref="https://www.geonames.org/2996944/lyon.html">
                      Lyon</settlement>
                </place>
-            </listPlace>
-            <listPlace>
-               <place>
+          
+               <place xml:id="venezia">
                   <country key="IT" ref="https://www.iso.org/obp/ui/#iso:code:3166:IT">Italie</country>
-                  <settlement xml:id="venezia" ref="https://www.geonames.org/3164603/venice.html">Venise</settlement>
+                  <settlement  ref="https://www.geonames.org/3164603/venice.html">Venise</settlement>
                </place>  
             </listPlace>
          </div>
 
 
          <div type="indexWorks">
-            <head>Index des ouvrages </head> <!-- ajouter identifiants pour les ouvrages -->
-            <listObject>
-               <object xml:id="considerationsMS">
-                  <objectIdentifier>
-                     <objectName type="littWork" rend="italic">Considérations sur les principaux
-                        événements de la Révolution française</objectName>
-                     <objectName type="author" ref="#stael">Germanine de Staël</objectName>
-                  </objectIdentifier>
-               </object>
-               <object xml:id="corinneMisene" source="https://www.wikidata.org/wiki/Q17176642">
-                  <objectIdentifier>
-                     <objectName type="painting" rend="italic">Corinne au Cap Misène</objectName>
-                     <objectName type="author" ref="#gerardF">François Gérard</objectName>
-                  </objectIdentifier>
-               </object>
-            </listObject>
-
+            <head>Index des ouvrages </head> 
+            <index>
+               <term xml:id="considerationsMS">
+                  <objectName type="littWork" rend="italic" ref="https://www.wikidata.org/wiki/Q107179831">Considérations sur les principaux
+                     événements de la Révolution française</objectName>
+                  <name type="author" ref="#stael">Germaine de Staël</name>
+               </term>
+               
+               <term xml:id="corinneMisene">
+                  <objectName type="painting" rend="italic" ref="https://www.wikidata.org/wiki/Q17176642">Corinne au Cap Misène</objectName>
+                  <name type="author" ref="#gerardF">François Gérard</name>
+                  
+               </term>
+        
+        </index>   
          </div>
       </body>
    </text>

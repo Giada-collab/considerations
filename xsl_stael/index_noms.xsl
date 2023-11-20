@@ -98,8 +98,7 @@
     
     <xsl:template match="person">
      
-        <xsl:for-each select="persName">
-            <xsl:sort select="persName" order="descending"/>   
+        <xsl:for-each select="persName">     
         <span class="persName">
            <xsl:attribute name="id">
                <xsl:value-of select="@xml:id"/>  
@@ -117,7 +116,6 @@
            
         </xsl:for-each> 
         <xsl:for-each select="birth">
-            
                 <xsl:text> (</xsl:text>   
                 <xsl:value-of select="date"/>
                 
@@ -126,13 +124,63 @@
         <xsl:for-each select="death">  
                 <xsl:value-of select="date"/> 
                 <xsl:text>) </xsl:text>
-              
+       
         </xsl:for-each>
         
         <br/>
         <br/>
     
     </xsl:template>
+    
+    
+    <xsl:template match="place">
    
+            <span class="place">
+              
+                <xsl:attribute name="id">
+                    <xsl:value-of select="@xml:id"/>  
+                </xsl:attribute> 
+                <xsl:apply-templates select="settlement"/>
+                <xsl:text> (</xsl:text>
+                <xsl:apply-templates select="country"/>
+                <xsl:text>)</xsl:text>
+            </span>
+        
+        <br/>
+        <br/>
+    
+    </xsl:template>
+    
+    
+    <xsl:template match="term">
+        
+        <span class="term">
+            
+            <xsl:attribute name="id">
+                <xsl:value-of select="@xml:id"/>  
+            </xsl:attribute> 
+          
+                <cite>
+                    <xsl:value-of select="objectName"/>
+                  
+                </cite>     
+                
+                <xsl:text> (</xsl:text>
+            
+            <xsl:value-of select="name"/>
+            
+            <xsl:text>)</xsl:text>
+          
+            <br/>
+            <br/>
+                   
+        </span>
+        
+        <br/>
+       
+        
+    </xsl:template>  
+    
+    
         
 </xsl:stylesheet>
