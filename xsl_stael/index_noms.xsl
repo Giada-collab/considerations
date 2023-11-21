@@ -61,11 +61,9 @@
           </div>
           <div class="main_content">
               <h2 class="title_page">Index des noms</h2>
-              
-          </div>
-          
+        
           <xsl:apply-templates/>
-          
+          </div>
           
           <div class="background_nav">
               <div class="footer">
@@ -97,8 +95,9 @@
    
     
     <xsl:template match="person">
-     
-        <xsl:for-each select="persName">     
+   
+        <xsl:for-each select="persName">  
+            <xsl:sort select="surname"/>
         <span class="persName">
            <xsl:attribute name="id">
                <xsl:value-of select="@xml:id"/>  
@@ -113,7 +112,7 @@
             <xsl:value-of select="nameLink"/>
           
         </span>
-           
+          
         </xsl:for-each> 
         <xsl:for-each select="birth">
                 <xsl:text> (</xsl:text>   
@@ -128,7 +127,7 @@
         </xsl:for-each>
         
         <br/>
-        <br/>
+       
     
     </xsl:template>
     
@@ -147,15 +146,13 @@
             </span>
         
         <br/>
-        <br/>
+       
     
     </xsl:template>
     
     
     <xsl:template match="term">
-        
         <span class="term">
-            
             <xsl:attribute name="id">
                 <xsl:value-of select="@xml:id"/>  
             </xsl:attribute> 
@@ -170,10 +167,7 @@
             <xsl:value-of select="name"/>
             
             <xsl:text>)</xsl:text>
-          
-            <br/>
-            <br/>
-                   
+             
         </span>
         
         <br/>

@@ -17,8 +17,6 @@
                <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
             </author>
             <editor>
-               <!-- faut-il mettre l'adresse complète pour ISNI ? Comment indiquer le ns pour tout le fichier ?-->
-               <!-- nom qui n'est pas indexé -->
                <persName xml:id="tesserS" ref="https://isni.org/isni/0000000353074065">
                   <surname>Tesser</surname>
                   <forename>Stefania</forename>
@@ -217,10 +215,9 @@
             <normalization>
                <p>Graphie du manuscrit original respectée sauf pour les accents, la ponctuation
                   forte et les majuscules dans les cas d'ambiguïté sémantique. L'intervention est
-                  signalée dans l'apparat critique.
-                  <!-- revoir : probablement je vais choisir d'autres signes --> Emploi uniformisé
-                  du soulignement pour les titres d'ouvrages et des bateaux. Foliotation
-                  correspondant à celle de la BnF. </p>
+                  signalée dans l'apparat critique. Emploi uniformisé du soulignement pour les
+                  titres d'ouvrages et des bateaux. Foliotation correspondant à celle de la BnF.
+               </p>
             </normalization>
          </editorialDecl>
          <variantEncoding location="internal" method="location-referenced"/>
@@ -262,37 +259,35 @@
 
             <pb n="1r" facs="#lettre_albertine_1"/>
             <!-- l'absence de titre dans le manuscrit est signalée par une note explicative -->
-            <note resp="#tesserS">Le manuscrit n'a pas de titre mais, d'après la
-               correspondance de <rs ref="index_noms.xml#stael">Germaine de Staël</rs> et de son
-               entourage, elle avait probablement choisi celui de <title type="littWork" rend="italic">Considérations sur les principaux événemens de la Révolution
-                  françoise</title>, comme il a été déclaré dans
-                  l'<title type="titleChapter" ref="edition_vol_1.xml#considerationsEd">&#171;Avis
-                  des éditeurs&#187;</title> de la première édition.</note>
-<!-- ajouter le lien vers la première èdition -->
+            <note resp="#tesserS">Le manuscrit n'a pas de titre mais, d'après la correspondance de
+                  <rs ref="index_noms.xml#stael">Germaine de Staël</rs> et de son entourage, elle
+               avait probablement choisi celui de <title type="littWork" subtype="crf" rend="italic"
+                  >Considérations sur les principaux événemens de la Révolution françoise</title>,
+               comme il a été déclaré dans l'<title type="titleChapter"
+                  ref="edition_vol_1.xml#considerationsEd">&#171;Avis des éditeurs&#187;</title> de
+               la première édition.</note>
+            <!-- ajouter le lien vers la première èdition -->
 
             <fw type="bibl" place="bottom-left">Achat 22856 </fw>
             <div type="letter" hand="#staelA">
 
-               <!-- voir l'original -->
+               
 
-               <p>
-                  <rs ref="index_noms.xml#gerardF">Vous</rs> m’avez fait un present si precieux,
-                  Monsieur, que <rs ref="index_noms.xml#staelA">j’ai </rs>cherché à vous exprimer ma
-                  reconnoissance par une chose qui j’en suis sure aura du prix à <del hand="#staelA"
-                     rend="strikethrough">
+               <p> Vous m’avez fait un present si precieux, Monsieur, que j’ai cherché à vous
+                  exprimer ma reconnoissance par une chose qui j’en suis sure aura du prix à <del
+                     hand="#staelA" rend="strikethrough">
                      <gap reason="illegible" atLeast="4" unit="char"/>
                   </del>
                   <add hand="#staelA" instant="true">vos</add> yeux. Ce manuscrit des <title
-                     type="littWork" rend="underlined" ref="index_noms.xml#considerationsMS"
+                     type="littWork" subtype="crf" rend="underlined" ref="index_noms.xml#considerationsMS"
                      >Considérations sur la révolution françoise</title> est une copie corrigée de
                   la main de <rs ref="index_noms.xml#stael">ma mère</rs> et de <rs
                      ref="index_noms.xml#staelAu">mon frere Auguste</rs>, je ne m’en serois pas
                   séparée facilement pour toute autre personne mais il m’est doux de le mettre entre
                      <pb n="1v" facs="#lettre_albertine_2"/> les mains de <rs
                      ref="index_noms.xml#gerardF">celui</rs> qui nous a procuré le bonheur de revoir
-                     <rs ref="index_noms.xml#stael"/><rs ref="index_noms.xml#staelAu">leurs traits
-                  </rs>cheris. Je crois accomplir un devoir et c’est en même tems un plaisir de vous
-                  le remettre. </p>
+                  leurs traits cheris. Je crois accomplir un devoir et c’est en même tems un plaisir
+                  de vous le remettre. </p>
                <closer>
                   <salute>Agreez je vous en prie l'expression de tous mes sentimens.</salute>
                   <signed>
@@ -308,13 +303,13 @@
             <note resp="#tesserS">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de
                   Staël</rs> a été reliée au manuscrit. Elle est adressée au peintre <rs
                   ref="index_noms.xml#gerardF"> François Gérard</rs> à qui elle a donné le manuscrit
-               des <title type="littWork" ref="index_noms.xml#staël" rend="italic"
+               des <title type="littWork" subtype="crf" ref="index_noms.xml#staël" rend="italic"
                   >Considérations</title> pour le remercier des portraits de sa <rs
-                  ref="index_noms.xml#stael">mère</rs> et son frère <rs ref="#staelAu"> Auguste.
-               </rs> Pour le portrait de Germaine de Staël, elle fait probablement allusion au tableau <title
-                  type="painting" ref="index_noms.xml#corinneMisene" rend="italic">Corinne au Cap
-                  Misène</title> réalisé en 1819 et qui se trouve au Musée des Beaux-Arts de <rs
-                  ref="index_noms.xml#lyon"/> Lyon.</note>
+                     ref="index_noms.xml#stael">mère</rs> et son frère <rs ref="index_noms.xml#staelAu"> Auguste.
+               </rs> Pour le portrait de Germaine de Staël, elle fait probablement allusion au
+               tableau <title type="painting" ref="index_noms.xml#corinneMisene" rend="italic"
+                  >Corinne au Cap Misène</title> réalisé en 1819 et qui se trouve au Musée des
+               Beaux-Arts de <rs ref="index_noms.xml#lyon"> Lyon.</rs></note>
             <div type="envelope" hand="#staelA">
                <!-- enveloppe reliée après la lettre -->
                <p>
@@ -342,8 +337,8 @@
                France</fw>
             <div type="part" n="1">
                <div type="chapter" n="1">
-                  <head type="titlePart" rend="underlined"><add type="addition" hand="#unknown">Première
-                        partie</add></head>
+                  <head type="titlePart" rend="underlined"><add type="addition" hand="#unknown"
+                        >Première partie</add></head>
                   <head type="titleChapter" subtype="nChapter">
                      <!-- les <head> suivants n'ont pas encore été expliqués dans les principes d'encodage -->
                      <handShift scribeRef="#randallF"/> 1<hi rend="superscript">er</hi>
@@ -428,5 +423,5 @@
          </div>
       </body>
    </text>
-   
+
 </TEI>

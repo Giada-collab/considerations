@@ -57,16 +57,22 @@
                             <li>
                                 <a href="savoir_plus.html">En savoir plus</a>
                             </li>
-                            <li class="topnav-right"><a href="../xml_stael/manuscrit_vol_1.xml">Fichier
-                                XML</a></li><li class="topnav-right"><a href="../html_stael/principes_editoriaux.html#legende"
-                                    >Légende</a></li>
-                            <li class="topnav-right"><a href="../html_stael/manuscrit.html">Retour à "Manuscrit"</a></li>
+                            <li class="topnav-right">
+                                <a href="../xml_stael/manuscrit_vol_1.xml">Fichier XML</a>
+                            </li>
+                            <li class="topnav-right">
+                                <a href="../html_stael/principes_editoriaux.html#legende"
+                                    >Légende</a>
+                            </li>
+                            <li class="topnav-right">
+                                <a href="../html_stael/manuscrit.html">Retour à "Manuscrit"</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="main_content">
                     <h2 class="title_page">Volume I</h2>
-                    
+
                 </div>
 
                 <xsl:apply-templates/>
@@ -219,10 +225,28 @@
     <!-- .................... -->
 
     <xsl:template match="title[@rend = 'underlined']">
-
+<xsl:choose>
+    <xsl:when test="@subtype='crf'">
         <span class="underlined">
-            <xsl:apply-templates/>
+        <xsl:apply-templates/>
         </span>
+    </xsl:when>
+<xsl:otherwise>
+        <span class="underlined">
+            <xsl:element name="a">
+                <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
+                <xsl:attribute name="href">
+                    <xsl:value-of
+                        select="concat('https://giada-collab.github.io/considerations/html_stael/index_noms.html', $id)"
+                    />
+                </xsl:attribute>
+                
+                <xsl:apply-templates/>
+                
+            </xsl:element>
+        </span>
+</xsl:otherwise>
+</xsl:choose>
     </xsl:template>
 
     <xsl:template match="closer">
@@ -232,7 +256,19 @@
         <br/>
 
         <p>
-            <xsl:value-of select="signed"/>
+            <xsl:element name="a">
+                <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
+                <xsl:attribute name="href">
+                    <xsl:value-of
+                        select="concat('https://giada-collab.github.io/considerations/html_stael/index_noms.html', $id)"
+                    />
+                </xsl:attribute>
+                <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>     
+                <xsl:value-of select="signed"/>
+                
+            </xsl:element>
+            
+           
         </p>
         <br/>
         <p>
@@ -252,7 +288,18 @@
         </p>
 
         <p>
-            <xsl:value-of select="addrLine[2]"/>
+            <xsl:element name="a">
+                <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
+                <xsl:attribute name="href">
+                    <xsl:value-of
+                        select="concat('https://giada-collab.github.io/considerations/html_stael/index_noms.html', $id)"
+                    />
+                </xsl:attribute>
+                
+                <xsl:value-of select="addrLine[2]"/>
+                
+            </xsl:element>
+                       
         </p>
         <br/>
 
@@ -316,21 +363,59 @@
     </xsl:template>
 
     <xsl:template match="title[@rend = 'italic']">
+        <xsl:choose>
+            <xsl:when test="@subtype='crf'">
+                <cite>
+                <xsl:apply-templates/>
+                </cite>
+            </xsl:when>
+            <xsl:otherwise>  
         <cite>
-            <xsl:apply-templates/>
+            <xsl:element name="a">
+                <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
+                <xsl:attribute name="href">
+                    <xsl:value-of
+                        select="concat('https://giada-collab.github.io/considerations/html_stael/index_noms.html', $id)"
+                    />
+                </xsl:attribute>
+                
+                <xsl:apply-templates/>
+                
+            </xsl:element>
+            
         </cite>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <xsl:template match="add[@type = 'addition']">
+        <span class="addition">
+
+            <xsl:apply-templates/>
+
+        </span>
+
 
     </xsl:template>
 
-<xsl:template match="add[@type = 'addition']">
-    <span class="addition">
-        
-        <xsl:apply-templates/> 
-        
-    </span>
-    
-    
-</xsl:template>
+    <!-- Revoir tooltip entités nommées -->
+    <xsl:template match="rs">
+       
+               <xsl:element name="a">
+                            <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
+                            <xsl:attribute name="href">
+                                <xsl:value-of
+                                    select="concat('https://giada-collab.github.io/considerations/html_stael/index_noms.html', $id)"
+                                />
+                            </xsl:attribute>
+                  
+                        <xsl:apply-templates/>
+                
+                    </xsl:element>
+                    
+               
+    </xsl:template>
 
+   
 
 </xsl:stylesheet>

@@ -146,6 +146,16 @@ li {
 }
 
 
+.legende {
+
+    font-size: 0.7em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+
+
+}
 
 
 /* Footer */
@@ -192,12 +202,33 @@ li {
 
 .title_page {
 
-    text-align: center; /* <h3> for each page */
+    text-align: center; /* <h2> for each page */
 
 }
 
 
 /* CSS main content all pages */
+
+h2{
+  font-size: 2.3vw;  
+    
+}
+
+
+
+h3{
+   
+   font-size: 1.8vw;
+    
+    
+}
+
+
+.indent{
+    
+margin-left: 0.9375em;
+    
+}
 
 
 a:hover {
@@ -301,8 +332,6 @@ cite {
 
 
 
-
-
 /* CRITICAL APPARATUS */
 
 .addEditor {
@@ -315,8 +344,8 @@ cite {
 
 .noteEditoriale {
 
-    width: 30px;
-    height: 30px;
+    width: 1.8em;
+    height: auto;
 
 }
 
@@ -461,6 +490,21 @@ cite {
 
 /* Section "Principes d'affichage" */
 
+#legende{
+    
+    line-height: 25px;
+    font-size: inherit;
+}
+
+
+
+.book {
+
+    width: 1.8em;
+    height: auto;
+
+}
+
 
 
 .del{
@@ -489,19 +533,6 @@ cite {
 }
 
 
-.copiste {
-
-    width: 25px;
-    height: 25px;
-
-}
-
-.book {
-
-    width: 25px;
-    height: 25px;
-
-}
 
 /* icons - end */
 
@@ -520,15 +551,6 @@ cite {
 }
 
 
-.legende {
-
-    font-size: 0.7em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-
-}
 
 
 
@@ -601,6 +623,8 @@ cite {
 }
 
 
+
+ 
 
 
 /*   tooltip normalisation */

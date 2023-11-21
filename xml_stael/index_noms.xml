@@ -2,35 +2,34 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-
+<!-- utilisation du standard ISO 3166 pour le code pays -->
 <TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-      <title type="main">
-         <title type="littWork"> Considérations sur les principaux événements de la
-            Révolution française</title> de Germaine de Staël : un laboratoire
-         éditorial</title>
-      <title type="sub">Index des noms</title>
-      <author>
-         <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
-      </author>
-      <editor>
-         <persName ref="manuscrit_vol_1.xml#tesserS">Stefania Tesser </persName>
-      </editor>
-      </titleStmt>
-      <publicationStmt>
-         <p>Publié en 2023</p>
-      </publicationStmt>
-      <sourceDesc>
-         <bibl>
-            <title type="littWork" ref="index_noms.xml#considerationsMS">Considérations sur les
-               principaux événements de la Révolution française</title>
+            <title type="main">
+               <title type="littWork"> Considérations sur les principaux événements de la Révolution
+                  française</title> de Germaine de Staël : un laboratoire éditorial</title>
+            <title type="sub">Index des noms</title>
             <author>
                <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
             </author>
-         </bibl>
-      </sourceDesc>
+            <editor>
+               <persName ref="manuscrit_vol_1.xml#tesserS">Stefania Tesser </persName>
+            </editor>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publié en 2023</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title type="littWork" ref="index_noms.xml#considerationsMS">Considérations sur les
+                  principaux événements de la Révolution française</title>
+               <author>
+                  <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
+               </author>
+            </bibl>
+         </sourceDesc>
       </fileDesc>
    </teiHeader>
    <text>
@@ -161,45 +160,42 @@
 
          <div type="indexPlaces">
             <!-- Comme il est en grande partie question d'événements se déroulant en France, ce pays n'est pas indexé -->
-            <!-- utilisation du standard ISO 3166 pour le code pays -->
+           
             <head>Index des noms de lieu</head>
             <listPlace>
                <place xml:id="paris">
-                  <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR">France</country>
-                  <settlement  ref="https://www.geonames.org/2988507/paris.html">
-                     Paris</settlement>
+                  <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR"
+                     >France</country>
+                  <settlement ref="https://www.geonames.org/2988507/paris.html"> Paris</settlement>
                </place>
-           
+
                <place xml:id="lyon">
-                  <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR">France</country>
-                  <settlement  ref="https://www.geonames.org/2996944/lyon.html">
-                     Lyon</settlement>
+                  <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR"
+                     >France</country>
+                  <settlement ref="https://www.geonames.org/2996944/lyon.html"> Lyon</settlement>
                </place>
-          
-               <place xml:id="venezia">
-                  <country key="IT" ref="https://www.iso.org/obp/ui/#iso:code:3166:IT">Italie</country>
-                  <settlement  ref="https://www.geonames.org/3164603/venice.html">Venise</settlement>
-               </place>  
             </listPlace>
          </div>
 
 
          <div type="indexWorks">
-            <head>Index des ouvrages </head> 
+            <head>Index des ouvrages </head>
             <index>
                <term xml:id="considerationsMS">
-                  <objectName type="littWork" rend="italic" ref="https://www.wikidata.org/wiki/Q107179831">Considérations sur les principaux
-                     événements de la Révolution française</objectName>
+                  <objectName type="littWork" rend="italic"
+                     ref="https://www.wikidata.org/wiki/Q107179831">Considérations sur les
+                     principaux événements de la Révolution française</objectName>
                   <name type="author" ref="#stael">Germaine de Staël</name>
                </term>
-               
+
                <term xml:id="corinneMisene">
-                  <objectName type="painting" rend="italic" ref="https://www.wikidata.org/wiki/Q17176642">Corinne au Cap Misène</objectName>
+                  <objectName type="painting" rend="italic"
+                     ref="https://www.wikidata.org/wiki/Q17176642">Corinne au Cap
+                     Misène</objectName>
                   <name type="author" ref="#gerardF">François Gérard</name>
-                  
                </term>
-        
-        </index>   
+
+            </index>
          </div>
       </body>
    </text>
