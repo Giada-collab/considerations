@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+<?xml-model href="../documentation_stael/index_noms.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../documentation_stael/index_noms.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- utilisation du standard ISO 3166 pour le code pays -->
 <TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
@@ -22,13 +22,88 @@
             <p>Publié en 2023</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-               <title type="littWork" ref="index_noms.xml#considerationsMS">Considérations sur les
-                  principaux événements de la Révolution française</title>
-               <author>
-                  <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
-               </author>
-            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <settlement ref="index_noms.xml#paris"> Paris</settlement>
+                  <institution>Bibliothèque nationale de France</institution>
+                  <repository>Département des Manuscrits</repository>
+                  <idno type="shelfmark">NAF 14606,14607,14608</idno>
+               </msIdentifier>
+               <msContents>
+                  <msItemStruct>
+                     <author>
+                        <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
+                     </author>
+                     <title type="littWork" ref="index_noms.xml#considerationsMS">Considérations sur
+                        les principaux événements de la Révolution française</title>
+                     <note>Le manuscrit n'a pas de titre. Il a été reconstruit d'après la
+                        correspondance</note>
+                  </msItemStruct>
+                  <msItem n="vol_1">
+                     <p>Premier volume</p>
+                  </msItem>
+                  <msItem n="vol_2">
+                     <p>Deuxième volume</p>
+                  </msItem>
+                  <msItem n="vol_3">
+                     <p>Troisième volume</p>
+                  </msItem>
+               </msContents>
+            </msDesc>
+            <biblStruct>
+               <monogr>
+                  <author>
+                     <persName ref="index_noms.xml#stael">Germaine de Staël </persName>
+                  </author>
+                  <editor>
+                     <persName ref="index_noms.xml#broglieV">Victor de Broglie </persName>
+                     <persName ref="index_noms.xml#staelAu"> Auguste de Staël </persName>
+                  </editor>
+                  <title type="main">Considérations sur les principaux événemens de la Révolution
+                     françoise</title>
+                  <title type="sub">ouvrage posthume de madame la baronne de Staël ; publ. par M. le
+                     duc de Broglie et M. le baron de Staël</title>
+                  <imprint>
+                     <pubPlace ref="index_noms.xml#paris">Paris</pubPlace>
+                     <publisher>Delaunay</publisher>
+                     <date when="1818">1818</date>
+                  </imprint>
+                  <extent>3 v.; in-8</extent>
+               </monogr>
+               <ref type="bib_desc" target="http://catalogue.bnf.fr/ark:/12148/cb178050717"> </ref>
+            </biblStruct>
+            <biblStruct>
+               <!-- data about digital version of the 1st edition. -->
+               <monogr>
+                  <author>
+                     <persName ref="index_noms.xml#stael">Germaine de Staël </persName>
+                  </author>
+                  <editor>
+                     <persName ref="index_noms.xml#broglieV">Victor de Broglie </persName>
+                     <persName ref="index_noms.xml#staelAu"> Auguste de Staël </persName>
+                  </editor>
+                  <title type="main">Considérations sur les principaux événemens de la Révolution
+                     françoise</title>
+                  <title type="sub">ouvrage posthume de madame la baronne de Staël, publ. par M. le
+                     duc de Broglie et M. le baron de Staël.</title>
+                  <idno type="shelfmark" n="NUMM-3056628"> Cote: NUMM-3056628</idno>
+                  <ref type="source" target="https://gallica.bnf.fr/ark:/12148/bpt6k3056628z"/>
+                  
+                  <availability status="restricted">
+                     <licence
+                        target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"
+                        >Utilisation non commerciale libre</licence>
+                  </availability>
+                  <imprint>
+                     <pubPlace ref="index_noms.xml#paris">Paris</pubPlace>
+                     <publisher>Bibliothèque nationale de France</publisher>
+                     <date when="2019-07-08">8 juillet 2019</date>
+                     <note>Version numérisée de la première édition</note>
+                  </imprint>
+                  <biblScope unit="volume" n="1">Tome premier</biblScope>
+               </monogr>
+            </biblStruct>
+            
          </sourceDesc>
       </fileDesc>
    </teiHeader>
