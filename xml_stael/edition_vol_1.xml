@@ -217,13 +217,16 @@
    </facsimile>
 
    <text>
-      <anchor type="collation" subtype="gap" xml:id="LetterEd"
-         corresp="manuscrit_vol_1.xml#LetterMs"/>
+      
       <front>
-         <pb facs="#frontispice"/>
+        
+         <pb n="0" facs="#frontispice"/>
          <!-- les images précédentes (plats, pages de garde, etc. n'ont pas été ajoutées pour l'instant) -->
          <!-- la dimension des caractères n'a pas encore été prise en compte -->
          <!-- pour l'instant, pas d'annotation (entités nommées) -->
+         <anchor type="collation" subtype="gap" xml:id="LetterEd"
+            corresp="manuscrit_vol_1.xml#LetterMs"/>
+         
          <titlePage>
             <docTitle rend="center">
                <note resp="#tesserS" target="manuscrit_vol_1.xml#noteTitle"/>
@@ -254,6 +257,7 @@
             </docImprint>
          </titlePage>
          <pb facs="#frontispice_verso"/>
+        
          <pb n="v" facs="#avis_editeurs_v"/>
         
 

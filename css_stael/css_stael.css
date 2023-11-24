@@ -332,6 +332,24 @@ cite {
 
 
 
+
+.finPage {
+
+    border-top: 1px dashed grey;
+
+}
+
+
+.folio {
+
+    font-size: 0.75em;
+    font-style: italic;
+
+}
+
+
+
+
 /* CRITICAL APPARATUS */
 
 .addEditor {
@@ -506,6 +524,14 @@ cite {
 }
 
 
+.manuscrit {
+
+    width: 1.8em;
+    height: auto;
+    border-bottom: dotted;
+
+}
+
 .quelles {
 
     width: 3.5em;
@@ -531,6 +557,8 @@ cite {
 
 
 
+
+
 .del{
    text-decoration: line-through; 
 }
@@ -544,22 +572,8 @@ cite {
 }
 
 
-/* Section "Documentation technique" */
 
-/* icons  */
-
-.imgXml{
-    
-   max-width:70%;
-   height: auto;
-   float:none;  
-    
-}
-
-
-
-/* icons - end */
-
+/* ??? */
 
 
 
@@ -574,40 +588,6 @@ cite {
 
 }
 
-
-
-
-
-
-.img_manuscrit {
-
-    margin-left: 50px;
-    height: 300px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-.download {
-
-    width: 30px;
-    height: 30px;
-
-}
-
-
-
-.finPage {
-
-    border-top: 1px dashed grey;
-
-}
-
-
-.folio {
-
-    font-size: 0.75em;
-    font-style: italic;
-
-}
 
 /* TOOLTIPS */
 
@@ -698,3 +678,26 @@ cite {
 
 
 /* END TOOLTIPS */
+
+
+
+
+/* 1ST EDITION */
+
+
+
+
+
+.page {
+
+    font-size: 0.75em;
+    font-style: italic;
+   
+
+}
+
+
+
+
+    
+  
