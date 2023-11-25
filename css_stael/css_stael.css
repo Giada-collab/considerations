@@ -186,8 +186,7 @@ li {
 }
 
 
-/* end footer */
-
+/* CSS main content all pages */
 
 
 .main_content {
@@ -207,7 +206,7 @@ li {
 }
 
 
-/* CSS main content all pages */
+
 
 h2{
   font-size: 2.3vw;  
@@ -288,21 +287,11 @@ cite {
     font-size: 1.8vw;
     line-height: 1.5;
 
-/* img home end */
-}
-
-/* ???? */
-
-.volume {
-    background-color: white;
-    font-size: 1.125em;
-    padding: 90px;
-    text-align: justify;
-    width: 60%;
-    line-height: 150%;
-    margin:auto;
 
 }
+
+/* PLAN DU SITE */
+
 
 .plan_site {
 
@@ -314,6 +303,20 @@ cite {
 
 
 /* MANUSCRIT VOLUME I */
+
+
+.volume {
+    background-color: white;
+    font-size: 1.5vw;
+    padding: 90px;
+    width: 60%;
+    line-height: 150%;
+    margin:auto;
+
+}
+
+
+
 
 .underlined {
 
@@ -573,7 +576,7 @@ cite {
 
 
 
-/* ??? */
+/* page introduction */
 
 
 
@@ -685,7 +688,31 @@ cite {
 /* 1ST EDITION */
 
 
+.titlePage{
+    
+    background-color: white;
+    font-size: 1.5vw;
+    padding: 90px;
+    width: 60%;
+    line-height: 150%;
+    margin:auto;
+    text-align:center;
+  
+   
+ 
+}
 
+.volumeEdBody{
+    
+    background-color: white;
+    font-size: 1.5vw;
+    padding: 90px;
+    width: 60%;
+    line-height: 150%;
+    margin:auto;
+   
+ 
+}
 
 
 .page {
@@ -696,8 +723,25 @@ cite {
 
 }
 
-
-
-
+.prefaceEd{
     
+    text-align:initial;
+    
+    
+}
   
+.titlePart1{
+    
+ font-size: 3vw;   
+    
+    
+    
+    
+}
+
+.head{
+    
+    text-align:center;
+    
+    
+}

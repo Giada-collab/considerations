@@ -100,23 +100,41 @@
 
 
 
-    <xsl:template match="text">
-        <xsl:if test="front | body">
-            <div class="volume">
-                <xsl:apply-templates/>
-            </div>
-        </xsl:if>   </xsl:template>
+    <xsl:template match="titlePage">
+      
+                
+                <div class="titlePage">
+                    <xsl:apply-templates/>
+                </div>   
+     
+          </xsl:template>
+    
+    
+    <xsl:template match="pb[@facs='#frontispice_verso']|div [@type='volume']">
+        
+        <div class="volumeEdBody">
+            <xsl:apply-templates/>
+        </div>
+          </xsl:template> 
+    
+    <xsl:template match="div[@type='prefaceEd']">
+        <span class="prefaceEd">
+            
+            <xsl:apply-templates/>
+            
+        </span>
+        
+        
+    </xsl:template>
 
     <xsl:template match="pb">
         <xsl:choose>
             <xsl:when test="@n = '0'"> </xsl:when>
-            <xsl:when test="@n = 'v'"> [<span class="addEditor"><span class="foreign_language"
-                >Verso</span> du frontispice</span>] <hr class="finPage">
+            <xsl:when test="@n = 'v'">  
                     <span class="page">
                         <xsl:value-of select="@n"/>
                     </span>
                     <xsl:apply-templates/>
-                </hr>
                 <br/><br/>
             </xsl:when>
             
@@ -141,13 +159,26 @@
                     select="concat('../html_stael/manuscrit_vol_1.html', $id)"
                 />
             </xsl:attribute>
-         
-            
-        
+   
             <img class="manuscrit" alt="Lien vers le manuscrit" src="../img_stael/manuscrit.jpg"/> 
         </xsl:element>
    
     </xsl:template>
-
-
+    
+    <xsl:template match="lb">
+<br/>
+       
+    </xsl:template>
+   
+  <xsl:template match="head">
+      
+      <span class="head">
+          
+         <xsl:apply-templates/> 
+          
+      </span>
+      
+  </xsl:template>
+        
+        
 </xsl:stylesheet>

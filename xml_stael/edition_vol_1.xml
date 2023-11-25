@@ -4,15 +4,13 @@
 <TEI xml:lang="fr" xmlns="http://www.tei-c.org/ns/1.0">
    <!-- dates standard ISO 8601  -->
    <!-- utilisation du standard ISO 3166 pour le code pays -->
- 
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main">
                <title type="littWork">Considérations sur les principaux événements de la Révolution
                   française</title> de Germaine de Staël : un laboratoire éditorial</title>
-            <title type="sub">Première
-               édition de 1818</title>
+            <title type="sub">Première édition de 1818</title>
             <author>
                <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
             </author>
@@ -32,7 +30,6 @@
                   <settlement ref="index_noms.xml#venezia">Venezia</settlement>
                </placeName>
             </authority>
-
             <date when="2023">2023</date>
             <availability status="restricted">
                <licence target="https://https://creativecommons.org/licenses/by-nc/4.0/deed.fr">CC
@@ -87,10 +84,8 @@
                      <layoutDesc>
                         <layout columns="2">Les copistes écrivent dans la colonne de droite et au
                            recto et verso de chaque feuillet</layout>
-
                      </layoutDesc>
                   </objectDesc>
-
                   <bindingDesc>
                      <binding>
                         <p>Reliure en <material>veau</material></p>
@@ -133,7 +128,6 @@
                </monogr>
                <ptr type="bibl" target="http://catalogue.bnf.fr/ark:/12148/cb178050717"> </ptr>
             </biblStruct>
-
             <biblStruct>
                <!-- données relatives à la version numérisée de la BnF. Elle est décrite comme unité bibliographique indépendente de la version papier-->
                <monogr>
@@ -141,7 +135,6 @@
                      <persName ref="index_noms.xml#stael">Germaine de Staël </persName>
                   </author>
                   <editor>
-                     
                      <persName ref="index_noms.xml#broglieV">Victor de Broglie </persName>
                      <persName ref="index_noms.xml#staelAu"> Auguste de Staël </persName>
                   </editor>
@@ -192,8 +185,12 @@
    </teiHeader>
    <facsimile>
       <!-- les images précédentes (plats, pages de garde, etc. n'ont pas été ajoutées pour l'instant) -->
-      <graphic xml:id="frontispice"
-         url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f13/full/1020,/0/native.jpg"/>
+      <surface>
+         <graphic
+            url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f13/full/1020,/0/native.jpg"
+            xml:id="frontispice"/>
+         <zone xml:id="zone_shf_gb3_4zb" lry="1098" lrx="576" uly="898" ulx="416"/>
+      </surface>
       <graphic xml:id="frontispice_verso"
          url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f14/full/1022,/0/native.jpg"/>
       <graphic xml:id="avis_editeurs_v"
@@ -213,199 +210,214 @@
          url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f21/full/1026,/0/native.jpg"/>
       <graphic xml:id="t1_2"
          url="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f22/full/1034,/0/native.jpg"/>
-
    </facsimile>
-
    <text>
-      
       <front>
-        
          <pb n="0" facs="#frontispice"/>
          <!-- les images précédentes (plats, pages de garde, etc. n'ont pas été ajoutées pour l'instant) -->
          <!-- la dimension des caractères n'a pas encore été prise en compte -->
          <!-- pour l'instant, pas d'annotation (entités nommées) -->
-         <anchor type="collation" subtype="gap" xml:id="LetterEd"
-            corresp="manuscrit_vol_1.xml#LetterMs"/>
-         
+        
          <titlePage>
+            <anchor type="collation" subtype="gap" xml:id="LetterEd"
+               corresp="manuscrit_vol_1.xml#LetterMs"/>
             <docTitle rend="center">
-               <note resp="#tesserS" target="manuscrit_vol_1.xml#noteTitle"/>
-               <titlePart> CONSIDÉRATIONS <lb/> SUR LES PRINCIPAUX ÉVÉNEMENS <lb/> DE <lb/> LA
-                  RÉVOLUTION FRANÇOISE ; </titlePart>
+               <lb/>
+               <lb/>
+               <lb/>
+               
+               <titlePart type="main"> CONSIDÉRATIONS <lb/> SUR LES PRINCIPAUX ÉVÉNEMENS <lb/> DE <lb/> LA
+                  RÉVOLUTION FRANÇOISE, </titlePart>
             </docTitle>
-            <byline> OUVRAGE POSTHUME<lb/> DE <docAuthor ref="manuscrit_vol_1.xml#stael"> MADAME LA
+            <lb/>
+            <lb/>
+            <byline rend="center"> OUVRAGE POSTHUME<lb/> DE <docAuthor> MADAME LA
                   BARONNE DE STAËL</docAuthor>, <lb/>PUBLIÉ <lb/> PAR M. LE DUC DE BROGLIE ET M. LE
                BARON DE STAËL. </byline>
-
+            <lb/>
+            <lb/>
             <epigraph rend="align_right">
                <quote> Les révolutions qui arrivent dans les grands états <lb/>ne sont point un
                   effet du hasard ni du caprice <lb/>des peuples.</quote>
                <bibl> MÉM. DE SULLY, T.I, p. 133 </bibl>
             </epigraph>
-            <titlePart rend="top-center">TOME PREMIER. </titlePart>
-            <!--     !!!!  ajouter image avec image map editor ? -->
+            <lb/>
+            <lb/>
+            <titlePart type="sub" rend="center">TOME PREMIER. </titlePart>
+            <!--  ajouter image avec image map editor ? -->
             <fw type="frise" place="below">Frise</fw>
+            <!-- vérifier -->
+            <graphic  url="#zone_shf_gb3_4zb"></graphic>
             <fw type="stamp" place="below">Tampon "Bibliothèque Royale"</fw>
-
-
+            <graphic  url="#zone_shf_gb3_4zb"></graphic>
+            <lb/>
+            <lb/>
+            <lb/>
+            <lb/>
             <docImprint rend="center">
-               <settlement ref="index_noms.xml#paris">PARIS,<lb/></settlement>
+               <settlement>PARIS,<lb/></settlement>
                <publisher>DELAUNAY, LIBRAIRE, PALAIS-ROYAL, GALERIE DE BOIS, N. 243 </publisher>
                <lb/>
                <publisher>BOSSANGE ET MASSON, LIBRAIRES, RUE DE TOURNON, N. 6.</publisher>
                <lb/><date>1818.</date>
             </docImprint>
          </titlePage>
+       
          <pb facs="#frontispice_verso"/>
-        
-         <pb n="v" facs="#avis_editeurs_v"/>
-        
-
-         <div type="prefaceEd">
-
-            <head type="prefaceEditors" rend="center"> AVIS DES EDITEURS.</head>
-
-            <p>
-               <seg type="collation" subtype="add" xml:id="PrefaceEdEd"
-                  corresp="manuscrit_vol_1.xml#PrefaceEdMs">
-                  <hi rend="larger"> E</hi>N remplissant la tâche que madame de Staël a daigné nous
-                  confier, nous devons avant tout faire connoître dans quel état nous avons trouvé
-                  le manuscrit remis à nos soins. <lb/> Madame de Staël s’étoit tracé, pour toutes
-                  ses compositions, une règle de travail dont elle ne s'écartoit jamais. Elle
-                  écrivoit d’un seul trait toute l’ébauche de l’ouvrage dont elle avoit conçu le
-                  plan, sans revenir sur ses pas, sans interrompre le cours de ses pensées, si ce
-                  n’est par les recherches que son sujet rendoit nécessaires. Cette première
-                  composition achevée, madame de Staël la transcrivoit en entier de sa main, et sans
-                  s’occuper encore de la correction du style, elle modifioit l’expression de ses
-                  idées et les classoit souvent dans un ordre nouveau. Le second travail étoit
-                  ensuite mis au net par un secrétaire, et ce n’étoit que sur la copie, souvent même
-                  sur les épreuves imprimées, que <pb n="vi" facs="#avis_editeurs_vi"/>
-                  <fw type="header" place="top-center"> AVIS DES EDITEURS.></fw> madame de Staël
-                  perfectionnoit les détails de la diction : plus occupée de transmettre à ses
-                  lecteurs toutes la nuances de sa pensée, toutes les émotions de son âme, que
-                  d’atteindre une correction minutieuse qu'on peut obtenir d’un travail, pour ainsi
-                  dire, mécanique. <lb/>Madame de Staël avoit achevé, dès les premiers jours de
-                  1816, la composition de l'ouvrage que nous publions. Elle avoit consacré une année
-                  à en revoir les deux premiers volumes, ainsi qu'une partie du troisième. Elle
-                  étoit revenue à Paris pour terminer les morceaux relatifs à des événemens récens
-                  dont elle n'avoit pas été témoin, et sur lesquels des renseignemens plus précis
-                  devoient modifier quelques-unes de ses opinions. Enfin les <title type="littWork"
-                     xml:id="considerationsEd" ref="index_noms.xml#considerationsMS" rend="italic">
-                     Considérations sur les principaux événemens de la révolution françoise</title>
-                  (car tel est le titre que madame de Staël avoit elle-même choisi) auroient paru à
-                  la fin de l'année dernière, si celle qui faisoit notre gloire et notre bonheur
-                  nous eût été conservée. <lb/>
-                  <pb n="vii" facs="#avis_editeurs_vii"/>
-                  <fw type="header" place="top-center"/> Nous avons trouvé les deux premiers volumes,
-                  et plusieurs chapitres du troisième, dans l'état où ils auroient été livrés à
-                  l’impression. D’autres chapitres étoient copiés, mais non revus par l’auteur.
-                  D’autres enfin n’étoient composés que de premier jet; et des notes marginales,
-                  écrites ou dictées par madame de Staël, indiquoient les points qu’elle se
-                  proposoit de développer. <lb/>Le premier sentiment comme le premier devoir de ses
-                  enfans, a été un respect religieux pour les moindres indications de sa pensée; et
-                  il est presque superflu de dire que nous ne nous sommes permis ni une addition ni
-                  même un changement, et que l’ouvrage qu’on va lire est parfaitement conforme au
-                  manuscrit de madame de Staël. <lb/>Le travail des éditeurs s’est borné uniquement
-                  à la révision des épreuves, et à la correction de ces légères inexactitudes de
-                  style, qui échappent à la vue dans le manuscrit le plus soigné. Ce travail s’est
-                  fait sous les yeux de <pb n="viii" facs="#avis_editeurs_viii"/>
-                  <fw type="header" place="top-center"/> M. A. W. de Schlegel, dont la rare
-                  supériorité d'esprit et de savoir justifie la confiance avec laquelle madame de
-                  Staël le consultoit dans tous ses travaux littéraires, autant que son honorable
-                  caractère mérite l’estime et l’amitié qu’elle n’a pas cessé d’avoir pour lui
-                  pendant une liaison de treize années.<lb/> M. de Staël remplira des intentions qui
-                  doivent être sacrées pour lui, en publiant une édition complète des œuvres de sa
-                  mere, et de celles de M. Necker. Les œuvres de madame de Staël renfermeront
-                  quelques compositions inédites; entre autres des fragmens d’un ouvrage commencé
-                  sous le titre de<title type="littWork" rend="italic"> Dix années d’exil</title>.
-                  L’une et l'autre collection sera précédée d’une notice biographique; mais un
-                  sentiment, que ceux qui ont connu madame de Staël apprécieront avec indulgence,
-                  n’a pas encore permis à ses enfans de se livrer à un travail qui touche de si près
-                  à leurs plus chers comme à leurs plus douloureux souvenirs.</seg></p>
-         </div>
-
-         <pb n="ix" facs="#avertissement_auteur_ix"/>
-         <div type="prefaceAu">
-
-            <head type="prefaceAuthor" rend="center"> AVERTISSEMENT <lb/>DE L’AUTEUR.</head>
-
-            <p><seg type="collation" subtype="add" xml:id="PrefaceAuEd"
-                  corresp="manuscrit_vol_1.xml#PrefaceAuMs"> J’AVOIS d’abord commencé cet ouvrage
-                  avec l’intention de le borner à l’examen des actes et des écrits politiques de mon
-                  père. Mais, en avançant dans mon travail, j’ai été conduite par le sujet même à
-                  retracer, d’une part, les principaux événemens de la révolution françoise, et à
-                  présenter, de l’autre, le tableau de l’Angleterre, comme une justification de
-                  l’opinion de M. NecKer, relativement aux institutions politiques de ce pays. Mon
-                  plan s’étant agrandi, il m’a semblé que je devois changer de titre, quoique je
-                  n’eusse pas changé d’objet. Il restera néanmoins dans ce livre plus de détails
-                  relatifs à mon <pb n="x" facs="#avertissement_auteur_x"/>
-                  <fw type="header" place="top-center">AVERTISSEMENT DE L'AUTEUR.</fw> père, et même
-                  à moi, que je n’en aurois mis, si je l’eusse d’abord conçu sous un point de vue
-                  général ; mais peut-être des circonstances particulières servent-elles à faire
-                  mieux connoÎtre l’esprit et le caractère des temps qu’on veut décrire.</seg>
-            </p>
-
-         </div>
-      </front>
-      <body>
-        
-         <pb n="1" facs="#t1_1"/>
+      
          <div type="volume" n="1">
-         <head type="titleWork" rend="center"><seg type="collation" subtype="add" xml:id="TitleEd"
-               corresp="manuscrit_vol_1.xml#TitleMs"> CONSIDÉRATIONS <lb/>SUR <lb/>LES PRINCIPAUX
-               ÉVÉNEMENS <lb/>DE LA RÉVOLUTION FRANÇOISE.</seg>
-         </head>
-         <fw type="frise" place="below">Frise</fw>
-
-         <head type="titlePart" rend="center"> PREMIÈRE PARTIE.</head>
-         <head type="titleChapter" rend="center">
-            <seg type="collation" subtype="subst" xml:id="Chap1Ed"
-               corresp="manuscrit_vol_1.xml#Chap1Ms">CHAPITRE PREMIER.</seg>
-         </head>
-
-         <head type="titleChapterMain" rend="center"><hi rend="italic">Réflexions
-            générales.</hi></head>
-
-         <div type="part" n="1">
-            <div type="chapter" n="1">
-               <p><hi rend="bold">L</hi>A révolution de France est une des <anchor type="collation"
-                     subtype="gap" xml:id="PlusEd" corresp="manuscrit_vol_1.xml#PlusMs"/> grandes
-                  époques de l’ordre social. Ceux qui la considèrent comme un événement accidentel,
-                     n’ont<seg type="collation" subtype="subst" xml:id="EtenduEd"
-                     corresp="manuscrit_vol_1.xml#EtenduMs"> porté</seg> leurs regards ni <seg
-                     type="subst" xml:id="substDansEd" corresp="manuscrit_vol_1.xml#substDansMs"
-                     >dans </seg>le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce
-                  ; et, afin de satisfaire leurs passions, ils ont attribué aux hommes du moment ce
-                  que les siècles avoient préparé.<anchor type="collation" subtype="gap"
-                     xml:id="AdversairesEd" corresp="manuscrit_vol_1.xml#AdversairesMs"/>
-                  <lb/>Il suffisoit cependant de jeter un coup d’œil sur les principales crises de
-                  l’histoire, pour se convaincre qu’elles ont été toutes inévitables,<fw
-                     type="footer" rend="bottom-left"><hi rend="small">TOME I</hi></fw>
-                  <pb n="2" facs="#t1_2"/>
-                  <fw type="header" rend="top-center">CONSIDÉRATIONS</fw>quand elles se rattachoient
-                  de quelque manière <seg type="collation" subtype="subst" xml:id="ProgresEd"
-                     corresp="manuscrit_vol_1.xml#ProgresMs">au développement</seg> des idées; et
-                  qu’après une lutte et des malheurs plus ou moins prolongés, le triomphe des
-                  lumières a toujours été favorable à la grandeur et à l’amélioration de l’espèce
-                  humaine. <lb/> Mon ambition seroit de parler du temps dans lequel nous avons vécu,
-                  comme s’il étoit déjà <anchor type="collation" subtype="gap" xml:id="BienEd"
-                     corresp="manuscrit_vol_1.xml#BienMs"/>loin de nous. Les hommes éclairés, qui
-                  sont toujours contemporains des siècles futurs par leurs pensées, jugeront si j’ai
-                  su m’élever à la hauteur d’impartialité que je
-                  <!-- fin f. 3v du manuscrit - fin échantillon test --> voulois atteindre.<lb/> Je
-                  me bornerai, dans ce chapitre, à des considérations générales sur la marche
-                  politique de la civilisation européenne, mais seulement par rapport à la
-                  révolution de France : car c’est à ce sujet, déjà bien vaste, que cet ouvrage est
-                  consacré.<lb/> Les deux peuples anciens dont la littérature et l’histoire
-                  composent encore aujourd’hui notre principale fortune intellectuelle, n’ont dû
-                  leur étonnante supériorité qu’à la jouissance d’une patrie libre. Mais l’esclavage
-                  existoit chez eux ; et, par conséquent, les droits et les motifs d’émulation, qui
-                  doivent être communs à tous les hommes, étoient le partage exclusif<pb n="3"/>
+            <pb n="v" facs="#avis_editeurs_v"/>
+            <div type="prefaceEd">
+               <head type="prefaceEditors" rend="center"> AVIS DES EDITEURS.</head>
+               <lb/>
+               <lb/>
+               
+               <p>
+                  <seg type="collation" subtype="add" xml:id="PrefaceEdEd"
+                     corresp="manuscrit_vol_1.xml#PrefaceEdMs">
+                     <hi rend="larger"> E</hi>N remplissant la tâche que madame de Staël a daigné
+                     nous confier, nous devons avant tout faire connoître dans quel état nous avons
+                     trouvé le manuscrit remis à nos soins. <lb/> Madame de Staël s’étoit tracé,
+                     pour toutes ses compositions, une règle de travail dont elle ne s'écartoit
+                     jamais. Elle écrivoit d’un seul trait toute l’ébauche de l’ouvrage dont elle
+                     avoit conçu le plan, sans revenir sur ses pas, sans interrompre le cours de ses
+                     pensées, si ce n’est par les recherches que son sujet rendoit nécessaires.
+                     Cette première composition achevée, madame de Staël la transcrivoit en entier
+                     de sa main, et sans s’occuper encore de la correction du style, elle modifioit
+                     l’expression de ses idées et les classoit souvent dans un ordre nouveau. Le
+                     second travail étoit ensuite mis au net par un secrétaire, et ce n’étoit que
+                     sur la copie, souvent même sur les épreuves imprimées, que <pb n="vi"
+                        facs="#avis_editeurs_vi"/>
+                     <fw type="header" place="top-center"> AVIS DES EDITEURS.></fw> madame de Staël
+                     perfectionnoit les détails de la diction : plus occupée de transmettre à ses
+                     lecteurs toutes la nuances de sa pensée, toutes les émotions de son âme, que
+                     d’atteindre une correction minutieuse qu'on peut obtenir d’un travail, pour
+                     ainsi dire, mécanique. <lb/>Madame de Staël avoit achevé, dès les premiers
+                     jours de 1816, la composition de l'ouvrage que nous publions. Elle avoit
+                     consacré une année à en revoir les deux premiers volumes, ainsi qu'une partie
+                     du troisième. Elle étoit revenue à Paris pour terminer les morceaux relatifs à
+                     des événemens récens dont elle n'avoit pas été témoin, et sur lesquels des
+                     renseignemens plus précis devoient modifier quelques-unes de ses opinions.
+                     Enfin les <title type="littWork" xml:id="considerationsEd"
+                        ref="index_noms.xml#considerationsMS" rend="italic"> Considérations sur les
+                        principaux événemens de la révolution françoise</title> (car tel est le
+                     titre que madame de Staël avoit elle-même choisi) auroient paru à la fin de
+                     l'année dernière, si celle qui faisoit notre gloire et notre bonheur nous eût
+                     été conservée. <lb/>
+                     <pb n="vii" facs="#avis_editeurs_vii"/>
+                     <fw type="header" place="top-center"/> Nous avons trouvé les deux premiers
+                     volumes, et plusieurs chapitres du troisième, dans l'état où ils auroient été
+                     livrés à l’impression. D’autres chapitres étoient copiés, mais non revus par
+                     l’auteur. D’autres enfin n’étoient composés que de premier jet; et des notes
+                     marginales, écrites ou dictées par madame de Staël, indiquoient les points
+                     qu’elle se proposoit de développer. <lb/>Le premier sentiment comme le premier
+                     devoir de ses enfans, a été un respect religieux pour les moindres indications
+                     de sa pensée; et il est presque superflu de dire que nous ne nous sommes permis
+                     ni une addition ni même un changement, et que l’ouvrage qu’on va lire est
+                     parfaitement conforme au manuscrit de madame de Staël. <lb/>Le travail des
+                     éditeurs s’est borné uniquement à la révision des épreuves, et à la correction
+                     de ces légères inexactitudes de style, qui échappent à la vue dans le manuscrit
+                     le plus soigné. Ce travail s’est fait sous les yeux de <pb n="viii"
+                        facs="#avis_editeurs_viii"/>
+                     <fw type="header" place="top-center"/> M. A. W. de Schlegel, dont la rare
+                     supériorité d'esprit et de savoir justifie la confiance avec laquelle madame de
+                     Staël le consultoit dans tous ses travaux littéraires, autant que son honorable
+                     caractère mérite l’estime et l’amitié qu’elle n’a pas cessé d’avoir pour lui
+                     pendant une liaison de treize années.<lb/> M. de Staël remplira des intentions
+                     qui doivent être sacrées pour lui, en publiant une édition complète des œuvres
+                     de sa mere, et de celles de M. Necker. Les œuvres de madame de Staël
+                     renfermeront quelques compositions inédites; entre autres des fragmens d’un
+                     ouvrage commencé sous le titre de<title type="littWork" rend="italic"> Dix
+                        années d’exil</title>. L’une et l'autre collection sera précédée d’une
+                     notice biographique; mais un sentiment, que ceux qui ont connu madame de Staël
+                     apprécieront avec indulgence, n’a pas encore permis à ses enfans de se livrer à
+                     un travail qui touche de si près à leurs plus chers comme à leurs plus
+                     douloureux souvenirs.</seg></p>
+            </div>
+            <pb n="ix" facs="#avertissement_auteur_ix"/>
+            <div type="prefaceAu">
+               <head type="prefaceAuthor" rend="center"> AVERTISSEMENT <lb/>DE L’AUTEUR.</head><lb/><lb/>
+               <p><seg type="collation" subtype="add" xml:id="PrefaceAuEd"
+                     corresp="manuscrit_vol_1.xml#PrefaceAuMs"> J’AVOIS d’abord commencé cet ouvrage
+                     avec l’intention de le borner à l’examen des actes et des écrits politiques de
+                     mon père. Mais, en avançant dans mon travail, j’ai été conduite par le sujet
+                     même à retracer, d’une part, les principaux événemens de la révolution
+                     françoise, et à présenter, de l’autre, le tableau de l’Angleterre, comme une
+                     justification de l’opinion de M. NecKer, relativement aux institutions
+                     politiques de ce pays. Mon plan s’étant agrandi, il m’a semblé que je devois
+                     changer de titre, quoique je n’eusse pas changé d’objet. Il restera néanmoins
+                     dans ce livre plus de détails relatifs à mon <pb n="x"
+                        facs="#avertissement_auteur_x"/>
+                     <fw type="header" place="top-center">AVERTISSEMENT DE L'AUTEUR.</fw> père, et
+                     même à moi, que je n’en aurois mis, si je l’eusse d’abord conçu sous un point
+                     de vue général ; mais peut-être des circonstances particulières servent-elles à
+                     faire mieux connoÎtre l’esprit et le caractère des temps qu’on veut
+                     décrire.</seg>
                </p>
             </div>
          </div>
+      </front>
+      <body>
+         <!-- on ne peut pas mettre un seul  <div type="volume" n="1"> incluant <front> et <body> : incompatible avec <titlePage>. Déplacé dans <body> -->
+         <div type="volume" n="1">
+            <pb n="1" facs="#t1_1"/>
+            <head type="titleWork" rend="center"><seg type="collation" subtype="add"
+                  xml:id="TitleEd" corresp="manuscrit_vol_1.xml#TitleMs"> CONSIDÉRATIONS <lb/>SUR
+                  <lb/>LES PRINCIPAUX ÉVÉNEMENS <lb/>DE LA RÉVOLUTION FRANÇOISE.</seg><lb/><lb/>
+            </head>
+            <fw type="frise" place="below">Frise</fw>
+            <head type="titlePart" rend="center"> PREMIÈRE PARTIE.</head><lb/><lb/>
+            <head type="titleChapter" rend="center">
+               <seg type="collation" subtype="subst" xml:id="Chap1Ed"
+                  corresp="manuscrit_vol_1.xml#Chap1Ms">CHAPITRE PREMIER.</seg>
+            </head>
+            <lb/>
+            <lb/>
+            <head type="titleChapterMain" rend="center"><hi rend="italic">Réflexions
+               générales.</hi></head><lb/><lb/>
+            <div type="part" n="1">
+               <div type="chapter" n="1">
+                  <p><hi rend="bold">L</hi>A révolution de France est une des <anchor
+                        type="collation" subtype="gap" xml:id="PlusEd"
+                        corresp="manuscrit_vol_1.xml#PlusMs"/> grandes époques de l’ordre social.
+                     Ceux qui la considèrent comme un événement accidentel, n’ont<seg
+                        type="collation" subtype="subst" xml:id="EtenduEd"
+                        corresp="manuscrit_vol_1.xml#EtenduMs"> porté</seg> leurs regards ni <seg
+                        type="subst" xml:id="substDansEd" corresp="manuscrit_vol_1.xml#substDansMs"
+                        >dans </seg>le passé, ni dans l'avenir. Ils ont pris les acteurs pour la
+                     pièce ; et, afin de satisfaire leurs passions, ils ont attribué aux hommes du
+                     moment ce que les siècles avoient préparé.<anchor type="collation"
+                        subtype="gap" xml:id="AdversairesEd"
+                        corresp="manuscrit_vol_1.xml#AdversairesMs"/>
+                     <lb/>Il suffisoit cependant de jeter un coup d’œil sur les principales crises
+                     de l’histoire, pour se convaincre qu’elles ont été toutes inévitables,<fw
+                        type="footer" rend="bottom-left"><hi rend="small">TOME I</hi></fw>
+                     <pb n="2" facs="#t1_2"/>
+                     <fw type="header" rend="top-center">CONSIDÉRATIONS</fw>quand elles se
+                     rattachoient de quelque manière <seg type="collation" subtype="subst"
+                        xml:id="ProgresEd" corresp="manuscrit_vol_1.xml#ProgresMs">au
+                        développement</seg> des idées; et qu’après une lutte et des malheurs plus ou
+                     moins prolongés, le triomphe des lumières a toujours été favorable à la
+                     grandeur et à l’amélioration de l’espèce humaine. <lb/> Mon ambition seroit de
+                     parler du temps dans lequel nous avons vécu, comme s’il étoit déjà <anchor
+                        type="collation" subtype="gap" xml:id="BienEd"
+                        corresp="manuscrit_vol_1.xml#BienMs"/>loin de nous. Les hommes éclairés, qui
+                     sont toujours contemporains des siècles futurs par leurs pensées, jugeront si
+                     j’ai su m’élever à la hauteur d’impartialité que je
+                     <!-- fin f. 3v du manuscrit - fin échantillon test --> voulois atteindre.<lb/>
+                     Je me bornerai, dans ce chapitre, à des considérations générales sur la marche
+                     politique de la civilisation européenne, mais seulement par rapport à la
+                     révolution de France : car c’est à ce sujet, déjà bien vaste, que cet ouvrage
+                     est consacré.<lb/> Les deux peuples anciens dont la littérature et l’histoire
+                     composent encore aujourd’hui notre principale fortune intellectuelle, n’ont dû
+                     leur étonnante supériorité qu’à la jouissance d’une patrie libre. Mais
+                     l’esclavage existoit chez eux ; et, par conséquent, les droits et les motifs
+                     d’émulation, qui doivent être communs à tous les hommes, étoient le partage
+                        exclusif<pb n="3"/>
+                  </p>
+               </div>
+            </div>
          </div>
       </body>
    </text>
-
 </TEI>
