@@ -65,15 +65,14 @@
                                 <a href="../html_stael/principes_editoriaux.html#legende"
                                     >Légende</a>
                             </li>
-                            <li class="topnav-right">
-                                <a href="../html_stael/manuscrit.html">Retour à "Première
-                                    édition"</a>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
                 <div class="main_content">
-                    <h2 class="title_page">Volume I</h2>
+                    <br/>
+                    <h2 class="title_page"><a href="premiere_edition.html">Première édition</a> -
+                        Volume I</h2>
 
                 </div>
 
@@ -98,53 +97,113 @@
 
     <xsl:template match="fw">   </xsl:template>
 
-
+    <!-- background -->
 
     <xsl:template match="titlePage">
-      
-                
-                <div class="titlePage">
-                    <xsl:apply-templates/>
-                </div>   
-     
-          </xsl:template>
-    
-    
-    <xsl:template match="pb[@facs='#frontispice_verso']|div [@type='volume']">
-        
-        <div class="volumeEdBody">
+
+        <div class="titlePage">
             <xsl:apply-templates/>
         </div>
-          </xsl:template> 
-    
-    <xsl:template match="div[@type='prefaceEd']">
-        <span class="prefaceEd">
-            
-            <xsl:apply-templates/>
-            
-        </span>
-        
-        
+
     </xsl:template>
+
+    <xsl:template match="pb[@facs = '#frontispice_verso']">   </xsl:template>
+
+
+    <xsl:template match="div">
+        <div>
+            <xsl:attribute name="class">
+                <xsl:value-of select="@type"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </div>   </xsl:template>
+
+    <xsl:template match="note[@resp = '#tesserS']">
+
+        <span class="tooltip">
+            <img class="noteEditoriale" alt="Note éditoriale" src="../img_stael/note_editoriale.jpg"/>
+
+            <span class="tooltiptext">
+
+                <xsl:apply-templates/>
+
+            </span>
+        </span>
+
+    </xsl:template>
+
+
+    <xsl:template match="ref">
+
+        <xsl:element name="a">
+            <xsl:variable name="id" select="substring-after(@target, 'manuscrit_vol_1.xml')"> </xsl:variable>
+            <xsl:attribute name="href">
+                <xsl:value-of select="concat('../html_stael/manuscrit_vol_1.html', $id)"/>
+            </xsl:attribute>
+
+            <xsl:apply-templates/>
+
+        </xsl:element>
+
+    </xsl:template>
+
+
+    <!-- Frontispice -->
+
+    <xsl:template match="titlePart[@type = 'main']">
+        <span class="titlePartMain">
+            <xsl:apply-templates/>
+        </span>
+
+    </xsl:template>
+
+
+    <xsl:template match="byline | docImprint | titlePart[@type = 'sub']">
+        <span class="byline">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+    <xsl:template match="epigraph">
+        <span class="epigraph">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+
+
 
     <xsl:template match="pb">
         <xsl:choose>
             <xsl:when test="@n = '0'"> </xsl:when>
-            <xsl:when test="@n = 'v'">  
-                    <span class="page">
-                        <xsl:value-of select="@n"/>
-                    </span>
-                    <xsl:apply-templates/>
-                <br/><br/>
+            <xsl:when test="@n = 'v'">
+                <span class="page">
+                    <xsl:value-of select="@n"/>
+                </span>
+                <xsl:apply-templates/>
+                <br/>
+                <br/>
             </xsl:when>
-            
+            <xsl:when test="@n = '1'">
+                <span class="page">
+                    <xsl:value-of select="@n"/>
+                </span>
+                <xsl:apply-templates/>
+                <br/>
+                <br/>
+            </xsl:when>
+
+
             <xsl:otherwise>
-                <hr class="finPage">
-                    <span class="page">
-                        <xsl:value-of select="@n"/>
-                    </span>
-                    <xsl:apply-templates/>
-                </hr>
+                <br/>
+                <br/>
+
+                <br/>
+                <span class="page">
+                    <xsl:value-of select="@n"/>
+                    <xsl:text>                                                              </xsl:text>
+                </span>
+                <xsl:apply-templates/>
+                <br/>
                 <br/>
                 <br/>
             </xsl:otherwise>
@@ -153,32 +212,115 @@
 
     <xsl:template match="anchor[@corresp]">
         <xsl:element name="a">
-            <xsl:variable name="id" select="substring-after(@corresp, 'manuscrit_vol_1.xml')"> </xsl:variable>
+            <xsl:variable name="id" select="substring-after(@corresp, 'manuscrit_vol_1.xml')"/>
+            <xsl:attribute name="id" select="@xml:id"/>
             <xsl:attribute name="href">
-                <xsl:value-of
-                    select="concat('../html_stael/manuscrit_vol_1.html', $id)"
-                />
+                <xsl:value-of select="concat('../html_stael/manuscrit_vol_1.html', $id)"/>
             </xsl:attribute>
-   
-            <img class="manuscrit" alt="Lien vers le manuscrit" src="../img_stael/manuscrit.jpg"/> 
+
+            <img class="manuscrit" alt="Lien vers le manuscrit" src="../img_stael/manuscrit.jpg"/>
         </xsl:element>
-   
+
     </xsl:template>
-    
+
     <xsl:template match="lb">
-<br/>
-       
+        <br/>
+
     </xsl:template>
-   
-  <xsl:template match="head">
-      
-      <span class="head">
-          
-         <xsl:apply-templates/> 
-          
-      </span>
-      
-  </xsl:template>
-        
-        
+
+
+
+    <xsl:template match="head">
+        <xsl:choose>
+            <xsl:when test="@type = 'titleWork'">
+                <h5>
+                    <xsl:apply-templates/>
+                </h5>
+
+            </xsl:when>
+            <xsl:otherwise>
+                <h6>
+                    <xsl:apply-templates/>
+                </h6>
+
+            </xsl:otherwise>
+        </xsl:choose>
+
+    </xsl:template>
+
+
+
+    <xsl:template match="title[@rend = 'italic']">
+        <xsl:choose>
+            <xsl:when test="@subtype = 'crf'">
+                <cite>
+                    <xsl:apply-templates/>
+                </cite>
+            </xsl:when>
+            <xsl:otherwise>
+                <cite>
+                    <xsl:element name="a">
+                        <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="concat('../html_stael/index_noms.html', $id)"/>
+                        </xsl:attribute>
+
+                        <xsl:apply-templates/>
+
+                    </xsl:element>
+
+                </cite>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <xsl:template match="seg">
+        <xsl:element name="a">
+            <xsl:variable name="id" select="substring-after(@corresp, 'manuscrit_vol_1.xml')"/>
+            <xsl:attribute name="id" select="@xml:id"/>
+            <xsl:attribute name="href">
+                <xsl:value-of select="concat('../html_stael/manuscrit_vol_1.html', $id)"/>
+            </xsl:attribute>
+
+            <img class="manuscrit" alt="Lien vers le manuscrit" src="../img_stael/manuscrit.jpg"/>
+        </xsl:element>
+
+        <xsl:choose>
+            <xsl:when test="@subtype = 'add'">
+                <mark class="add">
+                    <xsl:apply-templates/>
+                </mark>
+            </xsl:when>
+            <xsl:when test="@subtype = 'subst'">
+                <mark class="subst">
+                    <xsl:apply-templates/>
+                </mark>
+
+            </xsl:when>
+        </xsl:choose>
+
+    </xsl:template>
+    <xsl:template match="hi">
+        <xsl:choose>
+            <xsl:when test="@rend = 'bold'">
+                <span class="letterStart"><xsl:apply-templates/> </span>
+            </xsl:when>
+            <xsl:when test="@rend = 'small-caps'">
+                <span class="wordStart"><xsl:apply-templates/> </span>
+            </xsl:when>
+            <xsl:when test="@rend = 'italic'">
+                <cite>
+                    <xsl:apply-templates/>       
+                </cite>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates/>  
+            </xsl:otherwise>
+        </xsl:choose>
+
+
+
+    </xsl:template>
+
+
 </xsl:stylesheet>

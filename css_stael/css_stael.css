@@ -70,7 +70,7 @@ header {
 .background_nav {
     background-color: white;
     padding-left: 10px;
-   
+
 
 }
 
@@ -91,11 +91,11 @@ header {
 
 
 .topnav-right {
-  float: right;
-  background-color:#C0D1A9;/* Right-aligned section inside the top navigation */
-  color:white;
-  margin-right:0px;
-  margin-left:1px;
+    float: right;
+    background-color: #C0D1A9; /* Right-aligned section inside the top navigation */
+    color: white;
+    margin-right: 0px;
+    margin-left: 1px;
 }
 
 
@@ -142,7 +142,7 @@ ul {
 
 
 li {
-    float: left;/* text alignement in navigation bar */
+    float: left; /* text alignement in navigation bar */
 }
 
 
@@ -152,7 +152,7 @@ li {
     display: block;
     margin-left: auto;
     margin-right: auto;
-   
+
 
 
 }
@@ -208,25 +208,25 @@ li {
 
 
 
-h2{
-  font-size: 2.3vw;  
-    
+h2 {
+    font-size: 2.3vw;
+
 }
 
 
 
-h3{
-   
-   font-size: 1.8vw;
-    
-    
+h3 {
+
+    font-size: 1.8vw;
+
+
 }
 
 
-.indent{
-    
-margin-left: 0.9375em;
-    
+.indent {
+
+    margin-left: 0.9375em;
+
 }
 
 
@@ -311,7 +311,7 @@ cite {
     padding: 90px;
     width: 60%;
     line-height: 150%;
-    margin:auto;
+    margin: auto;
 
 }
 
@@ -428,8 +428,8 @@ cite {
 .addCopiste {
     font-weight: bold;
     color: #F4CB73;
-    
-    
+
+
 
 }
 
@@ -465,7 +465,7 @@ cite {
 }
 
 
-.addSchlegelW {   
+.addSchlegelW {
 
     font-weight: bold;
 
@@ -478,7 +478,7 @@ cite {
 
 .addStael {
 
-    font-weight: bold; 
+    font-weight: bold;
     color: #D57B69;
     display: inline;
 }
@@ -494,11 +494,11 @@ cite {
 }
 
 
-.addition{
-    
-     font-style: italic;
-    
-    
+.addition {
+
+    font-style: italic;
+
+
 }
 
 .crayon {
@@ -511,8 +511,8 @@ cite {
 
 /* Section "Principes d'affichage" */
 
-#legende{
-    
+#legende {
+
     line-height: 25px;
     font-size: inherit;
 }
@@ -562,15 +562,15 @@ cite {
 
 
 
-.del{
-   text-decoration: line-through; 
+.del {
+    text-decoration: line-through;
 }
 
 
 
 .subst {
 
-    font-weight: bold; 
+    font-weight: bold;
 
 }
 
@@ -617,7 +617,7 @@ cite {
     border-radius: 6px;
     top: -10px;
     left: 105%;
-    
+
 
     /* Position the tooltip text  */
     position: absolute;
@@ -631,7 +631,7 @@ cite {
 
 
 
- 
+
 
 
 /*   tooltip normalisation */
@@ -688,60 +688,109 @@ cite {
 /* 1ST EDITION */
 
 
-.titlePage{
-    
+.titlePage {
+
     background-color: white;
     font-size: 1.5vw;
     padding: 90px;
     width: 60%;
     line-height: 150%;
-    margin:auto;
-    text-align:center;
-  
-   
- 
+    margin: auto;
+    text-align: center;
+
+
 }
 
-.volumeEdBody{
-    
-    background-color: white;
-    font-size: 1.5vw;
-    padding: 90px;
-    width: 60%;
-    line-height: 150%;
-    margin:auto;
-   
- 
+.finPageEd {
+
+    font-size: 10px;
+
+
+
 }
+
 
 
 .page {
 
     font-size: 0.75em;
     font-style: italic;
-   
+    background-color: white;
+    text-decoration: none;
+
 
 }
 
-.prefaceEd{
-    
-    text-align:initial;
-    
-    
-}
-  
-.titlePart1{
-    
- font-size: 3vw;   
-    
-    
-    
-    
+/* Frontispice */
+
+.titlePartMain {
+
+
+    font-size: 2.3vw;
+
 }
 
-.head{
+
+
+.byline {
+
+    font-size: 1.3vw;
+
+}
+
+
+
+.epigraph {
+
+    text-align: left; /* corriger */
+    font-size: 0.625em;
+    line-height: 0.625em; /* corriger */
+
+}
+
+
+h6 {
+    text-align: center;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: 1.2em;
+    font-weight: normal;
+
+
+}
+
+h5 {
+
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 0em;
+    margin-bottom: 0em;
+
+}
+
+
+mark.add {
+
+    background-color: #C8E6DB;
+
+}
+
+mark.subst {
+
+    background-color: #C3D5E3;
+
+}
+
+.letterStart {
     
-    text-align:center;
+    font-weight: bold;
+
+}
+
+.wordStart{
     
+     font-variant: small-caps;
+     font-size: 0.82em;
     
 }

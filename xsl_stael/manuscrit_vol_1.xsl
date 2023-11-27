@@ -65,14 +65,13 @@
                                 <a href="../html_stael/principes_editoriaux.html#legende"
                                     >Légende</a>
                             </li>
-                            <li class="topnav-right">
-                                <a href="../html_stael/manuscrit.html">Retour à "Manuscrit"</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
                 <div class="main_content">
-                    <h2 class="title_page">Volume I</h2>
+                    <br/>
+                    <h2 class="title_page"><a href="manuscrit.html">Manuscrit</a> - Volume I</h2>
 
                 </div>
 
@@ -328,7 +327,7 @@
                 <div title="titlePart"/>
             </xsl:when>
 
-            <xsl:when test="@subtype = 'nChapter'">
+            <xsl:when test="@subtype = 'Chapter'">
                 <div title="titleChapter"/>
                 <xsl:apply-templates/>
                 <br/>
