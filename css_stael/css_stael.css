@@ -558,7 +558,12 @@ cite {
 }
 
 
+.corr {
 
+    width: 5em;
+    height: auto;
+
+}
 
 
 
@@ -793,4 +798,48 @@ mark.subst {
      font-variant: small-caps;
      font-size: 0.82em;
     
+}
+
+/* TOOLTIPS 1ST EDITION */
+
+/* Tooltip container*/
+.tooltipCorr{
+    position: relative;
+    display: inline-block;
+    border-bottom: dotted;
+
+}
+
+/* Tooltip text */
+.tooltipCorr .tooltiptextCorr {
+    visibility: hidden;
+    width: 120px;
+    font-size: smaller;
+    background-color: #FFE3BF;
+    text-align: center;
+    padding: 6px 0;
+    border-radius: 6px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+    /* Position the tooltip text  */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltipCorr:hover .tooltiptextCorr {
+    visibility: visible;
+}
+/*  Array  */
+.tooltipCorr .tooltiptextCorr::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #FFE3BF transparent transparent transparent;
 }

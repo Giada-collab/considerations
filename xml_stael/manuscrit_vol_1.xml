@@ -53,7 +53,7 @@
                      <author>
                         <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
                      </author>
-                     <title type="littWork" ref="index_noms.xml#considerationsMS">Considérations sur
+                     <title type="littWork" ref="index_noms.xml#considerationsSg">Considérations sur
                         les principaux événements de la Révolution française</title>
                      <note>Le manuscrit n'a pas de titre. Il a été reconstruit d'après la
                         correspondance</note>
@@ -279,7 +279,7 @@
                      <gap reason="illegible" atLeast="4" unit="char"/>
                   </del>
                   <add hand="#staelA" instant="true">vos</add> yeux. Ce manuscrit des <title
-                     type="littWork" subtype="crf" rend="underlined" ref="index_noms.xml#considerationsMS"
+                     type="littWork" subtype="crf" rend="underlined" ref="index_noms.xml#considerationsSg"
                      >Considérations sur la révolution françoise</title> est une copie corrigée de
                   la main de <rs ref="index_noms.xml#stael">ma mère</rs> et de <rs
                      ref="index_noms.xml#staelAu">mon frere Auguste</rs>, je ne m’en serois pas

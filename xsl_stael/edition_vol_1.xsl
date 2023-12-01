@@ -251,27 +251,10 @@
 
 
     <xsl:template match="title[@rend = 'italic']">
-        <xsl:choose>
-            <xsl:when test="@subtype = 'crf'">
+       
                 <cite>
                     <xsl:apply-templates/>
                 </cite>
-            </xsl:when>
-            <xsl:otherwise>
-                <cite>
-                    <xsl:element name="a">
-                        <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
-                        <xsl:attribute name="href">
-                            <xsl:value-of select="concat('../html_stael/index_noms.html', $id)"/>
-                        </xsl:attribute>
-
-                        <xsl:apply-templates/>
-
-                    </xsl:element>
-
-                </cite>
-            </xsl:otherwise>
-        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="seg">
@@ -281,24 +264,20 @@
             <xsl:attribute name="href">
                 <xsl:value-of select="concat('../html_stael/manuscrit_vol_1.html', $id)"/>
             </xsl:attribute>
-
-            <img class="manuscrit" alt="Lien vers le manuscrit" src="../img_stael/manuscrit.jpg"/>
+            <xsl:choose>
+                <xsl:when test="@subtype = 'add'">
+                    <mark class="add">
+                        <xsl:apply-templates/>
+                    </mark>
+                </xsl:when>
+                <xsl:when test="@subtype = 'subst'">
+                    <mark class="subst">
+                        <xsl:apply-templates/>
+                    </mark>
+                    
+                </xsl:when>
+            </xsl:choose>
         </xsl:element>
-
-        <xsl:choose>
-            <xsl:when test="@subtype = 'add'">
-                <mark class="add">
-                    <xsl:apply-templates/>
-                </mark>
-            </xsl:when>
-            <xsl:when test="@subtype = 'subst'">
-                <mark class="subst">
-                    <xsl:apply-templates/>
-                </mark>
-
-            </xsl:when>
-        </xsl:choose>
-
     </xsl:template>
     <xsl:template match="hi">
         <xsl:choose>
@@ -318,8 +297,17 @@
             </xsl:otherwise>
         </xsl:choose>
 
-
-
+    </xsl:template>
+    
+    <xsl:template match="choice">
+        
+        <span class="tooltipCorr">
+            <xsl:value-of select="corr"/>
+            <span class="tooltiptextCorr">
+                <xsl:value-of select="sic"/>
+                
+            </span>
+        </span>
     </xsl:template>
 
 

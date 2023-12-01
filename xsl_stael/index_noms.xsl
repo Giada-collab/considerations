@@ -97,8 +97,8 @@
     <xsl:template match="person">
    
         <xsl:for-each select="persName">  
-            <xsl:sort select="surname"/>
-        <span class="persName">
+            
+        <a class="persName">
            <xsl:attribute name="id">
                <xsl:value-of select="@xml:id"/>  
            </xsl:attribute> 
@@ -111,7 +111,7 @@
             <xsl:text> </xsl:text>
             <xsl:value-of select="nameLink"/>
           
-        </span>
+        </a>
           
         </xsl:for-each> 
         <xsl:for-each select="birth">
@@ -134,7 +134,7 @@
     
     <xsl:template match="place">
    
-            <span class="place">
+            <a class="place">
               
                 <xsl:attribute name="id">
                     <xsl:value-of select="@xml:id"/>  
@@ -143,7 +143,7 @@
                 <xsl:text> (</xsl:text>
                 <xsl:apply-templates select="country"/>
                 <xsl:text>)</xsl:text>
-            </span>
+            </a>
         
         <br/>
        
@@ -152,7 +152,7 @@
     
     
     <xsl:template match="term">
-        <span class="term">
+        <a class="term">
             <xsl:attribute name="id">
                 <xsl:value-of select="@xml:id"/>  
             </xsl:attribute> 
@@ -168,7 +168,7 @@
             
             <xsl:text>)</xsl:text>
              
-        </span>
+        </a>
         
         <br/>
        

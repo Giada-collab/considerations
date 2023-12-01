@@ -51,7 +51,7 @@
                      <author>
                         <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
                      </author>
-                     <title type="littWork" ref="index_noms.xml#considerationsMS" rend="italic"
+                     <title type="littWork" ref="index_noms.xml#considerationsSg" rend="italic"
                         >Considérations sur les principaux événements de la Révolution
                         française</title>
                      <note>Le manuscrit n'a pas de titre. Il a été reconstruit d'après la
@@ -241,7 +241,7 @@
             <epigraph rend="right">
                <quote> Les révolutions qui arrivent dans les grands états <lb/>ne sont point un
                   effet du hasard ni du caprice <lb/>des peuples.</quote>
-               <bibl> MÉM. DE SULLY, T.I, p. 133. </bibl>
+               <bibl> MÉM. DE SULLY, T. I, p. 133. </bibl>
             </epigraph>
             <lb/>
             <lb/>
@@ -273,9 +273,7 @@
                <note resp="#tesserS">L'&#8810; Avis des éditeurs &#8811; donne des renseignements
                   sur la manière de travailler de Staël et sur l'état du dernier manuscrit des
                      <title type="littWork" subtype="crf" rend="italic">Considérations,</title> ce
-                  qui ne figure que rarement dans sa correspondance. La déclaration de fidélité
-                  absolue au manuscrit, en revanche, doit être réfutée. Voir l'&#8810; Introduction
-                  &#8811; dans la section &#8810; Projet &#8811;.</note>
+                  qui ne figure que rarement dans sa correspondance. </note>
                <head type="prefaceEditors" rend="center"> AVIS DES EDITEURS.</head>
                <lb/>
                <lb/>
@@ -284,63 +282,78 @@
                   <seg type="collation" subtype="add" xml:id="PrefaceEdEd"
                      corresp="manuscrit_vol_1.xml#PrefaceEdMs">
                      <hi rend="bold"> E</hi><hi rend="small-caps">N</hi> remplissant la tâche que
-                     madame de Staël a daigné nous confier, nous devons avant tout faire connoître
-                     dans quel état nous avons trouvé le manuscrit remis à nos soins. <lb/> Madame
-                     de Staël s’étoit tracé, pour toutes ses compositions, une règle de travail dont
-                     elle ne s'écartoit jamais. Elle écrivoit d’un seul trait toute l’ébauche de
-                     l’ouvrage dont elle avoit conçu le plan, sans revenir sur ses pas, sans
+                        <rs ref="index_noms.xml#stael"> madame de Staël</rs> a daigné nous confier,
+                     nous devons avant tout faire connoître dans quel état nous avons trouvé le
+                     manuscrit remis à nos soins. <lb/><rs ref="index_noms.xml#stael"> Madame de
+                        Staël</rs> s’étoit tracé, pour toutes ses compositions, une règle de travail
+                     dont elle ne s'écartoit jamais. Elle écrivoit d’un seul trait toute l’ébauche
+                     de l’ouvrage dont elle avoit conçu le plan, sans revenir sur ses pas, sans
                      interrompre le cours de ses pensées, si ce n’est par les recherches que son
-                     sujet rendoit nécessaires. Cette première composition achevée, madame de Staël
-                     la transcrivoit en entier de sa main, et sans s’occuper encore de la correction
-                     du style, elle modifioit l’expression de ses idées et les classoit souvent dans
-                     un ordre nouveau. Le second travail étoit ensuite mis au net par un secrétaire,
-                     et ce n’étoit que sur la copie, souvent même sur les épreuves imprimées, que
-                        <pb n="vi" facs="#avis_editeurs_vi"/>
-                     <fw type="header" place="top-center"> AVIS DES EDITEURS.></fw> madame de Staël
-                     perfectionnoit les détails de la diction : plus occupée de transmettre à ses
-                     lecteurs toutes la nuances de sa pensée, toutes les émotions de son âme, que
-                     d’atteindre une correction minutieuse qu'on peut obtenir d’un travail, pour
-                     ainsi dire, mécanique. <lb/>Madame de Staël avoit achevé, dès les premiers
-                     jours de 1816, la composition de l'ouvrage que nous publions. Elle avoit
-                     consacré une année à en revoir les deux premiers volumes, ainsi qu'une partie
-                     du troisième. Elle étoit revenue à Paris pour terminer les morceaux relatifs à
-                     des événemens récens dont elle n'avoit pas été témoin, et sur lesquels des
-                     renseignemens plus précis devoient modifier quelques-unes de ses opinions.
-                     Enfin les <title type="littWork" subtype="crf" xml:id="considerationsEd"
-                        ref="index_noms.xml#considerationsMS" rend="italic"> Considérations sur les
+                     sujet rendoit nécessaires. Cette première composition achevée,<rs
+                        ref="index_noms.xml#stael"> madame de Staël</rs> la transcrivoit en entier
+                     de sa main, et sans s’occuper encore de la correction du style, elle modifioit
+                     l’expression de ses idées et les classoit souvent dans un ordre nouveau. Le
+                     second travail étoit ensuite mis au net par un secrétaire, et ce n’étoit que
+                     sur la copie, souvent même sur les épreuves imprimées, que <pb n="vi"
+                        facs="#avis_editeurs_vi"/>
+                     <!-- on ne peut pas pour les éditeurs (donc entités nommées plurielles) renvoyer simultanément à deux noms différents : voir comment créer un autre type de lien vers l'index des noms-->
+                     <fw type="header" place="top-center"> AVIS DES EDITEURS.></fw>
+                     <rs ref="index_noms.xml#stael">madame de Staël</rs> perfectionnoit les détails
+                     de la diction : plus occupée de transmettre à ses lecteurs toutes <choice>
+                        <sic> la </sic>
+                        <corr>les</corr>
+                     </choice> nuances de sa pensée, toutes les émotions de son âme, que d’atteindre
+                     une correction minutieuse qu'on peut obtenir d’un travail, pour ainsi dire,
+                     mécanique. <lb/><rs ref="index_noms.xml#stael">Madame de Staël</rs> avoit
+                     achevé, dès les premiers jours de 1816, la composition de l'ouvrage que nous
+                     publions. Elle avoit consacré une année à en revoir les deux premiers volumes,
+                     ainsi qu'une partie du troisième. Elle étoit revenue à <settlement
+                        ref="index_noms.xml#paris">Paris</settlement> pour terminer les morceaux
+                     relatifs à des événemens récens dont elle n'avoit pas été témoin, et sur
+                     lesquels des renseignemens plus précis devoient modifier quelques-unes de ses
+                     opinions. Enfin les <title type="littWork" subtype="crf"
+                        ref="index_noms.xml#considerationsSg" rend="italic"> Considérations sur les
                         principaux événemens de la révolution françoise</title> (car tel est le
-                     titre que madame de Staël avoit elle-même choisi) auroient paru à la fin de
-                     l'année dernière, si celle qui faisoit notre gloire et notre bonheur nous eût
-                     été conservée. <lb/>
+                     titre que <rs ref="index_noms.xml#stael">madame de Staël</rs> avoit elle-même
+                     choisi) auroient paru à la fin de l'année dernière, si celle qui faisoit notre
+                     gloire et notre bonheur nous eût été conservée. <lb/>
                      <pb n="vii" facs="#avis_editeurs_vii"/>
                      <fw type="header" place="top-center"/> Nous avons trouvé les deux premiers
                      volumes, et plusieurs chapitres du troisième, dans l'état où ils auroient été
                      livrés à l’impression. D’autres chapitres étoient copiés, mais non revus par
                      l’auteur. D’autres enfin n’étoient composés que de premier jet; et des notes
-                     marginales, écrites ou dictées par madame de Staël, indiquoient les points
-                     qu’elle se proposoit de développer. <lb/>Le premier sentiment comme le premier
-                     devoir de ses enfans, a été un respect religieux pour les moindres indications
-                     de sa pensée; et il est presque superflu de dire que nous ne nous sommes permis
-                     ni une addition ni même un changement, et que l’ouvrage qu’on va lire est
-                     parfaitement conforme au manuscrit de madame de Staël. <lb/>Le travail des
-                     éditeurs s’est borné uniquement à la révision des épreuves, et à la correction
-                     de ces légères inexactitudes de style, qui échappent à la vue dans le manuscrit
-                     le plus soigné. Ce travail s’est fait sous les yeux de <pb n="viii"
-                        facs="#avis_editeurs_viii"/>
-                     <fw type="header" place="top-center"/> M. A. W. de Schlegel, dont la rare
-                     supériorité d'esprit et de savoir justifie la confiance avec laquelle madame de
-                     Staël le consultoit dans tous ses travaux littéraires, autant que son honorable
-                     caractère mérite l’estime et l’amitié qu’elle n’a pas cessé d’avoir pour lui
-                     pendant une liaison de treize années.<lb/> M. de Staël remplira des intentions
-                     qui doivent être sacrées pour lui, en publiant une édition complète des œuvres
-                     de sa mere, et de celles de M. Necker. Les œuvres de madame de Staël
-                     renfermeront quelques compositions inédites; entre autres des fragmens d’un
-                     ouvrage commencé sous le titre de<title type="littWork" rend="italic"> Dix
-                        années d’exil</title>. L’une et l'autre collection sera précédée d’une
-                     notice biographique; mais un sentiment, que ceux qui ont connu madame de Staël
-                     apprécieront avec indulgence, n’a pas encore permis à ses enfans de se livrer à
-                     un travail qui touche de si près à leurs plus chers comme à leurs plus
-                     douloureux souvenirs.</seg></p>
+                     marginales, écrites ou dictées par <rs ref="index_noms.xml#stael">madame de
+                        Staël</rs>, indiquoient les points qu’elle se proposoit de développer.
+                     <lb/>Le premier sentiment comme le premier devoir de ses enfans, a été un
+                     respect religieux pour les moindres indications de sa pensée; et il est presque
+                     superflu de dire que nous ne nous sommes permis ni une addition ni même un
+                     changement, et que l’ouvrage qu’on va lire est parfaitement conforme au
+                     manuscrit de<rs ref="index_noms.xml#stael"> madame de Staël</rs>. <lb/>Le
+                     travail des éditeurs s’est borné uniquement à la révision des épreuves, et à la
+                     correction de ces légères inexactitudes de style, qui échappent à la vue dans
+                     le manuscrit le plus soigné. Ce travail s’est fait sous les yeux de <pb
+                        n="viii" facs="#avis_editeurs_viii"/>
+                     <fw type="header" place="top-center"/>
+                     <rs ref="index_noms.xml#schlegelW"> M. A. W. de Schlegel</rs>, dont la rare
+                     supériorité d'esprit et de savoir justifie la confiance avec laquelle <rs
+                        ref="index_noms.xml#stael">madame de Staël</rs> le consultoit dans tous ses
+                     travaux littéraires, autant que son honorable caractère mérite l’estime et
+                     l’amitié qu’elle n’a pas cessé d’avoir pour lui pendant une liaison de treize
+                        années.<lb/><rs ref="index_noms.xml#staelAu"> M. de Staël</rs> remplira des
+                     intentions qui doivent être sacrées pour lui, en publiant une édition complète
+                        des <title type="littWork" ref="index_noms.xml#oeuvresCompletesSg">
+                        œuvres </title> de <rs ref="index_noms.xml#stael"> sa mere</rs>, et de <title
+                        type="littWork" ref="index_noms.xml#oeuvresCompletesNj">celles</title> de
+                        <rs ref="index_noms.xml#neckerJ"> M. Necker.</rs> Les œuvres de <rs
+                        ref="index_noms.xml#stael"> madame de Staël</rs> renfermeront quelques
+                     compositions inédites; entre autres des fragmens d’un ouvrage commencé sous le
+                     titre de<title type="littWork" rend="italic" ref="index_noms.xml#dixAnneesSg">
+                        Dix années d’exil</title>. L’une et l'autre collection sera précédée d’une
+                     notice biographique ; mais un sentiment, que ceux qui ont connu <rs
+                        ref="index_noms.xml#stael">madame de Staël</rs> apprécieront avec
+                     indulgence, n’a pas encore permis à ses enfans de se livrer à un travail qui
+                     touche de si près à leurs plus chers comme à leurs plus douloureux
+                     souvenirs.</seg></p>
             </div>
             <pb n="ix" facs="#avertissement_auteur_ix"/>
             <div type="prefaceAu">
@@ -351,16 +364,16 @@
                      corresp="manuscrit_vol_1.xml#PrefaceAuMs">
                      <hi rend="bold">J’</hi><hi rend="small-caps">AVOIS</hi> d’abord commencé cet
                      ouvrage avec l’intention de le borner à l’examen des actes et des écrits
-                     politiques de mon père. Mais, en avançant dans mon travail, j’ai été conduite
-                     par le sujet même à retracer, d’une part, les principaux événemens de la
-                     révolution françoise, et à présenter, de l’autre, le tableau de l’Angleterre,
-                     comme une justification de l’opinion de M. Necker, relativement aux
-                     institutions politiques de ce pays. Mon plan s’étant agrandi, il m’a semblé que
-                     je devois changer de titre, quoique je n’eusse pas changé d’objet. Il restera
-                     néanmoins dans ce livre plus de détails relatifs à mon <pb n="x"
-                        facs="#avertissement_auteur_x"/>
-                     <fw type="header" place="top-center">AVERTISSEMENT DE L'AUTEUR.</fw> père, et
-                     même à moi, que je n’en aurois mis, si je l’eusse d’abord conçu sous un point
+                     politiques de<rs ref="index_noms.xml#neckerJ"> mon père.</rs> Mais, en avançant
+                     dans mon travail, j’ai été conduite par le sujet même à retracer, d’une part,
+                     les principaux événemens de la révolution françoise, et à présenter, de
+                     l’autre, le tableau de l’Angleterre, comme une justification de l’opinion de <rs ref="index_noms.xml#neckerJ">M.
+                     Necker,</rs> relativement aux institutions politiques de ce pays. Mon plan s’étant
+                     agrandi, il m’a semblé que je devois changer de titre, quoique je n’eusse pas
+                     changé d’objet. Il restera néanmoins dans ce livre plus de détails relatifs à
+                     mon <pb n="x" facs="#avertissement_auteur_x"/>
+                  <fw type="header" place="top-center">AVERTISSEMENT DE L'AUTEUR.</fw><rs ref="index_noms.xml#neckerJ">père,</rs> et
+                  même à <rs ref="index_noms.xml#stael">moi,</rs> que je n’en aurois mis, si je l’eusse d’abord conçu sous un point
                      de vue général ; mais peut-être des circonstances particulières servent-elles à
                      faire mieux connoÎtre l’esprit et le caractère des temps qu’on veut
                      décrire.</seg>
@@ -395,8 +408,8 @@
 
 
                   <p>
-                     <hi rend="bold">L</hi><hi rend="small-caps">A</hi> révolution de France est une des <anchor
-                        type="collation" subtype="gap" xml:id="PlusEd"
+                     <hi rend="bold">L</hi><hi rend="small-caps">A</hi> révolution de France est une
+                     des <anchor type="collation" subtype="gap" xml:id="PlusEd"
                         corresp="manuscrit_vol_1.xml#PlusMs"/> grandes époques de l’ordre social.
                      Ceux qui la considèrent comme un événement accidentel, n’ont<seg
                         type="collation" subtype="subst" xml:id="EtenduEd"
@@ -414,7 +427,7 @@
                      <fw type="header" rend="top-center">CONSIDÉRATIONS</fw>quand elles se
                      rattachoient de quelque manière <seg type="collation" subtype="subst"
                         xml:id="ProgresEd" corresp="manuscrit_vol_1.xml#ProgresMs">au
-                        développement</seg> des idées; et qu’après une lutte et des malheurs plus ou
+                        développement</seg> des idées ; et qu’après une lutte et des malheurs plus ou
                      moins prolongés, le triomphe des lumières a toujours été favorable à la
                      grandeur et à l’amélioration de l’espèce humaine. <lb/> Mon ambition seroit de
                      parler du temps dans lequel nous avons vécu, comme s’il étoit déjà <anchor

@@ -34,7 +34,7 @@
                      <author>
                         <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
                      </author>
-                     <title type="littWork" ref="index_noms.xml#considerationsMS">Considérations sur
+                     <title type="littWork" ref="index_noms.xml#considerationsSg">Considérations sur
                         les principaux événements de la Révolution française</title>
                      <note>Le manuscrit n'a pas de titre. Il a été reconstruit d'après la
                         correspondance</note>
@@ -88,7 +88,7 @@
                      duc de Broglie et M. le baron de Staël.</title>
                   <idno type="shelfmark" n="NUMM-3056628"> Cote: NUMM-3056628</idno>
                   <ref type="source" target="https://gallica.bnf.fr/ark:/12148/bpt6k3056628z"/>
-                  
+
                   <availability status="restricted">
                      <licence
                         target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"
@@ -103,7 +103,7 @@
                   <biblScope unit="volume" n="1">Tome premier</biblScope>
                </monogr>
             </biblStruct>
-            
+
          </sourceDesc>
       </fileDesc>
    </teiHeader>
@@ -114,77 +114,26 @@
          <div type="indexPeople">
             <head>Index des noms de personne</head>
 
+
+
             <listPerson>
+
+
                <person>
-                  <persName xml:id="stael" ref="https://isni.org/isni/0000000122591946">
-                     <surname>Staël-Holstein</surname>
-                     <forename>Germaine</forename>
+                  <persName xml:id="broglieV" ref="https://isni.org/isni/0000000122834231">
+                     <surname>Broglie</surname>
+                     <forename> Victor </forename>
                      <nameLink>de</nameLink>
                   </persName>
                   <birth>
-                     <date when="1766">1766</date>
+                     <date when="1785">1785</date>
                   </birth>
                   <death>
-                     <date when="1817">1817</date>
-                  </death>
-               </person>
-
-               <person>
-                  <persName xml:id="randallF" ref="http://viaf.org/viaf/259797369">
-                     <surname>Randall</surname>
-                     <forename>Frances</forename>
-                     <addName>Fanny</addName>
-                  </persName>
-                  <birth>
-                     <date when="1777">1777</date>
-                  </birth>
-                  <death>
-                     <date when="1833">1833</date>
-                  </death>
-                  <occupation>Gouvernante d'Albertine de Staël</occupation>
-               </person>
-
-               <person>
-                  <persName xml:id="staelA" ref="https://isni.org/isni/0000000108020725">
-                     <surname>Staël-Holstein</surname>
-                     <forename>Albertine</forename>
-                     <nameLink>de</nameLink>
-                  </persName>
-                  <birth>
-                     <date when="1797">1797</date>
-                  </birth>
-                  <death>
-                     <date when="1838">1838</date>
+                     <date when="1870">1870</date>
                   </death>
                </person>
 
 
-               <person>
-                  <persName xml:id="staelAu" ref="https://isni.org/isni/0000000121235202">
-                     <surname>Staël-Holstein</surname>
-                     <forename>Auguste-Louis</forename>
-                     <nameLink>de</nameLink>
-                  </persName>
-                  <birth>
-                     <date when="1789">1789</date>
-                  </birth>
-                  <death>
-                     <date when="1827">1827</date>
-                  </death>
-               </person>
-
-               <person>
-                  <persName xml:id="schlegelW" ref="https://isni.org/isni/0000000110276033">
-                     <surname>Schlegel</surname>
-                     <forename>August Wilhelm</forename>
-                  </persName>
-                  <birth>
-                     <date when="1767">1767</date>
-                  </birth>
-                  <death>
-                     <date when="1845">1845</date>
-                  </death>
-               </person>
 
                <person>
                   <persName xml:id="gerardF" ref="https://isni.org/isni/0000000107807200">
@@ -215,54 +164,160 @@
                   </death>
                </person>
 
+               <person>
+
+                  <persName xml:id="neckerJ" ref="https://isni.org/isni/000000012320977X">
+                     <surname>Necker</surname>
+                     <forename>Jacques</forename>
+                  </persName>
+                  <birth>
+                     <date when="1732">1732</date>
+                  </birth>
+                  <death>
+                     <date when="1804">1804</date>
+                  </death>
+               </person>
+
+
 
                <person>
-                  <persName xml:id="broglieV" ref="https://isni.org/isni/0000000122834231">
-                     <surname>Broglie</surname>
-                     <forename> Victor </forename>
+
+                  <persName xml:id="neckerS" ref="https://isni.org/isni/0000000114785572">
+                     <surname type="married">Necker</surname>
+                     <forename>Suzanne</forename>
+                     <surname type="birth">Curchod</surname>
+                  </persName>
+                  <birth>
+                     <date when="1737">1737</date>
+                  </birth>
+                  <death>
+                     <date when="1794">1794</date>
+                  </death>
+               </person>
+
+
+               <person>
+                  <persName xml:id="randallF" ref="http://viaf.org/viaf/259797369">
+                     <surname>Randall</surname>
+                     <forename>Frances</forename>
+                     <addName>Fanny</addName>
+                  </persName>
+                  <birth>
+                     <date when="1777">1777</date>
+                  </birth>
+                  <death>
+                     <date when="1833">1833</date>
+                  </death>
+                  <occupation>Gouvernante d'Albertine de Staël</occupation>
+               </person>
+
+
+
+
+               <person>
+                  <persName xml:id="schlegelW" ref="https://isni.org/isni/0000000110276033">
+                     <surname>Schlegel</surname>
+                     <forename>August Wilhelm</forename>
+                  </persName>
+                  <birth>
+                     <date when="1767">1767</date>
+                  </birth>
+                  <death>
+                     <date when="1845">1845</date>
+                  </death>
+               </person>
+
+
+               <person>
+                  <persName xml:id="staelA" ref="https://isni.org/isni/0000000108020725">
+                     <surname>Staël-Holstein</surname>
+                     <forename>Albertine</forename>
                      <nameLink>de</nameLink>
                   </persName>
                   <birth>
-                     <date when="1785">1785</date>
+                     <date when="1797">1797</date>
                   </birth>
                   <death>
-                     <date when="1870">1870</date>
+                     <date when="1838">1838</date>
                   </death>
                </person>
+
+
+               <person>
+                  <persName xml:id="staelAu" ref="https://isni.org/isni/0000000121235202">
+                     <surname>Staël-Holstein</surname>
+                     <forename>Auguste-Louis</forename>
+                     <nameLink>de</nameLink>
+                  </persName>
+                  <birth>
+                     <date when="1789">1789</date>
+                  </birth>
+                  <death>
+                     <date when="1827">1827</date>
+                  </death>
+               </person>
+
+
+
+
+               <person>
+                  <persName xml:id="stael" ref="https://isni.org/isni/0000000122591946">
+                     <surname>Staël-Holstein</surname>
+                     <forename>Germaine</forename>
+                     <nameLink>de</nameLink>
+                  </persName>
+                  <birth>
+                     <date when="1766">1766</date>
+                  </birth>
+                  <death>
+                     <date when="1817">1817</date>
+                  </death>
+               </person>
+
+
+
+
+
+
             </listPerson>
          </div>
 
 
          <div type="indexPlaces">
             <!-- Comme il est en grande partie question d'événements se déroulant en France, ce pays n'est pas indexé -->
-           
+
             <head>Index des noms de lieu</head>
             <listPlace>
-               <place xml:id="paris">
-                  <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR"
-                     >France</country>
-                  <settlement ref="https://www.geonames.org/2988507/paris.html"> Paris</settlement>
-               </place>
+
 
                <place xml:id="lyon">
                   <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR"
                      >France</country>
                   <settlement ref="https://www.geonames.org/2996944/lyon.html"> Lyon</settlement>
                </place>
+
+               <place xml:id="paris">
+                  <country key="FR" ref="https://www.iso.org/obp/ui/#iso:code:3166:FR"
+                     >France</country>
+                  <settlement ref="https://www.geonames.org/2988507/paris.html"> Paris</settlement>
+               </place>
+
             </listPlace>
          </div>
 
 
          <div type="indexWorks">
             <head>Index des ouvrages </head>
+
+            <!-- pour les ouvrages qui n'ont pas de ID, l'ajouter dans Wikidata -->
+            <!-- préciser la date de publication choisie : parfois dans le texte on fait mention à une date de publication précise -->
             <index>
-               <term xml:id="considerationsMS">
+               <term xml:id="considerationsSg">
                   <objectName type="littWork" rend="italic"
                      ref="https://www.wikidata.org/wiki/Q107179831">Considérations sur les
                      principaux événements de la Révolution française</objectName>
                   <name type="author" ref="#stael">Germaine de Staël</name>
                </term>
-
                <term xml:id="corinneMisene">
                   <objectName type="painting" rend="italic"
                      ref="https://www.wikidata.org/wiki/Q17176642">Corinne au Cap
@@ -270,6 +325,24 @@
                   <name type="author" ref="#gerardF">François Gérard</name>
                </term>
 
+               <term xml:id="dixAnneesSg">
+                  <objectName type="littWork" rend="italic">Dix années d'exil</objectName>
+                  <name type="author" ref="#stael">Germaine de Staël</name>
+               </term>
+
+
+               <term xml:id="oeuvresCompletesNj">
+                  <objectName type="littWork" rend="italic"
+                     ref="https://www.wikidata.org/wiki/Q116868867">Oeuvres complètes</objectName>
+                  <name type="author" ref="#stael">Jacques Necker</name>
+               </term>
+
+
+
+               <term xml:id="oeuvresCompletesSg">
+                  <objectName type="littWork" rend="italic">Oeuvres complètes</objectName>
+                  <name type="author" ref="#stael">Germaine de Staël</name>
+               </term>
             </index>
          </div>
       </body>
