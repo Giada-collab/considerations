@@ -312,7 +312,7 @@ cite {
     width: 60%;
     line-height: 150%;
     margin: auto;
-
+  
 }
 
 
@@ -580,6 +580,22 @@ cite {
 }
 
 
+/* Page Documentation technique */
+
+
+.imgXml{
+    
+     width: 70%;
+    height: auto;
+
+    
+    
+    
+    
+}
+
+
+
 
 /* page introduction */
 
@@ -613,7 +629,7 @@ cite {
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 20em;
+    width: 23em;
     font-size: smaller;
     background-color: #FFFBE1;
     border-style: outset;
@@ -622,6 +638,7 @@ cite {
     border-radius: 6px;
     top: -10px;
     left: 105%;
+    line-height: 1.4em;
 
 
     /* Position the tooltip text  */
@@ -843,3 +860,14 @@ mark.subst {
     border-style: solid;
     border-color: #FFE3BF transparent transparent transparent;
 }
+
+blockquote {
+    
+    line-height: 1.2em;
+    text-align: justify;
+    margin-left: 40%;
+    
+    
+}
+
+

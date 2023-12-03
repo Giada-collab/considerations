@@ -11,7 +11,7 @@
          <titleStmt>
             <title type="main">
                <title type="littWork">Considérations sur les principaux événements de la Révolution
-                  française</title> de Germaine de Staël : un laboratoire éditorial</title>
+                  française</title> de Germaine de Staël&#xA0;: un laboratoire éditorial</title>
             <title type="sub">Manuscrit</title>
             <author>
                <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
@@ -74,9 +74,9 @@
                         <support><material>Papier </material>vergé, filigrané et plié in-folio.
                            Emploi rare du vélin</support>
                         <extent>
-                           <locus n="vol_1">Premier volume : 315 ff.</locus>
-                           <locus n="vol_2">Deuxième volume : 326 ff.</locus>
-                           <locus n="vol_3">Troisième volume : 389 ff.</locus>
+                           <locus n="vol_1">Premier volume&#xA0;: 315 ff.</locus>
+                           <locus n="vol_2">Deuxième volume&#xA0;: 326 ff.</locus>
+                           <locus n="vol_3">Troisième volume&#xA0;: 389 ff.</locus>
                         </extent>
                         <foliation>Foliotation manuscrite dans l'angle supérieur gauche de chaque
                            page. Foliotation au recto de chaque feuillet dans l'angle supérieur
@@ -92,28 +92,29 @@
                   <handDesc>
                      <handNote xml:id="randallF">Copiste A: <persName ref="index_noms.xml#randallF"
                            >Fanny Randall</persName></handNote>
-                     <handNote xml:id="cB" medium="ink">Copiste B : non identifié</handNote>
-                     <handNote xml:id="staelA" medium="ink">Copiste C : <persName
+                     <handNote xml:id="cB" medium="ink">Copiste B&#xA0;: non identifié</handNote>
+                     <handNote xml:id="staelA" medium="ink">Copiste C&#xA0;: <persName
                            ref="index_noms.xml#staelA">Albertine de Staël</persName>
                         <note>Elle est autrice également de la lettre aux ff. 1r-2v</note>
                      </handNote>
-                     <handNote xml:id="cD" medium="ink">Copiste D : non identifié. </handNote>
-                     <handNote xml:id="cE" medium="ink">Copiste E : non identifié</handNote>
-                     <handNote xml:id="cF" medium="ink">Copiste F : non identifié</handNote>
-                     <handNote xml:id="staelAu" medium="ink">Copiste G : <persName
+                     <handNote xml:id="cD" medium="ink">Copiste D&#xA0;: non identifié. </handNote>
+                     <handNote xml:id="cE" medium="ink">Copiste E&#xA0;: non identifié</handNote>
+                     <handNote xml:id="cF" medium="ink">Copiste F&#xA0;: non identifié</handNote>
+                     <handNote xml:id="staelAu" medium="ink">Copiste G&#xA0;: <persName
                            ref="index_noms.xml#staelAu">Auguste de Staël</persName>
                         <note>Il est également auteur d'interventions posthumes dans le
                            manuscrit</note>
                      </handNote>
-                     <handNote xml:id="cH" medium="ink">Copiste H : non identifié</handNote>
-                     <handNote xml:id="cI" medium="ink">Copiste I : non identifié</handNote>
-                     <handNote xml:id="stael" medium="ink">Variantes d'auteur : <persName
+                     <handNote xml:id="cH" medium="ink">Copiste H&#xA0;: non identifié</handNote>
+                     <handNote xml:id="cI" medium="ink">Copiste I&#xA0;: non identifié</handNote>
+                     <handNote xml:id="stael" medium="ink">Variantes d'auteur&#xA0;: <persName
                            ref="index_noms.xml#stael"/>Germaine de Staël </handNote>
-                     <handNote xml:id="schlegelW" medium="ink">Intervention allographe B : <persName
-                           ref="index_noms.xml#schlegelW">Wilhelm Schlegel </persName></handNote>
-                     <handNote xml:id="allC" medium="pencil">Intervention allographe C : non
+                     <handNote xml:id="schlegelW" medium="ink">Intervention allographe B&#xA0;:
+                           <persName ref="index_noms.xml#schlegelW">Wilhelm Schlegel
+                        </persName></handNote>
+                     <handNote xml:id="allC" medium="pencil">Intervention allographe C&#xA0;: non
                         identifié </handNote>
-                     <handNote xml:id="allD" medium="ink">Auteur de feuillets adjoints : non
+                     <handNote xml:id="allD" medium="ink">Auteur de feuillets adjoints&#xA0;: non
                         identifié. <note>Écriture qui
                            <!-- ajouter pointeur vers les ff. du volume III --> figure <locus>aux
                               ff. 219r°-220v° du troisième volume</locus>. Ce sont des feuillets
@@ -156,14 +157,14 @@
                   </editor>
                   <title type="main">Considérations sur les principaux événemens de la Révolution
                      françoise</title>
-                  <title type="sub">ouvrage posthume de madame la baronne de Staël ; publ. par M. le
-                     duc de Broglie et M. le baron de Staël</title>
+                  <title type="sub">ouvrage posthume de madame la baronne de Staël&#xA0;; publ. par
+                     M. le duc de Broglie et M. le baron de Staël</title>
                   <imprint>
                      <pubPlace ref="index_noms.xml#paris">Paris</pubPlace>
                      <publisher>Delaunay</publisher>
                      <date when="1818">1818</date>
                   </imprint>
-                  <extent>3 v.; in-8</extent>
+                  <extent>3 v.&#xA0;; in-8</extent>
                </monogr>
                <ref type="bib_desc" target="http://catalogue.bnf.fr/ark:/12148/cb178050717"> </ref>
             </biblStruct>
@@ -255,23 +256,25 @@
    <text>
       <body>
          <div type="volume" n="1">
-            <!-- Lette d'Albertine de Staël à François Gérard -->
 
             <pb n="1r" facs="#lettre_albertine_1"/>
             <!-- l'absence de titre dans le manuscrit est signalée par une note explicative -->
-            <note resp="#tesserS">Le manuscrit n'a pas de titre mais, d'après la correspondance de
-                  <rs ref="index_noms.xml#stael">Germaine de Staël</rs> et de son entourage, elle
-               avait probablement choisi celui de <title type="littWork" subtype="crf" rend="italic"
-                  >Considérations sur les principaux événemens de la Révolution françoise</title>,
-               comme il a été déclaré dans l'<title type="titleChapter"
-                  ref="edition_vol_1.xml#considerationsEd">&#171;Avis des éditeurs&#187;</title> de
-               la première édition.</note>
-            <!-- ajouter le lien vers la première èdition -->
+            <note resp="#tesserS">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de
+                  Staël</rs> a été reliée à ce manuscrit probablement après la publication de
+               l'ouvrage. Elle est adressée au peintre <rs ref="index_noms.xml#gerardF"> François
+                  Gérard</rs> à qui elle l'a donné pour le remercier des portraits de sa <rs
+                  ref="index_noms.xml#stael">mère</rs> et son frère <rs ref="index_noms.xml#staelAu"
+                  > Auguste. </rs> En ce qui concerne le portrait de <rs ref="index_noms.xml#stael"
+                  >Germaine de Staël,</rs> elle fait probablement allusion au tableau <title
+                  type="painting" ref="index_noms.xml#corinneMisene" rend="italic">Corinne au Cap
+                  Misène</title> réalisé en 1819 et qui se trouve au Musée des Beaux-Arts de <rs
+                  ref="index_noms.xml#lyon"> Lyon.</rs></note>
+
+            <anchor type="collation" subtype="gap" corresp="edition_vol_1.xml#frontispiceEd"
+               xml:id="frontispiceMs"/>
 
             <fw type="bibl" place="bottom-left">Achat 22856 </fw>
             <div type="letter" hand="#staelA">
-
-               
 
                <p> Vous m’avez fait un present si precieux, Monsieur, que j’ai cherché à vous
                   exprimer ma reconnoissance par une chose qui j’en suis sure aura du prix à <del
@@ -279,7 +282,7 @@
                      <gap reason="illegible" atLeast="4" unit="char"/>
                   </del>
                   <add hand="#staelA" instant="true">vos</add> yeux. Ce manuscrit des <title
-                     type="littWork" subtype="crf" rend="underlined" ref="index_noms.xml#considerationsSg"
+                     type="littWork" rend="underlined" ref="index_noms.xml#considerationsSg"
                      >Considérations sur la révolution françoise</title> est une copie corrigée de
                   la main de <rs ref="index_noms.xml#stael">ma mère</rs> et de <rs
                      ref="index_noms.xml#staelAu">mon frere Auguste</rs>, je ne m’en serois pas
@@ -300,16 +303,7 @@
             </div>
 
             <pb n="2r" cert="high" facs="#lettre_albertine_3"/>
-            <note resp="#tesserS">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de
-                  Staël</rs> a été reliée au manuscrit. Elle est adressée au peintre <rs
-                  ref="index_noms.xml#gerardF"> François Gérard</rs> à qui elle a donné le manuscrit
-               des <title type="littWork" subtype="crf" ref="index_noms.xml#staël" rend="italic"
-                  >Considérations</title> pour le remercier des portraits de sa <rs
-                     ref="index_noms.xml#stael">mère</rs> et son frère <rs ref="index_noms.xml#staelAu"> Auguste.
-               </rs> Pour le portrait de Germaine de Staël, elle fait probablement allusion au
-               tableau <title type="painting" ref="index_noms.xml#corinneMisene" rend="italic"
-                  >Corinne au Cap Misène</title> réalisé en 1819 et qui se trouve au Musée des
-               Beaux-Arts de <rs ref="index_noms.xml#lyon"> Lyon.</rs></note>
+
             <div type="envelope" hand="#staelA">
                <!-- enveloppe reliée après la lettre -->
                <p>
@@ -320,15 +314,62 @@
                               cert="low">G</hi>érard</rs>.</addrLine>
                   </address>
                </p>
+               <note resp="#tesserS">Après l'&#8810;&#xA0;Avis des éditeurs&#xA0;&#8811; de la
+                  première édition figure un &#8810;&#xA0;Avertissement de l'auteur&#xA0;&#8811; qui
+                  n'a pas de trace dans le manuscrit. L'intention de <rs ref="index_noms.xml#stael"
+                     >Staël</rs> était sans doute d'écrire une préface puisque un fragment
+                  autographe de celle-ci a été trouvé, tête-bêche, dans le dernier feuillet du
+                     <title type="littWork" rend="italic" ref="index_noms.xml#mannequinSg"
+                     >Mannequin</title>, proverbe dramatique en deux actes écrit en 1811 et publié
+                  posthume dans les <title type="littWork" rend="italic"
+                     ref="index_noms.xml#oeuvresCompletesSg">Oeuvres complètes</title>
+                  <!-- récupéer le texte sans modernisation --> de 1820. Voici le fragment décrit
+                  dans un catalogue de vente (Christie, 1998, p. 168)&#xA0;: <p>
+                     &#8810;&#xA0;Préface. Il doit être de quelque intérêt pour l'Europe de
+                     connaître toutes les causes d'une Révolution qui non seulement a bouleversé la
+                     face des empires mais qui a peut-être opéré de plus grands changements dans les
+                     dispositions intérieures de la race humaine que dans sa destinée. Mon père
+                     s'étant trouvé ministre avant et pendant la Révolution, j'ai recueilli par son
+                     entretien et plus tard par mes propres circonstances des faits et des
+                     observations que je vais rassembler en les ralliant au premier objet de mes
+                     pensées&#xA0;: l'histoire de la vie de mon père. Je crois nécessaire de faire
+                     précéder ce récit par quelques réflexions sur l'état de la France pendant le
+                        XVIII<hi rend="superscript">e</hi> siècle. La Révolution française a été
+                     préparée si longtemps d'avance par la marche des opinions qu'on ne
+                     [...]&#xA0;&#8811;</p>
+               </note>
+               <anchor type="collation" subtype="gap" corresp="edition_vol_1.xml#PrefaceEdEd1"
+                  xml:id="PrefaceEdMs"/>
+               <anchor type="collation" subtype="gap" corresp="edition_vol_1.xml#PrefaceAuEd1"
+                  xml:id="PrefaceAuMs"/>
             </div>
 
 
             <pb n="3r" type="nBnF" facs="#v1_3r"/>
             <fw type="pageNum" place="top-left">1</fw>
+            
+           <!-- afficher  volNum et cahNum? --> 
+            
             <fw type="volNum" place="top-left"><del hand="#unknown">1.<hi rend="superscript">er</hi>
                   Volume</del></fw>
             <fw type="cahNum" place="top-left"><del hand="#unknown">1<hi rend="superscript">er</hi>
                   Cahier</del></fw>
+
+            <note resp="#tesserS">Ce manuscrit n'a pas de titre mais, d'après la correspondance de
+                  <rs ref="index_noms.xml#stael">Germaine de Staël</rs> et de son entourage, elle
+               avait probablement choisi celui de <title type="littWork" rend="italic"
+                  >Considérations sur les principaux événemens de la Révolution françoise</title>,
+               comme il a été déclaré dans l'&#171;&#xA0;Avis des éditeurs&#xA0;&#187; de la
+               première édition. C'est d'ailleurs le titre qui figure dans le frontispice de la
+               publication. Dans des stades génétiques précédents elle avait déjà songé à un titre
+               ensuite raturé&#xA0;: <title type="littWork" ref="index_noms.xml#staël" rend="italic"
+                  >Considérations sur les principaux faits de la révolution de France et sur les
+                  résultats de la révolution d'Angleterre</title> (Christie, 1998, p. 162).</note>
+
+            <anchor type="collation" subtype="gap" corresp="edition_vol_1.xml#titleWorkEd"
+               xml:id="titleWorkMs"/>
+
+
             <fw type="bibl" place="bottom-left">Achat 22856</fw>
             <fw type="bibl" place="top-center">N.a.fr. 14606 </fw>
 
@@ -341,12 +382,18 @@
                         >Première partie</add></head>
                   <head type="titleChapter" subtype="nChapter">
                      <!-- les <head> suivants n'ont pas encore été expliqués dans les principes d'encodage -->
+                     <anchor type="collation" subtype="subst" corresp="edition_vol_1.xml#Chap1Ed"
+                        xml:id="Chap1Ms"/>
                      <handShift scribeRef="#randallF"/> 1<hi rend="superscript">er</hi>
                      Chapitre.</head>
                   <head type="titleChapter" subtype="main">Réflexions générales </head>
                   <p>La Révolution de France est une des <del hand="#unknown" rend="strikethrough">
-                        plus </del> grandes époques de l'ordre social. Ceux qui la considèrent comme
-                     un évènement accidentel, n'ont <app>
+                        <anchor type="collation" subtype="add" xml:id="PlusMs"
+                           corresp="edition_vol_1.xml#PlusEd"/> plus </del> grandes époques de
+                     l'ordre social. Ceux qui la considèrent comme un évènement accidentel, n'ont
+                        <anchor type="collation" subtype="subst" xml:id="EtenduMs"
+                        corresp="edition_vol_1.xml#EtenduEd"/>
+                     <app>
                         <rdg varSeq="1">
                            <del hand="#schlegelW" rend="strikethrough">étendu</del>
                         </rdg>
@@ -358,7 +405,8 @@
                         <rdg varSeq="3">
                            <add hand="#schlegelW">porté</add>
                         </rdg>
-                     </app> leurs regards ni <app>
+                     </app> leurs regards ni 
+                     <app>
                         <rdg varSeq="1">
                            <del hand="#schlegelW" rend="strikethrough">dans</del>
                         </rdg>
@@ -372,7 +420,8 @@
                         </rdg>
                      </app> le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et
                      afin de satisfaire leurs passions, ils ont attribué aux hommes du moment ce que
-                     les siècles avoient préparé. <del hand="#unknown" rend="strikethrough"> Les
+                     les siècles avoient préparé. <anchor type="collation" subtype="add" xml:id="AdversairesMs"
+                        corresp="edition_vol_1.xml#AdversairesEd"/> <del hand="#unknown" rend="strikethrough"> Les
                         adversaires des principes de la Révolution aimoient à se persuader que le
                         choc auquel ils vouloient s'opposer étoit produit par quelques circonstances
                         particulieres <choice>
@@ -393,6 +442,8 @@
                      <!-- un trait vertical dans la marge gauche en correspondance du texte suivant -->
                      manière <metamark spanTo="#quApres" rend="verticalLine"
                         place="left-hand margin"/>
+                     <anchor type="collation" subtype="subst" xml:id="ProgresMs"
+                        corresp="edition_vol_1.xml#ProgresEd"/>
                      <del hand="#schlegelW" rend="strikethrough">aux progrès </del>
                      <add hand="#schlegelW">au developpement</add> des idées, et qu'après <anchor
                         type="metamark" xml:id="quApres"/> une lutte et des malheurs plus ou moins <app>
@@ -409,7 +460,8 @@
                         </rdg>
                      </app> le triomphe des lumières a toujours été favorable à la grandeur et à
                      l'amélioration de l'espèce humaine.<lb/> Mon ambition seroit de parler du temps
-                     dans lequel nous avons vécu, comme s'il étoit déjà <del hand="#stael"
+                     dans lequel nous avons vécu, comme s'il étoit déjà <anchor type="collation" subtype="add" xml:id="BienMs"
+                        corresp="edition_vol_1.xml#BienEd"/> <del hand="#stael"
                         rend="strikethrough">depuis long temps écoulé</del>
                      <add hand="#stael">bien loin de nous</add>. Les hommes éclairés qui sont
                      toujours contemporains <del hand="#stael" rend="strikethrough">de

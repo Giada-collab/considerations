@@ -336,7 +336,10 @@
                      ref="https://www.wikidata.org/wiki/Q116868867">Oeuvres complètes</objectName>
                   <name type="author" ref="#stael">Jacques Necker</name>
                </term>
-
+               <term xml:id="mannequinSg">
+                  <objectName type="littWork" rend="italic">Mannequin</objectName>
+                  <name type="author" ref="#stael">Germaine de Staël</name>
+               </term>
 
 
                <term xml:id="oeuvresCompletesSg">

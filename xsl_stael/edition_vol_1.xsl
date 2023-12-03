@@ -165,9 +165,9 @@
     </xsl:template>
 
     <xsl:template match="epigraph">
-        <span class="epigraph">
+        <div class="epigraph">
             <xsl:apply-templates/>
-        </span>
+        </div>
     </xsl:template>
 
 
@@ -258,27 +258,49 @@
     </xsl:template>
 
     <xsl:template match="seg">
-        <xsl:element name="a">
-            <xsl:variable name="id" select="substring-after(@corresp, 'manuscrit_vol_1.xml')"/>
-            <xsl:attribute name="id" select="@xml:id"/>
-            <xsl:attribute name="href">
-                <xsl:value-of select="concat('../html_stael/manuscrit_vol_1.html', $id)"/>
-            </xsl:attribute>
+        
+       
             <xsl:choose>
-                <xsl:when test="@subtype = 'add'">
+                <xsl:when test="@subtype = 'add' and (@xml:id='PrefaceEdEd' or @xml:id='PrefaceAuEd')">
                     <mark class="add">
                         <xsl:apply-templates/>
                     </mark>
                 </xsl:when>
+                <xsl:when test="@subtype = 'add'">
+                    <xsl:element name="a">
+                        <xsl:variable name="id" select="substring-after(@corresp, 'manuscrit_vol_1.xml')"/>
+                        <xsl:attribute name="id" select="@xml:id"/>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="concat('../html_stael/manuscrit_vol_1.html', $id)"/>
+                        </xsl:attribute>
+                    <mark class="add">
+                        <xsl:apply-templates/>
+                    </mark>
+                    </xsl:element>
+                </xsl:when>
                 <xsl:when test="@subtype = 'subst'">
+                    <xsl:element name="a">
+                        <xsl:variable name="id" select="substring-after(@corresp, 'manuscrit_vol_1.xml')"/>
+                        <xsl:attribute name="id" select="@xml:id"/>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="concat('../html_stael/manuscrit_vol_1.html', $id)"/>
+                        </xsl:attribute>
                     <mark class="subst">
                         <xsl:apply-templates/>
                     </mark>
-                    
+                    </xsl:element> 
                 </xsl:when>
+               
+             <xsl:otherwise>
+                 <xsl:apply-templates/>   
+                 
+             </xsl:otherwise>
             </xsl:choose>
-        </xsl:element>
     </xsl:template>
+    
+    
+    
+    
     <xsl:template match="hi">
         <xsl:choose>
             <xsl:when test="@rend = 'bold'">
@@ -292,6 +314,13 @@
                     <xsl:apply-templates/>       
                 </cite>
             </xsl:when>
+            <xsl:when test="@rend = 'superscript'">
+                
+                <span class="superscript">
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:when>
+            
             <xsl:otherwise>
                 <xsl:apply-templates/>  
             </xsl:otherwise>
@@ -310,5 +339,38 @@
         </span>
     </xsl:template>
 
+    <xsl:template match="rs">
+     
+        <xsl:element name="a">
+            <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
+            <xsl:attribute name="href">
+                <xsl:value-of select="concat('../html_stael/index_noms.html', $id)"/>
+            </xsl:attribute>
+        
+            <xsl:apply-templates/>
+        </xsl:element>
+        
+    </xsl:template>
+    
+<xsl:template match="cit">
+    <blockquote>
+        
+        <xsl:apply-templates/>
+    </blockquote>
+</xsl:template>
+    
+    <xsl:template match="graphic">
+        <xsl:element name="a">
+        <xsl:attribute name="href">
+            <xsl:value-of select="@url"/>
+        </xsl:attribute>    
+         <xsl:attribute name="id">
+             <xsl:value-of select="@xml:id"/>
+         </xsl:attribute>  
+        </xsl:element>
+    </xsl:template> 
+    
+    
+    
 
 </xsl:stylesheet>
