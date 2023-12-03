@@ -1,20 +1,29 @@
 
 /* BASIC STRUCTURE ALL PAGES*/
 
-body {
-    background-color: linen;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+/* définition de l'élément root pour pouvoir appliquer les dimension relatives "rem" */
+html{
+    
     font-family: Arial, Verdana, sans-serif;
     color: black;
-    font-size: 0.875em;
+    font-size: 100%;
+    
+    
+    
+}
+
+body {
+    background-color: linen;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+   
     text-align: justify;
 }
 
 header {
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 
 
 }
@@ -34,7 +43,7 @@ header {
 .title_header_sub {
 
     font-size: 2vw; /* Responsive Font Size */
-    line-height: 2.5em;
+    line-height: 2.5rem;
 
 
 
@@ -43,8 +52,8 @@ header {
 
 .title_header_sub2 {
 
-    font-size: 1.5vw; /* To allow users to resize the text (in the browser menu): em instead of pixels */
-    line-height: 2em;
+    font-size: 1.5vw; /* To allow users to resize the text (in the browser menu) */
+    line-height: 2rem;
 
 }
 
@@ -69,7 +78,7 @@ header {
 
 .background_nav {
     background-color: white;
-    padding-left: 10px;
+    padding-left: 0.625rem;
 
 
 }
@@ -82,8 +91,8 @@ header {
     color: black;
     float: none; /* W3C responsive layout*/
     width: 100%; /* W3C responsive layout*/
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
     text-decoration: none; /* no link underlined */
 
 }
@@ -94,8 +103,8 @@ header {
     float: right;
     background-color: #C0D1A9; /* Right-aligned section inside the top navigation */
     color: white;
-    margin-right: 0px;
-    margin-left: 1px;
+    margin-right: 0rem;
+    margin-left: 0.0625rem;
 }
 
 
@@ -104,9 +113,9 @@ header {
     position: absolute;
     background-color: white;
     overflow: auto; /* W3C responsive layout*/
-    box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.2);
-    padding-bottom: 10px;
-    padding-top: 10px;
+    box-shadow: 0rem 0.625rem 1.125rem 0rem rgba(0, 0, 0, 0.2);
+    padding-bottom: 0.625rem;
+    padding-top: 0.625rem;
     z-index: 1;
 
 }
@@ -120,8 +129,8 @@ header {
     font-size: 1.5vw;
     margin-left: 0;
     margin-right: 0;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding-bottom: 0.3125rem;
+    padding-top: 0.3125rem;
 
 }
 
@@ -148,7 +157,7 @@ li {
 
 .legende {
 
-    font-size: 0.7em;
+    font-size: 0.7rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -164,7 +173,7 @@ li {
     text-align: center;
     color: black;
     background-color: white;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     font-size: 1.3vw;
 
 
@@ -177,8 +186,8 @@ li {
     color: black;
     float: none; /* W3C responsive layout*/
     width: 100%; /* W3C responsive layout*/
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
 
 
 
@@ -193,8 +202,8 @@ li {
 
     background-color: linen;
     height: auto;
-    font-size: 1.5vw;
-    line-height: 1.5625em;
+    font-size: 1.6vw;
+    line-height: 2vw;
 
 
 }
@@ -225,7 +234,7 @@ h3 {
 
 .indent {
 
-    margin-left: 0.9375em;
+    margin-left: 0.9375rem;
 
 }
 
@@ -264,7 +273,7 @@ cite {
     position: relative;
     max-width: 100%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 
 }
 
@@ -276,14 +285,14 @@ cite {
 
 .container .content {
     position: absolute;
-    top: 0px;
+    top: 0rem;
     background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.6); /* Black background with 0.6 opacity */
     color: #f1f1f1;
     width: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    padding-top: 0.625rem;
     font-size: 1.8vw;
     line-height: 1.5;
 
@@ -296,7 +305,7 @@ cite {
 .plan_site {
 
     margin-left: 40%;
-    line-height: 2em;
+    line-height: 2rem;
 
 
 }
@@ -308,7 +317,7 @@ cite {
 .volume {
     background-color: white;
     font-size: 1.5vw;
-    padding: 90px;
+    padding: 5.625rem;
     width: 60%;
     line-height: 150%;
     margin: auto;
@@ -329,7 +338,7 @@ cite {
 .superscript {
 
     vertical-align: super;
-    font-size: 0.75em;
+    font-size: 1vw;
 
 }
 
@@ -338,14 +347,14 @@ cite {
 
 .finPage {
 
-    border-top: 1px dashed grey;
+    border-top: 0.0625rem dashed grey;
 
 }
 
 
 .folio {
 
-    font-size: 0.75em;
+    font-size: 0.6rem;
     font-style: italic;
 
 }
@@ -357,7 +366,7 @@ cite {
 
 .addEditor {
 
-    font-size: 0.875em;
+    font-size: 1.2vw;
     font-style: italic;
 }
 
@@ -365,8 +374,9 @@ cite {
 
 .noteEditoriale {
 
-    width: 1.8em;
+    width: 1.2rem;
     height: auto;
+
 
 }
 
@@ -377,7 +387,7 @@ cite {
 
     text-decoration: line-through;
     text-decoration-color: #6AB1AE;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 0.125rem;
     display: inline;
 
 }
@@ -386,7 +396,7 @@ cite {
 
     text-decoration: line-through;
     text-decoration-color: #9DBD8F;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 0.125rem;
     display: inline;
 
 }
@@ -397,7 +407,7 @@ cite {
 
     text-decoration: line-through;
     text-decoration-color: grey;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 0.125rem;
     display: inline;
 
 
@@ -409,7 +419,7 @@ cite {
 
     text-decoration: line-through;
     text-decoration-color: #0077b6;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 0.125rem;
     display: inline;
 
 
@@ -419,7 +429,7 @@ cite {
 .delStael {
     text-decoration: line-through;
     text-decoration-color: #D57B69;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 0.125rem;
     display: inline;
 }
 
@@ -513,23 +523,29 @@ cite {
 
 #legende {
 
-    line-height: 25px;
-    font-size: inherit;
+    line-height: 1.3rem;
+    font-size: 1.6vw;
 }
 
-
+#abbreviations{
+    
+     line-height: 1.3rem;
+    font-size: 1.6vw;
+    
+}
 
 .book {
 
-    width: 1.8em;
+    width: 1.2rem;
     height: auto;
+    border-bottom: dotted;
 
 }
 
 
 .manuscrit {
 
-    width: 1.8em;
+    width: 1.2rem;
     height: auto;
     border-bottom: dotted;
 
@@ -537,22 +553,17 @@ cite {
 
 .quelles {
 
-    width: 3.5em;
+    width: 3.3rem;
     height: auto;
 
 }
 
-.note {
 
-    width: 3.5em;
-    height: auto;
-
-}
 
 
 .celuiQui {
 
-    width: 4.3em;
+    width: 4.3rem;
     height: auto;
 
 }
@@ -560,7 +571,7 @@ cite {
 
 .corr {
 
-    width: 5em;
+    width: 5rem;
     height: auto;
 
 }
@@ -629,16 +640,16 @@ cite {
 /* Tooltip text */
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 23em;
+    width: 23rem;
     font-size: smaller;
     background-color: #FFFBE1;
     border-style: outset;
     text-align: justify;
-    padding: 10px;
-    border-radius: 6px;
-    top: -10px;
+    padding: 1.1rem;
+    border-radius: 0.375rem;
+    top: -0.625rem;
     left: 105%;
-    line-height: 1.4em;
+    line-height: 1.1rem;
 
 
     /* Position the tooltip text  */
@@ -670,15 +681,15 @@ cite {
 /* Tooltip text */
 .tooltipReg .tooltiptextReg {
     visibility: hidden;
-    width: 120px;
+    width: 7.5rem;
     font-size: smaller;
     background-color: #EABDB4;
     text-align: center;
-    padding: 6px 0;
-    border-radius: 6px;
+    padding: 0.375rem 0;
+    border-radius: 0.375rem;
     bottom: 100%;
     left: 50%;
-    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    margin-left: -3.75rem; /* Use half of the width (120/2 = 60), to center the tooltip */
 
     /* Position the tooltip text  */
     position: absolute;
@@ -695,8 +706,8 @@ cite {
     position: absolute;
     top: 100%; /* At the bottom of the tooltip */
     left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
+    margin-left: -0.3125rem;
+    border-width: 0.3125rem;
     border-style: solid;
     border-color: #EABDB4 transparent transparent transparent;
 }
@@ -714,7 +725,7 @@ cite {
 
     background-color: white;
     font-size: 1.5vw;
-    padding: 90px;
+    padding: 5.625rem;
     width: 60%;
     line-height: 150%;
     margin: auto;
@@ -725,7 +736,7 @@ cite {
 
 .finPageEd {
 
-    font-size: 10px;
+    font-size: 0.625rem;
 
 
 
@@ -735,7 +746,7 @@ cite {
 
 .page {
 
-    font-size: 0.75em;
+    font-size: 0.6rem;
     font-style: italic;
     background-color: white;
     text-decoration: none;
@@ -765,17 +776,17 @@ cite {
 .epigraph {
 
     text-align: left; /* corriger */
-    font-size: 0.625em;
-    line-height: 0.625em; /* corriger */
+    font-size: 0.625rem;
+    line-height: 0.625rem; /* corriger */
 
 }
 
 
 h6 {
     text-align: center;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    font-size: 1.2em;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-size: 1.8vw;
     font-weight: normal;
 
 
@@ -784,10 +795,10 @@ h6 {
 h5 {
 
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2vw;
     font-weight: normal;
-    margin-top: 0em;
-    margin-bottom: 0em;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 
 }
 
@@ -813,7 +824,7 @@ mark.subst {
 .wordStart{
     
      font-variant: small-caps;
-     font-size: 0.82em;
+     font-size: 1.2vw;
     
 }
 
@@ -830,15 +841,15 @@ mark.subst {
 /* Tooltip text */
 .tooltipCorr .tooltiptextCorr {
     visibility: hidden;
-    width: 120px;
+    width: 7.5rem;
     font-size: smaller;
     background-color: #FFE3BF;
     text-align: center;
-    padding: 6px 0;
-    border-radius: 6px;
+    padding: 0.375rem 0;
+    border-radius: 0.375rem;
     bottom: 100%;
     left: 50%;
-    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    margin-left: -3.75rem; /* Use half of the width (120/2 = 60), to center the tooltip */
 
     /* Position the tooltip text  */
     position: absolute;
@@ -855,18 +866,18 @@ mark.subst {
     position: absolute;
     top: 100%; /* At the bottom of the tooltip */
     left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
+    margin-left: -0.3125rem;
+    border-width: 0.3125rem;
     border-style: solid;
     border-color: #FFE3BF transparent transparent transparent;
 }
 
 blockquote {
     
-    line-height: 1.2em;
+    line-height: 1.1vw;
     text-align: justify;
     margin-left: 40%;
-    
+    font-size: 1.1vw;
     
 }
 

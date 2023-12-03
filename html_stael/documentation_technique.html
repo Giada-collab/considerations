@@ -49,8 +49,13 @@
                             <a href="index_noms.html">Index des noms</a>
                         </div>
                     </li>
-                    <li>
-                        <a href="savoir_plus.html">En savoir plus</a>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">À propos</a>
+                        <div class="dropdown-content">
+                            <a href="stael_politique.html">Staël et la politique</a>
+                            <a href="considerations.html">Les <cite>Considérations</cite></a>
+                            <a href="bibliographie.html">Bibliographie</a>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -94,7 +99,8 @@
                 chaque document il est possible de télécharger le fichier XML correspondant. Le
                 schéma de balisage est d'ailleurs disponible dans l'<a
                     href="../documentation_stael/manuscrit_vol_1_docum.html">ODD (<cite>One Document
-                        Does-it-all</cite>)</a>. <h4>Encodage en XML-TEI</h4>
+                        Does-it-all</cite>)</a>. 
+            <h4>Encodage en XML-TEI</h4>
             <p>L’encodage des textes se base sur le langage XML et les <cite>P5 Guidelines</cite> de
                 la <a href="https://tei-c.org/">TEI</a> pour sa structuration. La personnalisation
                 du schéma reste en tout cas conforme aux recommandations TEI, et ce pour assurer le
@@ -103,8 +109,6 @@
                 ISO 639-1:2002 pour les langues et des identifiants uniques pour les personnes
                 (ISNI, VIAF ou Wikidata), les lieux (GeoNames) et les titres d’ouvrages
                 (Wikidata).</p>
-         
-            
             <p><i> Balisage physique</i>&nbsp;: contribuer à une meilleure connaissance des
                 manuscrits de Staël et de sa manière de travailler est un autre objectif de ce
                 projet. Des métadonnées et un encodage du texte plus détaillés sur cet aspect sont
@@ -138,27 +142,26 @@
                 d’autres balises relatives aux entités nommés ou à la collation entre manuscrit et
                 première édition&nbsp;: un mot, un syntagme ou un paragraphe peut, en effet, être
                 intéressé par plusieurs phénomènes. Nous avons donc opté pour une annotation
-                minimale pour pouvoir concentrer ce travail pilote sur les variantes. Pour la même
-                raison, le balisage des entités nommées et sur la collation ne seront affichés
-                qu’ultérieurement.<br /> Pour signaler toute modification du texte de la part des
-                différentes mains, le choix a été porté dans un premier temps sur la méthode
-                “double-end-point" avec l’apparat critique placé dans le &lt;standOff>. Cela devait
-                permettre de délimiter de manière précise l’endroit affecté par la modification et
-                de ne pas surcharger le texte avec beaucoup d’annotations. Ce dernier effet n’ayant
-                pu être obtenu, nous sommes en train de tester la méthode “location-referenced” et
-                la position “internal” de l’apparat critique, c’est-à-dire dans le texte. Voici une
-                substitution de Staël&nbsp;: <br /><br /><img class="imgXml"
-                    src="../img_stael/subst_stael.png" alt="Substitution Staël">
-            <p> Tout type d’intervention est marquée par l’attribut @hand pour pouvoir
-                distinguer les différents scripteurs dont la liste a été crée dans le
-                &lt;handDesc&gt; du &lt;teiHeader&gt;. Le changement de copiste est indiqué comme
-                dans cet exemple&nbsp;: &lt;handShift scribeRef="#randallF"/&gt;. La distinction
-                entre @hand et @scribeRef permet aussi de distinguer les différentes foncions des
-                scripteurs. Il arrive, en effet, qu’une même personne est tantôt copiste à certains
-                endroits et tantôt auteur de modifications du texte dans d’autres. <br /> Dans le
-                cas de plus d'une substitution faisant partie d'une intervention unique, nous avons
-                pris pour base la section "11.3.1.5 Substitutions" des "P5 TEI Guidelines" qui
-                considère l'encodage suivant comme ayant une foction analogue à &lt;subst&gt;&nbsp;: </p>
+                minimale pour pouvoir concentrer ce travail pilote sur les variantes. <br /> Pour
+                signaler toute modification du texte de la part des différentes mains, le choix a
+                été porté dans un premier temps sur la méthode “double-end-point" avec l’apparat
+                critique placé dans le &lt;standOff>. Cela devait permettre de délimiter de manière
+                précise l’endroit affecté par la modification et de ne pas surcharger le texte avec
+                beaucoup d’annotations. Ce dernier effet n’ayant pu être obtenu, nous sommes en
+                train de tester la méthode “location-referenced” et la position “internal” de
+                l’apparat critique, c’est-à-dire dans le texte. Voici une substitution de
+                Staël&nbsp;: <br /><br /><img class="imgXml" src="../img_stael/subst_stael.png"
+                    alt="Substitution Staël">
+            <p> Tout type d’intervention est marquée par l’attribut @hand pour pouvoir distinguer
+                les différents scripteurs dont la liste a été crée dans le &lt;handDesc&gt; du
+                &lt;teiHeader&gt;. Le changement de copiste est indiqué comme dans cet
+                exemple&nbsp;: &lt;handShift scribeRef="#randallF"/&gt;. La distinction entre @hand
+                et @scribeRef permet aussi de distinguer les différentes foncions des scripteurs. Il
+                arrive, en effet, qu’une même personne est tantôt copiste à certains endroits et
+                tantôt auteur de modifications du texte dans d’autres. <br /> Dans le cas de plus
+                d'une substitution faisant partie d'une intervention unique, nous avons pris pour
+                base la section "11.3.1.5 Substitutions" des "P5 TEI Guidelines" qui considère
+                l'encodage suivant comme ayant une foction analogue à &lt;subst&gt;&nbsp;: </p>
             <img class="imgXml" src="../img_stael/subst_schlegel.png"
                 alt=" Deux substitutions Schlegel" />
             <p>L'ordre des interventions est indiqué par @varSeq, tandis que @rend restitue la
@@ -176,8 +179,8 @@
                 minimum indispensable pour l'identification sont les suivants&nbsp;: <br /><br />
                 <img class="imgXml" src="../img_stael/persName.png" alt=" Encodage noms de personne"
                  />
-            <p> L'identification est confiée à l'attribut @ref qui renvoie à un identifiant
-                unique. Voici les éléments de base pour les lieux&nbsp;:</p>
+            <p> L'identification est confiée à l'attribut @ref qui renvoie à un identifiant unique.
+                Voici les éléments de base pour les lieux&nbsp;:</p>
             <img class="imgXml" src="../img_stael/listPlace.png" alt=" Encodage noms de lieu" />
             <p>Dans ce cas également @ref renvoie à des identifiants uniques pour le pays et la
                 ville. Pour l'index des ouvrages cités, une solution sémantiquement satisfaisante et
@@ -190,16 +193,13 @@
                 ouvrages et dans &lt;name&gt; pour les auteurs. <br /> En ce qui concerne les notes,
                 nous ne les avons distinguées que sur la base de l'auteur de la note. Dans le
                 manuscrit, soi il s’agit d’une note de l’éditeur scientifique soi de Staël. Dans le
-                texte, l’élément &lt;note&gt; est donc suivi de @resp renvoyant à l’un des deux.
-                <h4>Encodage en HTML</h4>
+                texte, l’élément &lt;note&gt; est donc suivi de @resp renvoyant à l’un des deux. 
+            <h4>Encodage en HTML</h4>
             <h4>Principes d’affichage</h4>
             <!-- title with anchor -->
             <h3>Outils numériques</h3>
             <h3>Pratiques d'archivage</h3>
-            <h3>Licences</h3>
-            <!-- renvoit à mentions légales -->
-            <h3>Sources</h3>
-            <!--  disquiet, bvh, austin, proust, becket, varchi, calvin --></div>
+        </div>
         <div class="background_nav">
             <div class="footer">
                 <a href="plan_site.html">Plan du site</a>

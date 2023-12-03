@@ -55,11 +55,16 @@
 
                                 </div>
                             </li>
-                            <li>
-                                <a href="savoir_plus.html">En savoir plus</a>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">À propos</a>
+                                <div class="dropdown-content">
+                                    <a href="stael_politique.html">Staël et la politique</a>
+                                    <a href="considerations.html">Les <cite>Considérations</cite></a>
+                                    <a href="bibliographie.html">Bibliographie</a>
+                                </div>
                             </li>
                             <li class="topnav-right">
-                                <a href="../xml_stael/manuscrit_vol_1.xml">Fichier XML</a>
+                                <a href="../xml_stael/manuscrit_vol_1.xml">XML</a>
                             </li>
                             <li class="topnav-right">
                                 <a href="../html_stael/principes_editoriaux.html#legende"

@@ -55,11 +55,16 @@
 
                                 </div>
                             </li>
-                            <li>
-                                <a href="savoir_plus.html">En savoir plus</a>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">À propos</a>
+                                <div class="dropdown-content">
+                                    <a href="stael_politique.html">Staël et la politique</a>
+                                    <a href="considerations.html">Les <cite>Considérations</cite></a>
+                                    <a href="bibliographie.html">Bibliographie</a>
+                                </div>
                             </li>
                             <li class="topnav-right">
-                                <a href="../xml_stael/edition_vol_1.xml">Fichier XML</a>
+                                <a href="../xml_stael/edition_vol_1.xml">XML</a>
                             </li>
                             <li class="topnav-right">
                                 <a href="../html_stael/principes_editoriaux.html#legende"
@@ -96,6 +101,8 @@
     <xsl:template match="teiHeader">   </xsl:template>
 
     <xsl:template match="fw">   </xsl:template>
+    
+    <xsl:template match="pb[@facs = '#frontispice_verso']">   </xsl:template>
 
     <!-- background -->
 
@@ -107,7 +114,7 @@
 
     </xsl:template>
 
-    <xsl:template match="pb[@facs = '#frontispice_verso']">   </xsl:template>
+
 
 
     <xsl:template match="div">
@@ -200,7 +207,7 @@
                 <br/>
                 <span class="page">
                     <xsl:value-of select="@n"/>
-                    <xsl:text>                                                              </xsl:text>
+                   
                 </span>
                 <xsl:apply-templates/>
                 <br/>
@@ -370,7 +377,7 @@
         </xsl:element>
     </xsl:template> 
     
-    
+   
     
 
 </xsl:stylesheet>
