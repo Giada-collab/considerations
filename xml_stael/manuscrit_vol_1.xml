@@ -258,7 +258,8 @@
          <div type="volume" n="1">
 
             <pb n="1r" facs="#lettre_albertine_1"/>
-            <!-- l'absence de titre dans le manuscrit est signalée par une note explicative -->
+
+
             <note resp="#tesserS">Cette lettre d'<rs ref="index_noms.xml#staelA">Albertine de
                   Staël</rs> a été reliée à ce manuscrit probablement après la publication de
                l'ouvrage. Elle est adressée au peintre <rs ref="index_noms.xml#gerardF"> François
@@ -347,9 +348,9 @@
 
             <pb n="3r" type="nBnF" facs="#v1_3r"/>
             <fw type="pageNum" place="top-left">1</fw>
-            
-           <!-- afficher  volNum et cahNum? --> 
-            
+
+            <!-- afficher  volNum et cahNum? -->
+
             <fw type="volNum" place="top-left"><del hand="#unknown">1.<hi rend="superscript">er</hi>
                   Volume</del></fw>
             <fw type="cahNum" place="top-left"><del hand="#unknown">1<hi rend="superscript">er</hi>
@@ -387,9 +388,9 @@
                      <handShift scribeRef="#randallF"/> 1<hi rend="superscript">er</hi>
                      Chapitre.</head>
                   <head type="titleChapter" subtype="main">Réflexions générales </head>
-                  <p>La Révolution de France est une des <del hand="#unknown" rend="strikethrough">
-                        <anchor type="collation" subtype="add" xml:id="PlusMs"
-                           corresp="edition_vol_1.xml#PlusEd"/> plus </del> grandes époques de
+                  <p>La Révolution de France est une des <anchor type="collation" subtype="add"
+                        xml:id="PlusMs" corresp="edition_vol_1.xml#PlusEd"/>
+                     <del hand="#unknown" rend="strikethrough"> plus </del> grandes époques de
                      l'ordre social. Ceux qui la considèrent comme un évènement accidentel, n'ont
                         <anchor type="collation" subtype="subst" xml:id="EtenduMs"
                         corresp="edition_vol_1.xml#EtenduEd"/>
@@ -405,8 +406,7 @@
                         <rdg varSeq="3">
                            <add hand="#schlegelW">porté</add>
                         </rdg>
-                     </app> leurs regards ni 
-                     <app>
+                     </app> leurs regards ni <app>
                         <rdg varSeq="1">
                            <del hand="#schlegelW" rend="strikethrough">dans</del>
                         </rdg>
@@ -420,11 +420,12 @@
                         </rdg>
                      </app> le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et
                      afin de satisfaire leurs passions, ils ont attribué aux hommes du moment ce que
-                     les siècles avoient préparé. <anchor type="collation" subtype="add" xml:id="AdversairesMs"
-                        corresp="edition_vol_1.xml#AdversairesEd"/> <del hand="#unknown" rend="strikethrough"> Les
-                        adversaires des principes de la Révolution aimoient à se persuader que le
-                        choc auquel ils vouloient s'opposer étoit produit par quelques circonstances
-                        particulieres <choice>
+                     les siècles avoient préparé. <anchor type="collation" subtype="add"
+                        xml:id="AdversairesMs" corresp="edition_vol_1.xml#AdversairesEd"/>
+                     <del hand="#unknown" rend="strikethrough"> Les adversaires des principes de la
+                        Révolution aimoient à se persuader que le choc auquel ils vouloient
+                        s'opposer étoit produit par quelques circonstances particulieres 
+                        <choice>
                            <orig>, i</orig>
                            <reg>. I</reg>
                         </choice>ls se sont donc aveuglés autant qu'ils l'ont pu sur
@@ -435,10 +436,12 @@
                      <del hand="#unknown" rend="strikethrough">des faits, et sur la marche graduelle
                         de la civilisation européenne. </del>
                      <lb/> Il suffisoit cependant de jeter un coup d'œil sur les principales crises
-                     de l'histoire pour se convaincre <choice>
+                     de l'histoire pour se convaincre 
+                     <choice>
                         <orig>quelles</orig>
                         <reg>qu'elles</reg>
-                     </choice> ont été toutes inévitables quand elles se rattachoient de quelque
+                     </choice> 
+                     ont été toutes inévitables quand elles se rattachoient de quelque
                      <!-- un trait vertical dans la marge gauche en correspondance du texte suivant -->
                      manière <metamark spanTo="#quApres" rend="verticalLine"
                         place="left-hand margin"/>
@@ -460,9 +463,9 @@
                         </rdg>
                      </app> le triomphe des lumières a toujours été favorable à la grandeur et à
                      l'amélioration de l'espèce humaine.<lb/> Mon ambition seroit de parler du temps
-                     dans lequel nous avons vécu, comme s'il étoit déjà <anchor type="collation" subtype="add" xml:id="BienMs"
-                        corresp="edition_vol_1.xml#BienEd"/> <del hand="#stael"
-                        rend="strikethrough">depuis long temps écoulé</del>
+                     dans lequel nous avons vécu, comme s'il étoit déjà <anchor type="collation"
+                        subtype="add" xml:id="BienMs" corresp="edition_vol_1.xml#BienEd"/>
+                     <del hand="#stael" rend="strikethrough">depuis long temps écoulé</del>
                      <add hand="#stael">bien loin de nous</add>. Les hommes éclairés qui sont
                      toujours contemporains <del hand="#stael" rend="strikethrough">de
                         l'avenir</del>

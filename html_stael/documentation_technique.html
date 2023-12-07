@@ -67,34 +67,34 @@
                 fonctionnalités et les différents outils pour voir s’ils répondent de manière
                 efficace aux objectifs du projet. Les utilisateurs pourrons ainsi voir les premiers
                 résultats de ce travail qui seront ensuite analysés pour définir les améliorations à
-                apporter. Les données techniques que nous décrivons ici peuvent donc subir des
-                modifications importantes en fonctions des nouveaux choix opérés.</p>
+                apporter. Les caractéristiques techniques que nous décrivons ici peuvent donc subir
+                des modifications importantes en fonctions des nouveaux choix opérés.</p>
             <h3>Principes d’encodage</h3>
             <p>Assurer l’interopérabilité et la pérennisation des données sur le long terme a été
                 une des principales règles de cette édition qui nous ont conduit à choisir des
-                standards ouverts et largement utilisés par la communauté scientifique comme XML,
-                HTML, XSLT et les recommendations TEI.<br /> Un autre objectif était de faire
-                figurer les différentes écritures relevées dans le manuscrit et de comparer celui-ci
-                avec la première édition sans laisser entendre que, pour assurer la plus grande
-                fidélité aux intentions de l’auteur, le choix éditorial s’était exprimé de quelque
-                manière en faveur d’un élément plutôt que d’un autre (variantes de Staël <i>vs</i>
-                interventions allographes ou bien manuscrit <i>vs</i> première édition). Il fallait
-                donc représenter ces phénomènes de manière non hiérarchisée tout en respectant les
-                normes d’encodage et la lisibilité. <br /> Un autre problème a dû être affronté pour
-                l’affichage des contenus dans la page web&nbsp;: les différentes écritures devaient
-                être identifiables immédiatement et la navigation entre manuscrit et première
-                édition devait être rapide et intuitive. Tout ceci devait enfin être exprimé à
-                travers un code lisible et conforme aux recommandations sur l’accessibilité. <br />
-                Ce que l’on voit actuellement dans le site web de l’édition représente ainsi le
-                difficile compromis qui a pu être atteint pour l’instant entre ces différentes
-                exigences.</p>
-            <p>La structuration du site se base sur la distinction <span class="foreign_language"
-                    >source-output</span> qui prévoit deux niveaux de granularité des données&nbsp;:
-                dans le fichier XML-TEI l'annotation est beaucoup plus riche, alors que l'affichage
-                des données dans le site prévoit une granularité inférieure. Les raisons de ce choix
-                reposent sur l'état expérimental du site du point de vue technique&nbsp;: de
-                nouvelles informations seront graduellement affichées quand le test sur le rendu
-                final aura montré son efficacité à l'égard de la facilité d'utilisation. </p>
+                standards ouverts et largement utilisés par la communauté scientifique comme les
+                langages XML, HTML, XSLT et les recommendations TEI.<br /> Un autre objectif était
+                de faire figurer les différentes écritures relevées dans le manuscrit et de comparer
+                celui-ci avec la première édition sans laisser entendre que, pour assurer la plus
+                grande fidélité aux intentions de l’auteur, le choix éditorial s’était exprimé de
+                quelque manière en faveur d’un élément plutôt que d’un autre (variantes de Staël
+                    <i>vs</i> interventions allographes ou bien manuscrit <i>vs</i> première
+                édition). Il fallait donc représenter ces phénomènes de manière non hiérarchisée
+                tout en respectant les normes d’encodage et la lisibilité. <br /> Un autre problème
+                a dû être affronté pour l’affichage des contenus dans la page web&nbsp;: les
+                différentes écritures devaient être identifiables immédiatement et la navigation
+                entre manuscrit et première édition devait être rapide et intuitive. Tout ceci
+                devait enfin être exprimé à travers un code lisible et conforme aux recommandations
+                sur l’accessibilité du World Wide Web Consortium (W3C). Ce que l’on voit
+                actuellement dans ce site web représente ainsi un premier compromis qui a pu être
+                atteint entre ces différentes exigences.</p>
+            <p>Ce travail se base sur la distinction <span class="foreign_language"
+                    >source-output</span> qui prévoit deux niveaux de granularité&nbsp;: dans le
+                fichier XML-TEI l'annotation est plus détaillée, alors que l'affichage des données
+                présente une granularité inférieure. Les raisons de ce choix reposent sur l'état
+                expérimental de ce travail du point de vue technique&nbsp;: de nouvelles
+                informations seront graduellement affichées quand le test sur le rendu final aura
+                montré son efficacité à l'égard de la facilité d'utilisation. </p>
             <p> Nous décrivons ci-après les pratiques de balisage en rappelant que dans la page de
                 chaque document il est possible de télécharger le fichier XML correspondant. Le
                 schéma de balisage est d'ailleurs disponible dans l'<a
@@ -106,9 +106,9 @@
                 du schéma reste en tout cas conforme aux recommandations TEI, et ce pour assurer le
                 plus haut niveau d’interopérabilité. Pour des raisons analogues, nous avons utilisé
                 des standards tels que UTF-8 pour le codage des caractères, ISO 8601 pour les dates,
-                ISO 639-1:2002 pour les langues et des identifiants uniques pour les personnes
-                (ISNI, VIAF ou Wikidata), les lieux (GeoNames) et les titres d’ouvrages
-                (Wikidata).</p>
+                ISO 639-1:2002 pour les langues, ISO 3166 pour le code pays et des identifiants
+                uniques pour les personnes (ISNI, VIAF ou Wikidata), les lieux (GeoNames) et les
+                titres d’ouvrages (Wikidata).</p>
             <p><i> Balisage physique</i>&nbsp;: contribuer à une meilleure connaissance des
                 manuscrits de Staël et de sa manière de travailler est un autre objectif de ce
                 projet. Des métadonnées et un encodage du texte plus détaillés sur cet aspect sont
@@ -117,15 +117,15 @@
                 l’attribut @facs dans &lt;pb&gt; qui marque le début d’une nouvelle page. <br />La
                 pagination que nous avons adoptée est celle de la BnF qui a été introduite de
                 manière régulière dans tous les trois volumes. La pagination manuscrite, placée
-                normalement en haut a gauche de chaque page, est beaucoup plus irrégulière parce que
+                normalement en haut à gauche de chaque page, est beaucoup plus irrégulière parce que
                 elle est le résultat des différents déplacements de feuillets. Nous l'avons décrite
                 à l'aide de l'élément &lt;fw&gt; suivi de @type="pageNum". <br /> D’autres
                 informations sur la page comme le numéro de cahier (manuscrit) ou le titre courant
                 (première édition) sont introduites à l’aide de &lt;fw&gt; qui est toujours suivi
                 des attributs @type et @place. <br /> L’élément &lt;hi&gt; enfin est utilisé avec
                 @rend pour mettre en évidence des mots ou des lettres graphiquement distincts du
-                reste comme, par exemple, une lettre en exposant.<br /> Ce balisage ne figure que
-                dans le fichier XML et n’est pas affiché dans la page web. <br />
+                reste comme, par exemple, une lettre en exposant.<br /> Ces informations ne figurent
+                que dans le fichier XML. <br />
                 <i> Balisage logique</i>&nbsp;: la subdivision du texte est exprimée par l’élément
                 &lt;div&gt; toujours suivi de @type pour indiquer la typologie de la section
                 (préface, chapitre, partie) et, le cas échéant, de @n pour indiquer le numéro
@@ -133,72 +133,118 @@
                 préciser sémantiquement des éléments employés pour différents objets (&lt;div&gt;,
                 &lt;fw&gt;, &lt;head&gt;, etc.) surtout dans les cas où l'on prévoyait d'appliquer
                 un style particulier. Pour les subdivisions entièrement rédigées par une seule main,
-                l’attribut @hand a été introduit dans &lt;div&gt;. <br />
-                <i> Balisage sémantique</i>&nbsp;: le plus grand enjeu de l’encodage du texte a été
-                de trouver des balises indiquant clairement les différentes interventions dans le
-                manuscrit tout en laissant le code lisible et conforme à la TEI. Il fallait en même
-                temps penser au rendu final dans la page web qui devait représenter de manière
-                claire les différentes mains. Ce travail s’est vu compliqué par la superposition
-                d’autres balises relatives aux entités nommés ou à la collation entre manuscrit et
-                première édition&nbsp;: un mot, un syntagme ou un paragraphe peut, en effet, être
-                intéressé par plusieurs phénomènes. Nous avons donc opté pour une annotation
-                minimale pour pouvoir concentrer ce travail pilote sur les variantes. <br /> Pour
-                signaler toute modification du texte de la part des différentes mains, le choix a
-                été porté dans un premier temps sur la méthode “double-end-point" avec l’apparat
-                critique placé dans le &lt;standOff>. Cela devait permettre de délimiter de manière
-                précise l’endroit affecté par la modification et de ne pas surcharger le texte avec
-                beaucoup d’annotations. Ce dernier effet n’ayant pu être obtenu, nous sommes en
-                train de tester la méthode “location-referenced” et la position “internal” de
-                l’apparat critique, c’est-à-dire dans le texte. Voici une substitution de
-                Staël&nbsp;: <br /><br /><img class="imgXml" src="../img_stael/subst_stael.png"
-                    alt="Substitution Staël">
+                l’attribut @hand a été introduit dans &lt;div&gt; tandis que le changement de
+                copiste est signalé par &lt;handShift&gt; suivi de @scribeRef.<br />
+                <i> Balisage sémantique</i>&nbsp;: le plus grand enjeu a été de trouver des balises
+                indiquant clairement les différentes interventions dans le manuscrit tout en
+                laissant le code lisible et conforme à la TEI. Il fallait en même temps penser au
+                rendu final dans la page web qui devait les représenter de manière claire. Ce
+                travail s’est vu compliqué par la superposition d’autres balises relatives aux
+                entités nommés ou à la collation entre manuscrit et première édition&nbsp;: un mot,
+                un syntagme ou un paragraphe peut, en effet, être intéressé par plusieurs phénomènes
+                et cela peut surcharger le texte de code et créer des problèmes de lisibilité de la
+                page web à cause de la superposition de différents signes indiquant ces phénomènes.
+                Pour l'instant, nous avons donc opté pour une annotation minimale. <br /> À cause de
+                problèmes techniques en cours de solution, nous avons choisi de signaler toutes les
+                variantes des différents scripteurs d'après la méthode “location-referenced” et la
+                position “internal” de l’apparat critique, c’est-à-dire dans le texte. Cependant,
+                comme l'objectif est de ne pas surcharger le texte avec beaucoup d’annotations, nous
+                envisageons de déplacer tout ce qui relève de l'apparat critique (notes éditoriale,
+                variantes, modernisation et correction) dans le &lt;standOff&gt; ou dans un fichier
+                extérieur. Voici, par exemple, une substitution de Staël&nbsp;: <br /><br /><img
+                    class="imgXml" src="../img_stael/subst_stael.png" alt="Substitution Staël">
             <p> Tout type d’intervention est marquée par l’attribut @hand pour pouvoir distinguer
                 les différents scripteurs dont la liste a été crée dans le &lt;handDesc&gt; du
-                &lt;teiHeader&gt;. Le changement de copiste est indiqué comme dans cet
-                exemple&nbsp;: &lt;handShift scribeRef="#randallF"/&gt;. La distinction entre @hand
-                et @scribeRef permet aussi de distinguer les différentes foncions des scripteurs. Il
-                arrive, en effet, qu’une même personne est tantôt copiste à certains endroits et
-                tantôt auteur de modifications du texte dans d’autres. <br /> Dans le cas de plus
-                d'une substitution faisant partie d'une intervention unique, nous avons pris pour
-                base la section "11.3.1.5 Substitutions" des "P5 TEI Guidelines" qui considère
-                l'encodage suivant comme ayant une foction analogue à &lt;subst&gt;&nbsp;: </p>
+                &lt;teiHeader&gt;. Le changement de copiste est signalé de cette manière&nbsp;:
+                &lt;handShift scribeRef="#randallF"/&gt;. L'utilisation de @hand et @scribeRef
+                permet de distinguer les différentes foncions des scripteurs. Il arrive, en effet,
+                qu’une même personne est tantôt copiste à certains endroits et tantôt auteur de
+                variantes dans d’autres. <br /> Dans le cas de plus d'une substitution faisant
+                partie d'une intervention unique, nous avons pris pour base la section "11.3.1.5
+                Substitutions" des "P5 TEI Guidelines" qui considère l'encodage suivant comme ayant
+                une foction analogue à &lt;subst&gt;&nbsp;: </p>
             <img class="imgXml" src="../img_stael/subst_schlegel.png"
                 alt=" Deux substitutions Schlegel" />
             <p>L'ordre des interventions est indiqué par @varSeq, tandis que @rend restitue la
-                manière dont cette opération est effectuée. En particulier, l'élément &lt;add&gt;
-                emboîté dans &lt;del&gt; indique une addition qui a été ensuite rayée. Pour
-                distinguer dans les différents &lt;add&gt; ce qui fait partie d'une substition de ce
-                qui est une addition tout court, nous avons ajouté pour ces dernières l'attribut
-                @type="addition".<br /> Il faudra ensuite ajouter le balisage relatif à la collation
-                entre manuscrit et première édition et permettre une comparaison entre les deux
-                textes. Pour rendre ce travail plus aisé, la possibilité d’une mise en regard des
-                deux textes pourra être envisagée. <br /> L'index des noms a été mis dans un fichier
-                à part et cela dans le but de déplacer ailleurs tout ce qui n'appartient pas au
-                texte. Dans ce dernier, le balisage onomastique est marqué par &lt;rs&gt; suivi de
-                @ref renvoyant à l'index des noms. Les éléments qui ont été considérés comme le
-                minimum indispensable pour l'identification sont les suivants&nbsp;: <br /><br />
+                manière dont elles sont effectuées. En particulier, l'élément &lt;add&gt; emboîté
+                dans &lt;del&gt; indique une addition qui a été ensuite rayée. Pour distinguer dans
+                les différents &lt;add&gt; ce qui fait partie d'une substition de ce qui est une
+                addition tout court, nous avons ajouté pour ces dernières l'attribut
+                @type="addition".<br /> Nous avons évité l'utilisation de &lt;lem&gt; s'oppsant à
+                &lt;rdg&gt; et indiquant la leçon préférée par l'éditeur scientifique ou, en tout
+                cas, celle qui ferait partie d'un texte de base. Au contraire, nous avons essayé de
+                donner une représentation non hiérachisée des leçons des différents scripteurs comme
+                étant toutes potentiellement acceptables sur la base de nos principes éditoriaux et
+                des caractéristiques du manuscrit décrites dans l'introduction. <br /> Quant à la
+                collation entre manuscrit et première édition, il fallait, dans ce cas également,
+                opérer des choix de modélisation de manière à ne pas établir une hiérarchie entre
+                les deux versions. Nous sommes en train de tester les différentes options qui
+                doivent, en tout cas, assurer la lisibilité du texte encodé. Une solution provisoire
+                a été trouvée avec l'élément &lt;anchor&gt; fonctionnant comme hyperlien entre les
+                deux textes et permettant leur comparaison à l'endroit où une variation a été
+                détectée. Voici, par exemple, le mot &#8810;&nbsp;plus&nbsp;&#8811; qui est présent
+                dans le manuscrit mais non pas dans la première édition&nbsp;: <br /><br />
+                <img class="imgXml" src="../img_stael/anchor.png"
+                    alt=" Collation manuscrit-première édition" /><br />
+                <br />
+                <br /> L'élément &lt;anchor&gt; et l'attribut @corresp, qui introduit le lien vers
+                le point correspondant de la première édition identifié par un @xml:id, ne sont pas très
+                caractérisés du point de vue sémantique, l'attribut @corresp ayant
+                la fonction de pointer &#8810;&nbsp;to elements that correspond to the current
+                element in some way&nbsp;&#8811; (<a
+                    href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.linking.html#tei_att.corresp"
+                    >TEI Guidelines</a>). Ils ont donc été considérés comme aptes à établir des
+                liens génériques entre les deux versions sans marquer une prééminence de l'une sur
+                l'autre. Comme &lt;anchor&gt; peut être utilisé avec d'autres fonctions, l'attribut
+                @type suivi de la valeur &#8810;&nbsp;collation&nbsp;&#8811; est nécessaire. Le type
+                de divergence est signalé par l'introduction de @subtype suivi des valeurs
+                &#8810;&nbsp;add&nbsp;&#8811; (mot ou phrase présents dans le document courant
+                seulement), &#8810;&nbsp;gap&nbsp;&#8811; (mot ou phrase absents du document courant
+                seulement) ou &#8810;&nbsp;subst&nbsp;&#8811; (mot ou phrase du manuscrit qui ont
+                été remplacés dans la première édition). Les valeurs &#8810;&nbsp;add&nbsp;&#8811;
+                et &#8810;&nbsp;gap&nbsp;&#8811; pourraient prêter à confusion car des éléments
+                ayant le même nom mais un sémantisme différent existent déjè dans la TEI &nbsp;: on
+                pourra donc envisager de définir des valeurs différentes. Cette utilisation particulière de l'élément
+                &lt;anchor&gt; offre des avantages et des inconvénients&nbsp;: il permet d'éviter
+                l'effet de superposion éventuelle avec d'autres balises intéressant le même segment
+                scriptural mais il n'indique pas l'extension précise de ce segment affecté par une
+                variation entre les deux documents. Il faudra donc trouver une autre solution qui
+                puisse laisser, en même temps, le code léger. Ce problème a été partiellement
+                surmonté dans la première édition qui est marquée par une annotation peu détaillée.
+                Ici l'élément &lt;anchor&gt; est utilisé uniquement pour indiquer une lacune par
+                rapport au manuscrit. L'élément &lt;seg&gt; a été considéré, dans ce cas, plus
+                efficace car il permet de délimiter le mot ou le passage où les deux documents
+                divergent. Voici un exemple relatif au syntagme &#8810;&nbsp;au développement&nbsp;&#8811;&nbsp;:<br /><br />
+                <img class="imgXml" src="../img_stael/substEd.png" alt=" Substitiotion" />
+                <br /><br /> La modernisation et les corrections sont encadrées dans &lt;choice&gt;
+                pour pouvoir enregistrer la version originale et celle qui a été choisie par
+                l'éditeur scientifique. En ce qui concerne les notes, elles ont été différenciées
+                sur la base de l'auteur de la note, à savoir l’éditeur scientifique ou Staël. Dans
+                le texte, l’élément &lt;note&gt; est donc suivi de @resp renvoyant à l’un des deux.
+                <br /><br />Comme nous avons dit plus haut, le but du travail futur est de déplacer
+                certaines données et leur encodage comme, par exemple,
+                l'apparat critique extérieurement au texte. Ce travail a été fait pour l'index des noms. Dans le texte, le
+                balisage onomastique est marqué par &lt;rs&gt; suivi de @ref renvoyant aux données
+                correspondantes dans l'index des noms qui se bornent pour l'instant aux noms,
+                prénoms, dates de naissance et de mort&nbsp;: <br />
+                <br />
                 <img class="imgXml" src="../img_stael/persName.png" alt=" Encodage noms de personne"
                  />
-            <p> L'identification est confiée à l'attribut @ref qui renvoie à un identifiant unique.
-                Voici les éléments de base pour les lieux&nbsp;:</p>
-            <img class="imgXml" src="../img_stael/listPlace.png" alt=" Encodage noms de lieu" />
-            <p>Dans ce cas également @ref renvoie à des identifiants uniques pour le pays et la
-                ville. Pour l'index des ouvrages cités, une solution sémantiquement satisfaisante et
-                en même temps conforme à la TEI n'a pas encore été trouvée. Voici une solution
-                provisoire&nbsp;: </p>
+            <p> Ces éléments on été considérés comme le minimum indispensable pour l'identification.
+                Pour les noms des villes, seulement le nom du pays correspondant a été
+                introduit. Dans tous ces cas, l'attribut @ref a été ajouté pour renvoyer à un
+                identifiant unique. <br /> Pour l'index des ouvrages cités, une solution
+                sémantiquement satisfaisante et en même temps conforme à la TEI n'a pas encore été
+                trouvée. Voici une solution provisoire&nbsp;: </p>
             <img class="imgXml" src="../img_stael/term.png" alt=" Encodage ouvrages" />
             <p> La liste des ouvrages a été créée à l'aide des éléments &lt;index&gt; et
                 &lt;term&gt;. Comme ce dernier n'aide pas à l'identification des objets décrits,
                 cette fonction est confiée à l'attribut @type dans &lt;objectName&gt; pour les
-                ouvrages et dans &lt;name&gt; pour les auteurs. <br /> En ce qui concerne les notes,
-                nous ne les avons distinguées que sur la base de l'auteur de la note. Dans le
-                manuscrit, soi il s’agit d’une note de l’éditeur scientifique soi de Staël. Dans le
-                texte, l’élément &lt;note&gt; est donc suivi de @resp renvoyant à l’un des deux. 
+                ouvrages et dans &lt;name&gt; pour les auteurs. <br />
             <h4>Encodage en HTML</h4>
             <h4>Principes d’affichage</h4>
             <!-- title with anchor -->
-            <h3>Outils numériques</h3>
-            <h3>Pratiques d'archivage</h3>
+            <h3>Outils et pratiques d'archivage</h3>
         </div>
         <div class="background_nav">
             <div class="footer">

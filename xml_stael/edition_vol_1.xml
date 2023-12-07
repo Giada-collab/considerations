@@ -165,7 +165,8 @@
             <p>Édition numérique du dernier manuscrit des <title type="littWork"
                   >Considérations</title> et de la première édition posthume. Le projet vise à
                restituer toutes les écritures qui figurent dans le manuscrit et à fournir des moyens
-               pour comparer celui-ci avec le texte de la première édition </p>
+               pour comparer celui-ci avec le texte de la première édition qui offre parfois une
+               version sensiblement différente. </p>
          </projectDesc>
          <editorialDecl>
             <normalization>
@@ -250,7 +251,7 @@
 
             <fw type="frise" place="below">Frise</fw>
             <!-- vérifier - à transformer avec éléments dans <facsimile-->
-        
+
             <fw type="stamp" place="below">Tampon "Bibliothèque Royale"</fw>
 
             <lb/>
@@ -273,8 +274,9 @@
             <div type="prefaceEd">
                <note resp="#tesserS">L'&#8810;&#xA0;Avis des éditeurs&#xA0;&#8811;, qui a été ajouté
                   à la première édition, représente une des rares sources sur la manière de
-                  travailler de <rs ref="index_noms.xml#stael">Staël</rs> et sur l'état du dernier manuscrit des <rs ref="index_noms.xml#considerationsSg" ><title type="littWork"
-                     rend="italic">Considérations</title></rs>. </note>
+                  travailler de <rs ref="index_noms.xml#stael">Staël</rs> et sur l'état du dernier
+                  manuscrit des <rs ref="index_noms.xml#considerationsSg"><title type="littWork"
+                        rend="italic">Considérations</title></rs>. </note>
                <anchor type="collation" subtype="add" corresp="manuscrit_vol_1.xml#PrefaceEdMs"
                   xml:id="PrefaceEdEd1"/>
                <head type="prefaceEditors" rend="center"> AVIS DES EDITEURS.</head>
@@ -313,14 +315,14 @@
                         ref="index_noms.xml#paris">Paris</settlement> pour terminer les morceaux
                      relatifs à des événemens récens dont elle n'avoit pas été témoin, et sur
                      lesquels des renseignemens plus précis devoient modifier quelques-unes de ses
-                     opinions. Enfin les <rs ref="index_noms.xml#considerationsSg"> <title type="littWork"
-                         rend="italic"> Considérations sur les
-                        principaux événemens de la révolution françoise</title></rs> (car tel est le
-                     titre que <rs ref="index_noms.xml#stael">madame de Staël</rs> avoit elle-même
-                     choisi) auroient paru à la fin de l'année dernière, si celle qui faisoit notre
-                     gloire et notre bonheur nous eût été conservée. <lb/>
+                     opinions. Enfin les <rs ref="index_noms.xml#considerationsSg">
+                        <title type="littWork" rend="italic"> Considérations sur les principaux
+                           événemens de la révolution françoise</title></rs> (car tel est le titre
+                     que <rs ref="index_noms.xml#stael">madame de Staël</rs> avoit elle-même choisi)
+                     auroient paru à la fin de l'année dernière, si celle qui faisoit notre gloire
+                     et notre bonheur nous eût été conservée. <lb/>
                      <pb n="vii" facs="#avis_editeurs_vii"/>
-                     <fw type="header" place="top-center"/> Nous avons trouvé les deux premiers
+                     <fw type="header" place="top-center"> AVIS DES EDITEURS.></fw> Nous avons trouvé les deux premiers
                      volumes, et plusieurs chapitres du troisième, dans l'état où ils auroient été
                      livrés à l’impression. D’autres chapitres étoient copiés, mais non revus par
                      l’auteur. D’autres enfin n’étoient composés que de premier jet; et des notes
@@ -335,7 +337,7 @@
                      correction de ces légères inexactitudes de style, qui échappent à la vue dans
                      le manuscrit le plus soigné. Ce travail s’est fait sous les yeux de <pb
                         n="viii" facs="#avis_editeurs_viii"/>
-                     <fw type="header" place="top-center"/>
+                     <fw type="header" place="top-center"> AVIS DES EDITEURS.></fw>
                      <rs ref="index_noms.xml#schlegelW"> M. A. W. de Schlegel</rs>, dont la rare
                      supériorité d'esprit et de savoir justifie la confiance avec laquelle <rs
                         ref="index_noms.xml#stael">madame de Staël</rs> le consultoit dans tous ses
@@ -424,11 +426,11 @@
                         corresp="manuscrit_vol_1.xml#PlusMs"/> grandes époques de l’ordre social.
                      Ceux qui la considèrent comme un événement accidentel, n’ont<seg
                         type="collation" subtype="subst" xml:id="EtenduEd"
-                        corresp="manuscrit_vol_1.xml#EtenduMs"> porté</seg> leurs regards ni dans le passé, ni dans
-                     l'avenir. Ils ont pris les acteurs pour la pièce ; et, afin de satisfaire leurs
-                     passions, ils ont attribué aux hommes du moment ce que les siècles avoient
-                     préparé. <anchor type="collation" subtype="gap" xml:id="AdversairesEd"
-                        corresp="manuscrit_vol_1.xml#AdversairesMs"/>
+                        corresp="manuscrit_vol_1.xml#EtenduMs"> porté</seg> leurs regards ni dans le
+                     passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce ; et, afin de
+                     satisfaire leurs passions, ils ont attribué aux hommes du moment ce que les
+                     siècles avoient préparé. <anchor type="collation" subtype="gap"
+                        xml:id="AdversairesEd" corresp="manuscrit_vol_1.xml#AdversairesMs"/>
                      <lb/>Il suffisoit cependant de jeter un coup d’œil sur les principales crises
                      de l’histoire, pour se convaincre qu’elles ont été toutes inévitables,<fw
                         type="footer" rend="bottom-left"><hi rend="small">TOME I</hi></fw>
@@ -444,7 +446,7 @@
                         corresp="manuscrit_vol_1.xml#BienMs"/> loin de nous. Les hommes éclairés,
                      qui sont toujours contemporains des siècles futurs par leurs pensées, jugeront
                      si j’ai su m’élever à la hauteur d’impartialité que je
-                     <!-- fin f. 3v du manuscrit - fin échantillon test --> voulois atteindre.<lb/>
+                     <!-- fin f. 3v du manuscrit --> voulois atteindre.<lb/>
                      Je me bornerai, dans ce chapitre, à des considérations générales sur la marche
                      politique de la civilisation européenne, mais seulement par rapport à la
                      révolution de France : car c’est à ce sujet, déjà bien vaste, que cet ouvrage
