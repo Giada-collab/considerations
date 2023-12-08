@@ -99,8 +99,7 @@
                 chaque document il est possible de télécharger le fichier XML correspondant. Le
                 schéma de balisage est d'ailleurs disponible dans l'<a
                     href="../documentation_stael/manuscrit_vol_1_docum.html">ODD (<cite>One Document
-                        Does-it-all</cite>)</a>. 
-            <h4>Encodage en XML-TEI</h4>
+                        Does-it-all</cite>)</a>. <h4>Encodage en XML-TEI</h4>
             <p>L’encodage des textes se base sur le langage XML et les <cite>P5 Guidelines</cite> de
                 la <a href="https://tei-c.org/">TEI</a> pour sa structuration. La personnalisation
                 du schéma reste en tout cas conforme aux recommandations TEI, et ce pour assurer le
@@ -153,17 +152,17 @@
                 variantes, modernisation et correction) dans le &lt;standOff&gt; ou dans un fichier
                 extérieur. Voici, par exemple, une substitution de Staël&nbsp;: <br /><br /><img
                     class="imgXml" src="../img_stael/subst_stael.png" alt="Substitution Staël">
-            <p> Tout type d’intervention est marquée par l’attribut @hand pour pouvoir distinguer
-                les différents scripteurs dont la liste a été crée dans le &lt;handDesc&gt; du
-                &lt;teiHeader&gt;. Le changement de copiste est signalé de cette manière&nbsp;:
-                &lt;handShift scribeRef="#randallF"/&gt;. L'utilisation de @hand et @scribeRef
-                permet de distinguer les différentes foncions des scripteurs. Il arrive, en effet,
-                qu’une même personne est tantôt copiste à certains endroits et tantôt auteur de
-                variantes dans d’autres. <br /> Dans le cas de plus d'une substitution faisant
-                partie d'une intervention unique, nous avons pris pour base la section "11.3.1.5
-                Substitutions" des "P5 TEI Guidelines" qui considère l'encodage suivant comme ayant
-                une foction analogue à &lt;subst&gt;&nbsp;: </p>
-            <img class="imgXml" src="../img_stael/subst_schlegel.png"
+            <p> Tout type d’intervention est marquée par l’attribut @hand pour pouvoir
+                distinguer les différents scripteurs dont la liste a été crée dans le
+                &lt;handDesc&gt; du &lt;teiHeader&gt;. Le changement de copiste est signalé de cette
+                manière&nbsp;: &lt;handShift scribeRef="#randallF"/&gt;. L'utilisation de @hand et
+                @scribeRef permet de distinguer les différentes foncions des scripteurs. Il arrive,
+                en effet, qu’une même personne est tantôt copiste à certains endroits et tantôt
+                auteur de variantes dans d’autres. <br /> Dans le cas de plus d'une substitution
+                faisant partie d'une intervention unique, nous avons pris pour base la section
+                "11.3.1.5 Substitutions" des "P5 TEI Guidelines" qui considère l'encodage suivant
+                comme ayant une foction analogue à &lt;subst&gt;&nbsp;: </p>
+            <img class="imgXml" src="../img_stael/subst_Schlegel.png"
                 alt=" Deux substitutions Schlegel" />
             <p>L'ordre des interventions est indiqué par @varSeq, tandis que @rend restitue la
                 manière dont elles sont effectuées. En particulier, l'élément &lt;add&gt; emboîté
@@ -188,10 +187,10 @@
                     alt=" Collation manuscrit-première édition" /><br />
                 <br />
                 <br /> L'élément &lt;anchor&gt; et l'attribut @corresp, qui introduit le lien vers
-                le point correspondant de la première édition identifié par un @xml:id, ne sont pas très
-                caractérisés du point de vue sémantique, l'attribut @corresp ayant
-                la fonction de pointer &#8810;&nbsp;to elements that correspond to the current
-                element in some way&nbsp;&#8811; (<a
+                le point correspondant de la première édition identifié par un @xml:id, ne sont pas
+                très caractérisés du point de vue sémantique, l'attribut @corresp ayant la fonction
+                de pointer &#8810;&nbsp;to elements that correspond to the current element in some
+                way&nbsp;&#8811; (<a
                     href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.linking.html#tei_att.corresp"
                     >TEI Guidelines</a>). Ils ont donc été considérés comme aptes à établir des
                 liens génériques entre les deux versions sans marquer une prééminence de l'une sur
@@ -204,17 +203,18 @@
                 été remplacés dans la première édition). Les valeurs &#8810;&nbsp;add&nbsp;&#8811;
                 et &#8810;&nbsp;gap&nbsp;&#8811; pourraient prêter à confusion car des éléments
                 ayant le même nom mais un sémantisme différent existent déjè dans la TEI &nbsp;: on
-                pourra donc envisager de définir des valeurs différentes. Cette utilisation particulière de l'élément
-                &lt;anchor&gt; offre des avantages et des inconvénients&nbsp;: il permet d'éviter
-                l'effet de superposion éventuelle avec d'autres balises intéressant le même segment
-                scriptural mais il n'indique pas l'extension précise de ce segment affecté par une
-                variation entre les deux documents. Il faudra donc trouver une autre solution qui
-                puisse laisser, en même temps, le code léger. Ce problème a été partiellement
-                surmonté dans la première édition qui est marquée par une annotation peu détaillée.
-                Ici l'élément &lt;anchor&gt; est utilisé uniquement pour indiquer une lacune par
-                rapport au manuscrit. L'élément &lt;seg&gt; a été considéré, dans ce cas, plus
-                efficace car il permet de délimiter le mot ou le passage où les deux documents
-                divergent. Voici un exemple relatif au syntagme &#8810;&nbsp;au développement&nbsp;&#8811;&nbsp;:<br /><br />
+                pourra donc envisager de définir des valeurs différentes. Cette utilisation
+                particulière de l'élément &lt;anchor&gt; offre des avantages et des
+                inconvénients&nbsp;: il permet d'éviter l'effet de superposion éventuelle avec
+                d'autres balises intéressant le même segment scriptural mais il n'indique pas
+                l'extension précise de ce segment affecté par une variation entre les deux
+                documents. Il faudra donc trouver une autre solution qui puisse laisser, en même
+                temps, le code léger. Ce problème a été partiellement surmonté dans la première
+                édition qui est marquée par une annotation peu détaillée. Ici l'élément
+                &lt;anchor&gt; est utilisé uniquement pour indiquer une lacune par rapport au
+                manuscrit. L'élément &lt;seg&gt; a été considéré, dans ce cas, plus efficace car il
+                permet de délimiter le mot ou le passage où les deux documents divergent. Voici un
+                exemple relatif au syntagme &#8810;&nbsp;au développement&nbsp;&#8811;&nbsp;:<br /><br />
                 <img class="imgXml" src="../img_stael/substEd.png" alt=" Substitiotion" />
                 <br /><br /> La modernisation et les corrections sont encadrées dans &lt;choice&gt;
                 pour pouvoir enregistrer la version originale et celle qui a été choisie par
@@ -222,17 +222,17 @@
                 sur la base de l'auteur de la note, à savoir l’éditeur scientifique ou Staël. Dans
                 le texte, l’élément &lt;note&gt; est donc suivi de @resp renvoyant à l’un des deux.
                 <br /><br />Comme nous avons dit plus haut, le but du travail futur est de déplacer
-                certaines données et leur encodage comme, par exemple,
-                l'apparat critique extérieurement au texte. Ce travail a été fait pour l'index des noms. Dans le texte, le
-                balisage onomastique est marqué par &lt;rs&gt; suivi de @ref renvoyant aux données
-                correspondantes dans l'index des noms qui se bornent pour l'instant aux noms,
-                prénoms, dates de naissance et de mort&nbsp;: <br />
+                certaines données et leur encodage comme, par exemple, l'apparat critique
+                extérieurement au texte. Ce travail a été fait pour l'index des noms. Dans le texte,
+                le balisage onomastique est marqué par &lt;rs&gt; suivi de @ref renvoyant aux
+                données correspondantes dans l'index des noms qui se bornent pour l'instant aux
+                noms, prénoms, dates de naissance et de mort&nbsp;: <br />
                 <br />
                 <img class="imgXml" src="../img_stael/persName.png" alt=" Encodage noms de personne"
                  />
-            <p> Ces éléments on été considérés comme le minimum indispensable pour l'identification.
-                Pour les noms des villes, seulement le nom du pays correspondant a été
-                introduit. Dans tous ces cas, l'attribut @ref a été ajouté pour renvoyer à un
+            <p> Ces éléments on été considérés comme le minimum indispensable pour
+                l'identification. Pour les noms des villes, seulement le nom du pays correspondant a
+                été introduit. Dans tous ces cas, l'attribut @ref a été ajouté pour renvoyer à un
                 identifiant unique. <br /> Pour l'index des ouvrages cités, une solution
                 sémantiquement satisfaisante et en même temps conforme à la TEI n'a pas encore été
                 trouvée. Voici une solution provisoire&nbsp;: </p>
@@ -240,9 +240,25 @@
             <p> La liste des ouvrages a été créée à l'aide des éléments &lt;index&gt; et
                 &lt;term&gt;. Comme ce dernier n'aide pas à l'identification des objets décrits,
                 cette fonction est confiée à l'attribut @type dans &lt;objectName&gt; pour les
-                ouvrages et dans &lt;name&gt; pour les auteurs. <br />
+                ouvrages et dans &lt;name&gt; pour les auteurs. <br /><br />
             <h4>Encodage en HTML</h4>
+            <br />
+            <br /> Les fichiers XML ont été transformés en HTML à travers le langage de
+            transformation XSLT. 
+            
+            
+            
+            
+            
+            
+            
+            <br/>
+            
+            
+            
+            
             <h4>Principes d’affichage</h4>
+                
             <!-- title with anchor -->
             <h3>Outils et pratiques d'archivage</h3>
         </div>
