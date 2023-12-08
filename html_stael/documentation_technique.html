@@ -241,24 +241,38 @@
                 &lt;term&gt;. Comme ce dernier n'aide pas à l'identification des objets décrits,
                 cette fonction est confiée à l'attribut @type dans &lt;objectName&gt; pour les
                 ouvrages et dans &lt;name&gt; pour les auteurs. <br /><br />
-            <h4>Encodage en HTML</h4>
+            <h4>Encodage en HTML et CSS</h4>
             <br />
             <br /> Les fichiers XML ont été transformés en HTML à travers le langage de
-            transformation XSLT. 
-            
-            
-            
-            
-            
-            
-            
-            <br/>
-            
-            
-            
-            
+            transformation XSLT. Quant à l'affichage web des contenus, le balisage en HTML5 est
+            conforme aux recommandations du World Wide Web Consortium (W3C) relativement à
+            l'accessibilité des différents appareils mobiles. Voici les principales mesures
+            adoptées&nbsp;: <ol>
+                <li> ajout de la métadonnée Meta Viewport pour l'adaptation du texte aux fenêtres
+                    d'affichage des différents appareils&nbsp;: &lt;meta name="viewport"
+                    content="width=device-width, initial-scale=1.0"&gt;; </li>
+                <li> choix de polices de caractères installées dans la plupart des navigateurs
+                    (Arial)&nbsp;; </li>
+                <li>ajout, dans la propriété "font-family" des feuilles de style CSS, de polices de
+                    caractères ultérieures (Verdana, sans-serif) au cas où la première ne
+                    fonctionnerait pas. </li>
+                <li> les feuilles de style CSS, autre langage standard, sont placées dans un fichier
+                    externe pour permettre un chargement des pages plus rapide&nbsp;;</li>
+                <li> dans les CSS, seules les unités de mesure relatives
+                    &#8810;&nbsp;rem&nbsp;&#8811; (&#8810;&nbsp;root em&nbsp;&#8811;),
+                    &#8810;&nbsp;vw&nbsp;&#8811; (&#8810;&nbsp;viewport width&nbsp;&#8811;) et
+                    &#8810;&nbsp;%&nbsp;&#8811; ont été utilisées pour l'adaptation des dimensions
+                    dans la fenêtre d'affichage des différents dispositifs&nbsp;; <li>
+                    utilisation de formats standards pour les fichiers des images
+                    (&#8810;&nbsp;JPEG&nbsp;&#8811; ou &#8810;&nbsp;PNG&nbsp;&#8811;) qui, grâce à
+                    leur compression, permettent un affichage plus rapide&nbsp;;</li>
+                <li> utilisation de certaines propriétés pour un menu de navigation
+                    &#8810;&nbsp;responsive&nbsp;&#8811;&nbsp;: changement de couleur des liens au passage de la
+                    souris pour à montrer à l’utilisateur la page qu’il est en train de
+                    choisir.</li>
+            </ol>
+            <br />
             <h4>Principes d’affichage</h4>
-                
             <!-- title with anchor -->
             <h3>Outils et pratiques d'archivage</h3>
         </div>
