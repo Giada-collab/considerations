@@ -48,7 +48,7 @@ Stefania Tesser, *Considérations sur les principaux événements de la Révolut
 
 ## Licence
 
-!<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Data are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons International Attribution 4.0 </a>.
+!<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Data are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons International Attribution 4.0 </a>.
 
 
 
