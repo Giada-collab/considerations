@@ -1,5 +1,5 @@
 # *Considérations sur les principaux événements de la Révolution française* de Germaine de Staël : un laboratoire éditorial 
-### Digital edition of a political work of Madame de Staël
+### Digital critical edition of the last political work of Germaine de Staël
 ----------
 
 ## General information
@@ -9,7 +9,7 @@
 - Language of data: French
 
 ## Content
-Data from:  transcription of the last manuscript of *Considérations sur les principaux événements de la Révolution française* of Madame de Staël and its  1<sup>st</sup> edition (1818) . Data have been published in a [website](https://giada-collab.github.io/considerations/). This is a work in progress.
+Transcription of the last manuscript of *Considérations sur les principaux événements de la Révolution française* of Germaine de Staël and its  1<sup>st</sup> edition (1818) with variants. The first results of this work in progress can be viewed in the website [*Considérations sur les principaux événements de la Révolution française* de Germaine de Staël : un laboratoire éditorial ](https://giada-collab.github.io/considerations/). 
 
 
 ## Repository overview
