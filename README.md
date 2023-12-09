@@ -15,7 +15,29 @@ Transcription of the last manuscript of *Considérations sur les principaux év�
 ## Repository overview
 
 - css_stael
-  - css_stael.css 
+  - css_stael.css
+- documentation_stael
+  - index_noms_docum.html
+  - index_noms.compiled.odd
+  - index_noms.rng
+  - manuscrit_vol_1_docum.html
+  - manuscrit_vol_1.compiled.odd
+  - manuscrit_vol_1.rng
+- html_stael
+  - bibliographie.html
+  - considerations.html
+  - contact.html
+  - documentation_technique.html
+  - edition_vol_1.html
+  - index_noms.html
+  - introduction.html
+  - manuscrit_vol_1.html
+  - manuscrit.html
+  - mentions_legales.html
+  - objectifs.html
+  - plan_site.html
+  - premiere_edition.html
+  - 
 - img_stael
   - Considerations_1818_V_iii_26.jpg
   - Considerations_2017_I_i_5.jpg
