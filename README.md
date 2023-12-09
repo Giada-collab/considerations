@@ -43,7 +43,7 @@ Website tested for Microsoft Edge version 108.0.1462.76, Google Chrome version 1
 
 ## Cite this repository
 
-Stefania Tesser, *Considérations sur les principaux événements de la Révolution française de Madame de Staël : un laboratoire éditorial*, Venice: Ca' Foscari University of Venice, 2023, [https://github.com/Giada-collab/considerations](https://github.com/Giada-collab/considerations).
+*Considérations sur les principaux événements de la Révolution française de Madame de Staël : un laboratoire éditorial*, Stefania Tesser (éd.), 2023. URL : [https://github.com/Giada-collab/considerations](https://github.com/Giada-collab/considerations). (Accessed [MM/DD/JJJJ]).
 
 
 ## Licence
