@@ -15,26 +15,62 @@ Transcription of the last manuscript of *Considérations sur les principaux év�
 ## Repository overview
 
 - css_stael
-  - css_stael.css 
+  - css_stael.css
+- documentation_stael
+  - index_noms_docum.html
+  - index_noms.compiled.odd
+  - index_noms.rng
+  - manuscrit_vol_1_docum.html
+  - manuscrit_vol_1.compiled.odd
+  - manuscrit_vol_1.rng
+- html_stael
+  - bibliographie.html
+  - considerations.html
+  - contact.html
+  - documentation_technique.html
+  - edition_vol_1.html
+  - index_noms.html
+  - introduction.html
+  - manuscrit_vol_1.html
+  - manuscrit.html
+  - mentions_legales.html
+  - objectifs.html
+  - plan_site.html
+  - premiere_edition.html
+  - principes_editoriaux.html
+  - stael_politique.html
 - img_stael
-  - Considerations_1818_V_iii_26.jpg
-  - Considerations_2017_I_i_5.jpg
-  - Considerations_2017-V-iii-706.jpg
-  - Considerations_2023_I_i_5.jpg
-  - Considerations_ms_I_i_3r.jpg
-  - img_home_1.jpg
-  - img_home_2.jpg
-  - img_home_3.jpg
-  - img_home_4.jpg
+  - book.jpg
+  - img_auctorialite_1.jpg
+  - img_auctorialite_2.jpg
+  - img_home.jpg
+  - lettre_albertine_1.jpg
+  - lettre_albertine_2.jpg
+  - lettre_albertine_3.jpg
+  - manuscrit.jpg
+  - note_editoriale.jpg
+  - anchor.png
+  - celuiQui.png
+  - correction.png
   - madame_de_stael.png
-- Documentation_Stael.pdf
-- contact.html
-- edition_1818.html
+  - persName.png
+  - quelles.png
+  - subst_Schlegel.png
+  - subst_stael.png
+  - substEd.png
+  - term.png
+- xml_Stael
+  - edition_vol_1.xml
+  - index_noms.xml
+  - manuscrit_vol_1.xml
+- xsl_stael
+  - edition_vol_1.xsl
+  - index_noms.xsl
+  - manuscrit_vol_1.xsl
+- LICENSE
+- README.md
+- manuscrit_vol_1.xpr
 - index.html
-- manuscrit.html
-- mentions_legales.html
-- presentation_projet.html
-- ressources.html
 
 ## Methodological information
 
