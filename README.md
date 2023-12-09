@@ -38,7 +38,7 @@ Transcription of the last manuscript of *Considérations sur les principaux év�
 
 ## Methodological information
 
-Website tested for Microsoft Edge version 108.0.1462.76, Google Chrome version 108.0.5359.125, Firefox 72.0.2 and Android version QKQ1.191215.002.
+Website tested for Microsoft Edge version 108.0.1462.76, Google Chrome version 108.0.5359.125, Firefox 72.0.2, Safari 16.5 and Android version QKQ1.191215.002.
 
 
 ## Cite this repository

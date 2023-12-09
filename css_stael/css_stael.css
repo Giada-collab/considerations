@@ -551,6 +551,8 @@ cite {
 
 }
 
+
+
 .quelles {
 
     width: 3.3rem;
@@ -881,4 +883,11 @@ blockquote {
     
 }
 
+/* Mentions légales */
 
+.CC-BY-NC{
+    
+     width: 7rem;
+    height: auto;
+    
+}
