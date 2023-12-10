@@ -72,7 +72,14 @@ Transcription of the last manuscript of *Considérations sur les principaux év�
 - manuscrit_vol_1.xpr
 - index.html
 
-## Methodological information
+## Technical information
+
+Automatic transcription of the IIIF image of the 1<sup>st</sup> edition (provided by Bibliothèque Nationale de France) with [escriptorium](https://gitlab.com/scripta/escriptorium).
+Manual transcription of the manuscript.
+Text encoded in XML
+ and annotated according to TEI recommendations (P5 Guidelines). XML transformation into HTML5 by using XSLT. Editor: Oxygen (version 25.1).
+ 
+
 
 Website tested for Microsoft Edge version 108.0.1462.76, Google Chrome version 108.0.5359.125, Firefox 72.0.2, Safari 16.5 and Android version QKQ1.191215.002.
 
