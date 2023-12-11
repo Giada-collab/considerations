@@ -891,3 +891,25 @@ blockquote {
     height: auto;
     
 }
+
+
+/* page Manuscrit e page 1re édition */
+
+b.fiche{
+    
+    font-weight:bold;
+}
+
+.noteSmall{
+    
+    font-size:smaller;
+}
+
+
+
+button{
+    
+    background-color: #C0D1A9;
+    border: #C0D1A9;
+    font-size: 1.6vw;
+}

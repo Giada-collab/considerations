@@ -9,7 +9,10 @@
 - Language of data: French
 
 ## Content
-Transcription of the last manuscript of *Considérations sur les principaux événements de la Révolution française* of Germaine de Staël and its  1<sup>st</sup> edition (1818) with variants. The first results of this work in progress can be viewed in the website [*Considérations sur les principaux événements de la Révolution française* de Germaine de Staël : un laboratoire éditorial ](https://giada-collab.github.io/considerations/). 
+Transcription of the last manuscript of *Considérations sur les principaux événements de la Révolution française* of Germaine de Staël
+ with variants of several hands. Transcription of its  1<sup>st</sup> edition (1818) with several posthumous changes.
+  The aim of this project is to establish both texts with these characteristics and to make it easy to compare them.
+  The first results of the pilot version can be viewed in the website [*Considérations sur les principaux événements de la Révolution française* de Germaine de Staël : un laboratoire éditorial ](https://giada-collab.github.io/considerations/). 
 
 
 ## Repository overview
