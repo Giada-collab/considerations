@@ -20,8 +20,8 @@
                         src="../img_stael/madame_de_stael.png"/>
                     <span class="title_header">
 
-                        <cite>Considérations sur les principaux événements<br/> de la Révolution
-                            française</cite>
+                        <cite>Considérations sur les principaux événemens<br/> de la Révolution
+                            françoise</cite>
                         <br/>
                         <span class="title_header_sub">de Germaine de Staël: un laboratoire
                             éditorial </span>
