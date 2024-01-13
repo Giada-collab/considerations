@@ -5,7 +5,7 @@
     <xsl:output method="html" encoding="UTF-8"/>
 
     <!-- html commun à toutes les pages -->
-
+<xsl:variable name="index" select="document('../xml_stael/index_noms.xml')"/>
     <xsl:template match="/">
         <html>
             <head>
@@ -20,7 +20,7 @@
                         src="../img_stael/madame_de_stael.png"/>
                     <span class="title_header">
 
-                        <cite>Considérations sur les principaux événemens<br/> de la Révolution
+                        <cite>Considérations sur les principaux événemens<br/> de la révolution
                             françoise</cite>
                         <br/>
                         <span class="title_header_sub">de Germaine de Staël: un laboratoire
@@ -429,16 +429,11 @@
         
     </xsl:template>
     
-    <xsl:template match="graphic">
-        <xsl:element name="a">
-            <xsl:attribute name="href">
-                <xsl:value-of select="@url"/>
-            </xsl:attribute>    
-            <xsl:attribute name="id">
-                <xsl:value-of select="@xml:id"/>
-            </xsl:attribute>  
-        </xsl:element>
-    </xsl:template> 
+    
+   
+    
+   
+    
     
 
 </xsl:stylesheet>
