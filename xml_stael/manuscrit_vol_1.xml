@@ -10,7 +10,7 @@
       <fileDesc>
          <titleStmt>
             <title type="main">
-               <title type="littWork">Considérations sur les principaux événemens de la Révolution
+               <title type="littWork">Considérations sur les principaux événemens de la révolution
                   françoise</title> de Germaine de Staël&#xA0;: un laboratoire éditorial</title>
             <title type="sub">Manuscrit</title>
             <author>
@@ -30,7 +30,7 @@
          <publicationStmt>
             <authority>Università Ca' Foscari Venezia </authority>
             <address>
-               <settlement ref="index_noms.xml#venezia">Venezia</settlement>
+               <settlement ref="https://www.geonames.org/3164603/venice.html">Venezia</settlement>
             </address>
 
             <date when="2023">2023</date>
@@ -54,7 +54,7 @@
                         <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
                      </author>
                      <title type="littWork" ref="index_noms.xml#considerationsSg">Considérations sur
-                        les principaux événements de la Révolution française</title>
+                        les principaux événemens de la révolution françoise</title>
                      <note>Le manuscrit n'a pas de titre. Il a été reconstruit d'après la
                         correspondance</note>
                   </msItemStruct>
@@ -88,7 +88,7 @@
 
                      </layoutDesc>
                   </objectDesc>
-                  <!-- donner pour chaque écriture non indentifiée des éléments caractéristiques -->
+                  <!-- donner pour chaque écriture non indentifiée des éléments caractéristiques pour distinguer les unes des autres-->
                   <handDesc>
                      <handNote xml:id="randallF">Copiste A: <persName ref="index_noms.xml#randallF"
                            >Fanny Randall</persName></handNote>
@@ -155,7 +155,7 @@
                      <persName ref="index_noms.xml#broglieV">Victor de Broglie </persName>
                      <persName ref="index_noms.xml#staelAu"> Auguste de Staël </persName>
                   </editor>
-                  <title type="main">Considérations sur les principaux événemens de la Révolution
+                  <title type="main">Considérations sur les principaux événemens de la révolution
                      françoise</title>
                   <title type="sub">ouvrage posthume de madame la baronne de Staël&#xA0;; publ. par
                      M. le duc de Broglie et M. le baron de Staël</title>
@@ -169,7 +169,7 @@
                <ref type="bib_desc" target="http://catalogue.bnf.fr/ark:/12148/cb178050717"> </ref>
             </biblStruct>
             <biblStruct>
-               <!-- data about digital version of the 1st edition. -->
+               <!-- données sur la version numérique de la première édition -->
                <monogr>
                   <author>
                      <persName ref="index_noms.xml#stael">Germaine de Staël </persName>
@@ -178,7 +178,7 @@
                      <persName ref="index_noms.xml#broglieV">Victor de Broglie </persName>
                      <persName ref="index_noms.xml#staelAu"> Auguste de Staël </persName>
                   </editor>
-                  <title type="main">Considérations sur les principaux événemens de la Révolution
+                  <title type="main">Considérations sur les principaux événemens de la révolution
                      françoise</title>
                   <title type="sub">ouvrage posthume de madame la baronne de Staël, publ. par M. le
                      duc de Broglie et M. le baron de Staël.</title>
@@ -215,8 +215,8 @@
             </correction>
             <normalization>
                <p>Graphie du manuscrit original respectée sauf pour les accents, la ponctuation
-                  forte et les majuscules dans les cas d'ambiguïté sémantique. L'intervention est
-                  signalée dans l'apparat critique. Emploi uniformisé du soulignement pour les
+                  forte et les majuscules dans les cas d'ambiguïté sémantique. L'intervention est toujours
+                  signalée. Emploi uniformisé du soulignement pour les
                   titres d'ouvrages et des bateaux. Foliotation correspondant à celle de la BnF.
                </p>
             </normalization>
