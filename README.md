@@ -1,4 +1,4 @@
-# *Considérations sur les principaux événements de la Révolution française* de Germaine de Staël : un laboratoire éditorial 
+# *Considérations sur les principaux événemens de la révolution françoise* de Germaine de Staël : un laboratoire éditorial 
 ### Digital critical edition of the last political work of Germaine de Staël
 ----------
 
@@ -9,10 +9,11 @@
 - Language of data: French
 
 ## Content
-Transcription of the last manuscript of *Considérations sur les principaux événements de la Révolution française* of Germaine de Staël
+Transcription of the last manuscript of *Considérations sur les principaux événemens de la révolution françoise* of Germaine de Staël
  with variants of several hands. Transcription of its  1<sup>st</sup> edition (1818) with several posthumous changes.
   The aim of this project is to establish both texts with these characteristics and to make it easy to compare them.
-  The first results of the pilot version can be viewed in the website [*Considérations sur les principaux événements de la Révolution française* de Germaine de Staël : un laboratoire éditorial ](https://giada-collab.github.io/considerations/). 
+  
+  The first results of the pilot version can be viewed in the website [*Considérations sur les principaux événemens de la révolution françoise* de Germaine de Staël : un laboratoire éditorial ](https://giada-collab.github.io/considerations/). 
 
 
 ## Repository overview
@@ -89,7 +90,7 @@ Website tested for Microsoft Edge version 108.0.1462.76, Google Chrome version 1
 
 ## Cite this repository
 
-*Considérations sur les principaux événements de la Révolution française de Madame de Staël : un laboratoire éditorial*, Stefania Tesser (ed.), 2023. URL : [https://github.com/Giada-collab/considerations](https://github.com/Giada-collab/considerations). (Accessed [MM/DD/JJJJ]).
+*Considérations sur les principaux événemens de la révolution françoise de Germaine de Staël : un laboratoire éditorial*, Stefania Tesser (ed.), 2023. URL : [https://github.com/Giada-collab/considerations](https://github.com/Giada-collab/considerations). (Accessed [MM/DD/JJJJ]).
 
 
 ## Licence
