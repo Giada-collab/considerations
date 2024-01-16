@@ -5,7 +5,7 @@
     <xsl:output method="html" encoding="UTF-8"/>
 
     <!-- html commun à toutes les pages -->
-<xsl:variable name="index" select="document('../xml_stael/index_noms.xml')"/>
+
     <xsl:template match="/">
         <html>
             <head>
@@ -424,7 +424,7 @@
                 <xsl:value-of select="concat('../html_stael/edition_vol_1.html', $id)"/>
             </xsl:attribute>
             
-            <img class="manuscrit" alt="Lien vers le manuscrit" src="../img_stael/book.jpg"/>
+            <img class="book" alt="Lien vers la première édition" src="../img_stael/book.jpg"/>
         </xsl:element>
         
     </xsl:template>

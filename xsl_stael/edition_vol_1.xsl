@@ -182,7 +182,7 @@
     <xsl:template match="pb">
         <xsl:choose>
             <xsl:when test="@n = '0'"> </xsl:when>
-            <xsl:when test="@n = 'v'">
+            <xsl:when test="@n = 'v' ">
                 <span class="page">
                     <xsl:value-of select="@n"/>
                 </span>
@@ -366,6 +366,7 @@
     </blockquote>
 </xsl:template>
     
+    <!-- En dessous, tentative d'introduire le fac-similé -->
     <xsl:template match="graphic">
         <xsl:element name="a">
         <xsl:attribute name="href">

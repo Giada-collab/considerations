@@ -442,7 +442,7 @@
                         <reg>qu'elles</reg>
                      </choice> 
                      ont été toutes inévitables quand elles se rattachoient de quelque
-                     <!-- un trait vertical dans la marge gauche en correspondance du texte suivant -->
+                     <!-- trait vertical dans la marge gauche en correspondance du texte suivant -->
                      manière <metamark spanTo="#quApres" rend="verticalLine"
                         place="left-hand margin"/>
                      <anchor type="collation" subtype="subst" xml:id="ProgresMs"

@@ -560,6 +560,7 @@ cite {
 
 
 
+
 .quelles {
 
     width: 3.3rem;
@@ -852,7 +853,7 @@ mark.subst {
     visibility: hidden;
     width: 7.5rem;
     font-size: smaller;
-    background-color: #FFE3BF;
+    background-color: #D4C6A8;
     text-align: center;
     padding: 0.375rem 0;
     border-radius: 0.375rem;
@@ -878,7 +879,7 @@ mark.subst {
     margin-left: -0.3125rem;
     border-width: 0.3125rem;
     border-style: solid;
-    border-color: #FFE3BF transparent transparent transparent;
+    border-color: #D4C6A8 transparent transparent transparent;
 }
 
 blockquote {
