@@ -23,7 +23,7 @@
                         <cite>Considérations sur les principaux événemens<br/> de la révolution
                             françoise</cite>
                         <br/>
-                        <span class="title_header_sub">de Germaine de Staël: un laboratoire
+                        <span class="title_header_sub">de Germaine de Staël : un laboratoire
                             éditorial </span>
                         <br/>
                     </span>
