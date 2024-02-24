@@ -6,7 +6,7 @@
 - Author: Stefania Tesser
 - Email: stefania@unive.it
 - Institution: Ca' Foscari University of Venice
-- Language of data: French
+- Language: French
 
 ## Content
 Transcription of the last manuscript of *Considérations sur les principaux événemens de la révolution françoise* of Germaine de Staël
