@@ -14,7 +14,7 @@ Transcription of the last manuscript of *Considérations sur les principaux év�
   The aim of this project is to make both texts accessible for a large public and to facilitate their comparaison.
   
   Pilot version at the following address: [*Considérations sur les principaux événemens de la révolution françoise* de Germaine de Staël : un laboratoire éditorial ](https://giada-collab.github.io/considerations/). 
-
+Data stored here: [![DOI](https://zenodo.org/badge/587503539.svg)](https://zenodo.org/doi/10.5281/zenodo.10327992)
 
 ## Repository overview
 
