@@ -1,5 +1,5 @@
 # *Considérations sur les principaux événemens de la révolution françoise* de Germaine de Staël : un laboratoire éditorial 
-### Digital critical edition of the last political work of Germaine de Staël
+### Digital edition of the last political work of Germaine de Staël
 ----------
 
 ## General information
@@ -11,9 +11,9 @@
 ## Content
 Transcription of the last manuscript of *Considérations sur les principaux événemens de la révolution françoise* of Germaine de Staël
  with variants of several hands. Transcription of its  1<sup>st</sup> edition (1818) with several posthumous changes.
-  The aim of this project is to establish both texts with these characteristics and to make it easy to compare them.
+  The aim of this project is to make both texts accessible for a large public and to facilitate their comparaison.
   
-  The first results of the pilot version can be viewed in the website [*Considérations sur les principaux événemens de la révolution françoise* de Germaine de Staël : un laboratoire éditorial ](https://giada-collab.github.io/considerations/). 
+  The pilot version can be viewed in the website [*Considérations sur les principaux événemens de la révolution françoise* de Germaine de Staël : un laboratoire éditorial ](https://giada-collab.github.io/considerations/). 
 
 
 ## Repository overview
