@@ -13,7 +13,7 @@ Transcription of the last manuscript of *Considérations sur les principaux év�
  with variants of several hands. Transcription of its  1<sup>st</sup> edition (1818) with several posthumous changes.
   The aim of this project is to make both texts accessible for a large public and to facilitate their comparaison.
   
-  The pilot version can be viewed in the website [*Considérations sur les principaux événemens de la révolution françoise* de Germaine de Staël : un laboratoire éditorial ](https://giada-collab.github.io/considerations/). 
+  Pilot version at the following address: [*Considérations sur les principaux événemens de la révolution françoise* de Germaine de Staël : un laboratoire éditorial ](https://giada-collab.github.io/considerations/). 
 
 
 ## Repository overview
