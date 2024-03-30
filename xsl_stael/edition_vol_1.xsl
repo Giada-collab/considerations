@@ -168,15 +168,11 @@
 
     <xsl:template match="ref">
 
-        <xsl:element name="a">
-            <xsl:variable name="id" select="substring-after(@target, 'manuscrit_vol_1.xml')"> </xsl:variable>
-            <xsl:attribute name="href">
-                <xsl:value-of select="concat('../html_stael/manuscrit_vol_1.html', $id)"/>
-            </xsl:attribute>
+        >
 
             <xsl:apply-templates/>
 
-        </xsl:element>
+        
 
     </xsl:template>
 
@@ -374,14 +370,9 @@
 
     <xsl:template match="rs">
      
-        <xsl:element name="a">
-            <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
-            <xsl:attribute name="href">
-                <xsl:value-of select="concat('../html_stael/index_noms.html', $id)"/>
-            </xsl:attribute>
+       
         
             <xsl:apply-templates/>
-        </xsl:element>
         
     </xsl:template>
     
@@ -404,7 +395,22 @@
         </xsl:element>
     </xsl:template> 
     
-   
+  <!-- AUTRE SCRIPT -->  
+    <xsl:template match="ref">
+        
+        <xsl:element name="a">
+            <xsl:variable name="id" select="substring-after(@target, 'manuscrit_vol_1.xml')"> </xsl:variable>
+            <xsl:attribute name="href">
+                <xsl:value-of select="concat('../html_stael/manuscrit_vol_1.html', $id)"/>
+            </xsl:attribute>
+            
+            <xsl:apply-templates/>
+            
+        </xsl:element>
+        
+    </xsl:template>
+    
+    
     
 
 </xsl:stylesheet>

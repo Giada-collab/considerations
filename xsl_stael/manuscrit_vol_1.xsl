@@ -282,34 +282,20 @@
        
         <span class="underlined">
             
-                    <xsl:element name="a">
-                        <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
-                        <xsl:attribute name="href">
-                            <xsl:value-of
-                                select="concat('../html_stael/index_noms.html', $id)"
-                            />
-                        </xsl:attribute>
+                   
             
                         <xsl:apply-templates/>
                         
-                    </xsl:element>
-                </span>
+        </span>
                
         </xsl:when>
             <xsl:when test="@rend = 'italic'">
                 
                 <cite>
-                    <xsl:element name="a">
-                        <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
-                        <xsl:attribute name="href">
-                            <xsl:value-of
-                                select="concat('../html_stael/index_noms.html', $id)"
-                            />
-                        </xsl:attribute>
+                   
                         
                         <xsl:apply-templates/>
                         
-                    </xsl:element>
                     
                 </cite>
                 
@@ -325,19 +311,9 @@
         <br/>
 
         <p>
-            <xsl:element name="a">
-                <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
-                <xsl:attribute name="href">
-                    <xsl:value-of
-                        select="concat('../html_stael/index_noms.html', $id)"
-                    />
-                </xsl:attribute>
-                <xsl:attribute name="target">
-                    <xsl:text>_blank</xsl:text>
-                </xsl:attribute>
+            
                 <xsl:value-of select="signed"/>
 
-            </xsl:element>
 
 
         </p>
@@ -359,17 +335,10 @@
         </p>
 
         <p>
-            <xsl:element name="a">
-                <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
-                <xsl:attribute name="href">
-                    <xsl:value-of
-                        select="concat('../html_stael/index_noms.html', $id)"
-                    />
-                </xsl:attribute>
+           
 
                 <xsl:value-of select="addrLine[2]"/>
 
-            </xsl:element>
 
         </p>
         <br/>
@@ -449,20 +418,7 @@
     </xsl:template>
 
     <!-- Revoir tooltip entités nommées -->
-    <xsl:template match="rs">
-
-        <xsl:element name="a">
-            <xsl:variable name="id" select="substring-after(@ref, 'index_noms.xml')"> </xsl:variable>
-            <xsl:attribute name="href">
-                <xsl:value-of select="concat('../html_stael/index_noms.html', $id)"/>
-            </xsl:attribute>
-            <xsl:attribute name="target"><xsl:text>_blank</xsl:text></xsl:attribute>
-            <xsl:apply-templates/>
-
-        </xsl:element>
-
-
-    </xsl:template>
+   
 
     <xsl:template match="anchor[@corresp]">
         <xsl:element name="a">
