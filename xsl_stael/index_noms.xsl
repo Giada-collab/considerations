@@ -47,15 +47,16 @@
                       <li class="dropdown">
                           <a href="javascript:void(0)" class="dropbtn">Édition</a>
                           <div class="dropdown-content">
-                              <a href="manuscrit.html">Manuscrit</a>
-                              <a href="premiere_edition.html">Première édition</a>
+                              <a href="../html_stael/manuscrit_vol_1.html">Manuscrit</a>
+                              <a href="../html_stael/edition_vol_1.html">Première édition</a>
+                              <a href="../html_stael/index_noms.html">Index des noms</a>
                               
                           </div>
                       </li>
                       <li class="dropdown">
                           <a href="javascript:void(0)" class="dropbtn">À propos</a>
                           <div class="dropdown-content">
-                              <a href="stael_politique.html">Staël et la politique</a>
+                              <a href="stael.html">Germaine de Staël</a>
                               <a href="considerations.html">Les <cite>Considérations</cite></a>
                               <a href="bibliographie.html">Bibliographie</a>
                           </div>
