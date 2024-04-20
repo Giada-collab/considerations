@@ -99,13 +99,13 @@
                     
                     <b class="fiche">Acquisition</b> : Achat en vente publique, 31 mai 1963, A.
                     22856. Le manuscrit provenait de Jacques Lion.<br/>
-                    <b class="fiche">Période de composition</b> : 1813(?)-1817<br/>
+                    <b class="fiche">Période de composition</b> : 1811(?)-1817<br/>
                     
                     <b class="fiche">Support</b> : Papier vergé, filigrané et plié in-folio<br/>
                     
                     <b class="fiche">Format</b> : 320 × 250 mm <br/>
                     
-                    <b class="fiche">Volumes</b> : volume I (313 f.), volume II (326 f.), volume III (390 f.) <a href="https://gallica.bnf.fr/ark:/12148/btv1b10084773d">Document numérisé</a><br/>
+                    <b class="fiche">Volumes</b> : volume I (313 f.), volume II (326 f.), <a href="https://gallica.bnf.fr/ark:/12148/btv1b10084773d">volume III (390 f.)</a><br/>
                     <b class="fiche">Reliure</b> : à la cathédrale, veau violet<br/>
                     
                     <b class="fiche">Numérotation des pages</b> : foliotation en chiffres arabes
@@ -150,7 +150,11 @@
     <xsl:template match="fw">   </xsl:template>
 
     <xsl:template match="standOff">   </xsl:template>
-
+    
+    
+    <xsl:template match="rdg[@type='orig']">   </xsl:template>
+    
+    <!-- ######## -->
 
     <xsl:template match="div[@type = 'volume']">
         <div class="volume">
@@ -240,6 +244,7 @@
                     <xsl:apply-templates/>
                 </span>
             </xsl:when>
+           
 
         </xsl:choose>
 
