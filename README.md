@@ -95,7 +95,7 @@ Website tested for Microsoft Edge version 108.0.1462.76, Google Chrome version 1
 
 ## Licence
 
-!<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Data are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons International Attribution 4.0 </a>.
+!<a rel="license" href="[http://creativecommons.org/licenses/by/4.0/](http://creativecommons.org/licenses/by/4.0/)"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />Data are licensed under a <a rel="license" href="[[http://creativecommons.org/licenses/by/4.0](https://creativecommons.org/licenses/by/4.0/)](http://creativecommons.org/licenses/by/4.0/)/">Creative Commons International Attribution 4.0 </a>.
 
 
 
