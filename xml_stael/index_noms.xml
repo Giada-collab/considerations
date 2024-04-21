@@ -15,11 +15,16 @@
                <persName ref="index_noms.xml#stael">Germaine de Staël</persName>
             </author>
             <editor>
-               <persName ref="manuscrit_vol_1.xml#tesserS">Stefania Tesser </persName>
+               <persName>Stefania Tesser </persName>
             </editor>
          </titleStmt>
          <publicationStmt>
-            <p>Publié en 2023</p>
+            <p>Publié en 2023 https://https://creativecommons.org/licenses/by/4.0/deed.fr</p>
+            <p >Licence CC
+               BY-4.0 FR</p>
+            
+          
+               
          </publicationStmt>
          <sourceDesc>
             <msDesc>
