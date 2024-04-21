@@ -736,13 +736,16 @@ cite {
     background-color: white;
     font-size: 1.5vw;
     padding: 5.625rem;
-    width: 60%;
+    max-width: 45%;
     line-height: 150%;
-    margin: auto;
+ margin-left: 50rem;
     text-align: center;
 
 
 }
+
+
+
 
 .finPageEd {
 
@@ -769,7 +772,7 @@ cite {
 .titlePartMain {
 
 
-    font-size: 2.3vw;
+    font-size: 2.1vw;
 
 }
 
@@ -777,20 +780,24 @@ cite {
 
 .byline {
 
-    font-size: 1.3vw;
+    font-size: 1vw;
 
 }
 
 
-
-.epigraph {
-
-    text-align: left; /* corriger */
-    font-size: 0.625rem;
-    line-height: 0.625rem; /* corriger */
-
+.epigraph{
+    
+    
+     font-size: 0.7vw;
+     margin-left: auto;
 }
 
+
+.titlePartEnd{
+    
+     font-size: 0.8vw;
+    
+}
 
 h6 {
     text-align: center;
@@ -837,6 +844,9 @@ mark.subst {
      font-size: 1.2vw;
     
 }
+
+
+
 
 /* TOOLTIPS 1ST EDITION */
 
@@ -893,7 +903,7 @@ blockquote {
 
 /* Mentions légales */
 
-.CC-BY-NC{
+.CC-BY{
     
      width: 7rem;
     height: auto;
