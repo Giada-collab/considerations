@@ -14,11 +14,11 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>xml_stael/edition_vol_1.xml</String>
+                                    <String>xml_stael/manuscrit_vol_1.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>edition_vol_1</String>
+                                        <String>manuscrit_vol_1</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -34,11 +34,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>xml_stael/manuscrit_vol_1.xml</String>
+                                    <String>xml_stael/edition_vol_1.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>manuscrit_vol_1</String>
+                                        <String>edition_vol_1</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">

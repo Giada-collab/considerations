@@ -8,10 +8,10 @@
 
     <xsl:template match="/">
         <html>
-            
-            
-            
-            
+
+
+
+
             <head>
                 <title>Considérations - manuscrit v. 1</title>
                 <link rel="stylesheet" type="text/css" href="../css_stael/css_stael.css"/>
@@ -63,7 +63,8 @@
                                 <a href="javascript:void(0)" class="dropbtn">À propos</a>
                                 <div class="dropdown-content">
                                     <a href="stael.html">Germaine de Staël</a>
-                                    <a href="considerations.html">Les <cite>Considérations</cite></a>
+                                    <a href="considerations.html">Les
+                                        <cite>Considérations</cite></a>
                                     <a href="bibliographie.html">Bibliographie</a>
                                 </div>
                             </li>
@@ -74,54 +75,42 @@
                                 <a href="../html_stael/principes_editoriaux.html#legende"
                                     >Légende</a>
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="main_content">
-                    <br />
+                    <br/>
                     <h2 class="title_page">Manuscrit</h2>
-                    <br />
+                    <br/>
                     <b class="fiche">Institut de conservation</b> : Bibliothèque nationale de
                     France. Département des Manuscrits<br/>
-                    
                     <b class="fiche">Cote</b> : NAF 14606-14608<br/>
-                    
                     <b class="fiche"> Titre</b> : le manuscrit n'a pas de titre <br/>
-                    
-                    <b class="fiche"> Auteur</b> :  Staël-Holstein, Germaine de <br/>
-                    
-                    <b class="fiche">Description du contenu</b> : copie avec variantes
-                    autographes<br/>
-                    
+                    <b class="fiche"> Auteur</b> : Staël-Holstein, Germaine de <br/>
+                    <b class="fiche">Description du contenu</b> : copie avec variantes autographes<br/>
                     <b class="fiche">Langue</b> : français<br/>
-                    
                     <b class="fiche">Acquisition</b> : Achat en vente publique, 31 mai 1963, A.
                     22856. Le manuscrit provenait de Jacques Lion.<br/>
                     <b class="fiche">Période de composition</b> : 1811(?)-1817<br/>
-                    
                     <b class="fiche">Support</b> : Papier vergé, filigrané et plié in-folio<br/>
-                    
                     <b class="fiche">Format</b> : 320 × 250 mm <br/>
-                    
-                    <b class="fiche">Volumes</b> : volume I (313 f.), volume II (326 f.), <a href="https://gallica.bnf.fr/ark:/12148/btv1b10084773d">volume III (390 f.)</a><br/>
+                    <b class="fiche">Volumes</b> : volume I (313 f.), volume II (326 f.), <a
+                        href="https://gallica.bnf.fr/ark:/12148/btv1b10084773d">volume III (390
+                        f.)</a><br/>
                     <b class="fiche">Reliure</b> : à la cathédrale, veau violet<br/>
-                    
                     <b class="fiche">Numérotation des pages</b> : foliotation en chiffres arabes
-                    dans l'angle supérieur gauche et au <cite>recto</cite> et <cite>verso</cite> de chaque feuillet<br/>
-                    
-                    
-                    <b class="fiche">Note sur cette édition</b> : il est actuellement possible d'avoir accès
-                    à la transcription d'une partie du  volume I.<br/>
-                    <b class="fiche">Source des métadonnées : <a href="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc6176b">Bibliothèque nationale de
-                        France.</a></b>
+                    dans l'angle supérieur gauche et au <cite>recto</cite> et <cite>verso</cite> de
+                    chaque feuillet<br/>
+                    <b class="fiche">Note sur cette édition</b> : il est actuellement possible
+                    d'avoir accès à la transcription d'une partie du volume I.<br/>
+                    <b class="fiche">Source des métadonnées : <a
+                            href="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc6176b"
+                            >Bibliothèque nationale de France.</a></b>
                     <br/>
-                    
-                    
-                
                 </div>
-                
+
                 <div class="main_content">
                     <br/>
                     <h2 class="title_page">Volume I</h2>
@@ -150,11 +139,18 @@
     <xsl:template match="fw">   </xsl:template>
 
     <xsl:template match="standOff">   </xsl:template>
+
+
+    <xsl:template match="rdg[@type = 'orig']">   </xsl:template>
     
+    <xsl:template match="rdg[@wit='#ed1']">   </xsl:template>
     
-    <xsl:template match="rdg[@type='orig']">   </xsl:template>
-    
+
     <!-- ######## -->
+    
+   
+    
+    
 
     <xsl:template match="div[@type = 'volume']">
         <div class="volume">
@@ -209,20 +205,18 @@
     <xsl:template match="del[@hand = '#staelA']">
         <span class="delStaelA">
             <xsl:choose>
-                <xsl:when test="child::gap[@reason = 'illegible']">
+                <xsl:when test="child::gap[@reason = 'deleted']">
                     <xsl:text>xxx</xsl:text>
-
+                    
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:apply-templates/>
                 </xsl:otherwise>
             </xsl:choose>
-
+            
         </span>
     </xsl:template>
-
-
-
+    
 
 
     <xsl:template match="del">
@@ -244,11 +238,16 @@
                     <xsl:apply-templates/>
                 </span>
             </xsl:when>
-           
+
 
         </xsl:choose>
 
     </xsl:template>
+    
+    
+   
+    
+    
 
     <xsl:template match="add">
         <xsl:choose>
@@ -284,31 +283,31 @@
     <xsl:template match="title">
         <xsl:choose>
             <xsl:when test="@rend = 'underlined'">
-       
-        <span class="underlined">
-            
-                   
-            
-                        <xsl:apply-templates/>
-                        
-        </span>
-               
-        </xsl:when>
+
+                <span class="underlined">
+
+
+
+                    <xsl:apply-templates/>
+
+                </span>
+
+            </xsl:when>
             <xsl:when test="@rend = 'italic'">
-                
+
                 <cite>
-                   
-                        
-                        <xsl:apply-templates/>
-                        
-                    
+
+
+                    <xsl:apply-templates/>
+
+
                 </cite>
-                
-                
+
+
             </xsl:when>
         </xsl:choose>
     </xsl:template>
-    
+
     <xsl:template match="closer">
         <p>
             <xsl:value-of select="salute"/>
@@ -316,8 +315,8 @@
         <br/>
 
         <p>
-            
-                <xsl:value-of select="signed"/>
+
+            <xsl:value-of select="signed"/>
 
 
 
@@ -340,9 +339,9 @@
         </p>
 
         <p>
-           
 
-                <xsl:value-of select="addrLine[2]"/>
+
+            <xsl:value-of select="addrLine[2]"/>
 
 
         </p>
@@ -360,16 +359,16 @@
     <xsl:template match="head">
         <xsl:choose>
             <xsl:when test="@rend = 'underlined'">
-                
+
                 <p>
                     <span class="underlined">
                         <xsl:apply-templates/>
                     </span>
-                </p>   
-                
+                </p>
+
             </xsl:when>
-            
-            
+
+
             <xsl:when test="@type = 'titlePart'">
                 <div title="titlePart"/>
             </xsl:when>
@@ -423,26 +422,26 @@
     </xsl:template>
 
     <!-- Revoir tooltip entités nommées -->
-   
 
-    <xsl:template match="anchor[@corresp]">
+
+    <xsl:template match="anchor[@corresp] | rdg[@corresp]">
         <xsl:element name="a">
             <xsl:variable name="id" select="substring-after(@corresp, 'edition_vol_1.xml')"/>
             <xsl:attribute name="id" select="@xml:id"/>
             <xsl:attribute name="href">
                 <xsl:value-of select="concat('../html_stael/edition_vol_1.html', $id)"/>
             </xsl:attribute>
-            
+
             <img class="book" alt="Lien vers la première édition" src="../img_stael/book.jpg"/>
         </xsl:element>
-        
+
     </xsl:template>
-    
-    
-   
-    
-   
-    
-    
+
+
+
+
+
+
+
 
 </xsl:stylesheet>
