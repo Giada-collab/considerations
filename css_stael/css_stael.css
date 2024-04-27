@@ -736,9 +736,9 @@ cite {
     background-color: white;
     font-size: 1.5vw;
     padding: 5.625rem;
-    max-width: 45%;
+     width: 60%;
     line-height: 150%;
- margin-left: 50rem;
+ margin: auto;
     text-align: center;
 
 

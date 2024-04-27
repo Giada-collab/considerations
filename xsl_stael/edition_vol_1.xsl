@@ -90,11 +90,11 @@
                         <b class="fiche">Description matérielle </b> : : 3 t. ; in-8<br />
                         <b class="fiche">Institut de conservation</b> : Bibliothèque nationale de France.
                         Département Philosophie, histoire, sciences de l'homme<br />
-                        <b class="fiche">Cote</b> : volume I 8-LA32-1128
-                        (1) <a href="https://gallica.bnf.fr/ark:/12148/bpt6k3056628z">Document numérisé</a>,
-                        volume II I 8-LA32-1128 (2) <a href="https://gallica.bnf.fr/ark:/12148/bpt6k3053721g"
-                            >Document numérisé</a>, volume III I 8-LA32-1128 (3) <a
-                                href="https://gallica.bnf.fr/ark:/12148/bpt6k42319208">Document numérisé</a><br />
+                    <b class="fiche">Cote</b> : <a href="https://gallica.bnf.fr/ark:/12148/bpt6k3056628z">volume I 8-LA32-1128
+                        (1)</a>,
+                    <a href="https://gallica.bnf.fr/ark:/12148/bpt6k3053721g"
+                        >volume II I 8-LA32-1128 (2)</a>, <a
+                            href="https://gallica.bnf.fr/ark:/12148/bpt6k42319208">volume III I 8-LA32-1128 (3)</a> <br />
                         <b class="fiche">Note sur l'édition de ce
                             site web</b> : il est actuellement possible d'avoir accès à la transcription
                         d'une partie du volume I.<br />
@@ -128,7 +128,7 @@
 
     <xsl:template match="fw">   </xsl:template>
     
-    <xsl:template match="pb[@facs = '#frontispice_verso']">   </xsl:template>
+    
 
     <!-- background -->
 
@@ -187,19 +187,23 @@
     </xsl:template>
 
 
-    <xsl:template match="byline | docImprint | titlePart[@type = 'sub']">
+    <xsl:template match="byline">
         <span class="byline">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
 
-    <xsl:template match="epigraph">
+    <xsl:template match="quote|bibl">
         <div class="epigraph">
             <xsl:apply-templates/>
-        </div>
+            </div>
     </xsl:template>
 
-
+    <xsl:template match="docImprint | titlePart[@type = 'sub']">
+        <span class="titlePartEnd">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
 
     <xsl:template match="pb">
         <xsl:choose>
@@ -237,9 +241,26 @@
                 <br/>
             </xsl:otherwise>
         </xsl:choose>
+        <!--  !!!!! affichage du facsimile temporairement suspendu !!!!!  
+        <xsl:choose>
+       
+            <xsl:when test="@xml:id='frontispice_verso'"></xsl:when>
+            <xsl:otherwise>
+       
+        <img class="facsimile">     
+            <xsl:attribute name="src">
+                <xsl:value-of select="@facs"/>
+            </xsl:attribute>  
+            <xsl:attribute name="alt">
+                <xsl:value-of select="@xml:id"/>  
+            </xsl:attribute>
+        </img>
+            </xsl:otherwise>
+        </xsl:choose>
+         --> 
     </xsl:template>
 
-    <xsl:template match="anchor[@corresp]">
+    <xsl:template match="milestone[@corresp]">
         <xsl:element name="a">
             <xsl:variable name="id" select="substring-after(@corresp, 'manuscrit_vol_1.xml')"/>
             <xsl:attribute name="id" select="@xml:id"/>
@@ -383,18 +404,7 @@
     </blockquote>
 </xsl:template>
     
-    <!-- En dessous, tentative d'introduire le fac-similé -->
-    <xsl:template match="graphic">
-        <xsl:element name="a">
-        <xsl:attribute name="href">
-            <xsl:value-of select="@url"/>
-        </xsl:attribute>    
-         <xsl:attribute name="id">
-             <xsl:value-of select="@xml:id"/>
-         </xsl:attribute>  
-        </xsl:element>
-    </xsl:template> 
-    
+  
   <!-- AUTRE SCRIPT -->  
     <xsl:template match="ref">
         
