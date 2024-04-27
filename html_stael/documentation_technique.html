@@ -143,17 +143,22 @@
                 et cela peut surcharger le texte de code, créer des problèmes de lisibilité, générer
                 une syntaxe dans le fichier XML non conforme à la TEI, créer une superposition de
                 différents signes dans la page web. Pour l'instant, nous avons donc opté pour une
-                annotation minimale. <br /> À cause de problèmes techniques en cours de solution,
-                nous avons choisi de signaler toutes les variantes des différents scripteurs d'après
-                la méthode “location-referenced” et la position “internal” de l’apparat critique,
-                c’est-à-dire dans le texte. Cependant, comme l'objectif est de ne pas surcharger le
-                texte avec beaucoup d’annotations, nous envisageons de déplacer tout ce qui relève
-                de l'apparat critique (notes éditoriale, variantes, modernisation et correction)
-                dans le &lt;standOff&gt; ou dans un fichier extérieur. Voici, par exemple, une
-                substitution de Staël intégrée dans le texte&nbsp;: <br /><br /><img class="imgXml"
-                    src="../img_stael/subst_stael.png" alt="Substitution Staël">
-            <p> Tout type d’intervention est marquée par l’attribut @hand pour pouvoir
-                distinguer les différents scripteurs dont la liste a été crée dans le
+                annotation minimale. <br /> Pour l'apparat critique, nous avons choisi la méthode
+                “location-referenced” et la position “internal” et pour représenter les
+                modifications dans le manuscrit tout comme les divergences entre manuscrit et
+                première édition intéressant un même syntagme, nous avons séparé ces deux aspects à
+                l'aide de &lt;rdgGrp&gt; à l'intérieur de l'apparat &lt;app&gt; comme dans cette
+                intervention de Schlegel :<br />
+                <br />
+                <br />
+                <img class="imgXml" src="../img_stael/subst_Schlegel.png"
+                    alt=" Deux substitutions Schlegel" />
+                <br />
+            <p> De cette manière, les variantes génétiques sont séparées des leçons résultant de
+                la collation grâce aux attributs @genetic et @collation. En même temps, leur
+                juxtaposition permet de voir la leçon retenue dans la première édition.<br /> Dans
+                les variantes génétiques, tout type d’intervention est marquée par l’attribut @hand
+                pour pouvoir distinguer les différents scripteurs dont la liste a été crée dans le
                 &lt;handDesc&gt; du &lt;teiHeader&gt;. Le changement de copiste est signalé de cette
                 manière&nbsp;: &lt;handShift scribeRef="#randallF"/&gt;. L'utilisation de @hand et
                 @scribeRef permet de distinguer les différentes foncions des scripteurs. Il arrive,
@@ -161,59 +166,41 @@
                 auteur de variantes dans d’autres. <br /> Dans le cas de plus d'une substitution
                 faisant partie d'une intervention unique, nous avons pris pour base la section
                     <cite>11.3.1.5 Substitutions</cite> des <cite>P5 TEI Guidelines</cite> qui
-                considère l'encodage suivant comme ayant une foction analogue à &lt;subst&gt;&nbsp;: </p>
-            <img class="imgXml" src="../img_stael/subst_Schlegel.png"
-                alt=" Deux substitutions Schlegel" />
-            <p>L'ordre des interventions est indiqué par @varSeq, tandis que @rend restitue la
-                manière dont elles sont effectuées. En particulier, l'élément &lt;add&gt; emboîté
-                dans &lt;del&gt; indique une addition qui a été ensuite rayée. Pour distinguer dans
-                les différents &lt;add&gt; ce qui fait partie d'une substition de ce qui est une
-                addition tout court, nous avons ajouté pour ces dernières l'attribut
-                @type="addition".<br /> Nous avons évité l'utilisation de &lt;lem&gt; s'oppsant à
-                &lt;rdg&gt; et indiquant la leçon préférée par l'éditeur scientifique ou, en tout
-                cas, celle qui ferait partie d'un texte de base. Au contraire, nous avons essayé de
-                donner une représentation non hiérachisée des leçons des différents scripteurs comme
-                étant toutes potentiellement acceptables sur la base de nos principes éditoriaux de
-                sorte que toutes les modifications du texte rédigé par le copiste sont introduites par &lt;rdg&gt;. <br />
-                Quant à la collation entre manuscrit et première édition, il fallait, dans ce cas
-                également, opérer des choix de modélisation de manière à ne pas établir une
-                hiérarchie entre les deux versions. Nous sommes en train de tester les différentes
-                options qui doivent, en tout cas, assurer la lisibilité du texte encodé. Une
-                solution provisoire a été trouvée avec l'élément &lt;anchor&gt; fonctionnant comme
-                hyperlien entre les deux textes et permettant leur comparaison à l'endroit où une
-                variation a été détectée. Voici, par exemple, le mot &#8810;&nbsp;plus&nbsp;&#8811;
-                qui est présent dans le manuscrit mais non pas dans la première édition&nbsp;: <br /><br />
-                <img class="imgXml" src="../img_stael/anchor.png"
+                considère l'encodage de l'image ci-dessus comme ayant une foction analogue à
+                &lt;subst&gt;&nbsp;. </p>
+            <p>L'ordre des interventions est indiqué par @varSeq. L'attribut @rend restitue la
+                manière dont elles sont effectuées tandis que @place indique la position d'un ajout.
+                Pour distinguer dans les différents &lt;add&gt; ce qui fait partie d'une substition
+                de ce qui est une addition tout court, nous avons ajouté pour ces dernières
+                l'attribut @type="addition".<br /> Nous avons évité l'utilisation de &lt;lem&gt;
+                s'oppsant à &lt;rdg&gt; et indiquant la leçon préférée par l'éditeur scientifique
+                ou, en tout cas, celle qui ferait partie d'un texte de base. Au contraire, nous
+                avons essayé de donner une représentation non hiérachisée des leçons des différents
+                scripteurs comme étant toutes potentiellement acceptables sur la base de nos
+                principes éditoriaux de sorte que toutes les modifications du manuscrit sont
+                introduites par &lt;rdg&gt;. <br /> Quant à la collation entre manuscrit et première
+                édition, il fallait opérer des choix de modélisation de manière à ne pas établir une
+                hiérarchie entre les deux versions. Le deuxième groupe de &lt;rdg&gt; caractérisé
+                par @type="collation", traite le manuscrit et la première édition comme deux témoins
+                grâce à l'attribut @wit introduit dans tous les &lt;rdg&gt;. Si un des deux témoins
+                ne présente pas une certaine leçon, la balise &lt;rdg&gt;. est vide :<br /><br />
+                <img class="imgXml" src="..//img_stael/collation.png"
                     alt=" Collation manuscrit-première édition" /><br />
                 <br />
-                <br /> L'élément &lt;anchor&gt; et l'attribut @corresp, qui introduit le lien vers
-                le point correspondant de la première édition identifié par un @xml:id, ne sont pas
-                très caractérisés du point de vue sémantique, l'attribut @corresp ayant la fonction
-                de pointer &#8810;&nbsp;to elements that correspond to the current element in some
-                way&nbsp;&#8811; (<a
-                    href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.global.linking.html#tei_att.corresp"
-                    >TEI Guidelines</a>). Ils ont donc été considérés comme aptes à établir des
-                liens génériques entre les deux versions sans marquer une prééminence de l'une sur
-                l'autre. Comme &lt;anchor&gt; peut être utilisé avec d'autres fonctions, l'attribut
-                @type suivi de la valeur &#8810;&nbsp;collation&nbsp;&#8811; est nécessaire. Le type
-                de divergence est signalé par l'introduction de @subtype suivi des valeurs
-                &#8810;&nbsp;add&nbsp;&#8811; (mot ou phrase présents dans le document courant
-                uniquement), &#8810;&nbsp;gap&nbsp;&#8811; (mot ou phrase absents du document courant
-                uniquement) ou &#8810;&nbsp;subst&nbsp;&#8811; (mot ou phrase du manuscrit qui ont
-                été remplacés dans la première édition). Les valeurs &#8810;&nbsp;add&nbsp;&#8811;
-                et &#8810;&nbsp;gap&nbsp;&#8811; pourraient prêter à confusion car des éléments
-                ayant le même nom mais un sémantisme différent existent déjè dans la TEI &nbsp;: on
-                pourra donc envisager de définir des valeurs différentes. Cette utilisation
-                particulière de l'élément &lt;anchor&gt; offre des avantages et des
-                inconvénients&nbsp;: il permet d'éviter l'effet de superposion éventuelle avec
-                d'autres balises intéressant le même segment scriptural mais il n'indique pas
-                l'extension précise de ce segment affecté par une variation entre les deux
-                documents. Il faudra donc trouver une autre solution qui puisse laisser, en même
-                temps, le code léger. Ce problème a été partiellement surmonté dans la première
-                édition qui est marquée par une annotation peu détaillée. Ici l'élément
-                &lt;anchor&gt; est utilisé uniquement pour indiquer une lacune par rapport au
-                manuscrit. L'élément &lt;seg&gt; a été considéré, dans ce cas, plus efficace car il
-                permet de délimiter le mot ou le passage où les deux documents divergent. Voici un
+                <br> Des images indiquent les points où figure un leux variant dans le manuscrit ou dans la première édition et fonctionnent comme un hyperlien entre les deux documents (
+                    <img class="book" alt="Lien vers la première édition"
+                    src="../img_stael/book.jpg"> : du manuscrit à la première édition ; <img
+                    class="manuscrit" alt="Lien vers le manuscrit" src="../img_stael/manuscrit.jpg"
+                > : de la première édition au manuscrit). Ce lien est assuré par l'élément &lt;milestone&gt;.
+                 Voici, par exemple, pour le mot
+                &#8810;&nbsp;plus&nbsp;&#8811; dans le manuscrit : <br /><br />
+                <img class="imgXml" src="../img_stael/milestone.png"
+                    alt=" Lien manuscrit-première édition" /><br />
+                <br />
+                <br />  Dans la première édition l'élément
+                &lt;milestone&gt; est utilisé uniquement pour indiquer une lacune par rapport au
+                manuscrit. L'élément &lt;seg&gt;
+                permet  ici de délimiter le mot ou le passage où les deux documents divergents. Voici un
                 exemple relatif au syntagme &#8810;&nbsp;au développement&nbsp;&#8811;&nbsp;:<br /><br />
                 <img class="imgXml" src="../img_stael/substEd.png" alt=" Substitiotion" />
                 <br /><br /> La modernisation et les corrections sont encadrées dans &lt;choice&gt;
@@ -221,10 +208,10 @@
                 l'éditeur scientifique. En ce qui concerne les notes, elles ont été différenciées
                 sur la base de l'auteur de la note, à savoir l’éditeur scientifique ou Staël. Dans
                 le texte, l’élément &lt;note&gt; est donc suivi de @resp renvoyant à l’un des deux.
-                <br /><br />. L'index des noms est placé dans un fichier séparé. Dans le texte,
-                le balisage onomastique est marqué par &lt;rs&gt; suivi de @ref renvoyant aux
-                données correspondantes dans l'index des noms qui se bornent, pour l'instant, aux
-                noms, prénoms, dates de naissance et de mort&nbsp;: <br />
+                <br /><br />. L'index des noms est placé dans un fichier séparé. Dans le texte, le
+                balisage onomastique est marqué par &lt;rs&gt; suivi de @ref renvoyant aux données
+                correspondantes dans l'index des noms qui se bornent, pour l'instant, aux noms,
+                prénoms, dates de naissance et de mort&nbsp;: <br />
                 <br />
                 <img class="imgXml" src="../img_stael/persName.png" alt=" Encodage noms de personne"
                  />
@@ -290,15 +277,11 @@
             <br /><h3>Archivage et publication web</h3>
             <p>Toutes les données du projet sont stockées et rendues disponibles dans le dépot <a
                     href="https://github.com/Giada-collab/considerations">GitHub</a> avec une
-                licence CC-BY Creative Commons International Attribution 4.0.  <br />La publication web  dans <a
-                    href="https://pages.github.com/">GitHub Pages</a> a été réalisée à travers le service gratuit de <cite>web hosting</cite> de GitHub.
-                
-             
-            <p>Un prototype a enfin été archivé dans <a href="https://zenodo.org/records/10327993">Zenodo</a> pour la préservation des données sur le long terme.
-           
-                
-                  
-            </p>
+                licence CC-BY Creative Commons International Attribution 4.0. <br />La publication
+                web dans <a href="https://pages.github.com/">GitHub Pages</a> a été réalisée à
+                travers le service gratuit de <cite>web hosting</cite> de GitHub. <p>Un
+                prototype a enfin été archivé dans <a href="https://zenodo.org/records/10327993"
+                    >Zenodo</a> pour la préservation des données sur le long terme. </p>
         </div>
         <div class="background_nav">
             <div class="footer">

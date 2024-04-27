@@ -223,7 +223,7 @@
                signalée. Emploi uniformisé du soulignement pour les titres d'ouvrages et des
                bateaux. Foliotation correspondant à celle de la BnF. </p>
          </editorialDecl>
-         <variantEncoding location="internal" method="double-end-point"/>
+         <variantEncoding location="internal" method="location-referenced"/>
       </encodingDesc>
       <profileDesc>
          <textClass>
@@ -278,19 +278,19 @@
 
                <p> Vous m’avez fait un present si precieux, Monsieur, que j’ai cherché à vous
                   exprimer ma reconnoissance par une chose qui j’en suis sure aura du prix à <!-- @from ici (obligatoire pour le double end-point attachement method) devrait aider à extraire le lemma pour une édition critique future -->
-                  <app from="#vos">
-                    
-                        <rdg wit="#ms" type="genetic">
-                           <del hand="#staelA" rend="strikethrough">
-                              <gap reason="deleted" atLeast="4" unit="char"/>
-                           </del>
-                           <add xml:id="vos" hand="#staelA" instant="true" place="inline">vos</add>
-                        </rdg>
+                  <app>
+                     <rdgGrp  type="genetic">
+                     <rdg wit="#ms">
+                        <del hand="#staelA" rend="strikethrough">
+                           <gap reason="deleted" atLeast="4" unit="char"/>
+                        </del>
+                        <add hand="#staelA" instant="true" place="inline">vos</add>
+                     </rdg>
+                     </rdgGrp>
                   </app> yeux. Ce manuscrit des <title type="littWork" rend="underlined"
                      ref="index_noms.xml#considerationsSg">Considérations sur la révolution
                      françoise</title> est une copie corrigée de la main de <rs
                      ref="index_noms.xml#stael">ma mère</rs> et de <rs ref="index_noms.xml#staelAu"
-                      
                      >mon frere Auguste</rs>, je ne m’en serois pas séparée facilement pour toute
                   autre personne mais il m’est doux de le mettre entre <pb n="1v"
                      facs="#lettre_albertine_2"/> les mains de <rs ref="index_noms.xml#gerardF"
@@ -319,8 +319,8 @@
             
             <app from="#frontispiceMs">
                <rdgGrp type="collation">
-                  <rdg wit="#ms" xml:id="frontispiceMs" type="abs" corresp="edition_vol_1.xml#frontispiceEd"/>
-                  <rdg wit="#ed1" type="add">mettre ici le textec du frontispice de la première édition</rdg>
+                  <rdg wit="#ms" xml:id="frontispiceMs"/>
+                  <rdg wit="#ed1">mettre ici le texte du frontispice de la première édition</rdg>
                </rdgGrp>
             </app>
             
@@ -329,8 +329,8 @@
             
             <app from="#PrefaceEdMs">
                <rdgGrp type="collation">
-                  <rdg wit="#ms"  xml:id="PrefaceEdMs" type="abs" corresp="edition_vol_1.xml#PrefaceEdEd1"/>
-                  <rdg wit="#ed1" type="add">mettre ici le textec du frontispice de la première édition</rdg>
+                  <rdg wit="#ms"  xml:id="PrefaceEdMs"/>
+                  <rdg wit="#ed1">mettre ici le texte de l'avis des éditeurs de la première édition</rdg>
                </rdgGrp>
             </app>
             
@@ -362,28 +362,24 @@
                      [...]&#xA0;&#8811;</p>
                </note>
 
-
-               <app from="#PrefaceAuMs">
+               <milestone unit="collationIcon" xml:id="PrefaceAuMs"
+                  corresp="edition_vol_1.xml#PrefaceAuEd"/>
+               <app>
                   <rdgGrp type="collation">
-                     <rdg wit="#ms" type="abs" xml:id="PrefaceAuMs"
-                        corresp="edition_vol_1.xml#PrefaceAuEd1"/>
-                     <rdg wit="#ed1" type="add">AVERTISSEMENT <lb/>DE L’AUTEUR. <lb/>
+                     <rdg wit="#ms"/>
+                     <rdg wit="#ed1">AVERTISSEMENT <lb/>DE L’AUTEUR. <lb/>
                         <lb/>
-                        <p>
-                           <hi rend="bold">J’</hi><hi rend="small-caps">AVOIS</hi> d’abord commencé
-                           cet ouvrage avec l’intention de le borner à l’examen des actes et des
-                           écrits politiques de<rs ref="index_noms.xml#neckerJ"> mon père.</rs>
-                           Mais, en avançant dans mon travail, j’ai été conduite par le sujet même à
-                           retracer, d’une part, les principaux événemens de la révolution
-                           françoise, et à présenter, de l’autre, le tableau de l’Angleterre, comme
-                           une justification de l’opinion de <rs ref="index_noms.xml#neckerJ">M.
-                              Necker,</rs> relativement aux institutions politiques de ce pays. Mon
-                           plan s’étant agrandi, il m’a semblé que je devois changer de titre,
-                           quoique je n’eusse pas changé d’objet. Il restera néanmoins dans ce livre
-                           plus de détails relatifs à mon <pb n="x" xml:id="avertissement_auteur_x"
-                              facs="https://gallica.bnf.fr/iiif/ark:/12148/bpt6k3056628z/f20/full/1022,/0/native.jpg"/>
-                           <fw type="header" place="top-center">AVERTISSEMENT DE L'AUTEUR.</fw><rs
-                              ref="index_noms.xml#neckerJ">père,</rs> et même à <rs
+                        <p> J’AVOIS d’abord commencé cet ouvrage avec l’intention de le borner à
+                           l’examen des actes et des écrits politiques de<rs
+                              ref="index_noms.xml#neckerJ"> mon père.</rs> Mais, en avançant dans
+                           mon travail, j’ai été conduite par le sujet même à retracer, d’une part,
+                           les principaux événemens de la révolution françoise, et à présenter, de
+                           l’autre, le tableau de l’Angleterre, comme une justification de l’opinion
+                           de <rs ref="index_noms.xml#neckerJ">M. Necker,</rs> relativement aux
+                           institutions politiques de ce pays. Mon plan s’étant agrandi, il m’a
+                           semblé que je devois changer de titre, quoique je n’eusse pas changé
+                           d’objet. Il restera néanmoins dans ce livre plus de détails relatifs à
+                              mon<rs ref="index_noms.xml#neckerJ">père,</rs> et même à <rs
                               ref="index_noms.xml#stael">moi,</rs> que je n’en aurois mis, si je
                            l’eusse d’abord conçu sous un point de vue général&#xA0;; mais peut-être
                            des circonstances particulières servent-elles à faire mieux connoÎtre
@@ -399,7 +395,7 @@
 
             <!-- afficher  volNum et cahNum? -->
 
-            <fw type="volNum" place="top-left"><del hand="#unknown">1.<hi rend="superscript">er</hi>
+            <fw type="volNum" place="top-left"><del hand="#unknown"> 1.<hi rend="superscript">er</hi>
                   Volume</del></fw>
             <fw type="cahNum" place="top-left"><del hand="#unknown">1<hi rend="superscript">er</hi>
                   Cahier</del></fw>
@@ -416,18 +412,15 @@
                   de la révolution de France et sur les résultats de la révolution
                   d'Angleterre</title> (Christie, 1998, p. 162).</note>
 
-
-            <app from="#titleWorkMs">
+            <milestone unit="collationIcon" xml:id="titleWorkMs" corresp="edition_vol_1.xml#titleWorkEd"/>
+            
+            <app>
                <rdgGrp type="collation">
-                  <rdg wit="#ms" xml:id="titleWorkMs" type="abs"
-                     corresp="edition_vol_1.xml#titleWorkEd"/>
-                  <rdg wit="#ed1" type="add">CONSIDÉRATIONS <lb/>SUR <lb/>LES PRINCIPAUX ÉVÉNEMENS
-                     <lb/>DE LA RÉVOLUTION FRANÇOISE.</rdg>
+                  <rdg wit="#ms"/>
+                  <rdg wit="#ed1">CONSIDÉRATIONS <lb/>SUR <lb/>LES PRINCIPAUX ÉVÉNEMENS <lb/>DE LA
+                     RÉVOLUTION FRANÇOISE.</rdg>
                </rdgGrp>
             </app>
-
-
-
 
             <fw type="bibl" place="bottom-left">Achat 22856</fw>
             <fw type="bibl" place="top-center">N.a.fr. 14606 </fw>
@@ -440,20 +433,22 @@
                <div type="chapter" n="1">
 
                   <head type="titlePart" rend="underlined">
-                     <app from="#partie1">
-                        <rdg wit="#ms" xml:id="partie1" type="genetic">
-                           <add type="addition" hand="#unknown">Première partie</add></rdg>
+                     <app>
+                        <rdgGrp type="genetic">
+                           <rdg wit="#ms">
+                              <add type="addition" hand="#unknown">Première partie</add></rdg>
+                        </rdgGrp>
                      </app>
                   </head>
 
-                  <head type="titleChapter" subtype="nChapter"> 1<hi rend="superscript">er</hi>
-                     Chapitre. <handShift scribeRef="#randallF"/>
-                     <app from="#Chap1Ms">
+                  <head type="titleChapter" subtype="nChapter">
+                     <handShift scribeRef="#randallF"/>
+                     <milestone unit="collationIcon" xml:id="Chap1Ms"
+                        corresp="edition_vol_1.xml#Chap1Ed"/>
+                     <app>
                         <rdgGrp type="collation">
-                           <rdg wit="#ms" xml:id="Chap1Ms" type="subst"
-                              corresp="edition_vol_1.xml#Chap1Ed"> 1<hi rend="superscript">er</hi>
-                              Chapitre.</rdg>
-                           <rdg wit="#ed1" type="subst">CHAPITRE PREMIER.</rdg>
+                           <rdg wit="#ms"> 1<hi rend="superscript">er</hi> Chapitre.</rdg>
+                           <rdg wit="#ed1">CHAPITRE PREMIER.</rdg>
                         </rdgGrp>
                      </app>
                   </head>
@@ -465,66 +460,73 @@
 
                   <head type="titleChapter" subtype="main">Réflexions générales </head>
 
-                  <p>La Révolution de France est une des <del hand="#unknown" rend="strikethrough"
-                        >plus</del>
-                     <app from="#PlusMs">
+                  <p>La Révolution de France est une des
+                     
+                     
+                     <milestone unit="collationIcon" xml:id="PlusMs" corresp="edition_vol_1.xml#PlusEd"/>
+                     
+                     
+                     <app>
                         <rdgGrp type="genetic">
-                           <rdg wit="#ms" xml:id="PlusMs" corresp="edition_vol_1.xml#PlusEd"><del
-                                 hand="#unknown" rend="strikethrough">plus</del></rdg>
+                           <rdg wit="#ms"><del hand="#unknown" rend="strikethrough"> plus</del></rdg>
                         </rdgGrp>
                         <rdgGrp type="collation">
-                           <rdg wit="#ed1" type="abs"/>
+                           <rdg wit="#ed1"/>
                         </rdgGrp>
-
                      </app> grandes époques de l'ordre social. Ceux qui la considèrent comme un
-                     évènement accidentel, n'ont <app from="#EtenduMs">
+                     évènement accidentel, n'ont <milestone unit="collationIcon" xml:id="EtenduMs"
+                        corresp="edition_vol_1.xml#EtenduEd"/>
+                     <app>
                         <rdgGrp type="genetic">
-                           <rdg wit="#ms" xml:id="EtenduMs" corresp="edition_vol_1.xml#EtenduEd"
-                              varSeq="1">étendu</rdg>
-                           <rdg wit="#ms" varSeq="2">
+                           <rdg wit="#ms" varSeq="1">
                               <del hand="#schlegelW" rend="strikethrough">étendu</del>
                            </rdg>
-                           <rdg wit="#ms" varSeq="3">
+                           <rdg wit="#ms" varSeq="2">
                               <del hand="#schlegelW" rend="strikethrough">
                                  <add hand="#schlegelW" place="above"> étendu</add>
                               </del>
                            </rdg>
-                           <rdg wit="#ms" varSeq="4">
+                           <rdg wit="#ms" varSeq="3">
                               <add hand="#schlegelW" place="above">porté</add>
                            </rdg>
                         </rdgGrp>
                         <rdgGrp type="collation">
-                           <rdg wit="#ed1" type="subst">porté</rdg>
+                           <rdg wit="#ed1">porté</rdg>
                         </rdgGrp>
-                     </app> leurs regards ni <app from="#dansMs">
+                     </app> leurs regards ni
+                     
+                     
+                     <milestone unit="collationIcon" xml:id="dansMs" corresp="edition_vol_1.xml#dansEd"/>
+                     
+                     <app>
                         <rdgGrp type="genetic">
-                           <rdg wit="#ms" xml:id="dansMs" varSeq="1"
-                              corresp="edition_vol_1.xml#dansEd">dans</rdg>
-                           <rdg wit="#ms" varSeq="2">
+                           <rdg wit="#ms" varSeq="1">
                               <del hand="#schlegelW" rend="strikethrough">dans</del>
                            </rdg>
-                           <rdg wit="#ms" varSeq="3">
+                           <rdg wit="#ms" varSeq="2">
                               <del hand="#schlegelW" rend="strikethrough">
                                  <add hand="#schlegelW" place="above">sur</add>
                               </del>
                            </rdg>
-                           <rdg wit="#ms" varSeq="4">
+                           <rdg wit="#ms" varSeq="3">
                               <add hand="#schlegelW" place="above">dans</add>
                            </rdg>
                         </rdgGrp>
                         <rdgGrp type="collation"/>
                         <rdg wit="#ed1">dans</rdg>
-                     </app> le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et
+                     </app> 
+                     
+                     le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et
                      afin de satisfaire leurs passions, ils ont attribué aux hommes du moment ce que
-                     les siècles avoient préparé. <anchor xml:id="AdversairesMs" type="collation"
+                     les siècles avoient préparé. <milestone unit="collationIcon" xml:id="AdversairesMs"
                         corresp="edition_vol_1.xml#AdversairesEd"/>
-                     <app from="#adversaires">
+                     <app>
                         <rdgGrp type="genetic">
 
-                           <rdg wit="#ms" xml:id="adversaires"><del hand="#unknown"
-                                 rend="strikethrough"> Les adversaires des principes de la
-                                 Révolution aimoient à se persuader que le choc auquel ils vouloient
-                                 s'opposer étoit produit par quelques circonstances particulieres <choice>
+                           <rdg wit="#ms"><del hand="#unknown" rend="strikethrough"> Les adversaires
+                                 des principes de la Révolution aimoient à se persuader que le choc
+                                 auquel ils vouloient s'opposer étoit produit par quelques
+                                 circonstances particulieres <choice>
                                     <orig>, i</orig>
                                     <reg resp="#tesserS">. I</reg>
                                  </choice>ls se sont donc aveuglés autant qu'ils l'ont pu sur
@@ -537,7 +539,7 @@
                            </rdg>
                         </rdgGrp>
                         <rdgGrp type="collation">
-                           <rdg wit="#ed1" type="abs"/>
+                           <rdg wit="#ed1"/>
                         </rdgGrp>
 
                      </app>
@@ -549,26 +551,23 @@
                      <!-- trait vertical dans la marge gauche en correspondance du texte suivant -->
                      manière <metamark spanTo="#quApres" rend="verticalStrike"
                         place="left-hand margin"/>
-                     <anchor type="collation" xml:id="ProgresMs"
+                     <milestone unit="collationIcon" xml:id="ProgresMs"
                         corresp="edition_vol_1.xml#ProgresEd"/>
-                     <app from="#progres">
+                     <app>
                         <rdgGrp type="genetic">
-
                            <rdg wit="#ms" varSeq="1">
-                              <del xml:id="progres" hand="#schlegelW" rend="strikethrough">aux
-                                 progrès </del></rdg>
+                              <del hand="#schlegelW" rend="strikethrough">aux progrès </del></rdg>
                            <rdg wit="#ms" varSeq="2">
-                              <add hand="#schlegelW">au developpement</add>
+                              <add hand="#schlegelW" place="above">au developpement</add>
                            </rdg>
-
                         </rdgGrp>
                         <rdgGrp type="collation">
-                           <rdg wit="#ed1" type="subst">au developpement</rdg>
+                           <rdg wit="#ed1">au developpement</rdg>
 
                         </rdgGrp>
 
                      </app> des idées, et qu'après <anchor type="metamark" xml:id="quApres"/> une
-                     lutte et des malheurs plus ou moins <app from="#prolonges">
+                     lutte et des malheurs plus ou moins <app>
                         <rdgGrp type="genetic">
                            <rdg wit="#ms" varSeq="1">
                               <del hand="#stael" rend="strikethrough">longs</del>
@@ -579,31 +578,30 @@
                               </del>
                            </rdg>
                            <rdg wit="#ms" varSeq="3">
-                              <add xml:id="prolonges" hand="#stael">prolongés,</add>
+                              <add hand="#stael">prolongés,</add>
                            </rdg>
                         </rdgGrp>
 
                      </app> le triomphe des lumières a toujours été favorable à la grandeur et à
                      l'amélioration de l'espèce humaine.<lb/> Mon ambition seroit de parler du temps
-                     dans lequel nous avons vécu, comme s'il étoit déjà <anchor type="collation"
+                     dans lequel nous avons vécu, comme s'il étoit déjà <milestone unit="collationIcon"
                         xml:id="BienMs" corresp="edition_vol_1.xml#BienEd"/>
-                     <app from="#bienLoin">
+                     <app>
                         <rdgGrp type="genetic">
                            <rdg wit="#ms" varSeq="1"><del hand="#stael" rend="strikethrough">depuis
                                  long temps écoulé</del></rdg>
                            <rdg wit="#ms" varSeq="2">
-                              <add xml:id="bienLoin" hand="#stael">bien loin de nous</add>.</rdg>
+                              <add hand="#stael" place="above">bien loin de nous</add>.</rdg>
                         </rdgGrp>
                         <rdgGrp type="collation">
                            <rdg wit="#ed1"><mod type="abs">bien</mod>loin de nous</rdg>
                         </rdgGrp>
-                     </app> Les hommes éclairés qui sont toujours contemporains <app
-                        from="#sieclesF">
+                     </app> Les hommes éclairés qui sont toujours contemporains <app>
                         <rdgGrp type="genetic">
                            <rdg wit="#ms" varSeq="1">
                               <del hand="#stael" rend="strikethrough">de l'avenir</del></rdg>
-                           <rdg wit="#ms" varSeq="2"><add xml:id="sieclesF" hand="#stael">des
-                                 siecles futurs</add></rdg>
+                           <rdg wit="#ms" varSeq="2"><add hand="#stael" place="above">des siecles
+                                 futurs</add></rdg>
                         </rdgGrp>
                      </app> par leurs pensées, jugeront si j'ai su m'élever à la hauteur
                      d'impartialité que je <pb n="4r"/>

@@ -424,7 +424,7 @@
     <!-- Revoir tooltip entités nommées -->
 
 
-    <xsl:template match="anchor[@corresp] | rdg[@corresp]">
+    <xsl:template match="milestone[@corresp]">
         <xsl:element name="a">
             <xsl:variable name="id" select="substring-after(@corresp, 'edition_vol_1.xml')"/>
             <xsl:attribute name="id" select="@xml:id"/>
