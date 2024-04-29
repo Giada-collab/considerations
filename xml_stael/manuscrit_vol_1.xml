@@ -512,8 +512,9 @@
                               <add hand="#schlegelW" place="above">dans</add>
                            </rdg>
                         </rdgGrp>
-                        <rdgGrp type="collation"/>
+                        <rdgGrp type="collation">
                         <rdg wit="#ed1">dans</rdg>
+                        </rdgGrp>
                      </app> 
                      
                      le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et
@@ -529,7 +530,7 @@
                                  circonstances particulieres <choice>
                                     <orig>, i</orig>
                                     <reg resp="#tesserS">. I</reg>
-                                 </choice>ls se sont donc aveuglés autant qu'ils l'ont pu sur
+                                 </choice>ls se sont donc aveuglés autant qu'ils l'ont pu sur¢
                                  l'enchaînement </del>
                               <pb n="3v" facs="#v1_3v>"/>
                               <fw type="catch" place="bottom-right">je</fw>
