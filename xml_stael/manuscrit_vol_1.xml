@@ -279,13 +279,13 @@
                <p> Vous m’avez fait un present si precieux, Monsieur, que j’ai cherché à vous
                   exprimer ma reconnoissance par une chose qui j’en suis sure aura du prix à <!-- @from ici (obligatoire pour le double end-point attachement method) devrait aider à extraire le lemma pour une édition critique future -->
                   <app>
-                     <rdgGrp  type="genetic">
-                     <rdg wit="#ms">
-                        <del hand="#staelA" rend="strikethrough">
-                           <gap reason="deleted" atLeast="4" unit="char"/>
-                        </del>
-                        <add hand="#staelA" instant="true" place="inline">vos</add>
-                     </rdg>
+                     <rdgGrp type="genetic">
+                        <rdg wit="#ms">
+                           <del hand="#staelA" rend="strikethrough">
+                              <gap reason="deleted" atLeast="4" unit="char"/>
+                           </del>
+                           <add hand="#staelA" instant="true" place="inline">vos</add>
+                        </rdg>
                      </rdgGrp>
                   </app> yeux. Ce manuscrit des <title type="littWork" rend="underlined"
                      ref="index_noms.xml#considerationsSg">Considérations sur la révolution
@@ -366,8 +366,8 @@
                   corresp="edition_vol_1.xml#PrefaceAuEd"/>
                <app>
                   <rdgGrp type="collation">
-                     <rdg wit="#ms"/>
-                     <rdg wit="#ed1">AVERTISSEMENT <lb/>DE L’AUTEUR. <lb/>
+                     <rdg wit="#ms" type="abs"/>
+                     <rdg wit="#ed1" type="add">AVERTISSEMENT <lb/>DE L’AUTEUR. <lb/>
                         <lb/>
                         <p> J’AVOIS d’abord commencé cet ouvrage avec l’intention de le borner à
                            l’examen des actes et des écrits politiques de<rs
@@ -395,8 +395,8 @@
 
             <!-- afficher  volNum et cahNum? -->
 
-            <fw type="volNum" place="top-left"><del hand="#unknown"> 1.<hi rend="superscript">er</hi>
-                  Volume</del></fw>
+            <fw type="volNum" place="top-left"><del hand="#unknown"> 1.<hi rend="superscript"
+                     >er</hi> Volume</del></fw>
             <fw type="cahNum" place="top-left"><del hand="#unknown">1<hi rend="superscript">er</hi>
                   Cahier</del></fw>
 
@@ -412,13 +412,14 @@
                   de la révolution de France et sur les résultats de la révolution
                   d'Angleterre</title> (Christie, 1998, p. 162).</note>
 
-            <milestone unit="collationIcon" xml:id="titleWorkMs" corresp="edition_vol_1.xml#titleWorkEd"/>
-            
+            <milestone unit="collationIcon" xml:id="titleWorkMs"
+               corresp="edition_vol_1.xml#titleWorkEd"/>
+
             <app>
                <rdgGrp type="collation">
-                  <rdg wit="#ms"/>
-                  <rdg wit="#ed1">CONSIDÉRATIONS <lb/>SUR <lb/>LES PRINCIPAUX ÉVÉNEMENS <lb/>DE LA
-                     RÉVOLUTION FRANÇOISE.</rdg>
+                  <rdg wit="#ms" type="abs"/>
+                  <rdg wit="#ed1" type="add">CONSIDÉRATIONS <lb/>SUR <lb/>LES PRINCIPAUX ÉVÉNEMENS
+                     <lb/>DE LA RÉVOLUTION FRANÇOISE.</rdg>
                </rdgGrp>
             </app>
 
@@ -447,8 +448,9 @@
                         corresp="edition_vol_1.xml#Chap1Ed"/>
                      <app>
                         <rdgGrp type="collation">
-                           <rdg wit="#ms"> 1<hi rend="superscript">er</hi> Chapitre.</rdg>
-                           <rdg wit="#ed1">CHAPITRE PREMIER.</rdg>
+                           <rdg wit="#ms" type="subst"> 1<hi rend="superscript">er</hi>
+                              Chapitre.</rdg>
+                           <rdg wit="#ed1" type="subst">CHAPITRE PREMIER.</rdg>
                         </rdgGrp>
                      </app>
                   </head>
@@ -460,18 +462,15 @@
 
                   <head type="titleChapter" subtype="main">Réflexions générales </head>
 
-                  <p>La Révolution de France est une des
-                     
-                     
-                     <milestone unit="collationIcon" xml:id="PlusMs" corresp="edition_vol_1.xml#PlusEd"/>
-                     
-                     
+                  <p>La Révolution de France est une des <milestone unit="collationIcon"
+                        xml:id="PlusMs" corresp="edition_vol_1.xml#PlusEd"/>
                      <app>
                         <rdgGrp type="genetic">
-                           <rdg wit="#ms"><del hand="#unknown" rend="strikethrough"> plus</del></rdg>
+                           <rdg wit="#ms"><del hand="#unknown" rend="strikethrough">
+                              plus</del></rdg>
                         </rdgGrp>
                         <rdgGrp type="collation">
-                           <rdg wit="#ed1"/>
+                           <rdg wit="#ed1" type="abs"/>
                         </rdgGrp>
                      </app> grandes époques de l'ordre social. Ceux qui la considèrent comme un
                      évènement accidentel, n'ont <milestone unit="collationIcon" xml:id="EtenduMs"
@@ -491,13 +490,10 @@
                            </rdg>
                         </rdgGrp>
                         <rdgGrp type="collation">
-                           <rdg wit="#ed1">porté</rdg>
+                           <rdg wit="#ed1" type="subst">porté</rdg>
                         </rdgGrp>
-                     </app> leurs regards ni
-                     
-                     
-                     <milestone unit="collationIcon" xml:id="dansMs" corresp="edition_vol_1.xml#dansEd"/>
-                     
+                     </app> leurs regards ni <milestone unit="collationIcon" xml:id="dansMs"
+                        corresp="edition_vol_1.xml#dansEd"/>
                      <app>
                         <rdgGrp type="genetic">
                            <rdg wit="#ms" varSeq="1">
@@ -513,14 +509,12 @@
                            </rdg>
                         </rdgGrp>
                         <rdgGrp type="collation">
-                        <rdg wit="#ed1">dans</rdg>
+                           <rdg wit="#ed1" type="subst">dans</rdg>
                         </rdgGrp>
-                     </app> 
-                     
-                     le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et
+                     </app> le passé, ni dans l'avenir. Ils ont pris les acteurs pour la pièce, et
                      afin de satisfaire leurs passions, ils ont attribué aux hommes du moment ce que
-                     les siècles avoient préparé. <milestone unit="collationIcon" xml:id="AdversairesMs"
-                        corresp="edition_vol_1.xml#AdversairesEd"/>
+                     les siècles avoient préparé. <milestone unit="collationIcon"
+                        xml:id="AdversairesMs" corresp="edition_vol_1.xml#AdversairesEd"/>
                      <app>
                         <rdgGrp type="genetic">
 
@@ -540,7 +534,7 @@
                            </rdg>
                         </rdgGrp>
                         <rdgGrp type="collation">
-                           <rdg wit="#ed1"/>
+                           <rdg wit="#ed1" type="abs"/>
                         </rdgGrp>
 
                      </app>
@@ -557,26 +551,25 @@
                      <app>
                         <rdgGrp type="genetic">
                            <rdg wit="#ms" varSeq="1">
-                              <del hand="#schlegelW" rend="strikethrough">aux progrès </del></rdg>
+                              <del hand="#schlegelW" rend="strikethrough">aux progrès</del></rdg>
                            <rdg wit="#ms" varSeq="2">
                               <add hand="#schlegelW" place="above">au developpement</add>
                            </rdg>
                         </rdgGrp>
                         <rdgGrp type="collation">
-                           <rdg wit="#ed1">au developpement</rdg>
+                           <rdg wit="#ed1" type="subst">au developpement</rdg>
 
                         </rdgGrp>
 
-                     </app> des idées, et qu'après <anchor type="metamark" xml:id="quApres"/> une
-                     lutte et des malheurs plus ou moins <app>
+                     </app> des idées, et qu'après <metamark xml:id="quApres"/> une lutte et des
+                     malheurs plus ou moins <app>
                         <rdgGrp type="genetic">
                            <rdg wit="#ms" varSeq="1">
                               <del hand="#stael" rend="strikethrough">longs</del>
                            </rdg>
                            <rdg wit="#ms" varSeq="2">
                               <del hand="#stael" rend="strikethrough">
-                                 <add hand="#stael">durables</add>
-                              </del>
+                                 <add hand="#stael">durables</add></del>
                            </rdg>
                            <rdg wit="#ms" varSeq="3">
                               <add hand="#stael">prolongés,</add>
@@ -585,8 +578,8 @@
 
                      </app> le triomphe des lumières a toujours été favorable à la grandeur et à
                      l'amélioration de l'espèce humaine.<lb/> Mon ambition seroit de parler du temps
-                     dans lequel nous avons vécu, comme s'il étoit déjà <milestone unit="collationIcon"
-                        xml:id="BienMs" corresp="edition_vol_1.xml#BienEd"/>
+                     dans lequel nous avons vécu, comme s'il étoit déjà <milestone
+                        unit="collationIcon" xml:id="BienMs" corresp="edition_vol_1.xml#BienEd"/>
                      <app>
                         <rdgGrp type="genetic">
                            <rdg wit="#ms" varSeq="1"><del hand="#stael" rend="strikethrough">depuis
@@ -595,7 +588,7 @@
                               <add hand="#stael" place="above">bien loin de nous</add>.</rdg>
                         </rdgGrp>
                         <rdgGrp type="collation">
-                           <rdg wit="#ed1"><mod type="abs">bien</mod>loin de nous</rdg>
+                           <rdg wit="#ed1" type="subst"><mod type="abs">bien</mod>loin de nous</rdg>
                         </rdgGrp>
                      </app> Les hommes éclairés qui sont toujours contemporains <app>
                         <rdgGrp type="genetic">
