@@ -96,9 +96,9 @@
                     <b class="fiche">Période de composition</b> : 1811(?)-1817<br/>
                     <b class="fiche">Support</b> : Papier vergé, filigrané et plié in-folio<br/>
                     <b class="fiche">Format</b> : 320 × 250 mm <br/>
-                    <b class="fiche">Volumes</b> : volume I (313 f.), volume II (326 f.), <a
-                        href="https://gallica.bnf.fr/ark:/12148/btv1b10084773d">volume III (390
-                        f.)</a><br/>
+                    <b class="fiche">Volumes</b> : volume I (313 ff.), volume II (326 ff.), <a
+                        href="https://gallica.bnf.fr/ark:/12148/btv1b10084773d">volume III</a> (390
+                        ff.)<br/>
                     <b class="fiche">Reliure</b> : à la cathédrale, veau violet<br/>
                     <b class="fiche">Numérotation des pages</b> : foliotation en chiffres arabes
                     dans l'angle supérieur gauche et au <cite>recto</cite> et <cite>verso</cite> de
