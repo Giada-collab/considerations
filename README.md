@@ -5,13 +5,15 @@
 ## General information
 - Author: Stefania Tesser
 - Email: stefania@unive.it
-- Institution: Ca' Foscari University of Venice
+- Institution: Université Grenoble Alpes; Università Ca' Foscari Venezia
 - Language: French
 
 ## Content
-Transcription of the last manuscript of *Considérations sur les principaux événemens de la révolution françoise* of Germaine de Staël
- with variants of several hands. Transcription of its  1<sup>st</sup> edition (1818) with several posthumous changes.
-  The aim of this project is to make both texts accessible for a large public and to facilitate their comparaison.
+Digital edition of:
+- the last manuscript of *Considérations sur les principaux événemens de la révolution françoise* by Germaine de Staël
+- 1<sup>st</sup> edition (1818) of the same work with several posthumous changes
+  
+  The aim of this project is to show the work of Germaine de Staël and the changes made by the the editors of the *Considérations*.
   
   Pilot version at the following address: [*Considérations sur les principaux événemens de la révolution françoise* de Germaine de Staël : un laboratoire éditorial ](https://giada-collab.github.io/considerations/). 
 Data stored for long term preservation in Zenodo: [![DOI](https://zenodo.org/badge/587503539.svg)](https://zenodo.org/doi/10.5281/zenodo.10327992)
@@ -78,10 +80,9 @@ Data stored for long term preservation in Zenodo: [![DOI](https://zenodo.org/bad
 
 ## Technical information
 
-Automatic transcription of the IIIF image of the 1<sup>st</sup> edition (provided by Bibliothèque Nationale de France) with [escriptorium](https://gitlab.com/scripta/escriptorium).
+Automatic transcription from the IIIF image of the 1<sup>st</sup> edition (provided by Bibliothèque Nationale de France) with [eScriptorium](https://gitlab.com/scripta/escriptorium).
 Manual transcription of the manuscript.
-Text encoded in XML
- and annotated according to TEI recommendations (P5 Guidelines). XML transformation into HTML5 by using XSLT. Editor: Oxygen (version 25.1).
+Text encoded in XML-TEI. Transformation of the XML-TEI files into HTML5 by using XSLT. Editor: Oxygen (version 25.1).
  
 
 
